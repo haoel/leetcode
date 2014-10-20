@@ -1,3 +1,7 @@
+// Source : https://oj.leetcode.com/problems/sudoku-solver/
+// Author : Hao Chen
+// Date   : 2014-10-20
+
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>

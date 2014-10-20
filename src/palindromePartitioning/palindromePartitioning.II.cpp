@@ -2,10 +2,6 @@
 // Author : Hao Chen
 // Date   : 2014-08-24
 
-// Source : https://oj.leetcode.com/problems/palindrome-partitioning/
-// Author : Hao Chen
-// Date   : 2014-08-21
-
 #include <iostream>
 #include <string>
 #include <vector>
