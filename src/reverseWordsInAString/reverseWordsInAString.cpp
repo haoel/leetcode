@@ -10,7 +10,6 @@
 * Given s = "the sky is blue",
 * return "blue is sky the".
 * 
-* click to show clarification.
 * 
 * Clarification:
 * 

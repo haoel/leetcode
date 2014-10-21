@@ -29,11 +29,10 @@
 *             \
 *              6
 * 
-* click to show hints.
 * 
 * Hints:
-* If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
-* 
+* If you notice carefully in the flattened tree, each node's right child points to 
+* the next node of a pre-order traversal.
 *               
 **********************************************************************************/
 

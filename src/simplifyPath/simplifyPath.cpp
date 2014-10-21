@@ -10,7 +10,6 @@
 * path = "/home/", => "/home"
 * path = "/a/./b/../../c/", => "/c"
 * 
-* click to show corner cases.
 * 
 * Corner Cases:
 * 

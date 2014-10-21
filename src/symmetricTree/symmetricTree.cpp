@@ -29,7 +29,8 @@
 * 
 * OJ's Binary Tree Serialization:
 * 
-* The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+* The serialization of a binary tree follows a level order traversal, where '#' signifies 
+* a path terminator where no node exists below.
 * 
 * Here's an example:
 * 

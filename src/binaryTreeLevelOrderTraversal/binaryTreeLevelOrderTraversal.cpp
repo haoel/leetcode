@@ -4,7 +4,8 @@
 
 /********************************************************************************** 
 * 
-* Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+* Given a binary tree, return the level order traversal of its nodes' values. 
+* (ie, from left to right, level by level).
 * 
 * For example:
 * Given binary tree {3,9,20,#,#,15,7},
@@ -27,7 +28,8 @@
 * 
 * OJ's Binary Tree Serialization:
 * 
-* The serialization of a binary tree follows a level order traversal, where '#' signifies a path terminator where no node exists below.
+* The serialization of a binary tree follows a level order traversal, where '#' signifies 
+* a path terminator where no node exists below.
 * 
 * Here's an example:
 * 
