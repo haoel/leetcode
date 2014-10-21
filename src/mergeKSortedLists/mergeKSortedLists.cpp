@@ -2,6 +2,13 @@
 // Author : Hao Chen
 // Date   : 2014-07-06
 
+/********************************************************************************** 
+* 
+* Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+* 
+*               
+**********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

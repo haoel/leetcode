@@ -2,6 +2,12 @@
 // Author : Hao Chen
 // Date   : 2014-07-03
 
+/********************************************************************************** 
+* 
+* Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+*               
+**********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>

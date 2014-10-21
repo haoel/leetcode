@@ -1,6 +1,21 @@
 // Source : https://oj.leetcode.com/problems/sudoku-solver/
 // Author : Hao Chen
-// Date   : 2014-10-20
+// Date   : 2014-09-20
+
+/********************************************************************************** 
+* 
+* Write a program to solve a Sudoku puzzle by filling the empty cells.
+* 
+* Empty cells are indicated by the character '.'.
+* 
+* You may assume that there will be only one unique solution.
+* 
+* A sudoku puzzle...
+* 
+* ...and its solution numbers marked in red.
+* 
+*               
+**********************************************************************************/
 
 #include <stdlib.h>
 #include <string.h>

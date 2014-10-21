@@ -2,6 +2,12 @@
 // Author : Hao Chen
 // Date   : 2014-10-12
 
+/********************************************************************************** 
+* 
+* Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
+*               
+**********************************************************************************/
+
 #include <stdlib.h>
 #include <time.h>
 #include <iostream>

@@ -2,6 +2,15 @@
 // Author : Hao Chen
 // Date   : 2014-07-19
 
+/********************************************************************************** 
+* 
+* Implement strStr().
+* 
+* Returns a pointer to the first occurrence of needle in haystack, or null if needle is not part of haystack.
+* 
+*               
+**********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

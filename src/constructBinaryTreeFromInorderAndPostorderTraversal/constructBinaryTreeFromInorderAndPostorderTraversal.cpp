@@ -2,6 +2,16 @@
 // Author : Hao Chen
 // Date   : 2014-07-10
 
+/********************************************************************************** 
+* 
+* Given inorder and postorder traversal of a tree, construct the binary tree.
+* 
+* Note:
+* You may assume that duplicates do not exist in the tree.
+* 
+*               
+**********************************************************************************/
+
 #include <stdio.h>
 #include <vector>
 #include <queue>

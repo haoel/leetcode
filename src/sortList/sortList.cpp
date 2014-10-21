@@ -2,6 +2,12 @@
 // Author : Hao Chen
 // Date   : 2014-07-06
 
+/********************************************************************************** 
+* 
+* Sort a linked list in O(n log n) time using constant space complexity.
+*               
+**********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

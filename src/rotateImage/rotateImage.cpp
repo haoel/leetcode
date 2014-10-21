@@ -2,6 +2,15 @@
 // Author : Hao Chen
 // Date   : 2014-06-27
 
+/********************************************************************************** 
+* 
+* You are given an n x n 2D matrix representing an image.
+* Rotate the image by 90 degrees (clockwise).
+* Follow up:
+* Could you do this in-place?
+*               
+**********************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>

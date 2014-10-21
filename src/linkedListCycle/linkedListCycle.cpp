@@ -2,6 +2,16 @@
 // Author : Hao Chen
 // Date   : 2014-07-03
 
+/********************************************************************************** 
+* 
+* Given a linked list, determine if it has a cycle in it.
+* 
+* Follow up:
+* Can you solve it without using extra space?
+* 
+*               
+**********************************************************************************/
+
 
 bool hasCycle(ListNode *head) {
     ListNode* p1;

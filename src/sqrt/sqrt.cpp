@@ -2,6 +2,14 @@
 // Author : Hao Chen
 // Date   : 2014-08-26
 
+/********************************************************************************** 
+* 
+* Implement int sqrt(int x).
+* 
+* Compute and return the square root of x.
+*               
+**********************************************************************************/
+
 #include <stdlib.h>
 #include <iostream>
 using namespace std;

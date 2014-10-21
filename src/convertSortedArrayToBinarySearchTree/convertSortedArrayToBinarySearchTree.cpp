@@ -2,6 +2,12 @@
 // Author : Hao Chen
 // Date   : 2014-06-23
 
+/********************************************************************************** 
+* 
+* Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+*               
+**********************************************************************************/
+
 /**
  * Definition for binary tree
  * struct TreeNode {

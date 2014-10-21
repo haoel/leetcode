@@ -2,6 +2,13 @@
 // Author : Hao Chen
 // Date   : 2014-07-03
 
+/********************************************************************************** 
+* 
+* Write a function to find the longest common prefix string amongst an array of strings.
+* 
+*               
+**********************************************************************************/
+
 #include <iostream>
 #include <string>
 #include <vector>

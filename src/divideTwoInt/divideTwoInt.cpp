@@ -2,6 +2,13 @@
 // Author : Hao Chen
 // Date   : 2014-06-20
 
+/********************************************************************************** 
+* 
+* Divide two integers without using multiplication, division and mod operator.
+* 
+*               
+**********************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
