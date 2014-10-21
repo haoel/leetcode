@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 string findPalindrome(string s, int left, int right)
@@ -27,7 +28,7 @@ string findPalindrome(string s, int left, int right)
 }
 
 
-string longestPalindrome(string s) {
+string longestPalindrome_recursive_way(string s) {
     int n = s.size();
     if (n<=1) return s;
 
@@ -48,6 +49,40 @@ string longestPalindrome(string s) {
     return longest; 
 }
 
+//Memory Limit Exceeded
+string longestPalindrome_dp_way(string s) {
+
+    string longest;
+
+    int n = s.size();
+    if (n<=1) return s;
+    
+    //Construct a matrix, and consdier matrix[i][j] as s[i] -> s[j] is Palindrome or not.
+    vector< vector<int> > matrix (n, vector<int>(n));
+
+    // Dynamic Programming 
+    //   1) if i == j, then matrix[i][j] = true;
+    //   2) if i != j, then matrix[i][j] = (s[i]==s[j] && matrix[i+1][j-1])
+    for (int i=n-1; i>=0; i--){
+        for (int j=i; j<n; j++){
+            // The following if statement can be broken to 
+            //   1) i==j, matrix[i][j] = true
+            //   2) the length from i to j is 2 or 3, then, check s[i] == s[j]
+            //   3) the length from i to j > 3, then, check s[i]==s[j] && matrix[i+1][j-1]
+            if ( i==j || (s[i]==s[j] && (j-i<2 || matrix[i+1][j-1]) ) )  {
+                matrix[i][j] = true;
+                if (longest.size() < j-i+1){
+                    longest = s.substr(i, j-i+1);
+                }
+            }
+        }
+    }
+
+    return longest;
+}
+string longestPalindrome(string s) {
+    return longestPalindrome_dp_way(s);
+}
 
 int main(int argc, char**argv)
 {
