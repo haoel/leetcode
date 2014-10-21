@@ -1,8 +1,13 @@
-// Source : https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+// Source : https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
 // Author : Hao Chen
-// Date   : 2014-10-20
+// Date   : 2014-10-21
 
 /********************************************************************************** 
+* 
+* Follow up for "Find Minimum in Rotated Sorted Array":
+* What if duplicates are allowed?
+* 
+* Would this affect the run-time complexity? How and why?
 * 
 * Suppose a sorted array is rotated at some pivot unknown to you beforehand.
 * 
@@ -10,7 +15,7 @@
 * 
 * Find the minimum element.
 * 
-* You may assume no duplicate exists in the array.
+* The array may contain duplicates.
 *               
 **********************************************************************************/
 
@@ -19,21 +24,40 @@
 #include <time.h>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
+
+
+/*
+ * Need be very careful for the following cases:
+ *
+ *    [3, 3, 3, 3, 3]
+ *  
+ *    [3, 3, 3, 1, 3]
+ *
+ */
 
 int findMin(vector<int> &num) {
 
     int low=0, high=num.size()-1;
 
     while(high-low>1){
+        //skip the same element, this would cause the O(n) run-time complexity. 
+        while (high - low > 1 && num[low] == num[high]){
+            low++;
+        }
+        //binary search
         int mid = low + (high-low)/2;
-        if (num[low] < num[mid] && num[mid] < num[high]){
+        //Notes: checking the equal situation
+        if (num[low] <= num[mid] && num[mid] <= num[high]){
             return num[low] < num[mid] ? num[low] : num[mid];
         }
+        //move the high pointer to the middle, if sub-array from low to mid is rotated.
         if (num[low] > num [mid]){
             high = mid;
             continue;
         }
+        // move the low pointer to the middle, if sub-array from mid to high is rotated.
         if (num[mid] > num[high]){
             low = mid;
             continue;
@@ -97,9 +121,12 @@ int main(int argc, char** argv)
     int *a = new int[cnt];
     for(int n=0; n<=cnt; n++) {
         printf("--------------------------------------\n");
+        //generate the array with random elements
         for(int i=0; i<cnt; i++){
-            a[i]=i;
+            a[i]=rand()%cnt;
         }
+        //sort the array
+        sort(a, a+cnt); 
         expectedMin = a[0];
         //printArray(a, cnt);
         int rotate_pos = random() % cnt;
