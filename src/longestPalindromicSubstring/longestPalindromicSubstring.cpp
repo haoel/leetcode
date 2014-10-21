@@ -81,7 +81,7 @@ string longestPalindrome_dp_way(string s) {
     return longest;
 }
 string longestPalindrome(string s) {
-    return longestPalindrome_dp_way(s);
+    return longestPalindrome_recursive_way(s);
 }
 
 int main(int argc, char**argv)
