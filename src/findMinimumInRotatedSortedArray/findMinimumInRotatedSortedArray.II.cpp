@@ -50,6 +50,7 @@ int findMin(vector<int> &num) {
         int mid = low + (high-low)/2;
         //Notes: checking the equal situation
         if (num[low] <= num[mid] && num[mid] <= num[high]){
+            //In this clause, num[low] always less than num[mid], but if num[low] is equal to num[mid], how then?
             return num[low] < num[mid] ? num[low] : num[mid];
         }
         //move the high pointer to the middle, if sub-array from low to mid is rotated.
