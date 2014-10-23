@@ -48,9 +48,10 @@ int findMin(vector<int> &num) {
         }
         //binary search
         int mid = low + (high-low)/2;
+        //If the array is not rotated then return num[low]
         //Notes: checking the equal situation
         if (num[low] <= num[mid] && num[mid] <= num[high]){
-            return num[low] < num[mid] ? num[low] : num[mid];
+            return num[low];
         }
         //move the high pointer to the middle, if sub-array from low to mid is rotated.
         if (num[low] > num [mid]){
