@@ -31,7 +31,7 @@
 int reverse(int x) {
     int y=0;
     int n;
-    while( x>0 ){
+    while( x != <0){
         n = x%10;
         y = y*10 + n;
         x /= 10;
