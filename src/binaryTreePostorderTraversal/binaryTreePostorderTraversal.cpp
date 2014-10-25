@@ -38,6 +38,11 @@ struct TreeNode {
 vector<int> postorderTraversal1(TreeNode *root);
 vector<int> postorderTraversal2(TreeNode *root);
 
+
+// We have two methods here.
+//   1) the first one acutally is pre-order but reversed the access order.
+//   2) the second one is the traditional one 
+
 vector<int> postorderTraversal(TreeNode *root) {
     if (random()%2){
         cout << "---method one---" << endl;
@@ -46,6 +51,7 @@ vector<int> postorderTraversal(TreeNode *root) {
     cout << "---method two---" << endl;
     return postorderTraversal2(root);
 }
+
 
 vector<int> postorderTraversal1(TreeNode *root) {
     vector<int> v;
@@ -56,6 +62,7 @@ vector<int> postorderTraversal1(TreeNode *root) {
     while (stack.size()>0){
         TreeNode *n = stack.back();
         stack.pop_back();
+        //the tricks: reverse the access order.
         v.insert(v.begin(), n->val);
         if (n->left){
             stack.push_back(n->left);
@@ -67,6 +74,8 @@ vector<int> postorderTraversal1(TreeNode *root) {
     return v;
 }
 
+// traditional and standard way.
+// using the stack to simulate the recursive function stack.
 vector<int> postorderTraversal2(TreeNode *root) {
     vector<int> v;
     vector<TreeNode*> stack;
@@ -75,13 +84,16 @@ vector<int> postorderTraversal2(TreeNode *root) {
     while(stack.size()>0 || node!=NULL){
 
         if (node != NULL){
+            // keep going the left
             stack.push_back(node);
             node = node->left;
         }else{
             TreeNode *n = stack.back();
+            // left way is finsised, keep going to the right way
             if (n->right != NULL && lastVisitNode != n->right){
                 node = n->right;
             }else{
+                // both left and right has been accessed.
                 stack.pop_back();
                 v.push_back(n->val);
                 lastVisitNode = n;

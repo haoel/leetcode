@@ -65,6 +65,7 @@ int findMin(vector<int> &num) {
         }
     }
     
+    // checking the edge case 
     if (high == low) return num[low];
     return num[low] < num[high] ? num[low] : num[high];
 

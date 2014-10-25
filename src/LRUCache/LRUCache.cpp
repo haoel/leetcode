@@ -22,6 +22,12 @@
 #include <map>
 using namespace std;
 
+// The idea here is quite simple:
+//    1) A Map to index the key.  O(1) key search time-complexity.
+//    2) A List to sort the cache data by accessed time.
+// 
+//  Considering there are too many insert/delete opreations for the List, 
+//  The ouble linked list is the good data structure to performance it.
 
 class Node {
     public:
@@ -32,6 +38,7 @@ class Node {
         //Node(int k, int v, Node* n=NULL, Node* p=NULL): key(k), value(v), next(n), prev(p) {}
 };
 
+// the following double linked list seems a bit commplicated.
 class DoubleLinkedList {
 
     private:
@@ -151,8 +158,11 @@ class DoubleLinkedList {
 class LRUCache{
 
     private:
+        //cacheList - store the date
         DoubleLinkedList cacheList;
+        //cacheMap - index the date for searching
         map<int, Node*> cacheMap;
+        //the max capcity of cache
         int capacity;
 
     public:
@@ -164,6 +174,7 @@ class LRUCache{
         }
 
         int get(int key) {
+            // The accessed node must be up-to-time -- take to the front 
             if (cacheMap.find(key) != cacheMap.end() ){
                 cacheList.TakeToBegin(cacheMap[key]);
                 return cacheMap[key]->value;
@@ -173,12 +184,15 @@ class LRUCache{
         }
 
         void set(int key, int value) {
+            // key found, update the data, and take to the front 
             if (cacheMap.find(key) != cacheMap.end() ){
                 Node *p = cacheMap[key];
                 p->value = value;
                 cacheList.TakeToBegin(cacheMap[key]);
             }else{
+                // key not found, new a node to store data
                 cacheMap[key] = cacheList.NewAtBegin(key, value);
+                // if the capacity exceed, remove the last one.
                 if( cacheList.Size() > capacity) {
                     int key = cacheList.GetTailNode()->key; 
                     cacheMap.erase(key);
