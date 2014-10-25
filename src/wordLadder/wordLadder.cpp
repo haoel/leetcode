@@ -29,11 +29,57 @@
 *               
 **********************************************************************************/
 
+// --------------------------- 
+//  BFS non-recursive method
+// ---------------------------
+//
+//    Using BFS instead of DFS is becasue the solution need the shortest transformation path.
+//  
+//    So, we can change every char in the word one by one, until find all possible transformation.
+//
+//    Keep this iteration, we will find the shorest path.
+//
+// For example:
+//   
+//     start = "hit"
+//     end = "cog"
+//     dict = ["hot","dot","dog","lot","log","dit","hig", "dig"]
+//
+//                      +-----+                  
+//        +-------------+ hit +--------------+   
+//        |             +--+--+              |   
+//        |                |                 |   
+//     +--v--+          +--v--+           +--v--+
+//     | dit |    +-----+ hot +---+       | hig |
+//     +--+--+    |     +-----+   |       +--+--+
+//        |       |               |          |   
+//        |    +--v--+         +--v--+    +--v--+
+//        +----> dot |         | lot |    | dig |
+//             +--+--+         +--+--+    +--+--+
+//                |               |          |   
+//             +--v--+         +--v--+       |   
+//        +----> dog |         | log |       |   
+//        |    +--+--+         +--+--+       |   
+//        |       |               |          |   
+//        |       |    +--v--+    |          |   
+//        |       +--->| cog |<-- +          |   
+//        |            +-----+               |   
+//        |                                  |   
+//        |                                  |   
+//        +----------------------------------+   
+//     
+//     1) queue <==  "hit"
+//     2) queue <==  "dit", "hot", "hig"
+//     3) queue <==  "dot", "lot", "dig"
+//     4) queue <==  "dog", "log" 
+// 
 class Solution {
 public:
-    //BFS non-recursive method
     int ladderLength(string start, string end, unordered_set<string> &dict) {
         
+        // Using a map for two purposes: 
+        //   1) store the distince so far.
+        //   2) remove the duplication 
         map<string, int> dis;
         dis[start] = 1;
         

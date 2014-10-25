@@ -39,6 +39,40 @@
 #include <unordered_set>
 using namespace std;
 
+// Solution
+//
+//      1) Using BSF algorithm build a tree like below
+//      2) Using DSF to parse the tree to the transformation path.
+//
+// For example:
+//
+//     start = "hit"
+//     end = "cog"
+//     dict = ["hot","dot","dog","lot","log","dit","hig", "dig"]
+//
+//                      +-----+
+//        +-------------+ hit +--------------+
+//        |             +--+--+              |
+//        |                |                 |
+//     +--v--+          +--v--+           +--v--+
+//     | dit |    +-----+ hot +---+       | hig |
+//     +--+--+    |     +-----+   |       +--+--+
+//        |       |               |          |
+//        |    +--v--+         +--v--+    +--v--+
+//        +----> dot |         | lot |    | dig |
+//             +--+--+         +--+--+    +--+--+
+//                |               |          |
+//             +--v--+         +--v--+       |
+//        +----> dog |         | log |       |
+//        |    +--+--+         +--+--+       |
+//        |       |               |          |
+//        |       |    +--v--+    |          |
+//        |       +--->| cog |<-- +          |
+//        |            +-----+               |
+//        |                                  |
+//        |                                  |
+//        +----------------------------------+
+
 map< string, unordered_set<string> >& 
 buildTree(string& start, string& end, unordered_set<string> &dict) {
 

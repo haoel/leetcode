@@ -38,6 +38,34 @@ bool isPalindrome(string &s, int start, int end)  {
     return true;  
 }  
 
+// DFS - Deepth First Search
+//    
+//   For example: "aaba"
+//    
+//                     +------+           
+//              +------| aaba |-----+     
+//              |      +------+     |     
+//            +-v-+              +-v--+  
+//            | a |aba           | aa |ba
+//        +---+---+--+           +--+-+  
+//        |          |              |    
+//      +-v-+     +--v--+         +-v-+  
+//      | a |ba   | aba |\0       | b |a 
+//      +-+-+     +-----+         +-+-+  
+//        |        a, aba           |    
+//      +-v-+                     +-v-+  
+//      | b |a                    | a |\0
+//      +-+-+                     +---+  
+//        |                      aa, b, a
+//      +-v-+                            
+//      | a |\0                          
+//      +---+                            
+//    a, a, b, a                         
+//
+//   You can see this algorithm still can be optimized, becasue there are some dupliation.
+//   (  The optimization you can see the "Palindrome Partitioning II" )
+//
+   
 void partitionHelper(string &s, int start, vector<string> &output, vector< vector<string> > &result) {
 
     if (start == s.size()) {
@@ -46,8 +74,11 @@ void partitionHelper(string &s, int start, vector<string> &output, vector< vecto
     }
     for(int i=start; i<s.size(); i++) {
         if ( isPalindrome(s, start, i) == true ) {
+            //put the current palindrome substring into ouput
             output.push_back(s.substr(start, i-start+1) );
+            //Recursively check the rest substring
             partitionHelper(s, i+1, output, result);
+            //take out the current palindrome substring, in order to check longer substring.
             output.pop_back();
         }
     }
