@@ -45,12 +45,12 @@ int minCut(string s) {
  *  -------------------
  *
  *  Define res[i] = the minimum cut from 0 to i in the string.
- *  The result w =e need eventually is res[s.size()-1].
+ *  The result eventually is res[s.size()-1].
  *  We know res[0]=0. Next we are looking for the optimal solution function f.
  *  
  *  For example, let s = "leet".
  *  
- *  f(0) = 0;  // minimum cut of str[0:0]="l", which is a palindrome, so not cut is needed.
+ *  f(0) = 0; // minimum cut of str[0:0]="l", which is a palindrome, so not cut is needed.
  *  f(1) = 1; // str[0:1]="le" How to get 1? 
  *                   f(1) might be:  (1)   f(0)+1=1, the minimum cut before plus the current char.
  *                                   (2)   0, if str[0:1] is a palindrome  (here "le" is not )
@@ -76,16 +76,24 @@ int minCut(string s) {
  *  Also using the similar DP idea, we can construct the look-up table before the main part above, 
  *  so that the palindrome testing becomes the looking up operation. The way we construct the table is also the idea of DP.
  *
- *  e.g.   mp[i][j]==true if str[i:j] is palindrome.
- *         mp[i][i]=true;
+ *  e.g.   mp[i][j]=true if str[i:j] is palindrome.
+ *         mp[i][i]=true; 
  *         mp[i][j] = true if str[i]==str[j] and (mp[i+1][j-1]==true or j-i<2 )  j-i<2 ensures the array boundary. 
  */
 
 
 int minCut_DP(string& s) {
+    //res[] is for minimal cut DP
     vector<int>res(s.size(),0);
+    //mp[][] is for palindrome checking DP
     bool mp[s.size()][s.size()];
 
+    //construct the pailndrome checking matrix
+    //  1) matrix[i][j] = true;     if (i==j)                   -- only one char
+    //  2) matrix[i][j] = true;     if (i==j+1) && s[i]==s[j]   -- only two chars
+    //  3) matrix[i][j] = matrix[i+1][j-1];   if s[i]==s[j]     -- more than two chars
+    //
+    //note:  1) and 2) can be combined together
     for (int i=s.size()-1;i>=0;i--){
         for (int j=i;j<s.size();j++){
             if ((s[i]==s[j]) && (j-i<2 || mp[i+1][j-1])){
@@ -95,12 +103,18 @@ int minCut_DP(string& s) {
             }
         }
     }
+    //minimal cut dp
     for (int i=0;i<s.size();i++){
-        if (mp[0][i]){
+        //if s[0..i] is palindrome, then no need to cut
+        if (mp[0][i] == true){
             res[i]=0;
         }else{
+            // if s[0..i] isn't palindrome 
+            // then, for each 0 to i, find a "j" which meets two conditions:
+            //    a) s[j+1..i] are palindrome.
+            //    b) res[j]+1 is minimal   
             int ms = s.size();
-            for (int j=0;j<i;j++){
+            for (int j=0; j<i; j++){
                 if (mp[j+1][i] && ms>res[j]+1 ) {
                     ms=res[j]+1;
                 } 
@@ -118,7 +132,7 @@ int minCutHelper(string &s, int steps, int& minSteps ) {
     if (minSteps <= steps) {
         return -2;
     }
-    // adding the cache
+    // adding the cache to remove the duplicated calculation
     static map<string, int> cache;
     if ( cache.find(s)!=cache.end() ){
         if (s.size()>0)
@@ -174,14 +188,12 @@ void minCutHelper(string &s, int start, int steps, int& min ) {
     for(int i=s.size()-1; i>=start; i--){
         //cut unnecessary DFS 
         if ( min > steps && isPalindrome(s, start, i)) {
-            //if ( cache.find(i+1)==cache.end() ){
             minCutHelper(s, i+1, steps+1, min );
-            //    cache[i+1] = true;
-            //}
         }
     }
 }
 
+//traditional palindrome checking function.
 bool isPalindrome(string &s, int start, int end)  {  
 
     while(start < end)  {  

@@ -44,19 +44,31 @@ vector<vector<int> > generate(int numRows)
     return pascalTriangle;
 }
 
-void printVector(vector< vector<int> > pt)
+void printTriangle(vector< vector<int> > pt)
 {
+	cout << "[" << endl;
     for(int i=0; i<pt.size(); i++){
-        cout << "{ ";
+    	for(int space=(pt.size()-i-1); space>=0; space--){
+    		cout << " ";
+    	}
+        cout << "[";
         for(int j=0; j<pt[i].size(); j++){
-            cout << pt[i][j] << ", ";
+            cout << pt[i][j];
+            if(j<pt[i].size()-1){
+            	cout << ",";
+            }
         }
-        cout << "} " << endl;
+        cout << "]";
+        if(i<pt.size()-1){
+        	cout << ",";
+        }
+        cout << endl;
     }
+    cout << "]" << endl;
 }
 
 int main(int argc, char** argv)
 {
     int n = atoi(argv[1]);
-    printVector(generate(n)); 
+    printTriangle(generate(n)); 
 }
