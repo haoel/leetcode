@@ -32,18 +32,24 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-
+//The solution is quite simple can be explained by itself
 int maxPathSum(TreeNode *root, int& maxSum ) {
 
     if (NULL == root) return 0;
 
+    //get the maxPathSum for both left and right branch
+    int left  = maxPathSum(root->left,  maxSum);
+    int right = maxPathSum(root->right, maxSum);
+
+    // The max sum could be one of the following situations:
+    //    1) root + left
+    //    2) root + right
+    //    3) root
+    //    4) root + left + right   
+    //
+    // And the whole function need to return the the max of 1) 2) 3) 
     int val = root->val;
-    int left = root->left ? maxPathSum(root->left, maxSum) : 0;
-    int right = root->right ? maxPathSum(root->right, maxSum) : 0;
-
-    int maxBranch = left + val > right + val ?
-        max(left + val, val) : max(right + val, val);
-
+    int maxBranch = left > right ? max(left + val, val) : max(right + val, val);
     int m = max(left + right + val, maxBranch);
 
     maxSum = max(maxSum, m);

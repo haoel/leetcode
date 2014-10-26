@@ -15,6 +15,10 @@
 
 class Solution {
 public:
+    //
+    // find all of ranges: which start a valley with the nearest peak after
+    // add their delta together 
+    //
     int maxProfit(vector<int> &prices) {
         int max=0, begin=0, end=0;
         bool up=false, down=false;
@@ -32,7 +36,7 @@ public:
                 max += (prices[end] - prices[begin]);
             }
         }
-        
+        // edge case 
         if (begin < prices.size() && up==true){
             end = prices.size() - 1;
             max += (prices[end] - prices[begin]);

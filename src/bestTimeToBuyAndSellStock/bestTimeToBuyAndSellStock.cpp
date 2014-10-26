@@ -13,6 +13,19 @@
 
 class Solution {
 public:
+    //
+    // This solution is O(1) space dynamic programming 
+    //
+    // We can make sure the max profit at least be ZERO. So,
+    //    1) we have two pointers (begin & end ) 
+    //    2) if prices[end] - prices[begin] >  0, then move the "end" pointer to next
+    //    3) if prices[end] - prices[begin] <= 0, then move the "begin" pointer to current posstion.
+    //    4) tracking the max profit
+    //
+    // Notes:
+    //    Some people think find the highest-price & lowest-price, this is wrong. 
+    //    Because the highest-price must be after lowest-price
+    //
     int maxProfit(vector<int> &prices) {
         
         int max=0, begin=0, end=0, delta=0;

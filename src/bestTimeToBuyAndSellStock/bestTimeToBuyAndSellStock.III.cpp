@@ -16,6 +16,18 @@
 
 class Solution {
 public:
+    // Dynamic Programming
+    //
+    //     Considering prices[n], and we have a position "i", we could have
+    //       1) the maxProfit1 for prices[0..i]  
+    //       2) the maxProfit2 for proices[i..n]
+    //
+    //    So, 
+    //      for 1) we can go through the prices[n] forwardly.
+    //          forward[i] = max( forward[i-1], price[i] - lowestPrice[0..i] ) 
+    //      for 2) we can go through the prices[n] backwoardly.
+    //          backward[i] = max( backward[i+1], highestPrice[i..n] - price[i]) 
+    //
     int maxProfit(vector<int> &prices) {
         if (prices.size()<=1) return 0;
         
