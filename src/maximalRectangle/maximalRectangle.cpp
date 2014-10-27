@@ -15,6 +15,18 @@
 #include <vector>
 using namespace std;
 
+// The problem can be convert to the problem - "Largest Rectangle in Histogram"
+//   1) we can take each row to calculate each row's histogram.
+//   2) using the algorithm of "Largest Rectangle in Histogram" to find the largest area histogram.
+//   3) tracking the maximal area.
+//
+// For the 1), it's easy. 
+//     heights[i][j] = 1,                     if (i==0)
+//     heights[i][j] = heights[i-1][j] + 1;,  if (i>0)
+//
+// For the 2), please referr to "Largest Rectangle in Histogram"
+// 
+
 int largestRectangleArea(vector<int> &height) {
 
     if (height.size()<=0) return 0;
@@ -44,11 +56,7 @@ int maximalRectangle(vector<vector<char> > &matrix) {
     if (matrix.size()<=0 || matrix[0].size()<=0) return 0;
     int row = matrix.size();
     int col = matrix[0].size();
-    vector< vector<int> > heights(row);
-    for (int i=0; i<row; i++){
-        vector<int> v(col);
-        heights[i] = v;
-    }
+    vector< vector<int> > heights(row, vector<int> col);
 
     int maxArea = 0;
     for(int i=0; i<row; i++){

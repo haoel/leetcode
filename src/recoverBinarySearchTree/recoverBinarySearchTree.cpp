@@ -42,6 +42,23 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+//
+// We can convert the BST to a sorted array,  then we can find the two nodes which missed the order.
+//
+// To cover the BST to sorted array, we needn't use an extra array, we just traverse the tree in order.
+//  
+//                   8
+//           _______/ \_______
+//          /                 \
+//         4                  12
+//      __/ \__             __/ \__
+//     /       \           /       \
+//    2         6        10        14
+//   / \       / \       / \       / \
+//  1   3     5   7     9  11    13  15
+//  
+//  
 class Solution {
 public:
     void recoverTreeHelper(TreeNode *root) {
@@ -53,10 +70,8 @@ public:
             if (prev->val > root->val){
                 if (n1==NULL) {
                     n1 = prev;
-                    n2 = root;
-                }else{
-                    n2 = root;
                 }
+                n2 = root;
             }
         }
         prev = root;
