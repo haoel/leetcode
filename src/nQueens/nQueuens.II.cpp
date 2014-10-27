@@ -31,7 +31,7 @@ int totalNQueens(int n) {
     return result;    
 }
 
-
+// the solution is same as the "N Queens" problem.
 void solveNQueensRecursive(int n, int currentRow, vector<int>& solution, int& result) {
 
     for (int i = 0; i < n; i++) {

@@ -22,6 +22,7 @@
 #include <iostream>
 using namespace std;
 
+//Acutally, using the Greedy algorithm can have the answer
 int jump(int A[], int n) {
     if (n<=1) return 0;
     
@@ -36,9 +37,10 @@ int jump(int A[], int n) {
         if (coverPos >= n-1){
             return steps;
         }
+        //Greedy: find the next place which can have biggest distance
         int nextPos=0;
         int maxDistance=0;
-        for(int j=i+1; j<=A[i]+i; j++){
+        for(int j=i+1; j<=coverPos; j++){
             if ( A[j]+j > maxDistance ) {
                 maxDistance = A[j]+j;
                 nextPos = j;
@@ -59,7 +61,7 @@ void printArray(int a[], int n){
 }
 int main()
 {
-    #define TEST(a) printArray(a, sizeof(a)/sizeof(int)); cout<<jump(a, sizeof(a)/sizeof(int))<<endl;
+    #define TEST(a) printArray(a, sizeof(a)/sizeof(a[0])); cout<<jump(a, sizeof(a)/sizeof(a[0]))<<endl;
 
     int a1[]={0};
     TEST(a1);
@@ -75,6 +77,14 @@ int main()
 
     int a5[]={1,2,3};
     TEST(a5);
+
+    // 0 -> 1 -> 4 -> end
+    int a6[]={2,3,1,1,4,0,1};
+    TEST(a6);
+
+    // 0 -> 1 -> 3 -> end
+    int a7[]={2,3,1,2,0,1};
+    TEST(a7);
 
     return 0;
 }
