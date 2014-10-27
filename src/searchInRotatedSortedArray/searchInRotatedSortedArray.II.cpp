@@ -13,6 +13,16 @@
 *               
 **********************************************************************************/
 
+// Using the same idea "Search in Rotated Sorted Array"
+// but need be very careful about the following cases:
+//   [3,3,3,4,5,6,3,3] 
+//   [3,3,3,3,1,3]
+// After split, you don't know which part is rotated and which part is not.
+// So, you have to skip the ducplication
+//   [3,3,3,4,5,6,3,3] 
+//          ^       ^
+//   [3,3,3,3,1,3]
+//            ^ ^
 class Solution {
 public:
     bool search(int A[], int n, int key) {
@@ -28,8 +38,7 @@ public:
                  return false;
             }
             
-            //if dupilicates, them binary search the duplication
-            
+            //if dupilicates, remove the duplication
             while (low < high && A[low]==A[high]){
                 low++;
             }

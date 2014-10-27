@@ -21,6 +21,9 @@
 #include <algorithm>
 using namespace std;
 
+// To deal with the duplication number, we need do those modifications:
+//    1) sort the array [pos..n].
+//    2) skip the same number.
 vector<vector<int> > permute(vector<int> &num) {
 
     vector<vector<int> > vv;
