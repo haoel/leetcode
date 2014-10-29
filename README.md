@@ -1,6 +1,8 @@
 LeetCode
 ========
 
+介绍LeetCode的文章:[Leetcode 编程训练](http://coolshell.cn/articles/12052.html)
+
 LeetCode C++ Solutions
 
 | Title | Solution | Add Date | Difficulty |
