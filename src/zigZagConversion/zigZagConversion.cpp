@@ -28,7 +28,8 @@
 using namespace std;
 
 string convert(string s, int nRows) {
-    if (nRows<=1) return s;
+    //The cases no need to do anything
+    if (nRows<=1 || nRows>=s.size()) return s;
      
     vector<string> r(nRows);
     int row = 0;
