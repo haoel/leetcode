@@ -12,6 +12,13 @@
 *               
 **********************************************************************************/
 
+/*
+ * if there is a cycle in the list, then we can use two pointers travers the list.
+ *
+ * one pointer traverse one step each time, another one traverse two steps each time.
+ *
+ * so, those two pointers meet together, that means there must be a cycle inside the list.
+ */
 
 bool hasCycle(ListNode *head) {
     ListNode* p1;

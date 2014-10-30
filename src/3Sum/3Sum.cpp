@@ -29,11 +29,26 @@
 using namespace std;
 
 
-//solution:  http://en.wikipedia.org/wiki/3SUM
+/*
+ *   Simlar like "Two Number" problem, we can have the simlar solution.
+ *
+ *   Suppose the input array is S[0..n-1], 3SUM can be solved in O(n^2) time on average by 
+ *   inserting each number S[i] into a hash table, and then for each index i and j,  
+ *   checking whether the hash table contains the integer - (s[i]+s[j])
+ *
+ *   Alternatively, the algorithm below first sorts the input array and then tests all 
+ *   possible pairs in a careful order that avoids the need to binary search for the pairs 
+ *   in the sorted list, achieving worst-case O(n^n)
+ *
+ *   Solution:  Quadratic algorithm
+ *   http://en.wikipedia.org/wiki/3SUM
+ *
+ */
 vector<vector<int> > threeSum(vector<int> &num) {
 
     vector< vector<int> > result;
 
+    //sort the array, this is the key
     sort(num.begin(), num.end());
 
     int n = num.size();
