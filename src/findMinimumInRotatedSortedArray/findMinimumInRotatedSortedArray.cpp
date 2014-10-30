@@ -28,10 +28,10 @@ using namespace std;
  */
 int findMin(vector<int> &num) {
 
-    int low=0, high=num.size()-1;
+    int low=0, high=num.size()-1, mid;
 
     while(high-low>1){
-        int mid = low + (high-low)/2;
+        mid = (high+low)/2;
         // Chek the array if it is non-rotated, then just return the first element.
         if (num[low] < num[mid] && num[mid] < num[high]){
             return num[low];
@@ -43,12 +43,9 @@ int findMin(vector<int> &num) {
         // if the left part is rotated, warch the left part
         if (num[low] > num [mid]){
             high = mid;
-            continue;
-        }
-        // if the right part is rotated, search the right part.
-        if (num[mid] > num[high]){
+        } else {
+            // You may assume no duplicate exists in the array.
             low = mid;
-            continue;
         }
     }
     // the array only has 1 element
