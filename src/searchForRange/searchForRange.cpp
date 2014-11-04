@@ -23,6 +23,15 @@ using namespace std;
 
 int binary_search(int A[], int low, int high, int key);
 
+/*
+ *   O(log n) solution must be something like binary search.
+ *
+ *   So, we can use the binary search to find the one postion - `pos`
+ *   
+ *   then, we can keep using the binary search find the target in A[0..pos-1] and A[pos+1..n]
+ *
+ *   The code below is self-explaination
+ */
 vector<int> searchRange(int A[], int n, int target) {
     int pos = binary_search(A, 0, n-1, target);
 
