@@ -26,6 +26,7 @@
 #include <time.h>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 struct TreeNode {
@@ -62,8 +63,7 @@ vector<int> postorderTraversal1(TreeNode *root) {
     while (stack.size()>0){
         TreeNode *n = stack.back();
         stack.pop_back();
-        //the tricks: reverse the access order.
-        v.insert(v.begin(), n->val);
+        v.push_back(n->val);
         if (n->left){
             stack.push_back(n->left);
         } 
@@ -71,6 +71,7 @@ vector<int> postorderTraversal1(TreeNode *root) {
             stack.push_back(n->right);
         }
     }
+    std::reverse(v.begin(), v.end());  // the trick
     return v;
 }
 
