@@ -18,6 +18,7 @@
 using namespace std;
 
 bool isValid(string s) {
+    if (s.size() % 2 != 0) return false;
 
     string stack;
 
@@ -31,19 +32,19 @@ bool isValid(string s) {
             if ((lch=='[' && rch ==']') ||
                     (lch=='{' && rch =='}') ||
                     (lch=='(' && rch ==')') ) {
-                s.pop_back();
                 stack.pop_back();
             }else{
                 return false;
             }
+        } else if (lch== ']' || lch=='}' || lch==')' ) {
+            stack.push_back(lch);
+        } else {
+            return false;
         }
 
-        if (lch== ']' || lch=='}' || lch==')' ) {
-            s.pop_back();
-            stack.push_back(lch);
-        }
+        s.pop_back();
     }
-    return (s.size()==0 && stack.size()==0 );
+    return stack.size()==0;
 }
 
 int main(int argc, char**argv)
