@@ -69,7 +69,7 @@ string getPermutation(int n, int k) {
         ss << num[idx];
         num.erase(num.begin()+idx);
         n--;
-        k = (k-1)%group + 1;
+        k -= group * idx;
     }
 
     return ss.str();
