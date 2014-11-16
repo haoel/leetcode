@@ -96,7 +96,7 @@ int numDistinct1(string S, string T) {
 //    For example:
 //
 //      S = "abbbc"  T="abb"
-//      posMap = { [a]={0}, [b]={1,2} }
+//      posMap = { [a]={0}, [b]={2,1} }
 //      numOfSubSeq = {1, 0, 0, 0 }
 //
 //      S[0] is 'a', pos is 0,  numOfSubSeq = {1, 0+1, 0, 0};
