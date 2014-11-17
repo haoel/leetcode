@@ -69,6 +69,8 @@ string getPermutation(int n, int k) {
         ss << num[idx];
         num.erase(num.begin()+idx);
         n--;
+        //the next k also can be caculated like this: 
+        //    k = (k-1)%group + 1; 
         k -= group * idx;
     }
 
