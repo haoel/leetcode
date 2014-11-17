@@ -17,7 +17,8 @@ public:
         map<string, int> m;
         for(int i=0; i<strs.size(); i++){
             string word = strs[i];
-            sort(word.begin(), word.end());  // Why not use a better hashing technique?
+            //sort it can easy to check they are anagrams or not
+            sort(word.begin(), word.end());  
             if (m.find(word)==m.end()){
                 m[word] = i;
             }else{
