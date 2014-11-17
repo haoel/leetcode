@@ -58,7 +58,7 @@ int maxPathSum(TreeNode *root, int& maxSum ) {
 }
 
 int maxPathSum(TreeNode *root) {
-    #define INT_MIN     -2147483648
+    #define INT_MIN     (-2147483647 - 1)
     int maxSum = INT_MIN;
     maxPathSum(root, maxSum);
     return maxSum;
