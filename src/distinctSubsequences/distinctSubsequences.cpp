@@ -91,12 +91,12 @@ int numDistinct1(string S, string T) {
 //=====================
 //
 //  The idea here is an optimization of above idea 
-//  (It might be difficult to understand if you don't know the above idea)
+//  (It might be difficult to understand if you don't understand the above idea)
 //
 //    For example:
 //
 //      S = "abbbc"  T="abb"
-//      posMap = { [a]={0}, [b]={1,2} }
+//      posMap = { [a]={0}, [b]={2,1} } <- the map of T's every char.
 //      numOfSubSeq = {1, 0, 0, 0 }
 //
 //      S[0] is 'a', pos is 0,  numOfSubSeq = {1, 0+1, 0, 0};
