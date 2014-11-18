@@ -31,13 +31,15 @@
 #include <string>
 using namespace std;
 
+//Recursive backtracking algorithm
 bool exist(vector<vector<char> > &board, string word, int idx, int row, int col, vector< vector<int> > &mask) {
     int i = row;
     int j = col;
     if (board[i][j] == word[idx] && mask[i][j]==0 ) {
-        mask[i][j]=1;
+        mask[i][j]=1; //mark the current char is matched
         if (idx+1 == word.size()) return true;
-        idx++;
+        //checking the next char in `word` through the right, left, up, down four directions in the `board`.
+        idx++; 
         if (( i+1<board.size()    && exist(board, word, idx, i+1, j, mask) ) ||
             ( i>0                 && exist(board, word, idx, i-1, j, mask) ) ||
             ( j+1<board[i].size() && exist(board, word, idx, i, j+1, mask) ) ||
@@ -45,11 +47,9 @@ bool exist(vector<vector<char> > &board, string word, int idx, int row, int col,
         {
              return true;
         }
-        mask[i][j]=0;
+        mask[i][j]=0; //cannot find any successful solution, clear the mark. (backtracking)
     }
-    //if (board[i][j] != word[idx]) {
-    //    mask[i][j]=0;
-    //}
+
     return false;
 }
 
@@ -57,11 +57,9 @@ bool exist(vector<vector<char> > &board, string word) {
     if (board.size()<=0 || word.size()<=0) return false;
     int row = board.size();
     int col = board[0].size();
-    vector< vector<int> > mask;
-    for(int i=0; i<row; i++) {
-        vector<int> v(col);
-        mask.push_back(v);
-    }
+    //using a mask to mark which char has been selected.
+    //do not use vector<bool>, it has big performance issue, could cause Time Limit Error
+    vector< vector<int> > mask(row, vector<int> col);
 
     for(int i=0; i<board.size(); i++) {
         for(int j=0; j<board[i].size(); j++){

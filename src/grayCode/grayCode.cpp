@@ -27,12 +27,50 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <iostream>
 #include <vector>
 using namespace std;
 
-
-vector<int> grayCode(int n) {
+/*
+ * I designed the following stupid algorithm base on the blow observation
+ * 
+ * I noticed I can use a `mirror-like` binary tree to figure out the gray code.
+ * 
+ * For example:
+ * 
+ *           0      
+ *        __/ \__   
+ *       0       1  
+ *      / \     / \ 
+ *     0   1   1   0
+ * So, the gray code as below: (top-down, from left to right)
+ *
+ *     0 0 0 
+ *     0 0 1
+ *     0 1 1
+ *     0 1 0
+ * 
+ *                  0
+ *            _____/ \_____
+ *           0             1
+ *        __/ \__       __/ \__
+ *       0       1     1       0
+ *      / \     / \   / \     / \
+ *     0   1   1   0 0   1   1   0
+ * 
+ * So, the gray code as below:
+ *
+ *     0 0 0 0 
+ *     0 0 0 1
+ *     0 0 1 1
+ *     0 0 1 0
+ *     0 1 1 0
+ *     0 1 1 1 
+ *     0 1 0 1
+ *     0 1 0 0
+ */
+vector<int> grayCode01(int n) {
     vector<int> v;
     //n = 1<<n;
     
@@ -56,6 +94,29 @@ vector<int> grayCode(int n) {
     return v;
 }
 
+/*
+ * Actually, there is a better way.
+ * The mathematical way is: (num >> 1) ^ num; 
+ * Please refer to http://en.wikipedia.org/wiki/Gray_code
+ */
+vector<int> grayCode02(int n) {
+    vector<int> ret;   
+    int size = 1 << n;   
+    for(int i = 0; i < size; ++i) {
+        ret.push_back((i >> 1)^i);   
+    }
+    return ret;   
+}
+
+//random invoker
+vector<int> grayCode(int n) {
+    srand(time(0));
+    if (rand()%2){
+        return grayCode01(n);
+    }
+    return grayCode02(n);
+}
+
 void printBits(int n, int len){
     for(int i=len-1; i>=0; i--) {
         if (n & (1<<i)) {
@@ -69,7 +130,7 @@ void printBits(int n, int len){
 void printVector(vector<int>& v, int bit_len)
 {
     vector<int>::iterator it;
-    
+
     for(it=v.begin(); it!=v.end(); ++it){
         //bitset<bit_len> bin(*it);
         printBits(*it, bit_len);
@@ -83,7 +144,7 @@ int main(int argc, char** argv)
 {
     int n = 2;
     if (argc>1){
-       n = atoi(argv[1]); 
+        n = atoi(argv[1]); 
     }
     vector<int> v = grayCode(n);
     printVector(v, n);
