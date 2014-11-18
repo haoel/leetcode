@@ -61,18 +61,19 @@ public:
      *   Let's see how it improve the above.
      *
      *   We use three bitmask, 
-     *    1) `ones` represent the i-th bit had apear once.
-     *    2) `twos` represent the i-th bit had apear twice.
-     *    3) `threes` represent the i-th bit had apear three times.
+     *    1) `ones` stores current bits.
+     *    2) `twos` stores 1s that have appeared twice.
+     *    3) `threes` stores 1s that have appeared three times.
      *
-     *    When the i-th bit had appeared for the third time, clear the i-th bit of both `ones` and `twos` to 0.
+     *    When there are 1s that have appeared three times, remove them from both `ones` and `twos`.
+     *    And all 1s that just appeared twice did not affect the final bits by using XOR operations.
      *    The final answer will be the value of `ones`
      *
      */
     int singleNumber_2(int A[], int n) {
         int ones = 0, twos = 0, threes = 0;
         for (int i = 0; i < n; i++) {
-            twos |= ones & A[i];
+            twos |= ones & A[i];  // use OR "|=" to keep old 1s in `two`, not "="
             ones ^= A[i];
             threes = ones & twos;
             ones &= ~threes;
