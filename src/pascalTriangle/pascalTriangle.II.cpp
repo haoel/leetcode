@@ -27,7 +27,7 @@ vector<int> getRow(int rowIndex) {
            v.push_back(0);
     }
 
-    for (int i=0; i<rowIndex; i++){
+    for (int i=1; i<rowIndex; i++){
         for(int j=i+1; j>0; j--){
            v[j] += v[j-1];
         } 
