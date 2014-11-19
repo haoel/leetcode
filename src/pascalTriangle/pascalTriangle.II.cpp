@@ -22,12 +22,9 @@ using namespace std;
 
 vector<int> getRow(int rowIndex) {
     vector<int> v;
-    for(int i=0; i<rowIndex; i++){
-       if(i==0){
-           v.push_back(1);
-       }else{
+    v.push_back(1);
+    for(int i=0; i<=rowIndex; i++){
            v.push_back(0);
-       }
     }
 
     for (int i=0; i<rowIndex; i++){
@@ -35,7 +32,6 @@ vector<int> getRow(int rowIndex) {
            v[j] += v[j-1];
         } 
     }
-    v.push_back(1);
     return v;
     
 }
