@@ -23,7 +23,7 @@ using namespace std;
 vector<int> getRow(int rowIndex) {
     vector<int> v;
     v.push_back(1);
-    for(int i=0; i<=rowIndex; i++){
+    for(int i=1; i<=rowIndex; i++){
            v.push_back(0);
     }
 
