@@ -69,6 +69,9 @@ void printTriangle(vector< vector<int> > pt)
 
 int main(int argc, char** argv)
 {
-    int n = atoi(argv[1]);
+    int n = 3;
+    if (argc>1) {
+        n = atoi(argv[1]);
+    }
     printTriangle(generate(n)); 
 }
