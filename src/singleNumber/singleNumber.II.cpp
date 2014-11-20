@@ -33,7 +33,7 @@ public:
      *
      *  Because the same number appear 3 times, which means the sum of i-th bits for all numbers should be 3 times.
      *
-     *  In other word, the sum of i-th bits mod 3, it must be 0 or 1. 1 means that is the single number bit.
+     *  In other word, the sum of the i-th bits mod 3, it must be 0 or 1. 1 means that is the single number bit.
      *
      * This solution can be easy to extend to "every element appears k times except for one."
      *
@@ -60,10 +60,10 @@ public:
      *
      *   Let's see how it improve the above.
      *
-     *   We use three bitmask, 
-     *    1) `ones` represent the i-th bit had apear once.
-     *    2) `twos` represent the i-th bit had apear twice.
-     *    3) `threes` represent the i-th bit had apear three times.
+     *   We use three bitmasks, 
+     *    1) `ones`     as a bitmask which represents the i-th bit had appeared once.
+     *    2) `twos`     as a bitmask which represents the i-th bit had appeared twice.
+     *    3) `threes`   as a bit mask which represents the i-th bit had appeared three times.
      *
      *    When the i-th bit had appeared for the third time, clear the i-th bit of both `ones` and `twos` to 0.
      *    The final answer will be the value of `ones`
@@ -72,9 +72,13 @@ public:
     int singleNumber_2(int A[], int n) {
         int ones = 0, twos = 0, threes = 0;
         for (int i = 0; i < n; i++) {
-            twos |= ones & A[i];
+            // `ones & A[i]` the result is the bitmask which the bits appeared twice
+            twos |= ones & A[i]; 
+            // XOR means remove the bit which appeared twice int `ones` 
             ones ^= A[i];
+            // count the `three`
             threes = ones & twos;
+            // clear the `ones` and `twos` if the i-th bit had appeared three times.
             ones &= ~threes;
             twos &= ~threes;
         }
