@@ -27,23 +27,28 @@ public:
             return head;
         }
         
-        ListNode *p1, *p2=head;
+        //find the length of List
+        int len=1;
+        ListNode *p=head;
+        while( p->next != NULL ){
+            p = p->next;
+            len++;
+        }
+        //connect the tail to head
+        p->next = head;
+        //find the left place (take care the case - k > len)
+        k = len - k % len;
+        
+        //find the place
         for(int i=0; i<k; i++){
-            if (p2->next!=NULL){
-                p2 = p2->next;  
-            } else {
-                //Shit! the K also rotated!
-                p2 = head;
-            }
+            p = p->next;
         }
         
-        for(p1=head; p2->next!=NULL; p1=p1->next, p2=p2->next);
-        
-        p2->next = head;
-        head = p1->next;
-        p1->next = NULL;
+        //break the list
+        head = p->next;
+        p->next = NULL;
         
         return head;
-            
+        
     }
 };
