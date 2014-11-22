@@ -111,60 +111,44 @@ void solve_non_recursively(vector< vector<char> > &board) {
     int row = board.size();
     int col = board[0].size();
 
-    queue<position> q;
-    position p(0,0);
+    queue<position> q;  // stores positions of all Os that are not surrounded
 
     //left & right edge
     for (int r=0; r<row; r++){
         if ( board[r][0] == 'O') {
-            board[r][0] = 'N';
-            p.set(r, 0);
-            q.push(p) ; 
+            q.push(position(r, 0));
         }
         if ( board[r][col-1] == 'O') {
-            board[r][col-1] = 'N';
-            p.set(r, col-1);
-            q.push(p) ; 
+            q.push(position(r, col-1));
         }
     }
     //top & bottom edge
     for (int c=1; c<col-1; c++){
         if ( board[0][c] == 'O') {
-            board[0][c] = 'N';
-            p.set(0, c);
-            q.push(p) ; 
+            q.push(position(0, c));
         }
         if ( board[row-1][c] == 'O') {
-            board[row-1][c] = 'N';
-            p.set(row-1, c);
-            q.push(p) ; 
+            q.push(position(row-1, c));
         }
     }
 
     while (!q.empty()){
-        p = q.front();
+        position p = q.front();
         q.pop(); 
         int r = p.row;
         int c = p.col;
+        board[r][c] = 'N';
         if (r < row-1 && board[r+1][c] == 'O') {
-            board[r+1][c] = 'N';
-            p.set(r+1, c);
-            q.push(p);
+            q.push(position(r+1, c));
         }
         if (r > 0 && board[r-1][c] == 'O') {
-            board[r-1][c] = 'N';
-            p.set(r-1, c);
-            q.push(p);
+            q.push(position(r-1, c));
         }
         if (c < col-1 && board[r][c+1] == 'O') {
-            board[r][c+1] = 'N';
-            p.set(r, c+1);
-            q.push(p);
+            q.push(position(r, c+1));
         }
         if (c>0 && board[r][c-1] == 'O') {
-            board[r][c-1] = 'N';
-            p.set(r, c-1);
-            q.push(p);
+            q.push(position(r, c-1));
         }
     }
 
