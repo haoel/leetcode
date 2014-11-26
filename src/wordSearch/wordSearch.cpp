@@ -59,7 +59,7 @@ bool exist(vector<vector<char> > &board, string word) {
     int col = board[0].size();
     //using a mask to mark which char has been selected.
     //do not use vector<bool>, it has big performance issue, could cause Time Limit Error
-    vector< vector<int> > mask(row, vector<int> col);
+    vector< vector<int> > mask(row, vector<int>(col, 0));
 
     for(int i=0; i<board.size(); i++) {
         for(int j=0; j<board[i].size(); j++){
