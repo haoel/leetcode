@@ -31,7 +31,16 @@ public:
             maxArea = area > maxArea ? area : maxArea;
             // because the area is decided by the shorter edge
             // so we increase the area is to increase the shorter edge
-            height[left] < height[right] ? left++ : right-- ;
+            //height[left] < height[right] ? left++ : right-- ;
+            if (height[left] < height[right]) {
+                do {
+                    left++;
+                } while (left < right && height[left-1] >= height[left]);
+            } else {
+                do {
+                    right--;
+                } while (right > left && height[right+1] >= height[right]);
+            }
         }
         
         return maxArea;
