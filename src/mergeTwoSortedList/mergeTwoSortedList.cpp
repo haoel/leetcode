@@ -82,6 +82,24 @@ public:
         
         return l;
     }
+
+    ListNode *mergeTwoLists03(ListNode *l1, ListNode *l2) {
+        ListNode *head = NULL;
+        ListNode **pTail = &head;
+        while (l1 != NULL && l2 != NULL) {
+            if (l1->val < l2->val) {
+                *pTail = l1;
+                l1 = l1->next;
+            } else {
+                *pTail = l2;
+                l2 = l2->next;
+            }
+            pTail = &(*pTail)->next;
+        }
+        *pTail = (l1 != NULL ? l1 : l2);
+        return head;
+    }
+
 private:
     ListNode* mergeTheRest(ListNode* l, ListNode*head, ListNode* tail){
         if (l){
