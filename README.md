@@ -5,6 +5,9 @@ LeetCode C++ Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/) | [C++](./src/intersectionOfTwoLinkedLists/intersectionOfTwoLinkedLists.cpp)|2014/11/27|Easy|
+|[Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) :books: | [C++](./src/longestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cpp)|2014/11/25|Hard|
+|[Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) :books: | [C++](./src/readNCharactersGivenRead4/readNCharactersGivenRead4.II.cpp)|2014/11/23|Hard|
 |[Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) :books: | [C++](./src/readNCharactersGivenRead4/readNCharactersGivenRead4.cpp)|2014/11/19|Easy|
 |[Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) :books: | [C++](./src/binaryTreeUpsideDown/binaryTreeUpsideDown.cpp)|2014/11/16|Medium|
 |[Min Stack](https://oj.leetcode.com/problems/min-stack/)| [C++](./src/minStack/minStack.cpp)|2014/11/09|Easy|
