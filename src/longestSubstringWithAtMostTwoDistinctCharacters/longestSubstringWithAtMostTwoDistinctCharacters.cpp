@@ -20,9 +20,11 @@ using namespace std;
 /*
  * Idea:
  *
- *    1) Using a map to count every chars.
+ *    1) Using a map to count every char(s).
  *    2) Using a 'cnt' to count the current distinct chars.
- *    3) if `cnt > 2`, then go through the previous substring to remove one char
+ *    3) If `cnt > 2`, then go through the previous substring to decrease each char's count which stored in the map,
+ *       if one of char's count decrease to zero, then the global distinct chars `cnt` decrease one.
+ *       During the travel, maintain a pointer `start` to point the start position of sub-string.
  *
  * The following algorithm run-time complexity is O(n^2)
  *
@@ -30,7 +32,7 @@ using namespace std;
  */
 int lengthOfLongestSubstringTwoDistinct(string s) {
     int maxLen = 0;
-    char charMap[256] = {0};
+    int charMap[256] = {0};
     int wordCnt = 0;
     int start = 0;
 
