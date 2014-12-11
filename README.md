@@ -5,6 +5,7 @@ LeetCode C++ Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts; | [C++](./src/missingRanges/missingRanges.cpp)|2014/12/09|Medium|
 |[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/) | [C++](./src/findPeakElement/findPeakElement.cpp)|2014/12/04|Medium|
 |[One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/)&hearts; | [C++](./src/oneEditDistance/oneEditDistance.cpp)|2014/11/30|Medium|
 |[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/) | [C++](./src/intersectionOfTwoLinkedLists/intersectionOfTwoLinkedLists.cpp)|2014/11/27|Easy|
