@@ -3,6 +3,8 @@ LeetCode
 
 LeetCode C++ Solutions
 
+(Notes: "&hearts;" means you need buy a book from Leetcode)
+
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
 |[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts; | [C++](./src/missingRanges/missingRanges.cpp)|2014/12/09|Medium|
