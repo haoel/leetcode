@@ -7,6 +7,9 @@ LeetCode C++ Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/) | [C++](./src/fractionToRecurringDecimal/fractionToRecurringDecimal.cpp)|2014/12/16|Medium|
+|[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/) | [C++](./src/compareVersionNumbers/compareVersionNumbers.cpp)|2014/12/15|Easy|
+|[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/) | [C++](./src/maximumGap/maximumGap.cpp)|2014/12/13|Hard|
 |[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts; | [C++](./src/missingRanges/missingRanges.cpp)|2014/12/09|Medium|
 |[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/) | [C++](./src/findPeakElement/findPeakElement.cpp)|2014/12/04|Medium|
 |[One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/)&hearts; | [C++](./src/oneEditDistance/oneEditDistance.cpp)|2014/11/30|Medium|
