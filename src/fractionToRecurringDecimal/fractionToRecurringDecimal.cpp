@@ -22,7 +22,9 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <map>
 using namespace std;
+
 
 /*
  *  Be careful the following cases:
@@ -41,123 +43,53 @@ using namespace std;
  *    > 1/17 = 0.(0588235294117647)
  */
 
-
-// Notes:
-//  > check 3 times repeated-decimail numbers
-//  > using c-style string for performance
-bool checkRepeat(string &dec) {
-
-    size_t dot = dec.find('.') + 1;
-    const char *p = dec.c_str() + dot ;
-
-    //for case: 0.000
-    if (atoi(p) ==0 ) return false;
-
-    //check 3 times repeated string
-    size_t len = dec.size();
-    //static string s1, s2, s3;
-    for(int i=2; i<=(len-dot)/3; i++) {
-        int j=0;
-        const char *p1 = dec.c_str()+len - i;
-        const char *p2 = dec.c_str()+len - i*2;
-        const char *p3 = dec.c_str()+len - i*3;
-        for(; j<i; j++, p1++, p2++, p3++){
-            if (*p1!=*p2 || *p1 != *p3){
-                break;
-            }
-        }
-        if ( i == j) {
-            dec.erase(dec.end()-i*2, dec.end());
-            dec.insert(dec.end()-i,'(');
-            dec.push_back(')');
-            return true;
-        }
-    } 
-    return false;
-}
-
-/*
- *    0.16  
- *  -------
- *6 ) 1.00
- *    0 
- *    -
- *    1 0       <-- Remainder=1, mark 1 as seen at position=0.
- *    - 6 
- *    ---
- *      40      <-- Remainder=4, mark 4 as seen at position=1.
- *    - 36 
- *    ---
- *       4      <-- Remainder=4 was seen before at position=1, so the fractional part which is 16 starts repeating at position=1 => 1(6).
- */
-
 string fractionToDecimal(int numerator, int denominator) {
     string result;
     //deal with the `ZERO` cases
     if (denominator == 0){ return result; }
     if (numerator == 0) { return "0"; }
-    
+
     //using long long type make sure there has no integer overflow
     long long n = numerator;
     long long d = denominator;
 
     //deal with negtive cases 
-    int sign = 1;
-    if ( n < 0 ) {
-        n = -n;
-        sign = -sign; 
-    }
-    if ( d < 0 ) {
-        d = -d;
-        sign = -sign; 
-    }
-
-    if (sign < 0){
+    bool sign = ((float)numerator/denominator >= 0);
+    if ( n < 0 ){ n = -n; }
+    if ( d < 0 ){ d = -d; }
+    if (sign == false){
         result.push_back('-');
     }
 
-    //real work
-    long long remainder = 0;
-    long long division = 0;
-    bool point = false;
+    long long remainder = n % d;
+    long long division = n / d;
+    ostringstream oss;
+    oss << division;
+    result += oss.str();
+    if (remainder == 0){
+        return result;
+    }
+    //remainder has value, the result is a float
+    result.push_back('.');
 
-    while( n != 0 )  {
+    //using a map to recorder all of reminders and it's position.
+    //if the reminder appeared before, which means the repeated loop begin.
+    //In C++11, it's better to use unordered_map
+    map<long long, int> rec;
 
-        division = n / d;
-        remainder = n % d; 
-
-        if (division >=10){
-            ostringstream oss;
-            oss << division;
-            result += oss.str();
-        }else{
-            result.push_back( division + '0' );
-        }
-
-        if ( point == false && remainder !=0 ){
-            result.push_back('.');
-            point = true;
-        }
-
-        //deal with case only have one number repeated. e.g. 1/3 = 0.3333
-        if ( point == true && n == remainder * 10 ) {
-            result.insert(result.end()-1, '(');
+    for (int pos=result.size(); remainder!=0; pos++, remainder=(remainder*10)%d ) {
+        if (rec.find(remainder) != rec.end()) {
+            result.insert(result.begin()+rec[remainder], '(');
             result.push_back(')');
-            break;
+            return result;
         }
-
-        //deal with the case which have multiple number repeated. e.g. 25/99 = 0.252525...
-        if (checkRepeat(result) == true){
-            break;
-        }
-
-
-        n = remainder * 10;
-
+        rec[remainder] = pos;
+        result.push_back((remainder*10)/d + '0');
     }
 
     return result;
 }
+
 
 void test(int num, int deno)
 {
