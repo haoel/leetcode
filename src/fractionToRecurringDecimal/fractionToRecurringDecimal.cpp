@@ -72,9 +72,10 @@ string fractionToDecimal(int numerator, int denominator) {
     //remainder has value, the result is a float
     result.push_back('.');
 
-    //using a map to recorder all of reminders and it's position.
-    //if the reminder appeared before, which means the repeated loop begin.
-    //In C++11, it's better to use unordered_map
+    //using a map to record all of reminders and their position.
+    //if the reminder appeared before, which means the repeated loop begin, 
+    //then, get the place from map to insert "(".
+    //(In C++11, it's better to use unordered_map )
     map<long long, int> rec;
 
     for (int pos=result.size(); remainder!=0; pos++, remainder=(remainder*10)%d ) {
