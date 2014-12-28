@@ -15,7 +15,16 @@
 #include <string>
 #include <map>
 using namespace std;
-
+/*
+ * Idea:
+ * 
+ * Using a map store each char's index.
+ * 
+ * So, we can be easy to know the when duplication and the previous duplicated char's index.
+ * 
+ * Then we can take out the previous duplicated char, and keep tracking the maxiumn length. 
+ * 
+ */
 int lengthOfLongestSubstring1(string s) {
     map<char, int> m;
     int maxLen = 0;
@@ -66,6 +75,6 @@ int main(int argc, char** argv)
         s = argv[1];
         cout << s << " : " << lengthOfLongestSubstring(s) << endl;
     }
-    
+
     return 0;
 }

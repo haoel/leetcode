@@ -26,7 +26,7 @@ struct Point {
 int maxPoints(vector<Point> &points) {
 
     #define INT_MAX 2147483647
-    #define INT_MIN -2147483648
+    #define INT_MIN (-INT_MAX - 1)
 
     if (points.size()<=0) return 0;
     if (points.size()<=2) return points.size();

@@ -25,6 +25,7 @@ struct Interval {
     Interval(int s, int e) : start(s), end(e) {}
 };
 
+//Two factos sorting [start:end]
 bool compare(const Interval& lhs, const Interval& rhs){
     return (lhs.start==rhs.start) ? lhs.end < rhs.end : lhs.start < rhs.start;
 }
@@ -34,10 +35,12 @@ vector<Interval> merge(vector<Interval> &intervals) {
     vector<Interval> result;
 
     if (intervals.size() <= 0) return result;
-
+    //sort the inervals. Note: using the customized comparing function.
     sort(intervals.begin(), intervals.end(), compare);
     for(int i=0; i<intervals.size(); i++) { 
         int size = result.size();
+        // if the current intervals[i] is overlapped with previous interval.
+        // merge them together
         if( size>0 && result[size-1].end >= intervals[i].start) {
             result[size-1].end = max(result[size-1].end, intervals[i].end); 
         }else{

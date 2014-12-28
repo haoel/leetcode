@@ -22,15 +22,44 @@
 **********************************************************************************/
 
 /*
-1 2 3 4
-1 2 4 3
-1 3 2 4
-1 3 4 2
-1 4 2 3
-1 4 3 2
-2 1 3 4
-...
-*/
+ * Take a look the following continuous permutation, can you find the patern?
+ *
+ *    1 2 3 4
+ *    1 2 4 3
+ *    1 3 2 4
+ *    1 3 4 2
+ *    1 4 2 3
+ *    1 4 3 2
+ *    2 1 3 4
+ *    ...
+ *
+ * The pattern as below:
+ *
+ *    1) find the first place which num[i-1] < num[i]
+ *    2) find the first number from n-1 to i which >= num[i-1]
+ *    3) swap the 2) num with num[i-1]
+ *    4) sort the sub-array [i, n) //actuall sort is fine as well
+ * 
+ * For example:
+ * 
+ *     1 4 3 2   <-- 1) find the first place which num[i-1] < num[i]
+ *     ^
+ * 
+ *     1 4 3 2   <-- 2) find the first number from n-1 to i which >= num[i-1]
+ *     ^     ^  
+ * 
+ *     2 4 3 1   <-- 3) swap them
+ *     ^     ^
+ * 
+ *     2 4 3 1   <-- 4) sort
+ *       ^   ^
+ *
+ *     2 1 3 4   
+ * 
+ * Edge Case:
+ *
+ *     4 3 2 1, the next permutation is 1 2 3 4
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,6 +68,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+
 
 void nextPermutation(vector<int> &num) {
 
@@ -54,10 +84,15 @@ void nextPermutation(vector<int> &num) {
             int tmp = num[j];
             num[j] = num[i-1];
             num[i-1] = tmp;
+            //sort works as well
+            //sort(num.begin()+i, num.end()); 
             reverse(num.begin()+i, num.end()); 
             return; 
         }
+        //edge case: 4 3 2 1
         if (i == 1 ){
+            //sort works as well
+            //sort(num.begin(), num.end());
             reverse(num.begin(), num.end());
             return;
         }

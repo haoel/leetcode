@@ -50,34 +50,40 @@ vector< vector<string> > solveNQueens(int n) {
     return result;    
 }
 
-
+//The following recursion is easy to understand. Nothing's tricky.
+//  1) recursively find all of possible columns row by row.
+//  2) solution[] array only stores the columns index. `solution[row] = col;` 
 void solveNQueensRecursive(int n, int currentRow, vector<int>& solution, vector< vector<string> >& result) {
+    //if no more row need to do, shape the result
     if (currentRow == n){
         vector<string> s;
-        for (int i = 0; i < n; i++) {
-            string row;
-            for (int j = 0; j < n; j++) {
-                if ( solution[i]== j ) {
-                    row += "Q";
-                }else{
-                    row += ".";
-                }
+        for (int row = 0; row < n; row++) {
+            string sRow;
+            for (int col = 0; col < n; col++) {
+                sRow = sRow + (solution[row] == col ? "Q" :"." );
             }
-            s.push_back(row);
+            s.push_back(sRow);
         }
         result.push_back(s);
         return;
     }
 
-    for (int i = 0; i < n; i++) {
-        if (isValid(i, currentRow, solution) ) {
-            solution[currentRow] = i;
+    //for each column
+    for (int col = 0; col < n; col++) {
+        //if the current column is valid
+        if (isValid(col, currentRow, solution) ) {
+            //place the Queue
+            solution[currentRow] = col;
+            //recursively put the Queen in next row
             solveNQueensRecursive(n, currentRow+1, solution, result);
         }
     } 
 }
 
-
+//Attempting to put the Queen into [row, col], check it is valid or not
+//Notes: 
+//  1) we just checking the Column not Row, because the row cannot be conflicted
+//  2) to check the diagonal, we just check |x'-x| == |y'-y|, (x',y') is a Queen will be placed
 bool isValid(int attemptedColumn, int attemptedRow, vector<int> &queenInColumn) {
 
     for(int i=0; i<attemptedRow; i++) {

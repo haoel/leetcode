@@ -26,28 +26,54 @@
 **********************************************************************************/
 
 #include <stdio.h>
+#include <stdlib.h>
 
-
+//Why need the INT_MIN be defined like that?
+//Please take a look: 
+//  http://stackoverflow.com/questions/14695118/2147483648-0-returns-true-in-c
+#define INT_MAX     2147483647
+#define INT_MIN     (-INT_MAX - 1)
 int reverse(int x) {
     int y=0;
     int n;
     while( x != 0){
         n = x%10;
+        //Checking the over/underflow.
+        //Actually, it should be y>(INT_MAX-n)/10, but n/10 is 0, so omit it.
+        if (y > INT_MAX/10 || y < INT_MIN/10){
+             return 0;
+        }
         y = y*10 + n;
         x /= 10;
     }
     return y;
 }
 
-int main()
+#define TEST(n, e)  printf("%12d  =>  %-12d    %s!\n",  n, reverse(n),  e == reverse(n)?"passed":"failed")
+
+int main(int argc, char**argv)
 {
-    printf("%d, %d\n", 123, reverse(123));
-    printf("%d, %d\n", -123, reverse(-123));
-    printf("%d, %d\n", 100, reverse(100));
-    printf("%d, %d\n", 1002, reverse(1002));
+    //basic cases
+    TEST(  123,  321);
+    TEST( -123, -321);
+    TEST( -100,   -1);
+    TEST( 1002, 2001);
+    //big integer
+    TEST( 1463847412,  2147483641);
+    TEST(-2147447412, -2147447412);
+    TEST( 2147447412,  2147447412);
     //overflow
-    printf("%d, %d\n", 1000000003 , reverse(1000000003 ));
-    printf("%d, %d\n", -2147447412 , reverse(-2147447412 ));
-    printf("%d\n",  -2147447412 == reverse(-2147447412 ));
+    TEST( 1000000003, 0);
+    TEST( 2147483647, 0);
+    TEST(-2147483648, 0);
+    //customized cases
+    if (argc<2){
+        return 0;
+    }
+    printf("\n");
+    for (int i=1; i<argc; i++) {
+        int n = atoi(argv[i]); 
+        printf("%12d  =>  %-12d    %s!\n",  n, reverse(n), reverse(reverse(n))==n ? "passed":"failed");
+    }
     return 0;
 }

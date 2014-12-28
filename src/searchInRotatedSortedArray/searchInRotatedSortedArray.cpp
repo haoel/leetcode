@@ -31,7 +31,14 @@ int search(int A[], int n, int target) {
     }
     return search2(A, n, target);
 }
-
+/*
+ *    Using binary search idea, 
+ *    1) Spliting the array to two part, one part should be non-rotated, another one is rotated.
+ *    2) Checking the "key" whether is possible in non-rotated sorted part.
+ *        2.1) if it is, then go to the classcial binary searh.
+ *        2.2) if it not, then keep spliting the rorated part.
+ *
+ */
 int search1(int A[], int n, int key) {
     if (n<=0) return -1;
 

@@ -48,7 +48,7 @@ public:
         //create a map, key is source node, value is clone node.
         map<UndirectedGraphNode*, UndirectedGraphNode*> cloneMap;
         
-        //using queue for breath first search
+        //using queue for breadth first search
         queue<UndirectedGraphNode*> q;
         q.push(node);
         
@@ -56,7 +56,7 @@ public:
         UndirectedGraphNode* cloneNode = new UndirectedGraphNode(node->label);
         cloneMap[node] = cloneNode;
         
-        //breath first search
+        //breadth first search
         while(!q.empty()){
             UndirectedGraphNode* n = q.front();
             q.pop();

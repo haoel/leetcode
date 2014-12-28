@@ -14,16 +14,17 @@ class Solution {
 public:
     vector<string> anagrams(vector<string> &strs) {
         vector<string> result;
-        map<string, string> m;
+        map<string, int> m;
         for(int i=0; i<strs.size(); i++){
             string word = strs[i];
-            sort(word.begin(), word.end());
+            //sort it can easy to check they are anagrams or not
+            sort(word.begin(), word.end());  
             if (m.find(word)==m.end()){
-                m[word] = strs[i];
+                m[word] = i;
             }else{
-                if (m[word]!="#"){
-                    result.push_back(m[word]);
-                    m[word]="#";
+                if (m[word]>=0){
+                    result.push_back(strs[m[word]]);
+                    m[word]=-1;
                 }
                 result.push_back(strs[i]);
             }

@@ -29,6 +29,11 @@ using namespace std;
 
 vector<vector<int> > threeSum(vector<int> num, int target); 
 
+/*
+ * 1) Sort the array,
+ * 2) traverse the array, and solve the problem by using "3Sum" soultion.
+ */
+
 vector<vector<int> > fourSum(vector<int> &num, int target) {
     vector< vector<int> > result;
     if (num.size()<4) return result;
@@ -51,7 +56,7 @@ vector<vector<int> > fourSum(vector<int> &num, int target) {
 vector<vector<int> > threeSum(vector<int> num, int target) {
 
     vector< vector<int> > result;
-
+    //sort the array (if the qrray is sorted already, it won't waste any time)
     sort(num.begin(), num.end());
 
     int n = num.size();

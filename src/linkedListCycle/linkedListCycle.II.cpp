@@ -46,6 +46,12 @@ public:
         
     }  
     
+    /* 
+     * So, the idea is:
+     *   1) Using the cycle-chcking algorithm.
+     *   2) Once p1 and p1 meet, then reset p1 to head, and move p1 & p2 synchronously
+     *      until p1 and p2 meet again, that place is the cycle's start-point 
+     */
     ListNode *detectCycle(ListNode *head) {
         
         if (hasCycle(head)==false){

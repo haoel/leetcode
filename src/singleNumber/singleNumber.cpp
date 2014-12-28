@@ -13,7 +13,9 @@
 **********************************************************************************/
 
 #include <stdio.h>
-
+// This is classical interview question
+// As we know, the same number XOR together will be 0,
+// So, XOR all of numbers, the result is the number which only appears once. 
 int singleNumber(int A[], int n) {
     int s = 0;
     for(int i=0; i<n; i++){

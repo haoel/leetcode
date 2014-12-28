@@ -22,7 +22,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define INT_MIN     -2147483648
+#define INT_MIN     (-2147483647 - 1)
 
 int maxSubArray1(int A[], int n);
 int maxSubArray2(int A[], int n); 
