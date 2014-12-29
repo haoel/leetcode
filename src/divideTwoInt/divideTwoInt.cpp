@@ -30,7 +30,7 @@ int divide(int dividend, int divisor) {
     }
 
     long long bit_num[32];
-    memset( bit_num, 0, sizeof(bit_num)/sizeof(bit_num[0]) );
+    memset( bit_num, 0, sizeof(bit_num) );
 
     int i=0;
     long long d = dvs;
