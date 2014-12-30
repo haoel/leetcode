@@ -36,11 +36,12 @@ bool isValid(string s) {
             }else{
                 return false;
             }
-        }
-
-        if (lch== ']' || lch=='}' || lch==')' ) {
+        } else if (lch== ']' || lch=='}' || lch==')' ) {
             s.pop_back();
             stack.push_back(lch);
+        } else {
+            //skip the other charactors
+            s.pop_back();
         }
     }
     return (s.size()==0 && stack.size()==0 );
