@@ -65,7 +65,7 @@ class Solution {
         int trailingZeroes(int n) {
             int result = 0;
             //To avoid the integer overflow ( e.g. 'n >=1808548329' )
-            for(int i=5; n/i>0 && i <= INT_MAX/5; i*=5){
+            for(long long i=5; n/i>0 && i <= INT_MAX; i*=5){
                 result += (n/i);
             }
             return result;
