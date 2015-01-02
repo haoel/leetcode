@@ -71,28 +71,14 @@ public:
     }
     
     bool hasPathSum2(TreeNode *root, int sum) {
-        
-        if (root==NULL) return false;
-        
-        if (root->left==NULL && root->right==NULL ){
-            return (root->val==sum);
+        if (root == NULL) {
+            return false;
         }
-        
-        if (root->left){
-            root->left->val += root->val;
-            if (hasPathSum2(root->left, sum)){
-                return true;
-            }
+        sum -= root->val;
+        if (root->left == NULL && root->right == NULL) {
+            return sum == 0;
         }
-        
-        if (root->right){
-            root->right->val += root->val;
-            if (hasPathSum2(root->right, sum)){
-                return true;
-            }
-        }
-        
-        return false;
+        return hasPathSum(root->left, sum) || hasPathSum(root->right, sum);        
     }
 
 };
