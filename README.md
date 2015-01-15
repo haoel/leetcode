@@ -7,6 +7,7 @@ LeetCode C++ Solutions
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|174|[Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/) | [C++](./src/dungeonGame/dungeonGame.cpp)|Hard|
 |173|[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/) | [C++](./src/binarySearchTreeIterator/binarySearchTreeIterator.cpp)|Medium|
 |172|[Factorial Trailing Zeroes](https://oj.leetcode.com/problems/factorial-trailing-zeroes/) | [C++](./src/factorialTrailingZeroes/factorialTrailingZeroes.cpp)|Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/) | [C++](./src/excelSheetColumnNumber/excelSheetColumnNumber.cpp)|Easy|
