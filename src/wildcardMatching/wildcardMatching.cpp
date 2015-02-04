@@ -32,35 +32,31 @@ using namespace std;
 
 
 bool isMatch(const char *s, const char *p) {
-
-    bool star = false;
-    const char *s1, *p1;
-    while( *s && (*p || star) ){
-        if (*p=='?' || *s == *p){
-            s++; p++;
-        }else if (*p=='*'){
-            //skip the "*", and mark a flag
-            star = true;
+    const char *last_s = NULL;
+    const char *last_p = NULL;
+    while (*s != '\0') {
+        // Here, '*' in the pattern is ungreedy. This means we are trying to
+        // build one or more one-character-to-one-character mappings between
+        // the pattern string and the target string as much as possible.
+        if (*p == '*') {
+            last_s = s;
+            last_p = p++;
+        } else if (*p == '?' || *p == *s) {
+            s++;
             p++;
-            //edge case
-            if (*p=='\0') return true;
-            //use s1 and p1 to store where the "*" match starts.
-            s1 = s;
-            p1 = p;
-        }else{
-            if (star==false) return false;
-            // if meet "*" previously, but the *s != *p
-            // reset the p, using '*' to match this situation
-            p = p1;
-            s = ++s1; 
+        } else if (last_s) {
+            // Why not use stacks? Because '*' is ungreedy and it can match any
+            // character. If s becomes '\0' and the rest of p contains
+            // characters other than '*', that means:
+            //      len(original_s) < len(original_p) - count(original_p, '*')
+            s = ++last_s;
+            p = last_p + 1;
+        } else {
+            return false;
         }
     }
-    //edge case: "s" is done, but "p" still have chars.
-    if (*s=='\0') {
-         while (*p=='*') p++; //filter all of '*' 
-         if (*p=='\0') return true;
-    }
-    return false;
+    while (*p == '*') p++;
+    return *p == '\0';
 }
 
 
@@ -89,6 +85,11 @@ int main(int argc, char** argv)
     s = "a";
     p = "a**";
     cout << s << ", " << p << " : " << isMatch(s, p) << endl;
+
+    s = "*aa";
+    p = "*a";
+    cout << s << ", " << p << " : " << isMatch(s, p) << endl;
+
     if (argc>2){
         s = argv[1];
         p = argv[2];
