@@ -36,9 +36,7 @@ bool isMatch(const char *s, const char *p) {
     bool star = false;
     const char *s1, *p1;
     while( *s && (*p || star) ){
-        if (*p=='?' || *s == *p){
-            s++; p++;
-        }else if (*p=='*'){
+        if (*p=='*'){
             //skip the "*", and mark a flag
             star = true;
             p++;
@@ -47,6 +45,8 @@ bool isMatch(const char *s, const char *p) {
             //use s1 and p1 to store where the "*" match starts.
             s1 = s;
             p1 = p;
+        }else if (*p=='?' || *s == *p){
+            s++; p++;
         }else{
             if (star==false) return false;
             // if meet "*" previously, but the *s != *p
@@ -89,6 +89,12 @@ int main(int argc, char** argv)
     s = "a";
     p = "a**";
     cout << s << ", " << p << " : " << isMatch(s, p) << endl;
+
+    /* thanks @jakwings (GitHub) find this problem */
+    s = "*aa"; // <-- it is not a pattern, it just a string where '*' is not a wildcard
+    p = "*a";
+    cout << s << ", " << p << " : " << isMatch(s, p) << endl;
+
     if (argc>2){
         s = argv[1];
         p = argv[2];
