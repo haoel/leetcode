@@ -26,7 +26,16 @@ function install_xidel()
         mkdir xidel
     fi
     cd xidel
+    linux=`uname -m`
     xidel_tar=xidel-0.8.4.linux64.tar.gz
+    case $linux in
+        x86_64 )    xidel_tar=xidel-0.8.4.linux64.tar.gz
+                    ;;
+          i686 )    xidel_tar=xidel-0.8.4.linux32.tar.gz
+                    ;;
+             * )    echo "Cannot install xidel, please install it manually!"
+                    exit 1;
+    esac
     if [ ! -f ${xidel_tar} ]; then
         echo "Downloading xidel....."
         curl -L http://softlayer-sng.dl.sourceforge.net/project/videlibri/Xidel/Xidel%200.8.4/${xidel_tar} -o ${xidel_tar}
