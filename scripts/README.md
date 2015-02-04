@@ -5,6 +5,8 @@ Some Scripts
 
 `comments.sh` - it's used to generate author and problem description comments 
 
+> **Notes**: The  `comments.sh`  needs [xidel](http://videlibri.sourceforge.net/xidel.html) to parse the html and grabe the contents without any HTML tags. The script  would check  xidel  whether installed or not in your Linux box, if not, it will download the [Universal Linux Version](http://videlibri.sourceforge.net/xidel.html#downloads) . 
+
 1) Create a file named largestNumber.cpp, and add Copyright & Problem description
 ```
 ./comments.sh https://oj.leetcode.com/problems/largest-number/
