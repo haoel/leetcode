@@ -37,7 +37,7 @@ bool isMatch(const char *s, const char *p) {
     while (*s != '\0') {
         // Here, '*' in the pattern is ungreedy. This means we are trying to
         // build one or more one-character-to-one-character mappings between
-        // the pattern string and the target string as less as possible.
+        // the pattern string and the target string as much as possible.
         if (*p == '*') {
             last_s = s;
             last_p = p++;
