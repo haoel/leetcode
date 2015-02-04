@@ -33,34 +33,34 @@ using namespace std;
 
 bool isMatch(const char *s, const char *p) {
 
-    bool star = false;
-    const char *s1, *p1;
-    while( *s && (*p || star) ){
+    const char *last_s = NULL; 
+    const char *last_p = NULL;
+    while( *s != '\0' ){
         if (*p=='*'){
             //skip the "*", and mark a flag
-            star = true;
             p++;
             //edge case
             if (*p=='\0') return true;
-            //use s1 and p1 to store where the "*" match starts.
-            s1 = s;
-            p1 = p;
+            //use last_s and last_p to store where the "*" match starts.
+            last_s = s;
+            last_p = p;
         }else if (*p=='?' || *s == *p){
             s++; p++;
-        }else{
-            if (star==false) return false;
-            // if meet "*" previously, but the *s != *p
+        }else if (last_s != NULL){ // check "last_s" to know whether meet "*" before
+            // if meet "*" previously, and the *s != *p
             // reset the p, using '*' to match this situation
-            p = p1;
-            s = ++s1; 
+            p = last_p;
+            s = ++last_s; 
+        }else{
+            // *p is not wildcard char, 
+            // doesn't match *s, 
+            // there are no '*' wildcard matched before
+            return false;
         }
     }
     //edge case: "s" is done, but "p" still have chars.
-    if (*s=='\0') {
-         while (*p=='*') p++; //filter all of '*' 
-         if (*p=='\0') return true;
-    }
-    return false;
+    while (*p == '*') p++;
+    return *p == '\0';
 }
 
 
