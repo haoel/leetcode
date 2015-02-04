@@ -86,7 +86,7 @@ int main(int argc, char** argv)
     p = "a**";
     cout << s << ", " << p << " : " << isMatch(s, p) << endl;
 
-    s = "*";
+    s = "*aa";
     p = "*a";
     cout << s << ", " << p << " : " << isMatch(s, p) << endl;
 
