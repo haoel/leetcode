@@ -7,6 +7,7 @@ LeetCode C++ Solutions
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|177|[Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/)| [C++](./src/repeatedDNASequences/repeatedDNASequences.cpp)|Medium|
 |176|[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts; | [C++](./src/reverseWordsInAString/reverseWordsInAString.II.cpp)|Medium|
 |175|[Largest Number](https://oj.leetcode.com/problems/largest-number/) | [C++](./src/largestNumber/largestNumber.cpp)|Medium|
 |174|[Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/) | [C++](./src/dungeonGame/dungeonGame.cpp)|Hard|
