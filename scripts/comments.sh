@@ -2,7 +2,11 @@
 set -e
 
 AUTHOR="Hao Chen"
-LEETCODE_URL=https://oj.leetcode.com/problems/
+LEETCODE_URL=https://leetcode.com/problems/
+LEETCODE_NEW_URL=https://leetcode.com/problems/
+LEETCODE_OLD_URL=https://oj.leetcode.com/problems/
+COMMENT_TAG="//"
+FILE_EXT=".cpp"
 
 function usage()
 {
@@ -46,9 +50,19 @@ function install_xidel()
     echo "Install xidel successfullly !"
 }
 
-if [ $# -lt 1 ] || [[ "${1}" != ${LEETCODE_URL}* ]]; then
+if [ $# -lt 1 ] || [[ "${1}" != ${LEETCODE_NEW_URL}* ]] && [[ "${1}" != ${LEETCODE_OLD_URL}* ]]; then
     usage
     exit 255
+fi
+
+if [[ "${1}" == ${LEETCODE_OLD_URL}* ]]; then
+    LEETCODE_URL=${LEETCODE_OLD_URL}
+fi
+
+IS_SHELL=`curl ${1} 2>/dev/null | grep Bash |wc -l`
+if [ ${IS_SHELL} -gt 0 ]; then
+    COMMENT_TAG='#'
+    FILE_EXT='.sh'
 fi
 
 
@@ -61,7 +75,7 @@ if [ $# -gt 1 ] && [ -f $2 ]; then
 else
     source_file=${1#${LEETCODE_URL}}
     source_file=${source_file::${#source_file}-1}
-    source_file=`echo $source_file | awk -F '-' '{for (i=1; i<=NF; i++) printf("%s", toupper(substr($i,1,1)) substr($i,2)) }'`.cpp
+    source_file=`echo $source_file | awk -F '-' '{for (i=1; i<=NF; i++) printf("%s", toupper(substr($i,1,1)) substr($i,2)) }'`${FILE_EXT}
 
     if [ ! -f ${source_file} ]; then
         echo "Create a new file - ${source_file}."
@@ -73,10 +87,10 @@ else
 fi
 
 #adding the Copyright Comments
-if  ! grep -Fq "// Author :" $source_file ; then
-    sed -i '1i\'"// Source : ${leetcode_url}" $source_file
-    sed -i '2i\'"// Author : ${AUTHOR}" $source_file
-    sed -i '3i\'"// Date   : ${current_time}\n" $source_file
+if  ! grep -Fq  "${COMMENT_TAG} Author :" $source_file ; then
+    sed -i '1i\'"${COMMENT_TAG} Source : ${leetcode_url}" $source_file
+    sed -i '2i\'"${COMMENT_TAG} Author : ${AUTHOR}" $source_file
+    sed -i '3i\'"${COMMENT_TAG} Date   : ${current_time}\n" $source_file
 fi
 
 #grab the problem description and add the comments
@@ -86,14 +100,27 @@ if [ -z "${xidel}" ]; then
     install_xidel
 fi
 
-xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
-    grep -v '                ' |sed '/^$/N;/^\n$/D'  | \
-    sed 's/^/ * /' | sed "1i/*$(printf '%.0s*' {0..80}) \n * " | \
-    sed "\$a \ $(printf '%.0s*' {0..80})*/\n" > /tmp/tmp.txt
+case $FILE_EXT in
+    .cpp )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
+                    grep -v '                ' |sed '/^$/N;/^\n$/D'  | \
+                    sed 's/^/ * /' | sed "1i/*$(printf '%.0s*' {0..80}) \n * " | \
+                    sed "\$a \ $(printf '%.0s*' {0..80})*/\n" > /tmp/tmp.txt
+                ;;
+    .sh )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
+                    grep -v '                ' |sed '/^$/N;/^\n$/D'  | \
+                    sed 's/^/# /' | sed "1i#$(printf '%.0s#' {0..80}) \n# " | \
+                    sed "\$a \#$(printf '%.0s#' {0..80})\n" > /tmp/tmp.txt
+                ;;
+      * )       echo "Bad file extension!"
+                exit 1;
+
+esac
 
 sed -i '4 r /tmp/tmp.txt' ${source_file}
 
 rm -f /tmp/tmp.txt
 
 echo "${source_file} updated !"
+
+
 
