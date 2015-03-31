@@ -7,6 +7,10 @@ LeetCode C++ Solutions
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|181|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)| [C++](./src/numberOf1Bits/numberOf1Bits.cpp)|Easy|
+|180|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)| [C++](./src/reverseBits/reverseBits.cpp)|Easy|
+|179|[Rotate Array](https://leetcode.com/problems/rotate-array/)| [C++](./src/rotateArray/rotateArray.cpp)|Easy|
+|178|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [C++](./src/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.IV.cpp)|Hard|
 |177|[Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/)| [C++](./src/repeatedDNASequences/repeatedDNASequences.cpp)|Medium|
 |176|[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts; | [C++](./src/reverseWordsInAString/reverseWordsInAString.II.cpp)|Medium|
 |175|[Largest Number](https://oj.leetcode.com/problems/largest-number/) | [C++](./src/largestNumber/largestNumber.cpp)|Medium|
