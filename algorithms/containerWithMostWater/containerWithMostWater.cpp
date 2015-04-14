@@ -25,8 +25,10 @@ public:
 
         int area; 
         while ( left < right ){
+            int leftHeight = height[left];
+            int rightHeight = height[right];
             // calculate the area
-            area = (right - left) * ( height[left] < height[right] ? height[left] : height[right]);
+            area = (right - left) * (leftHeight < rightHeight ? leftHeight : rightHeight);
             // tracking the maxium area
             maxArea = area > maxArea ? area : maxArea;
             // because the area is decided by the shorter edge
@@ -36,14 +38,14 @@ public:
             //
             // However, the above code could cause the unnecessary `area` cacluation
             // We can do some improvement as below:
-            if (height[left] < height[right]) {
+            if (leftHeight < rightHeight) {
                 do {
                     left++;
-                } while (left < right && height[left-1] >= height[left]);
+                } while (left < right && leftHeight >= height[left]);
             } else {
                 do {
                     right--;
-                } while (right > left && height[right+1] >= height[right]);
+                } while (right > left && rightHeight >= height[right]);
             }
         }
         
