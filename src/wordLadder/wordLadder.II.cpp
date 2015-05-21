@@ -126,7 +126,7 @@ buildTree(string& start, string& end, unordered_set<string> &dict) {
 
 void generatePath( string start, string end,
         map< string, unordered_set<string> > &parents, 
-        vector<string> path,
+        vector<string> &path,
         vector< vector<string> > &paths) {
 
     if (parents.find(start) == parents.end()){
