@@ -3,6 +3,8 @@ LeetCode
 
 ###LeetCode Algorithm
 
+This chart is a good place to start [from](http://wwwx.cs.unc.edu/~zhew/Leetcoder/).
+
 (Notes: "&hearts;" means you need buy a book from Leetcode)
 
 | # | Title | Solution | Difficulty |
