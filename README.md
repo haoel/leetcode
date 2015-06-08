@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|188|[Count Primes](https://leetcode.com/problems/count-primes/)| [C++](./algorithms/countPrimes/CountPrimes.cpp)|Easy|
 |187|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)| [C++](./algorithms/removeLinkedListElements/RemoveLinkedListElements.cpp)|Easy|
 |186|[Happy Number](https://leetcode.com/problems/happy-number/)| [C++](./algorithms/happyNumber/HappyNumber.cpp)|Easy|
 |185|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)| [C++](./algorithms/bitwiseANDOfNumbersRange/BitwiseAndOfNumbersRange.cpp)|Medium|
