@@ -45,7 +45,7 @@ bool isHappy(int n) {
 
     while (n!=1) {
         n = squares(n);
-cout << n << endl;
+        //cout << n << endl;
         if (m.find(n) != m.end()){
             return false;
         }
