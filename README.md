@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|193|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)| [C++](./algorithms/minimumSizeSubarraySum/MinimumSizeSubarraySum.cpp)|Medium|
 |192|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [C++](./algorithms/implementTriePrefixTree/ImplementTriePrefixTree.cpp)|Medium|
 |191|[Course Schedule](https://leetcode.com/problems/course-schedule/)| [C++](./algorithms/courseSchedule/CourseSchedule.cpp)|Medium|
 |190|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./algorithms/reverseLinkedList/reverseLinkedList.cpp)|Easy|
