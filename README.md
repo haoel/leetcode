@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|190|[Reverse Linked List ](https://leetcode.com/problems/reverse-linked-list/)| [C++](./algorithms/reverseLinkedList/reverseLinkedList.cpp)|Easy|
 |189|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)| [C++](./algorithms/isomorphicStrings/IsomorphicStrings.cpp)|Easy|
 |188|[Count Primes](https://leetcode.com/problems/count-primes/)| [C++](./algorithms/countPrimes/CountPrimes.cpp)|Easy|
 |187|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)| [C++](./algorithms/removeLinkedListElements/RemoveLinkedListElements.cpp)|Easy|
