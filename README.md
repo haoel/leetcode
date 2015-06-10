@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|196|[Word Search II](https://leetcode.com/problems/word-search-ii/)| [C++](./algorithms/wordSearch/wordSearch.II.cpp)|Hard|
 |195|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)| [C++](./algorithms/addAndSearchWord/AddAndSearchWord.cpp)|Medium|
 |194|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| [C++](./algorithms/courseSchedule/CourseSchedule.II.cpp)|Medium|
 |193|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)| [C++](./algorithms/minimumSizeSubarraySum/MinimumSizeSubarraySum.cpp)|Medium|
