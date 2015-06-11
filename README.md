@@ -146,7 +146,7 @@ LeetCode
 |61|[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)| [C++](./algorithms/uniquePaths/uniquePaths.cpp)|Medium|
 |60|[Rotate List](https://oj.leetcode.com/problems/rotate-list/)| [C++](./algorithms/rotateList/rotateList.cpp)|Medium|
 |59|[Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)| [C++](./algorithms/permutationSequence/permutationSequence.cpp)|Medium|
-|58|[Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/)| [C++](./algorithms/spiralMatrix/spiralMatrix.II.cpp)|Medium|
+|58|[Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/)| [C++](./algorithms/spiralMatrix/spiralMatrix.II.cpp) / [JS](./algorithms/spiralMatrix/spiralMatrix.II.js)|Medium|
 |57|[Length of Last Word](https://oj.leetcode.com/problems/length-of-last-word/)| [C++](./algorithms/lengthOfLastWord/lengthOfLastWord.cpp)|Easy|
 |56|[Insert Interval](https://oj.leetcode.com/problems/insert-interval/)| [C++](./algorithms/insertInterval/insertInterval.cpp)|Hard|
 |55|[Merge Intervals](https://oj.leetcode.com/problems/merge-intervals/)| [C++](./algorithms/mergeIntervals/mergeIntervals.cpp)|Hard|
