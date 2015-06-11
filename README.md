@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|198|[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)| [C++](./algorithms/shortestPalindrome/ShortestPalindrome.cpp)|Hard|
 |197|[House Robber II](https://leetcode.com/problems/house-robber-ii/)| [C++](./algorithms/houseRobber/houseRobber.II.cpp)|Medium|
 |196|[Word Search II](https://leetcode.com/problems/word-search-ii/)| [C++](./algorithms/wordSearch/wordSearch.II.cpp)|Hard|
 |195|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)| [C++](./algorithms/addAndSearchWord/AddAndSearchWord.cpp)|Medium|
