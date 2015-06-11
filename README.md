@@ -83,7 +83,7 @@ LeetCode
 |124|[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)| [C++](./algorithms/binaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cpp)|Hard|
 |123|[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.III.cpp)|Hard|
 |122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.II.cpp)|Medium|
-|121|[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cpp)|Medium|
+|121|[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cpp) / [JS](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.js)|Medium|
 |120|[Triangle](https://oj.leetcode.com/problems/triangle/)| [C++](./algorithms/triangle/triangle.cpp)|Medium|
 |119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [C++](./algorithms/pascalTriangle/pascalTriangle.II.cpp)|Easy|
 |118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [C++](./algorithms/pascalTriangle/pascalTriangle.cpp)|Easy|
