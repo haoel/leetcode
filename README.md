@@ -194,7 +194,7 @@ LeetCode
 |13|[Roman to Integer](https://oj.leetcode.com/problems/roman-to-integer/)| [C++](./algorithms/romanToInteger/romanToInteger.cpp)|Easy|
 |12|[Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman/)| [C++](./algorithms/integerToRoman/integerToRoman.cpp)|Medium|
 |11|[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)| [C++](./algorithms/containerWithMostWater/containerWithMostWater.cpp)|Medium|
-|10|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)| [C++](./algorithms/regularExpressionMatching/regularExpressionMatching.cpp)|Hard|
+|10|[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)| [C++](./algorithms/regularExpressionMatching/regularExpressionMatching.cpp) / [JS](./algorithms/regularExpressionMatching/regularExpressionMatching.js)|Hard|
 |9|[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)| [C++](./algorithms/palindromeNumber/palindromeNumber.cpp)|Easy|
 |8|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)| [C++](./algorithms/stringToIntegerAtoi/stringToIntegerAtoi.cpp)|Easy|
 |7|[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)| [C++](./algorithms/reverseInteger/reverseInteger.cpp)|Easy|
