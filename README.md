@@ -201,7 +201,7 @@ LeetCode
 |6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)| [C++](./algorithms/zigZagConversion/zigZagConversion.cpp)|Easy|
 |5|[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)| [C++](./algorithms/longestPalindromicSubstring/longestPalindromicSubstring.cpp)|Medium|
 |4|[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)| [C++](./algorithms/medianOfTwoSortedArrays/medianOfTwoSortedArrays.cpp)|Hard|
-|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](./algorithms/longestSubstringWithoutRepeatingCharacters/longestSubstringWithoutRepeatingCharacters.cpp)|Medium|
+|3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](./algorithms/longestSubstringWithoutRepeatingCharacters/longestSubstringWithoutRepeatingCharacters.cpp) / [JS](./algorithms/longestSubstringWithoutRepeatingCharacters/longestSubstringWithoutRepeatingCharacters.js)|Medium|
 |2|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)| [C++](./algorithms/addTwoNumbers/addTwoNumbers.cpp) / [JS](./algorithms/addTwoNumbers/addTwoNumbers.js)|Medium|
 |1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| [C++](./algorithms/twoSum/twoSum.cpp) / [JS](./algorithms/twoSum/twoSum.js)|Medium|
 
