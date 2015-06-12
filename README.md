@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|207|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [C++](./algorithms/rectangleArea/RectangleArea.cpp)|Easy|
 |206|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)| [C++](./algorithms/countCompleteTreeNodes/CountCompleteTreeNodes.cpp)|Medium|
 |205|[Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./algorithms/maximalSquare/MaximalSquare.cpp)|Medium|
 |204|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.III.cpp)|Medium|
