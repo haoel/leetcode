@@ -7,6 +7,8 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|204|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.III.cpp)|Medium|
+|203|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.II.cpp)|Easy|
 |202|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| [C++](./algorithms/theSkylineProblem/TheSkylineProblem.cpp)|Hard|
 |201|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.cpp)|Easy|
 |200|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [C++](./algorithms/combinationSum/combinationSum.III.cpp)|Medium|
