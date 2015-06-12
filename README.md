@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|202|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| [C++](./algorithms/theSkylineProblem/TheSkylineProblem.cpp)|Hard|
 |201|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.cpp)|Easy|
 |200|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [C++](./algorithms/combinationSum/combinationSum.III.cpp)|Medium|
 |199|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)| [C++](./algorithms/kthLargestElementInAnArray/KthLargestElementInAnArray.cpp)|Medium|
