@@ -9,10 +9,17 @@
  * You may assume all four edges of the grid are all surrounded by water.
  * 
  * Example 1:
- * 11110110101100000000
+ *   11110
+ *   11010
+ *   11000
+ *   00000
  * Answer: 1
+ * 
  * Example 2:
- * 11000110000010000011
+ *   11000
+ *   11000
+ *   00100
+ *   00011
  * Answer: 3
  * 
  * Credits:Special thanks to @mithmatt for adding this problem and creating all test cases.
