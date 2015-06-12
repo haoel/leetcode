@@ -7,6 +7,9 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|210|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./algorithms/invertBinaryTree/InvertBinaryTree.cpp)|Easy|
+|209|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./algorithms/implementStackUsingQueues/ImplementStackUsingQueues.cpp)|Medium|
+|208|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)| [C++](./algorithms/basicCalculator/BasicCalculator.cpp)|Medium|
 |207|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [C++](./algorithms/rectangleArea/RectangleArea.cpp)|Easy|
 |206|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)| [C++](./algorithms/countCompleteTreeNodes/CountCompleteTreeNodes.cpp)|Medium|
 |205|[Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./algorithms/maximalSquare/MaximalSquare.cpp)|Medium|
