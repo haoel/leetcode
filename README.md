@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|205|[Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./algori/thms/maximalSquare/MaximalSquare.cpp)|Medium|
 |204|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.III.cpp)|Medium|
 |203|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.II.cpp)|Easy|
 |202|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| [C++](./algorithms/theSkylineProblem/TheSkylineProblem.cpp)|Hard|
