@@ -71,17 +71,17 @@ vector<vector<int> > threeSum(vector<int> &num) {
                 result.push_back(v);
                 // Continue search for all triplet combinations summing to zero.
                 //skip the duplication
-                while(low<n && num[low]==num[low+1]) low++; 
-                while(high>0 && num[high]==num[high-1]) high--; 
+                while(high>low && num[low]==num[low+1]) low++; 
+                while(high>low && num[high]==num[high-1]) high--; 
                 low++;
                 high--;
             } else if (a+b+c > 0) {
                 //skip the duplication
-                while(high>0 && num[high]==num[high-1]) high--;
+                while(high>low && num[high]==num[high-1]) high--;
                 high--;
             } else{
                 //skip the duplication
-                while(low<n && num[low]==num[low+1]) low++;
+                while(high>low && num[low]==num[low+1]) low++;
                 low++;
             } 
         }
