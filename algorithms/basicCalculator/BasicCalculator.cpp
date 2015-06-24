@@ -231,6 +231,11 @@ int calculate_RPN_design_pattern(string& s) {
 }
 
 
+/*
+ *  RPN - Reverse Polish Notation
+ *  see:  https://en.wikipedia.org/wiki/Reverse_Polish_notation
+ */
+
 //RPN evluation - Memory Limit Exceeded!!
 int calculate_RPN_evluation(string& s) {
     vector<string> exp = Parse(s);
@@ -253,7 +258,7 @@ int calculate_RPN_evluation(string& s) {
 
 
 
-//Two stack solution
+//Two stack solution - quick & dirty solution
 inline void calculate_two_stacks(stack<int>& num_stack, stack<char>& op_stack) {
     int lhs = num_stack.top(); num_stack.pop();
     int rhs = num_stack.top(); num_stack.pop();
