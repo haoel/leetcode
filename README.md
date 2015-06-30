@@ -8,7 +8,7 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |211|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)| [C++](./algorithms/basicCalculator/BasicCalculator.II.cpp)|Medium|
-|210|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./algorithms/invertBinaryTree/InvertBinaryTree.cpp) ; [Golang](./algorithms/invertBinaryTree/InvertBinaryTree.go)|Easy|
+|210|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./algorithms/invertBinaryTree/InvertBinaryTree.cpp) ; [Golang](./algorithms/invertBinaryTree/invertBinaryTree.go)|Easy|
 |209|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./algorithms/implementStackUsingQueues/ImplementStackUsingQueues.cpp)|Medium|
 |208|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)| [C++](./algorithms/basicCalculator/BasicCalculator.cpp)|Medium|
 |207|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [C++](./algorithms/rectangleArea/RectangleArea.cpp)  ;  [Golang](./algorithms/rectangleArea/RectangleArea.go)|Easy|
