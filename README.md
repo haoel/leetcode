@@ -7,6 +7,34 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|211|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)| [C++](./algorithms/basicCalculator/BasicCalculator.II.cpp)|Medium|
+|210|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./algorithms/invertBinaryTree/InvertBinaryTree.cpp)|Easy|
+|209|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./algorithms/implementStackUsingQueues/ImplementStackUsingQueues.cpp)|Medium|
+|208|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)| [C++](./algorithms/basicCalculator/BasicCalculator.cpp)|Medium|
+|207|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [C++](./algorithms/rectangleArea/RectangleArea.cpp)|Easy|
+|206|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)| [C++](./algorithms/countCompleteTreeNodes/CountCompleteTreeNodes.cpp)|Medium|
+|205|[Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./algorithms/maximalSquare/MaximalSquare.cpp)|Medium|
+|204|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.III.cpp)|Medium|
+|203|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.II.cpp)|Easy|
+|202|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| [C++](./algorithms/theSkylineProblem/TheSkylineProblem.cpp)|Hard|
+|201|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)| [C++](./algorithms/containsDuplicate/ContainsDuplicate.cpp)|Easy|
+|200|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [C++](./algorithms/combinationSum/combinationSum.III.cpp)|Medium|
+|199|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)| [C++](./algorithms/kthLargestElementInAnArray/KthLargestElementInAnArray.cpp)|Medium|
+|198|[Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/)| [C++](./algorithms/shortestPalindrome/ShortestPalindrome.cpp)|Hard|
+|197|[House Robber II](https://leetcode.com/problems/house-robber-ii/)| [C++](./algorithms/houseRobber/houseRobber.II.cpp)|Medium|
+|196|[Word Search II](https://leetcode.com/problems/word-search-ii/)| [C++](./algorithms/wordSearch/wordSearch.II.cpp)|Hard|
+|195|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)| [C++](./algorithms/addAndSearchWord/AddAndSearchWord.cpp)|Medium|
+|194|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| [C++](./algorithms/courseSchedule/CourseSchedule.II.cpp)|Medium|
+|193|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)| [C++](./algorithms/minimumSizeSubarraySum/MinimumSizeSubarraySum.cpp)|Medium|
+|192|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [C++](./algorithms/implementTriePrefixTree/ImplementTriePrefixTree.cpp)|Medium|
+|191|[Course Schedule](https://leetcode.com/problems/course-schedule/)| [C++](./algorithms/courseSchedule/CourseSchedule.cpp)|Medium|
+|190|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./algorithms/reverseLinkedList/reverseLinkedList.cpp)|Easy|
+|189|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)| [C++](./algorithms/isomorphicStrings/IsomorphicStrings.cpp)|Easy|
+|188|[Count Primes](https://leetcode.com/problems/count-primes/)| [C++](./algorithms/countPrimes/CountPrimes.cpp)|Easy|
+|187|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)| [C++](./algorithms/removeLinkedListElements/RemoveLinkedListElements.cpp)|Easy|
+|186|[Happy Number](https://leetcode.com/problems/happy-number/)| [C++](./algorithms/happyNumber/HappyNumber.cpp)|Easy|
+|185|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)| [C++](./algorithms/bitwiseANDOfNumbersRange/BitwiseAndOfNumbersRange.cpp)|Medium|
+|184|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./algorithms/numberOfIslands/NumberOfIslands.cpp)|Medium|
 |183|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)| [C++](./algorithms/binaryTreeRightSideView/binaryTreeRightSideView.cpp)|Medium|
 |182|[House Robber](https://leetcode.com/problems/house-robber/)| [C++](./algorithms/houseRobber/houseRobber.cpp)|Easy|
 |181|[Number of 1 Bits](https://oj.leetcode.com/problems/number-of-1-bits/)| [C++](./algorithms/numberOf1Bits/numberOf1Bits.cpp)|Easy|
