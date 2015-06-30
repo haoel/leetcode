@@ -32,7 +32,7 @@ LeetCode
 |189|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)| [C++](./algorithms/isomorphicStrings/IsomorphicStrings.cpp) ; [Golang](./algorithms/isomorphicStrings/IsomorphicStrings.go)|Easy|
 |188|[Count Primes](https://leetcode.com/problems/count-primes/)| [C++](./algorithms/countPrimes/CountPrimes.cpp) ; [Golang](./algorithms/countPrimes/CountPrimes.go)|Easy|
 |187|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)| [C++](./algorithms/removeLinkedListElements/RemoveLinkedListElements.cpp) ; [Golang](./algorithms/removeLinkedListElements/RemoveLinkedListElements.go)|Easy|
-|186|[Happy Number](https://leetcode.com/problems/happy-number/)| [C++](./algorithms/happyNumber/HappyNumber.cpp)|Easy|
+|186|[Happy Number](https://leetcode.com/problems/happy-number/)| [C++](./algorithms/happyNumber/HappyNumber.cpp)  ;  [Golang](./algorithms/happyNumber/HappyNumber.go)|Easy|
 |185|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)| [C++](./algorithms/bitwiseANDOfNumbersRange/BitwiseAndOfNumbersRange.cpp)|Medium|
 |184|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./algorithms/numberOfIslands/NumberOfIslands.cpp)|Medium|
 |183|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)| [C++](./algorithms/binaryTreeRightSideView/binaryTreeRightSideView.cpp)|Medium|
