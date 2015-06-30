@@ -30,7 +30,7 @@ LeetCode
 |191|[Course Schedule](https://leetcode.com/problems/course-schedule/)| [C++](./algorithms/courseSchedule/CourseSchedule.cpp)|Medium|
 |190|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./algorithms/reverseLinkedList/reverseLinkedList.cpp) ; [Golang](./algorithms/reverseLinkedList/reverseLinkedList.go)|Easy|
 |189|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)| [C++](./algorithms/isomorphicStrings/IsomorphicStrings.cpp) ; [Golang](./algorithms/isomorphicStrings/IsomorphicStrings.go)|Easy|
-|188|[Count Primes](https://leetcode.com/problems/count-primes/)| [C++](./algorithms/countPrimes/CountPrimes.cpp)|Easy|
+|188|[Count Primes](https://leetcode.com/problems/count-primes/)| [C++](./algorithms/countPrimes/CountPrimes.cpp) ; [Golang](./algorithms/countPrimes/CountPrimes.go)|Easy|
 |187|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)| [C++](./algorithms/removeLinkedListElements/RemoveLinkedListElements.cpp)|Easy|
 |186|[Happy Number](https://leetcode.com/problems/happy-number/)| [C++](./algorithms/happyNumber/HappyNumber.cpp)|Easy|
 |185|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)| [C++](./algorithms/bitwiseANDOfNumbersRange/BitwiseAndOfNumbersRange.cpp)|Medium|
