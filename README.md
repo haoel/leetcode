@@ -48,7 +48,7 @@ LeetCode
 |173|[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/) | [C++](./algorithms/binarySearchTreeIterator/binarySearchTreeIterator.cpp)|Medium|
 |172|[Factorial Trailing Zeroes](https://oj.leetcode.com/problems/factorial-trailing-zeroes/) | [C++](./algorithms/factorialTrailingZeroes/factorialTrailingZeroes.cpp) ; [Golang](./algorithms/factorialTrailingZeroes/factorialTrailingZeroes.go)|Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/) | [C++](./algorithms/excelSheetColumnNumber/excelSheetColumnNumber.cpp)  ;  [Golang](./algorithms/excelSheetColumnNumber/excelSheetColumnNumber.go)|Easy|
-|170|[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts; | [C++](./algorithms/twoSum/twoSum.III.cpp)|Easy|
+|170|[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts; | [C++](./algorithms/twoSum/twoSum.III.cpp) ;  [Golang](./algorithms/twoSum/twoSum.III.go)|Easy|
 |169|[Majority Element](https://oj.leetcode.com/problems/majority-element/) | [C++](./algorithms/majorityElement/majorityElement.cpp)|Easy|
 |168|[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/) | [C++](./algorithms/excelSheetColumnTitle/excelSheetColumnTitle.cpp)|Easy|
 |167|[Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) &hearts; | [C++](./algorithms/twoSum/twoSum.II.cpp)|Medium|
