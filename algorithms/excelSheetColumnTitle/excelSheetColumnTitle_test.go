@@ -5,5 +5,7 @@ import (
 )
 
 func TestConvertToTitle(t *testing.T) {
-	t.Log(convertToTitle(28))
+	if convertToTitle(28) != "AB" {
+		t.Error("fail")
+	}
 }
