@@ -50,7 +50,7 @@ LeetCode
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/) | [C++](./algorithms/excelSheetColumnNumber/excelSheetColumnNumber.cpp)  ;  [Golang](./algorithms/excelSheetColumnNumber/excelSheetColumnNumber.go)|Easy|
 |170|[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts; | [C++](./algorithms/twoSum/twoSum.III.cpp) ;  [Golang](./algorithms/twoSum/twoSum.go)|Easy|
 |169|[Majority Element](https://oj.leetcode.com/problems/majority-element/) | [C++](./algorithms/majorityElement/majorityElement.cpp)  ;  [Golang](./algorithms/majorityElement/majorityElement.go)|Easy|
-|168|[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/) | [C++](./algorithms/excelSheetColumnTitle/excelSheetColumnTitle.cpp)|Easy|
+|168|[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/) | [C++](./algorithms/excelSheetColumnTitle/excelSheetColumnTitle.cpp)  ;  [Golang](./algorithms/excelSheetColumnTitle/excelSheetColumnTitle.go) |Easy|
 |167|[Two Sum II - Input array is sorted](https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/) &hearts; | [C++](./algorithms/twoSum/twoSum.II.cpp)|Medium|
 |166|[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/) | [C++](./algorithms/fractionToRecurringDecimal/fractionToRecurringDecimal.cpp)|Medium|
 |165|[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/) | [C++](./algorithms/compareVersionNumbers/compareVersionNumbers.cpp)|Easy|
