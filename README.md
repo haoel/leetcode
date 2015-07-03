@@ -7,6 +7,9 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|214|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| [C++](./algorithms/kthSmallestElementInaBST/KthSmallestElementInABst.cpp)|Medium|
+|213|[Majority Element II](https://oj.leetcode.com/problems/majority-element-ii/) | [C++](./algorithms/majorityElement/majorityElement.II.cpp)|Medium|
+|212|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [C++](./algorithms/summaryRanges/SummaryRanges.cpp)|Easy|
 |211|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)| [C++](./algorithms/basicCalculator/BasicCalculator.II.cpp)|Medium|
 |210|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./algorithms/invertBinaryTree/InvertBinaryTree.cpp)|Easy|
 |209|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./algorithms/implementStackUsingQueues/ImplementStackUsingQueues.cpp)|Medium|
