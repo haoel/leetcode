@@ -100,7 +100,7 @@ LeetCode
 |121|[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cpp)|Medium|
 |120|[Triangle](https://oj.leetcode.com/problems/triangle/)| [C++](./algorithms/triangle/triangle.cpp)|Medium|
 |119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [C++](./algorithms/pascalTriangle/pascalTriangle.II.cpp) ; [Golang](./algorithms/pascalTriangle/pascalTriangle.II.go)|Easy|
-|118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [C++](./algorithms/pascalTriangle/pascalTriangle.cpp)|Easy|
+|118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [C++](./algorithms/pascalTriangle/pascalTriangle.cpp) ; [Golang](./algorithms/pascalTriangle/pascalTriangle.II.go)|Easy|
 |117|[Populating Next Right Pointers in Each Node II](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)| [C++](./algorithms/populatingNextRightPointersInEachNode/populatingNextRightPointersInEachNode.II.cpp)|Hard|
 |116|[Populating Next Right Pointers in Each Node](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)| [C++](./algorithms/populatingNextRightPointersInEachNode/populatingNextRightPointersInEachNode.cpp)|Medium|
 |115|[Distinct Subsequences](https://oj.leetcode.com/problems/distinct-subsequences/)| [C++](./algorithms/distinctSubsequences/distinctSubsequences.cpp)|Hard|
