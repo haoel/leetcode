@@ -86,6 +86,12 @@ else
     fi
 fi
 
+# the source file is existed but it is empty, add a line, 
+# otherwise it could casue the comments inserts failed.
+if [ ! -s $source_file ]; then
+    echo "" > $source_file 
+fi
+
 #adding the Copyright Comments
 if  ! grep -Fq  "${COMMENT_TAG} Author :" $source_file ; then
     sed -i '1i\'"${COMMENT_TAG} Source : ${leetcode_url}" $source_file
@@ -100,14 +106,17 @@ if [ -z "${xidel}" ]; then
     install_xidel
 fi
 
+# using xidel grab the problem description
+# 1) the `fold` command is used to wrap the text at centain column
+# 2) the last two `sed` commands are used to add the comments tags
 case $FILE_EXT in
     .cpp )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
-                    grep -v '                ' |sed '/^$/N;/^\n$/D'  | \
+                    grep -v '                ' |sed '/^$/N;/^\n$/D'  | fold -w 85 -s |\
                     sed 's/^/ * /' | sed "1i/*$(printf '%.0s*' {0..80}) \n * " | \
                     sed "\$a \ $(printf '%.0s*' {0..80})*/\n" > /tmp/tmp.txt
                 ;;
     .sh )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
-                    grep -v '                ' |sed '/^$/N;/^\n$/D'  | \
+                    grep -v '                ' |sed '/^$/N;/^\n$/D'  | fold -w 85 -s| \
                     sed 's/^/# /' | sed "1i#$(printf '%.0s#' {0..80}) \n# " | \
                     sed "\$a \#$(printf '%.0s#' {0..80})\n" > /tmp/tmp.txt
                 ;;
@@ -116,11 +125,9 @@ case $FILE_EXT in
 
 esac
 
+#insert the problem description into the source file, and remove it
 sed -i '4 r /tmp/tmp.txt' ${source_file}
-
 rm -f /tmp/tmp.txt
 
 echo "${source_file} updated !"
-
-
 
