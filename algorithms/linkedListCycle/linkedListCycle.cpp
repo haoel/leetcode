@@ -21,24 +21,12 @@
  */
 
 bool hasCycle(ListNode *head) {
-    ListNode* p1;
-    ListNode* p2;
-
-    if (head==NULL) return false;
-    p1=head;
-    p2=head;
-
-    while (p1!=NULL && p2!=NULL){
-
-        p1=p1->next;
-
-        if (p2->next == NULL) return false;
-
-        p2=p2->next->next;
-
-        if (p1==p2) return true;
-    }
-
-    return false;
-
-}  
+    if (head==NULL || head->next==NULL) return false;
+    ListNode* fast=head;
+    ListNode* slow=head;
+    do{
+        slow = slow->next;
+        fast = fast->next->next;
+    }while(fast != NULL && fast->next != NULL && fast != slow);
+    return fast == slow? true : false;
+} 
