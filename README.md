@@ -7,6 +7,8 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|216|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./algorithms/mplementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
+|215|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./algorithms/powerOfTwo/PowerOfTwo.cpp)|Easy|
 |214|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| [C++](./algorithms/kthSmallestElementInaBST/KthSmallestElementInABst.cpp)|Medium|
 |213|[Majority Element II](https://oj.leetcode.com/problems/majority-element-ii/) | [C++](./algorithms/majorityElement/majorityElement.II.cpp)|Medium|
 |212|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [C++](./algorithms/summaryRanges/SummaryRanges.cpp)|Easy|
