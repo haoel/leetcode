@@ -7,7 +7,8 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|218|[slindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./algorithms/palindromeLinkedList/PalindromeLinkedList.cpp)|Easy|
+|218|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./algorithms/lowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp)|Easy|
+|218|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./algorithms/palindromeLinkedList/PalindromeLinkedList.cpp)|Easy|
 |217|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)| [C++](./algorithms/numberOfDigitOne/NumberOfDigitOne.cpp)|Medium|
 |216|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./algorithms/implementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
 |215|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./algorithms/powerOfTwo/PowerOfTwo.cpp)|Easy|
