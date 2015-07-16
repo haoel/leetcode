@@ -7,6 +7,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|217|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)| [C++](./algorithms/numberOfDigitOne/NumberOfDigitOne.cpp)|Medium|
 |216|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./algorithms/implementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
 |215|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./algorithms/powerOfTwo/PowerOfTwo.cpp)|Easy|
 |214|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| [C++](./algorithms/kthSmallestElementInaBST/KthSmallestElementInABst.cpp)|Medium|
