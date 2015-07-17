@@ -49,20 +49,17 @@ public:
     // in-order travel - non-recursive way
     int kthSmallestHelper_nonRecursive(TreeNode* root, int k){
         stack<TreeNode*> s;
-        
         while(!s.empty() || root){
-            
-            while (root) { 
+            if(root){
                 s.push(root);
-                root = root->left;
+                root = root -> left;
+            }else{
+                root = s.top();
+                s.pop();
+                k--;
+                if(k==0) return root -> val;
+                root = root -> right;
             }
-            
-            k--;
-            root = s.top()->right;
-
-            if (k==0) return s.top()->val;
-            
-            s.pop();
         }
         return -1;
     }
