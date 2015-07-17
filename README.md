@@ -5,9 +5,12 @@ LeetCode
 
 (Notes: "&hearts;" means you need buy a book from Leetcode)
 
+
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|220|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C++](./algorithms/lowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfABinaryTree.cpp)|Easy|
+|222|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)| [C++](./algorithms/productOfArrayExceptSelf/ProductOfArrayExceptSelf.cpp)|Medium|
+|221|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C++](./algorithms/deleteNodeInALinkedList/DeleteNodeInALinkedList.cpp)|Easy|
+|220|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C++](./algorithms/lowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfABinaryTree.cpp)|Medium|
 |219|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./algorithms/lowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp)|Easy|
 |218|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./algorithms/palindromeLinkedList/PalindromeLinkedList.cpp)|Easy|
 |217|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)| [C++](./algorithms/numberOfDigitOne/NumberOfDigitOne.cpp)|Medium|
