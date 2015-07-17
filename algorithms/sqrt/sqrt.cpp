@@ -39,15 +39,11 @@ int sqrt(int x) {
 
 // http://en.wikipedia.org/wiki/Newton%27s_method
 int sqrt_nt(int x) {
-    if (x == 0) return 0;
-    double last = 0;
-    double res = 1;
-    while (res != last)
-    {
-        last = res;
-        res = (res + x / res) / 2;
-    }
-    return int(res);
+    double x0 = 1;
+    do{
+        x0 = (x0 + x/x0)/2;
+    }while(abs(x0 * x0 - x) >= 1);
+    return int(x0);
 }
 
 
