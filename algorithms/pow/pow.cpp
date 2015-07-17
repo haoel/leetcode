@@ -57,6 +57,16 @@ double pow(double x, int n) {
 
 }
 
+double pow_recur(double x, long n) {
+        if(n == 0) return 1;
+        if(n == 1) return x;
+        if(n < 0) return 1 / powHelper(x, -n);
+        long half = n / 2;
+        double value = powHelper(x, half);
+        if(n % 2 == 0) return value * value;
+        else return value * value * x;
+}
+
 int main(int argc, char** argv){
     double x=2.0;
     int n = 3;
