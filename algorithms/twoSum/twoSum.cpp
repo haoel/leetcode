@@ -50,7 +50,7 @@ public:
     //     which means we found the second one.
     //      
     vector<int> twoSum(vector<int> &numbers, int target) {
-        map<int, int> m;
+        unordered_map<int, int> m;
         vector<int> result;
         for(int i=0; i<numbers.size(); i++){
             // not found the second one
