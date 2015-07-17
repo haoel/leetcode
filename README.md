@@ -5,8 +5,17 @@ LeetCode
 
 (Notes: "&hearts;" means you need buy a book from Leetcode)
 
+
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|222|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)| [C++](./algorithms/productOfArrayExceptSelf/ProductOfArrayExceptSelf.cpp)|Medium|
+|221|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C++](./algorithms/deleteNodeInALinkedList/DeleteNodeInALinkedList.cpp)|Easy|
+|220|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C++](./algorithms/lowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfABinaryTree.cpp)|Medium|
+|219|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./algorithms/lowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp)|Easy|
+|218|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./algorithms/palindromeLinkedList/PalindromeLinkedList.cpp)|Easy|
+|217|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)| [C++](./algorithms/numberOfDigitOne/NumberOfDigitOne.cpp)|Medium|
+|216|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./algorithms/implementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
+|215|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./algorithms/powerOfTwo/PowerOfTwo.cpp)|Easy|
 |214|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| [C++](./algorithms/kthSmallestElementInaBST/KthSmallestElementInABst.cpp)|Medium|
 |213|[Majority Element II](https://oj.leetcode.com/problems/majority-element-ii/) | [C++](./algorithms/majorityElement/majorityElement.II.cpp)|Medium|
 |212|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [C++](./algorithms/summaryRanges/SummaryRanges.cpp)|Easy|
