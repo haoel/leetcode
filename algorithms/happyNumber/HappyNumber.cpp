@@ -37,22 +37,14 @@ int squares(int n) {
 }
 
 bool isHappy(int n) {
-
-    if (n==1) return true;
-
-    map<int, bool> m;
-    m[n]=true;
-
-    while (n!=1) {
-        n = squares(n);
-        //cout << n << endl;
-        if (m.find(n) != m.end()){
-            return false;
-        }
-        m[n] = true;
-    }
-
-    return true;
+    if (n<=0) return false;
+    int slow = n;
+    int fast = n;
+    do{
+        slow = squares(slow);
+        fast = squares(squares(fast));
+    }while(fast != 1 && slow != fast);
+    return fast == 1;
 }
 
 
