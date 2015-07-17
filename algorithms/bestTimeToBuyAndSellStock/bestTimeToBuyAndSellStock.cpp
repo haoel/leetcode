@@ -25,28 +25,13 @@ public:
     // Notes:
     //    Some people think find the highest-price & lowest-price, this is wrong. 
     //    Because the highest-price must be after lowest-price
-    //
     int maxProfit(vector<int> &prices) {
-        
-        int max=0, begin=0, end=0, delta=0;
-        
+        if(prices.size() == 0) return 0;
+        int MAX=0, MIN=prices[0];
         for (int i=0; i<prices.size(); i++) {
-            
-            end = i;
-            
-            delta = prices[end] - prices[begin];
-            
-            if (delta <= 0){
-                begin = i;
-            }
-            
-            if ( delta > max ){
-                max = delta;
-            }
-            
+            MIN = min(MIN, prices[i]);
+            MAX = max(MAX, prices[i] - MIN);
         }
-        
-        return max;
-        
+        return MAX;
     }
 };
