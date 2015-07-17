@@ -21,19 +21,16 @@ class Solution {
 public:
     int canCompleteCircuit(vector<int> &gas, vector<int> &cost) {
         int current = 0;
-        int start = gas.size(); //start from the end to beginning
         int total = 0;
-        
-        do {
-            if (total + gas[current] - cost[current] >= 0) {
-                total += (gas[current] - cost[current]);
-                current++; // can go from current to current+1
-            }else{
-                start--; //not enough gas, try to start the one before origin start point.
-                total += (gas[start] - cost[start]);
+        int start = -1; // initially, start + 1 is 0
+        for(int i = 0; i < gas.size(); i++){
+            current += gas[i] - cost[i];
+            total += gas[i] - cost[i];
+            if(current < 0){
+                current = 0;
+                start = i;
             }
-        } while(current != start);
-        
-        return total>=0 ? start % gas.size() : -1;
+        }
+        return total>=0 ? start + 1 : -1;
     }
 };
