@@ -60,9 +60,9 @@ double pow(double x, int n) {
 double pow_recur(double x, long n) {
         if(n == 0) return 1;
         if(n == 1) return x;
-        if(n < 0) return 1 / powHelper(x, -n);
+        if(n < 0) return 1 / pow_recur(x, -n);
         long half = n / 2;
-        double value = powHelper(x, half);
+        double value = pow_recur(x, half);
         if(n % 2 == 0) return value * value;
         else return value * value * x;
 }
