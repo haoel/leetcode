@@ -5,7 +5,9 @@ Some Scripts
 
 `comments.sh` - it's used to generate author and problem description comments 
 
-> **Notes**: The  `comments.sh`  needs [xidel](http://videlibri.sourceforge.net/xidel.html) to grab & parse the html  contents with filtering out the HTML tags. The script  would check the `xidel`  whether installed or not in your Linux box, if not, it will download the [Universal Linux Version](http://videlibri.sourceforge.net/xidel.html#downloads) . 
+> **Notes**: 
+> - The  `comments.sh`  needs [xidel](http://videlibri.sourceforge.net/xidel.html) to grab & parse the html  contents with filtering out the HTML tags. The script  would check the `xidel`  whether installed or not in your Linux box, if not, it will download the [Universal Linux Version](http://videlibri.sourceforge.net/xidel.html#downloads) . 
+> - The `comments.sh` currently can automatically detect the problem's type, if the problem is `algorithm` type, it's going to create `.cpp` file, if the problem is `shell` type, the `.sh` file will be created.
 
 1) Create a file named largestNumber.cpp, and add Copyright & Problem description
 ```
