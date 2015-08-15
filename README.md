@@ -8,6 +8,9 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|226|[Valid Anagrams](https://oj.leetcode.com/problems/valid-anagrams/)| [C++](./algorithms/anagrams/ValidAnagrams.cpp)|Easy|
+|225|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[C++](./algorithms/differentWaysToAddParentheses/DifferentWaysToAddParentheses.cpp)|Medium|
+|224|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[C++](./algorithms/search2DMatrix/search2DMatrix.II.cpp)|Medium|
 |223|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./algorithms/slidingWindowMaximum/SlidingWindowMaximum.cpp)|Hard|
 |222|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)| [C++](./algorithms/productOfArrayExceptSelf/ProductOfArrayExceptSelf.cpp)|Medium|
 |221|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C++](./algorithms/deleteNodeInALinkedList/DeleteNodeInALinkedList.cpp)|Easy|
@@ -183,7 +186,7 @@ LeetCode
 |51|[N-Queens II](https://oj.leetcode.com/problems/n-queens-ii/)| [C++](./algorithms/nQueens/nQueuens.II.cpp)|Hard|
 |50|[N-Queens](https://oj.leetcode.com/problems/n-queens/)| [C++](./algorithms/nQueens/nQueuens.cpp)|Hard|
 |49|["Pow(x, n)"](https://oj.leetcode.com/problems/powx-n/)| [C++](./algorithms/pow/pow.cpp)|Medium|
-|48|[Anagrams](https://oj.leetcode.com/problems/anagrams/)| [C++](./algorithms/anagrams/anagrams.cpp)|Medium|
+|48|[Group Anagrams](https://oj.leetcode.com/problems/anagrams/)| [C++](./algorithms/anagrams/GroupAnagrams.cpp)|Medium|
 |47|[Rotate Image](https://oj.leetcode.com/problems/rotate-image/)| [C++](./algorithms/rotateImage/rotateImage.cpp)|Medium|
 |46|[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)| [C++](./algorithms/permutations/permutations.II.cpp)|Hard|
 |45|[Permutations](https://oj.leetcode.com/problems/permutations/)| [C++](./algorithms/permutations/permutations.cpp)|Medium|
