@@ -35,9 +35,10 @@ void combinationSumHelper(vector<int> &candidates, int start, int target, vector
     }
     if (target==0){
         result.push_back(solution);
+        return;
     }
     for(int i=start; i<candidates.size(); i++){
-        //remote duplicates
+        //skip duplicates
         if (i>start && candidates[i] == candidates[i-1]) {
             continue;
         }
