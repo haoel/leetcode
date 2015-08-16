@@ -29,6 +29,7 @@
 #include <vector>
 using namespace std;
 
+//As same as DP solution with "Unique Path I", just need to consider the obstacles.
 int uniquePathsWithObstacles(vector<vector<int> > &obstacleGrid) {
     vector< vector<int> > v = obstacleGrid;
     unsigned int max=0;

@@ -3,20 +3,52 @@
 // Date   : 2014-07-20
 
 /********************************************************************************** 
-* 
-* Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, 
-* find the area of largest rectangle in the histogram.
-* 
-* Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
-* 
-* The largest rectangle is shown in the shaded area, which has area = 10 unit.
-* 
-* For example,
-* Given height = [2,1,5,6,2,3],
-* return 10.
-* 
-*               
-**********************************************************************************/
+ * 
+ * Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, 
+ * find the area of largest rectangle in the histogram.
+ * 
+ *                    6          
+ *                  +---+        
+ *               5  |   |        
+ *              +---+   |        
+ *              |   |   |        
+ *              |   |   |        
+ *              |   |   |     3  
+ *              |   |   |   +---+
+ *        2     |   |   | 2 |   |
+ *      +---+   |   |   +---+   |
+ *      |   | 1 |   |   |   |   |
+ *      |   +---+   |   |   |   |
+ *      |   |   |   |   |   |   |
+ *      +---+---+---+---+---+---+
+ *      
+ * Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
+ *      
+ *      
+ *                    6          
+ *                  +---+        
+ *               5  |   |        
+ *              +-------|        
+ *              |-------|        
+ *              |-------|        
+ *              |-------|     3  
+ *              |-------|   +---+
+ *        2     |-------| 2 |   |
+ *      +---+   |-------|---+   |
+ *      |   | 1 |-------|   |   |
+ *      |   +---|-------|   |   |
+ *      |   |   |-------|   |   |
+ *      +---+---+---+---+---+---+
+ *      
+ * 
+ * The largest rectangle is shown in the shaded area, which has area = 10 unit.
+ * 
+ * For example,
+ * Given height = [2,1,5,6,2,3],
+ * return 10.
+ * 
+ *               
+ **********************************************************************************/
 
 #include <iostream>
 #include <vector>
@@ -132,7 +164,7 @@ void test(int a[], int n)
 
 int main()
 {
-    #define TEST(a) test(a, sizeof(a)/sizeof(int))
+#define TEST(a) test(a, sizeof(a)/sizeof(int))
 
     int a0[] = {2,1,3,1};
     TEST(a0);
