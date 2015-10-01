@@ -8,7 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|258|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./algorithms/anagrams/ValidAnagram.cpp)|Easy|
+|258|[Add Digits](https://leetcode.com/problems/add-digits/)| [C++](./algorithms/anagrams/ValidAnagram.cpp)|Easy|
 |226|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./algorithms/anagrams/ValidAnagram.cpp)|Easy|
 |225|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[C++](./algorithms/differentWaysToAddParentheses/DifferentWaysToAddParentheses.cpp)|Medium|
 |224|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[C++](./algorithms/search2DMatrix/search2DMatrix.II.cpp)|Medium|
