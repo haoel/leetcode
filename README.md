@@ -156,7 +156,7 @@ LeetCode
 |81|[Search in Rotated Sorted Array II](https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [C++](./algorithms/searchInRotatedSortedArray/searchInRotatedSortedArray.II.cpp)|Medium|
 |80|[Remove Duplicates from Sorted Array II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./algorithms/removeDuplicatesFromSortedArray/removeDuplicatesFromSortedArray.II.cpp)|Medium|
 |79|[Word Search](https://oj.leetcode.com/problems/word-search/)| [C++](./algorithms/wordSearch/wordSearch.cpp)|Medium|
-|78|[Subsets](https://oj.leetcode.com/problems/subsets/)| [C++](./algorithms/subsets/subsets.cpp)|Medium|
+|78|[Subsets](https://oj.leetcode.com/problems/subsets/)| [C++](./algorithms/subsets/subsets.cpp), [Java](./algorithms-java/src/subsets/subsets.java)|Medium|
 |77|[Combinations](https://oj.leetcode.com/problems/combinations/)| [C++](./algorithms/combinations/combinations.cpp)|Medium|
 |76|[Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/)| [C++](./algorithms/minimumWindowSubstring/minimumWindowSubstring.cpp)|Hard|
 |75|[Sort Colors](https://oj.leetcode.com/problems/sort-colors/)| [C++](./algorithms/sortColors/sortColors.cpp)|Medium|
