@@ -207,7 +207,7 @@ LeetCode
 |30|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./algorithms/nextPermutation/nextPermutation.cpp)|Medium|
 |29|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./algorithms/substringWithConcatenationOfAllWords/substringWithConcatenationOfAllWords.cpp)|Hard|
 |28|[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)| [C++](./algorithms/divideTwoInt/divideTwoInt.cpp)|Medium|
-|27|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [C++](./algorithms/strStr/strStr.cpp)|Easy|
+|27|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [C++](./algorithms/strStr/strStr.cpp), [Java](./algorithms-java/strStr/strStr.java)|Easy|
 |26|[Remove Element](https://oj.leetcode.com/problems/remove-element/)| [C++](./algorithms/removeElement/removeElement.cpp)|Easy|
 |25|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./algorithms/removeDuplicatesFromSortedArray/removeDuplicatesFromSortedArray.cpp)|Easy|
 |24|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./algorithms/reverseNodesInKGroup/reverseNodesInKGroup.cpp)|Hard|
