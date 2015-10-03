@@ -200,7 +200,7 @@ LeetCode
 |37|[Count and Say](https://oj.leetcode.com/problems/count-and-say/)| [C++](./algorithms/countAndSay/countAndSay.cpp)|Easy|
 |36|[Sudoku Solver](https://oj.leetcode.com/problems/sudoku-solver/)| [C++](./algorithms/sudokuSolver/sudokuSolver.cpp)|Hard|
 |35|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)| [C++](./algorithms/validSudoku/validSudoku.cpp)|Easy|
-|34|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./algorithms/searchInsertPosition/searchInsertPosition.cpp), [Java](./algorithms-java/searchInsertPosition/src/searchInsertPosition.java)|Medium|
+|34|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./algorithms/searchInsertPosition/searchInsertPosition.cpp), [Java](./algorithms-java/src/searchInsertPosition/searchInsertPosition.java)|Medium|
 |33|[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)| [C++](./algorithms/searchForRange/searchForRange.cpp), [Java](./algorithms-java/src/searchForRange/searchForRange.java)|Medium|
 |32|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./algorithms/searchInRotatedSortedArray/searchInRotatedSortedArray.cpp)|Hard|
 |31|[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)| [C++](./algorithms/longestValidParentheses/longestValidParentheses.cpp)|Hard|
