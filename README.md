@@ -202,7 +202,7 @@ LeetCode
 |35|[Valid Sudoku](https://oj.leetcode.com/problems/valid-sudoku/)| [C++](./algorithms/validSudoku/validSudoku.cpp)|Easy|
 |34|[Search Insert Position](https://oj.leetcode.com/problems/search-insert-position/)| [C++](./algorithms/searchInsertPosition/searchInsertPosition.cpp), [Java](./algorithms-java/src/searchInsertPosition/searchInsertPosition.java)|Medium|
 |33|[Search for a Range](https://oj.leetcode.com/problems/search-for-a-range/)| [C++](./algorithms/searchForRange/searchForRange.cpp), [Java](./algorithms-java/src/searchForRange/searchForRange.java)|Medium|
-|32|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./algorithms/searchInRotatedSortedArray/searchInRotatedSortedArray.cpp)|Hard|
+|32|[Search in Rotated Sorted Array](https://oj.leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./algorithms/searchInRotatedSortedArray/searchInRotatedSortedArray.cpp), [Java](./algorithms-java/src/searchInRotatedSortedArray/searchInRotatedSortedArray.java)|Hard|
 |31|[Longest Valid Parentheses](https://oj.leetcode.com/problems/longest-valid-parentheses/)| [C++](./algorithms/longestValidParentheses/longestValidParentheses.cpp)|Hard|
 |30|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./algorithms/nextPermutation/nextPermutation.cpp)|Medium|
 |29|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./algorithms/substringWithConcatenationOfAllWords/substringWithConcatenationOfAllWords.cpp)|Hard|
