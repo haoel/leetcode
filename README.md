@@ -8,7 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)| [Java](./algorithms-java/src/firstBadVersion/firstBadVersion.java)|Medium|
+|278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)| [Java](./algorithms-java/src/firstBadVersion/firstBadVersion.java)|Easy|
 |226|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./algorithms/anagrams/ValidAnagram.cpp)|Easy|
 |225|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[C++](./algorithms/differentWaysToAddParentheses/DifferentWaysToAddParentheses.cpp)|Medium|
 |224|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[C++](./algorithms/search2DMatrix/search2DMatrix.II.cpp)|Medium|
@@ -73,7 +73,7 @@ LeetCode
 |165|[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/) | [C++](./algorithms/compareVersionNumbers/compareVersionNumbers.cpp)|Easy|
 |164|[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/) | [C++](./algorithms/maximumGap/maximumGap.cpp)|Hard|
 |163|[Missing Ranges](https://oj.leetcode.com/problems/missing-ranges/) &hearts; | [C++](./algorithms/missingRanges/missingRanges.cpp)|Medium|
-|162|[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/) | [C++](./algorithms/findPeakElement/findPeakElement.cpp)|Medium|
+|162|[Find Peak Element](https://oj.leetcode.com/problems/find-peak-element/) | [C++](./algorithms/findPeakElement/findPeakElement.cpp), [Java](./algorithms-java/src/findPeakElement/findPeakElement.java)|Medium|
 |161|[One Edit Distance](https://oj.leetcode.com/problems/one-edit-distance/)&hearts; | [C++](./algorithms/oneEditDistance/oneEditDistance.cpp)|Medium|
 |160|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/) | [C++](./algorithms/intersectionOfTwoLinkedLists/intersectionOfTwoLinkedLists.cpp)|Easy|
 |159|[Longest Substring with At Most Two Distinct Characters](https://oj.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) &hearts; | [C++](./algorithms/longestSubstringWithAtMostTwoDistinctCharacters/longestSubstringWithAtMostTwoDistinctCharacters.cpp)|Hard|
