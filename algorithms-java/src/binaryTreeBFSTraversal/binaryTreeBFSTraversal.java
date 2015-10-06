@@ -1,4 +1,4 @@
-package binaryTreeBFSTraversall;
+package binaryTreeBFSTraversal;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * Created by leicao on 5/10/15.
  */
-public class binaryTreeBFSTraversall {
+public class binaryTreeBFSTraversal {
     public List<Integer> bfsTraversal(TreeNode root) {
         List<Integer>  results = new ArrayList<Integer>();
         if (root == null) {

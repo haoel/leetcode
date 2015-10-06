@@ -1,4 +1,4 @@
-package binaryTreeBFSTraversall;
+package binaryTreeBFSTraversal;
 
 /**
  * Created by leicao on 5/10/15.

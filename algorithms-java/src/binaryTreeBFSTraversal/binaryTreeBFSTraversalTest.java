@@ -1,4 +1,4 @@
-package binaryTreeBFSTraversall;
+package binaryTreeBFSTraversal;
 
 import org.junit.Test;
 
@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by leicao on 6/10/15.
  */
-public class binaryTreeBFSTraversallTest {
+public class binaryTreeBFSTraversalTest {
 
     /**
      *          0
@@ -60,7 +60,7 @@ public class binaryTreeBFSTraversallTest {
             }});
         }};
 
-        binaryTreeBFSTraversall b = new binaryTreeBFSTraversall();
+        binaryTreeBFSTraversal b = new binaryTreeBFSTraversal();
         for (int i = 0; i < results.size(); i++) {
             List<Integer> r = b.bfsTraversal(inputes.get(i));
             assertEquals(results.get(i), r);
