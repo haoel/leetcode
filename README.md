@@ -137,7 +137,7 @@ LeetCode
 |101|[Symmetric Tree](https://oj.leetcode.com/problems/symmetric-tree/)| [C++](./algorithms/symmetricTree/symmetricTree.cpp)|Easy|
 |100|[Same Tree](https://oj.leetcode.com/problems/same-tree/)| [C++](./algorithms/sameTree/sameTree.cpp)|Easy|
 |99|[Recover Binary Search Tree](https://oj.leetcode.com/problems/recover-binary-search-tree/)| [C++](./algorithms/recoverBinarySearchTree/recoverBinarySearchTree.cpp)|Hard|
-|98|[Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)| [C++](./algorithms/validateBinarySearchTree/validateBinarySearchTree.cpp)|Medium|
+|98|[Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)| [C++](./algorithms/validateBinarySearchTree/validateBinarySearchTree.cpp), [Java](./algorithms-java/src/validateBinarySearchTree/validateBinarySearchTree.java)|Medium|
 |97|[Interleaving String](https://oj.leetcode.com/problems/interleaving-string/)| [C++](./algorithms/interleavingString/interleavingString.cpp)|Hard|
 |96|[Unique Binary Search Trees II](https://oj.leetcode.com/problems/unique-binary-search-trees-ii/)| [C++](./algorithms/uniqueBinarySearchTrees/uniqueBinarySearchTrees.II.cpp)|Medium|
 |95|[Unique Binary Search Trees](https://oj.leetcode.com/problems/unique-binary-search-trees/)| [C++](./algorithms/uniqueBinarySearchTrees/uniqueBinarySearchTrees.cpp)|Medium|
