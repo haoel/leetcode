@@ -1,6 +1,6 @@
 // Source : https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/
-// Author : Hao Chen
-// Date   : 2014-06-21
+// Author : Lei Cao
+// Date   : 2015-10-03
 
 /**********************************************************************************
  *

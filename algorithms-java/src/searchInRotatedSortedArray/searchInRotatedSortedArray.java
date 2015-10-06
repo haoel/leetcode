@@ -1,3 +1,7 @@
+// Source : https://oj.leetcode.com/problems/search-in-rotated-sorted-array/
+// Author : Lei Cao
+// Date   : 2015-10-03
+
 /**********************************************************************************
  *
  * Suppose a sorted array is rotated at some pivot unknown to you beforehand.

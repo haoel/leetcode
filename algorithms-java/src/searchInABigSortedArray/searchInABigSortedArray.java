@@ -1,3 +1,7 @@
+// Source : http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/
+// Author : Lei Cao
+// Date   : 2015-10-05
+
 /**********************************************************************************
  *
  * Given a big sorted array, find the first index of a target number. Your algorithm should be in O(log k), where k is the first index of the target number.

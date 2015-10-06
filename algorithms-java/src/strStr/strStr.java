@@ -1,6 +1,6 @@
 // Source : https://oj.leetcode.com/problems/implement-strstr/
 // Author : Lei Cao
-// Date   : 2014-07-19
+// Date   : 2015-10-02
 
 /**********************************************************************************
  *

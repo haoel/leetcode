@@ -1,6 +1,6 @@
-// Source : https://oj.leetcode.com/problems/subsets/
+// Source : https://oj.leetcode.com/problems/subsets-ii/
 // Author : Lei Cao
-// Date   : 2014-07-03
+// Date   : 2015-10-02
 
 /**********************************************************************************
  *

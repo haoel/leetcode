@@ -1,3 +1,7 @@
+// Source : https://oj.leetcode.com/problems/find-peak-element/
+// Author : Lei Cao
+// Date   : 2014-10-05
+
 /**********************************************************************************
  *
  * A peak element is an element that is greater than its neighbors.

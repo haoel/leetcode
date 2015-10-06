@@ -1,3 +1,7 @@
+// Source : https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+// Author : Lei Cao
+// Date   : 2014-10-05
+
 /**********************************************************************************
  *
  * Suppose a sorted array is rotated at some pivot unknown to you beforehand.

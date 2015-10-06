@@ -1,3 +1,7 @@
+// Source : https://oj.leetcode.com/problems/search-a-2d-matrix/
+// Author : Lei Cao
+// Date   : 2015-10-03
+
 /**********************************************************************************
  *
  * Write an efficient algorithm that searches for a value in an m x n matrix.
