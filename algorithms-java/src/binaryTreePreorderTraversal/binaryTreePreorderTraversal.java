@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/binary-tree-preorder-traversal/
+// Inspired by : http://www.jiuzhang.com/solutions/binary-tree-preorder-traversal/
 // Author : Lei Cao
 // Date   : 2015-10-05
 

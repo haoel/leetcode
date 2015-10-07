@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/find-peak-element/
+// Inspired by : http://www.jiuzhang.com/solutions/find-peak-element/
 // Author : Lei Cao
 // Date   : 2014-10-05
 

@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/search-in-rotated-sorted-array/
+// Inspired by : http://www.jiuzhang.com/solutions/search-in-rotated-sorted-array/
 // Author : Lei Cao
 // Date   : 2015-10-03
 

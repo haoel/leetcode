@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/search-insert-position/
+// Inspired by : http://www.jiuzhang.com/solutions/search-insert-position/
 // Author : Lei Cao
 // Date   : 2015-10-03
 

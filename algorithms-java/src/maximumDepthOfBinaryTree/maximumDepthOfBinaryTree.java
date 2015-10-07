@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/
+// Inspired by : http://www.jiuzhang.com/solutions/maximum-depth-of-binary-tree/
 // Author : Lei Cao
 // Date   : 2015-10-03
 

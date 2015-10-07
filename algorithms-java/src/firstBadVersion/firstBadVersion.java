@@ -1,4 +1,5 @@
 // Source : https://leetcode.com/problems/first-bad-version/
+// Inspired by : http://www.jiuzhang.com/solutions/first-bad-version/
 // Author : Lei Cao
 // Date   : 2014-10-05
 

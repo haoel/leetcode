@@ -1,11 +1,7 @@
 package validateBinarySearchTree;
 
-import binaryTreePreorderTraversal.*;
 import org.junit.Test;
-
 import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.Assert.*;
 
 /**
@@ -35,7 +31,6 @@ public class validateBinarySearchTreeTest {
         n2.left = n5;
         n2.right = n6;
 
-
         TreeNode tt0 = new TreeNode(1);
         TreeNode tt1 = new TreeNode(1);
         tt0.left = tt1;
@@ -48,9 +43,6 @@ public class validateBinarySearchTreeTest {
         nn0.left = null;
         nn0.right = nn1;
 
-
-
-
         ArrayList<TreeNode> inputes = new ArrayList<TreeNode>();
         inputes.add(t0);
         inputes.add(n0);
@@ -58,12 +50,17 @@ public class validateBinarySearchTreeTest {
         inputes.add(ttt0);
         inputes.add(nn0);
 
-        boolean[] results = {true, false, false, true, true};
+        boolean[] results = {
+                true,
+                false,
+                false,
+                true,
+                true
+        };
 
         for (int i = 0; i < results.length; i++) {
             validateBinarySearchTree v = new validateBinarySearchTree();
             boolean r = v.isValidBST(inputes.get(i));
-            System.out.println(r);
             assertEquals(results[i], r);
         }
     }

@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/implement-strstr/
+// Inspired by : http://www.jiuzhang.com/solutions/implement-strstr/
 // Author : Lei Cao
 // Date   : 2015-10-02
 

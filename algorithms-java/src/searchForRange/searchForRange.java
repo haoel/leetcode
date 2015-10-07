@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/search-for-a-range/
+// Inspired by : http://www.jiuzhang.com/solutions/search-for-a-range/
 // Author : Lei Cao
 // Date   : 2015-10-03
 

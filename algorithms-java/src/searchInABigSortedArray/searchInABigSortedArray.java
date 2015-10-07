@@ -1,4 +1,5 @@
 // Source : http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/
+// Inspired by : http://www.jiuzhang.com/solutions/search-in-a-big-sorted-array/
 // Author : Lei Cao
 // Date   : 2015-10-05
 

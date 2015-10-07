@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+// Inspired by : http://www.jiuzhang.com/solutions/find-minimum-in-rotated-sorted-array/
 // Author : Lei Cao
 // Date   : 2014-10-05
 

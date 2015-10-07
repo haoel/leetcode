@@ -1,4 +1,5 @@
 // Source : https://oj.leetcode.com/problems/subsets/
+// Inspired by : http://www.jiuzhang.com/solutions/subsets/
 // Author : Lei Cao
 // Date   : 2015-10-02
 
