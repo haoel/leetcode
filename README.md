@@ -112,7 +112,7 @@ LeetCode
 |127|[Word Ladder II](https://oj.leetcode.com/problems/word-ladder-ii/)| [C++](./algorithms/wordLadder/wordLadder.II.cpp)|Hard|
 |126|[Word Ladder](https://oj.leetcode.com/problems/word-ladder/)| [C++](./algorithms/wordLadder/wordLadder.cpp)|Medium|
 |125|[Valid Palindrome](https://oj.leetcode.com/problems/valid-palindrome/)| [C++](./algorithms/validPalindrome/validPalindrome.cpp)|Easy|
-|124|[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)| [C++](./algorithms/binaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cpp)|Hard|
+|124|[Binary Tree Maximum Path Sum](https://oj.leetcode.com/problems/binary-tree-maximum-path-sum/)| [C++](./algorithms/binaryTreeMaximumPathSum/binaryTreeMaximumPathSum.cpp), [Java](./algorithms-java/src/binaryTreeMaximumPathSum/binaryTreeMaximumPathSum.java)|Hard|
 |123|[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.III.cpp)|Hard|
 |122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.II.cpp)|Medium|
 |121|[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./algorithms/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cpp)|Medium|
