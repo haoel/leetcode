@@ -175,7 +175,7 @@ LeetCode
 |64|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)| [C++](./algorithms/mergeTwoSortedList/mergeTwoSortedList.cpp)|Easy|
 |63|[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)| [C++](./algorithms/minimumPathSum/minimumPathSum.cpp)|Medium|
 |62|[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)| [C++](./algorithms/uniquePaths/uniquePaths.II.cpp)|Medium|
-|61|[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)| [C++](./algorithms/uniquePaths/uniquePaths.cpp)|Medium|
+|61|[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)| [C++](./algorithms/uniquePaths/uniquePaths.cpp), [Java](./algorithms-java/src/dynamicProgramming/uniquePaths/uniquePaths.java)|Medium|
 |60|[Rotate List](https://oj.leetcode.com/problems/rotate-list/)| [C++](./algorithms/rotateList/rotateList.cpp)|Medium|
 |59|[Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)| [C++](./algorithms/permutationSequence/permutationSequence.cpp)|Medium|
 |58|[Spiral Matrix II](https://oj.leetcode.com/problems/spiral-matrix-ii/)| [C++](./algorithms/spiralMatrix/spiralMatrix.II.cpp)|Medium|
