@@ -174,7 +174,7 @@ LeetCode
 |65|[Add Binary](https://oj.leetcode.com/problems/add-binary/)| [C++](./algorithms/addBinary/addBinary.cpp)|Easy|
 |64|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)| [C++](./algorithms/mergeTwoSortedList/mergeTwoSortedList.cpp)|Easy|
 |63|[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)| [C++](./algorithms/minimumPathSum/minimumPathSum.cpp)|Medium|
-|62|[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)| [C++](./algorithms/uniquePaths/uniquePaths.II.cpp)|Medium|
+|62|[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)| [C++](./algorithms/uniquePaths/uniquePaths.II.cpp), [Java](./algorithms-java/src/dynamicProgramming/uniquePaths/uniquePathsII.java)|Medium|
 |61|[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)| [C++](./algorithms/uniquePaths/uniquePaths.cpp), [Java](./algorithms-java/src/dynamicProgramming/uniquePaths/uniquePaths.java)|Medium|
 |60|[Rotate List](https://oj.leetcode.com/problems/rotate-list/)| [C++](./algorithms/rotateList/rotateList.cpp)|Medium|
 |59|[Permutation Sequence](https://oj.leetcode.com/problems/permutation-sequence/)| [C++](./algorithms/permutationSequence/permutationSequence.cpp)|Medium|
@@ -254,4 +254,4 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1|[Search in a big sorted array](http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/)|[Java](./algorithms-java/src/searchInABigSortedArray/searchInABigSortedArray.java)|Medium|
-[2][Search Range in Binary Search Tree](http://www.lintcode.com/en/problem/search-range-in-binary-search-tree/) | [Java](./algorithms-java/src/searchRangeInBinarySearchTree/searchRangeInBinarySearchTree.java)|Medium|
+|2|[Search Range in Binary Search Tree](http://www.lintcode.com/en/problem/search-range-in-binary-search-tree/) | [Java](./algorithms-java/src/searchRangeInBinarySearchTree/searchRangeInBinarySearchTree.java)|Medium|
