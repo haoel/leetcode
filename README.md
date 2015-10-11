@@ -63,7 +63,7 @@ LeetCode
 |176|[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts; | [C++](./algorithms/reverseWordsInAString/reverseWordsInAString.II.cpp)|Medium|
 |175|[Largest Number](https://oj.leetcode.com/problems/largest-number/) | [C++](./algorithms/largestNumber/largestNumber.cpp)|Medium|
 |174|[Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/) | [C++](./algorithms/dungeonGame/dungeonGame.cpp)|Hard|
-|173|[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/) | [C++](./algorithms/binarySearchTreeIterator/binarySearchTreeIterator.cpp)|Medium|
+|173|[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/) | [C++](./algorithms/binarySearchTreeIterator/binarySearchTreeIterator.cpp), [Java](./algorithms-java/src/binarySearchTreeIterator/binarySearchTreeIterator.java)|Medium|
 |172|[Factorial Trailing Zeroes](https://oj.leetcode.com/problems/factorial-trailing-zeroes/) | [C++](./algorithms/factorialTrailingZeroes/factorialTrailingZeroes.cpp)|Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/) | [C++](./algorithms/excelSheetColumnNumber/excelSheetColumnNumber.cpp)|Easy|
 |170|[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts; | [C++](./algorithms/twoSum/twoSum.III.cpp)|Easy|
@@ -254,3 +254,4 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1|[Search in a big sorted array](http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/)|[Java](./algorithms-java/src/searchInABigSortedArray/searchInABigSortedArray.java)|Medium|
+[2][Search Range in Binary Search Tree](http://www.lintcode.com/en/problem/search-range-in-binary-search-tree/) | [Java](./algorithms-java/src/searchRangeInBinarySearchTree/searchRangeInBinarySearchTree.java)|Medium|

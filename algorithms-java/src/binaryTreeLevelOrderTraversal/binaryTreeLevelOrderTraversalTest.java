@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -64,7 +65,7 @@ public class binaryTreeLevelOrderTraversalTest {
 
         for (int i = 0; i < results.size(); i++) {
             binaryTreeLevelOrderTraversal b = new binaryTreeLevelOrderTraversal();
-            ArrayList<ArrayList<Integer>> r = b.levelOrder(inputs.get(i));
+            List<List<Integer>> r = b.levelOrder(inputs.get(i));
             System.out.println(r.size());
             for (int j = 0; j < r.size(); j++) {
                 System.out.println(Arrays.toString(r.toArray()));
