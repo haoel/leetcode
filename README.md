@@ -166,14 +166,14 @@ LeetCode
 |73|[Set Matrix Zeroes](https://oj.leetcode.com/problems/set-matrix-zeroes/)| [C++](./algorithms/setMatrixZeroes/setMatrixZeroes.cpp)|Medium|
 |72|[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)| [C++](./algorithms/editDistance/editDistance.cpp)|Hard|
 |71|[Simplify Path](https://oj.leetcode.com/problems/simplify-path/)| [C++](./algorithms/simplifyPath/simplifyPath.cpp)|Medium|
-|70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)| [C++](./algorithms/climbStairs/climbStairs.cpp)|Easy|
+|70|[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)| [C++](./algorithms/climbStairs/climbStairs.cpp), [Java](./algorithms-java/src/dynamicProgramming/climbStairs/climbStairs.java)|Easy|
 |69|[Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)| [C++](./algorithms/sqrt/sqrt.cpp)|Medium|
 |68|[Text Justification](https://oj.leetcode.com/problems/text-justification/)| [C++](./algorithms/textJustification/textJustification.cpp)|Hard|
 |67|[Plus One](https://oj.leetcode.com/problems/plus-one/)| [C++](./algorithms/plusOne/plusOne.cpp)|Easy|
 |66|[Valid Number](https://oj.leetcode.com/problems/valid-number/)| [C++](./algorithms/validNumber/validNumber.cpp)|Easy|
 |65|[Add Binary](https://oj.leetcode.com/problems/add-binary/)| [C++](./algorithms/addBinary/addBinary.cpp)|Easy|
 |64|[Merge Two Sorted Lists](https://oj.leetcode.com/problems/merge-two-sorted-lists/)| [C++](./algorithms/mergeTwoSortedList/mergeTwoSortedList.cpp)|Easy|
-|63|[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)| [C++](./algorithms/minimumPathSum/minimumPathSum.cpp)|Medium|
+|63|[Minimum Path Sum](https://oj.leetcode.com/problems/minimum-path-sum/)| [C++](./algorithms/minimumPathSum/minimumPathSum.cpp), [Java](./algorithms-java/src/dynamicProgramming/minimumPathSum/minimumPathSum.java)|Medium|
 |62|[Unique Paths II](https://oj.leetcode.com/problems/unique-paths-ii/)| [C++](./algorithms/uniquePaths/uniquePaths.II.cpp), [Java](./algorithms-java/src/dynamicProgramming/uniquePaths/uniquePathsII.java)|Medium|
 |61|[Unique Paths](https://oj.leetcode.com/problems/unique-paths/)| [C++](./algorithms/uniquePaths/uniquePaths.cpp), [Java](./algorithms-java/src/dynamicProgramming/uniquePaths/uniquePaths.java)|Medium|
 |60|[Rotate List](https://oj.leetcode.com/problems/rotate-list/)| [C++](./algorithms/rotateList/rotateList.cpp)|Medium|
