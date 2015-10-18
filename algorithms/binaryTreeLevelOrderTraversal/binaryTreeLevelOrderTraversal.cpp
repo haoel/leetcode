@@ -65,11 +65,15 @@ struct TreeNode {
 
 vector<vector<int> > levelOrder1(TreeNode *root);
 vector<vector<int> > levelOrder2(TreeNode *root);
+vector<vector<int> > levelOrder3(TreeNode *root);
 
 
 vector<vector<int> > levelOrder(TreeNode *root) {
     if (random()%2){
         return levelOrder1(root);
+    }
+    if (random()%2){
+        return levelOrder3(root);
     }
     return levelOrder2(root);
 }
@@ -145,6 +149,35 @@ vector<vector<int> > levelOrder2(TreeNode *root) {
             vv.push_back(vv_right[i]);
         }
     }
+
+    return vv;
+}
+
+vector<vector<int> > levelOrder3(TreeNode *root) {
+    vector< vector<int> > vv;
+    if(root == NULL) return vv;
+
+    int level = 0; // current level.
+    TreeNode *last = root; // last node of currrent level.
+    queue<TreeNode*> q;
+
+    q.push(root);
+    vv.push_back(vector<int>());
+    while(!q.empty()) {
+        TreeNode *p = q.front();
+        q.pop();
+
+        vv[level].push_back(p->val);
+        if(p->left ) q.push(p->left);
+        if(p->right) q.push(p->right);
+
+        if(p == last) {
+            level++;
+            last = q.back();
+            vv.push_back(vector<int>()); // new buffer for next row.
+        }
+    }
+    vv.pop_back();
 
     return vv;
 }
