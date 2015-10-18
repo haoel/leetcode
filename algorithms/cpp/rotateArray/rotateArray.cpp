@@ -88,7 +88,7 @@ void rotate(int nums[], int n, int k) {
         return rotate1(nums, n, k);
     }
     cout << "[2] ";
-    return rotate1(nums, n, k);
+    return rotate2(nums, n, k);
 }
 
 void printArray(int nums[], int n) {
