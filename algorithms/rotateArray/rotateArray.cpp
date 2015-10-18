@@ -2,21 +2,21 @@
 // Author : Hao Chen
 // Date   : 2015-03-30
 
-/********************************************************************************** 
-* 
+/**********************************************************************************
+*
 * Rotate an array of n elements to the right by k steps.
-* For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4]. 
-* 
+* For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
+*
 * Note:
 * Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
-* 
+*
 * Hint:
 * Could you do it in-place with O(1) extra space?
-* 
+*
 * Related problem: Reverse Words in a String II
-* 
+*
 * Credits:Special thanks to @Freezen for adding this problem and creating all test cases.
-*               
+*
 **********************************************************************************/
 
 #include <stdlib.h>
@@ -42,33 +42,33 @@ void reverseArray(int nums[],int start, int end){
 
 void rotate1(int nums[], int n, int k) {
     if (k<=0) return;
-    k %= n; 
+    k %= n;
     reverseArray(nums, n-k, n-1);
     reverseArray(nums, 0, n-k-1);
-    reverseArray(nums, 0, n-1);    
+    reverseArray(nums, 0, n-1);
 }
 
 /*
  * How to change [0,1,2,3,4,5,6] to [4,5,6,0,1,2,3] by k = 3?
  *
- * We can change by following rules: 
+ * We can change by following rules:
  *
  *     [0]->[3], [3]->[6], [6]->[2],  [2]->[5], [5]->[1], [1]->[4]
- *    
+ *
  *
  */
 void rotate2(int nums[], int n, int k) {
     if (k<=0) return;
     k %= n;
     int currIdx=0, newIdx=k;
-    int tmp1 = nums[currIdx], tmp2; 
+    int tmp1 = nums[currIdx], tmp2;
     int origin = 0;
 
     for(int i=0; i<n; i++){
 
         tmp2 = nums[newIdx];
         nums[newIdx] = tmp1;
-        tmp1 = tmp2; 
+        tmp1 = tmp2;
 
         currIdx = newIdx;
 
@@ -79,7 +79,7 @@ void rotate2(int nums[], int n, int k) {
         }
         newIdx = (currIdx + k) % n;
 
-    } 
+    }
 }
 
 void rotate(int nums[], int n, int k) {
@@ -88,7 +88,7 @@ void rotate(int nums[], int n, int k) {
         return rotate1(nums, n, k);
     }
     cout << "[2] ";
-    return rotate1(nums, n, k);
+    return rotate2(nums, n, k);
 }
 
 void printArray(int nums[], int n) {
@@ -107,7 +107,7 @@ void initArray(int nums[], int n) {
 
 
 int main(int argc, char**argv) {
-    
+
     srand(time(0));
 
     int nums[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
