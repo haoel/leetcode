@@ -64,6 +64,13 @@ struct TreeNode {
 vector<TreeNode*> TreeToArray_level_order(TreeNode* root);
 
 vector<vector<int> > zigzagLevelOrder(TreeNode *root) {
+    if (random()%2){
+        return zigzagLevelOrder1(root);
+    }
+    return zigzagLevelOrder2(root);
+}
+
+vector<vector<int> > zigzagLevelOrder1(TreeNode *root) {
     vector<vector<int> > result;
     vector<TreeNode*> tree = TreeToArray_level_order(root);
 
@@ -118,6 +125,35 @@ vector<TreeNode*> TreeToArray_level_order(TreeNode* root){
     }
     //cout << endl;
     return result;
+}
+
+vector<vector<int> > zigzagLevelOrder2(TreeNode *root) {
+    vector<vector<int> > vv;
+    if(root == NULL) return vv;
+
+    int level = 0;
+    TreeNode *last = root;
+    queue<TreeNode*> q;
+
+    q.push(root);
+    vv.push_back(vector<int>());
+    while(!q.empty()) {
+        TreeNode *p = q.front();
+        q.pop();
+
+        vv[level].insert(level%2 ? vv[level].begin() : vv[level].end(), p->val);
+        if(p->left) q.push(p->left);
+        if(p->right) q.push(p->right);
+
+        if(p == last) {
+            level++;
+            last = q.back();
+            vv.push_back(vector<int>());
+        }
+    }
+    vv.pop_back();
+
+    return vv;
 }
 
 void printTree_level_order(TreeNode *root)
