@@ -9,7 +9,7 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) &hearts; | [Java](./algorithms/java/src/inorderSuccessorInBST/inorderSuccessorInBST.java)|Medium|
-|278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)| [Java](./algorithms/java/src/firstBadVersion/firstBadVersion.java)|Easy|
+|278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)| [C++](./algorithms/cpp/firstBadVersion/FirstBadVersion.cpp), [Java](./algorithms/java/src/firstBadVersion/firstBadVersion.java)|Easy|
 |258|[Add Digits](https://leetcode.com/problems/add-digits/)| [C++](./algorithms/cpp/addDigits/addDigits.cpp)|Easy|
 |226|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./algorithms/cpp/anagrams/ValidAnagram.cpp)|Easy|
 |225|[Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)|[C++](./algorithms/cpp/differentWaysToAddParentheses/DifferentWaysToAddParentheses.cpp)|Medium|
