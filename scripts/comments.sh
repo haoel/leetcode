@@ -178,7 +178,7 @@ case $FILE_EXT in
 esac
 
 #insert the problem description into the source file, and remove it
-sed.bak -i "" '4 r /tmp/tmp.txt' ${source_file}
+sed -i.bak '4 r /tmp/tmp.txt' ${source_file}
 rm -f ${source_file}.bak
 rm -f /tmp/tmp.txt
 
