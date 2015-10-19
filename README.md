@@ -117,7 +117,7 @@ LeetCode
 |123|[Best Time to Buy and Sell Stock III](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [C++](./algorithms/cpp/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.III.cpp)|Hard|
 |122|[Best Time to Buy and Sell Stock II](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [C++](./algorithms/cpp/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.II.cpp)|Medium|
 |121|[Best Time to Buy and Sell Stock](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./algorithms/cpp/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.cpp)|Medium|
-|120|[Triangle](https://oj.leetcode.com/problems/triangle/)| [C++](./algorithms/cpp/triangle/triangle.cpp), [C++](./algorithms/java/src/dynamicProgramming/triangle/triangle.java)|Medium|
+|120|[Triangle](https://oj.leetcode.com/problems/triangle/)| [C++](./algorithms/cpp/triangle/triangle.cpp), [Java](./algorithms/java/src/dynamicProgramming/triangle/triangle.java)|Medium|
 |119|[Pascal's Triangle II](https://oj.leetcode.com/problems/pascals-triangle-ii/)| [C++](./algorithms/cpp/pascalTriangle/pascalTriangle.II.cpp)|Easy|
 |118|[Pascal's Triangle](https://oj.leetcode.com/problems/pascals-triangle/)| [C++](./algorithms/cpp/pascalTriangle/pascalTriangle.cpp)|Easy|
 |117|[Populating Next Right Pointers in Each Node II](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)| [C++](./algorithms/cpp/populatingNextRightPointersInEachNode/populatingNextRightPointersInEachNode.II.cpp)|Hard|
