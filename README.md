@@ -9,6 +9,7 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |292|[Nim Game](https://leetcode.com/problems/nim-game/)  | [C++](./algorithms/cpp/nimGame/nimGame.cpp)|Easy|
+|287|[Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)  | [C++](./algorithms/cpp/findTheDuplicateNumber/findTheDuplicateNumber.cpp)|Hard|
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) &hearts; | [Java](./algorithms/java/src/inorderSuccessorInBST/inorderSuccessorInBST.java)|Medium|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)| [C++](./algorithms/cpp/firstBadVersion/FirstBadVersion.cpp), [Java](./algorithms/java/src/firstBadVersion/firstBadVersion.java)|Easy|
 |258|[Add Digits](https://leetcode.com/problems/add-digits/)| [C++](./algorithms/cpp/addDigits/addDigits.cpp)|Easy|
