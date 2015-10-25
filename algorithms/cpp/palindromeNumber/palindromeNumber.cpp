@@ -21,6 +21,7 @@
 *               
 **********************************************************************************/
 
+#include <math.h>
 #include <stdio.h>
 
 class Solution {
@@ -52,6 +53,17 @@ public:
         return (x>=0 && x == reverse(x));
     }
 
+    bool isPalindrome3(int x) {
+        if(x < 0) return false;
+
+        int len = (int)log10(x) + 1;
+        for(int i = 0, j = len-1; i < j; i++, j--) {
+            int a = x / (int)pow(10, i) % 10;
+            int b = x / (int)pow(10, j) % 10;
+            if(a != b) return false;
+        }
+        return true;
+    }
 private:    
     int reverse(int x) {
         int y=0;
