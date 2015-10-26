@@ -44,6 +44,7 @@
 
 #include <stdio.h>
 #include <vector>
+#include <queue>
 using namespace std;
 
 /**
@@ -128,6 +129,71 @@ void connect2(TreeLinkNode *root) {
         root=v.back();
         v.pop_back();
     }
+}
+
+void connect3(TreeLinkNode *root) {
+    if(root == NULL) return;
+
+    queue<TreeLinkNode*> q;
+    TreeLinkNode *prev, *last;
+    prev = last = root;
+
+    q.push(root);
+    while(!q.empty()) {
+        TreeLinkNode* p = q.front();
+        q.pop();
+
+        prev->next = p;
+        if(p->left ) q.push(p->left);
+        if(p->right) q.push(p->right);
+
+        if(p == last) { // meets last of current level
+            // now, q contains all nodes of next level
+            last = q.back();
+            p->next = NULL; // cut down.
+            prev = q.front();
+        }
+        else {
+            prev = p;
+        }
+    }
+}
+
+// constant space
+// key point: we can use `next` pointer to represent
+//      the buffering queue of level order traversal.
+void connect4(TreeLinkNode *root) {
+    if(root == NULL) return;
+
+    TreeLinkNode *head, *tail;
+    TreeLinkNode *prev, *last;
+
+    head = tail = NULL;
+    prev = last = root;
+
+#define push(p) \
+    if(head == NULL) { head = tail = p; } \
+    else { tail->next = p; tail = p; }
+
+    push(root);
+    while(head != NULL) {
+        TreeLinkNode* p = head;
+        head = head->next; // pop
+
+        prev->next = p;
+        if(p->left ) push(p->left);
+        if(p->right) push(p->right);
+
+        if(p == last) {
+            last = tail;
+            p->next = NULL; // cut down.
+            prev = head;
+        }
+        else {
+            prev = p;
+        }
+    }
+#undef push
 }
 
 void printTree(TreeLinkNode *root){
