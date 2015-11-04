@@ -62,7 +62,7 @@ public:
      * We have two pointers to travel the array, assume they named `p1` and `p2`.
      * 
      *   1) `p1` points the tail of current arrays without any ZEROs.
-     *   2) `p2` points the head of the reset array which skips the ZEROs.
+     *   2) `p2` points the head of the rest array which skips the ZEROs.
      * 
      * Then we can just simply move the item from `p2` to `p1`.
      *
@@ -80,6 +80,7 @@ public:
             nums[p1++] = nums[p2]; 
         }    
         
+        //set ZERO for rest items 
         while ( p1<nums.size() ) nums[p1++] = 0;
     }
 
