@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/h_index/
-// Author : Calinescu Valentin
+// Author : Calinescu Valentin, Hao Chen
 // Date   : 2015-10-22
 
 /*************************************************************************************** 
@@ -41,6 +41,10 @@
 class Solution {
 public:
     int hIndex(vector<int>& citations) {
+        return hIndex02(citations);
+        return hIndex01(citations);
+    }
+    int hIndex01(vector<int>& citations) {
         sort(citations.begin(), citations.end());
         int h_index = 0;
         for(int i = citations.size() - 1; i >= 0; i--)
@@ -48,4 +52,17 @@ public:
                 h_index = citations.size() - i;
         return h_index;
     }
+
+    // same solution but a bit different implemtation
+    int hIndex02(vector<int>& citations) {
+        sort(citations.begin(), citations.end());
+        int n = citations.size();
+        for (int i=0; i<n; i++){
+            if (citations[i] >= n-i){
+                return n-i;
+            }
+        }
+        return 0;
+    }
+
 };
