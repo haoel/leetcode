@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/binary-tree-paths/
-// Author : Calinescu Valentin
+// Author : Calinescu Valentin, Hao Chen
 // Date   : 2015-10-23
 
 /*************************************************************************************** 
@@ -55,5 +55,41 @@ public:
                 TreePaths[i].erase(TreePaths[i].begin(), TreePaths[i].begin() + 2);
         }
         return TreePaths;
+    }
+};
+
+
+
+
+// Another more clear DFS implementation
+
+class Solution {
+public:
+    void binaryTreePathsHelper(TreeNode* root, vector<int> solution, vector<string>& result ) {
+        if (!root) return;
+        
+        solution.push_back(root->val);
+        
+        //meet the leaf node, shape a path into the result
+        if (root->left==NULL && root->right==NULL){
+            if(solution.size()>0){
+                stringstream ss;
+                for(int i=0; i<solution.size(); i++){
+                    ss << solution[i] << (i<solution.size()-1 ? "->":"");
+                }
+                result.push_back(ss.str());
+            }
+            return;
+        }
+        
+        binaryTreePathsHelper(root->left, solution, result);
+        binaryTreePathsHelper(root->right, solution, result);
+        
+    }
+    vector<string> binaryTreePaths(TreeNode* root) {
+        vector<string> result;
+        vector<int> solution;
+        binaryTreePathsHelper(root, solution, result);
+        return result;
     }
 };
