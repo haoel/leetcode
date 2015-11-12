@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/range-sum-query-immutable/
-// Author : Calinescu Valentin
+// Author : Calinescu Valentin, Hao Chen
 // Date   : 2015-11-10
 
 /*************************************************************************************** 
