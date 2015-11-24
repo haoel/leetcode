@@ -23,7 +23,7 @@ public:
         srand(time(NULL));
     }
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
-        switch (random()%2){
+        switch (random()%3){
             case 0:
                 return mergeTwoLists01(l1, l2);
             case 1:
