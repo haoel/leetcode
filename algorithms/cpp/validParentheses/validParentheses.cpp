@@ -15,36 +15,27 @@
 
 #include <iostream>
 #include <string>
+#include <stack>
 using namespace std;
 
 bool isValid(string s) {
-
-    string stack;
-
-    while(s.size()>0){
-
-        char lch = s.back();
-
-        if (lch == '[' || lch=='{' || lch=='(') {
-            if (s.size()<=0) return false;
-            char rch = stack.back();
-            if ((lch=='[' && rch ==']') ||
-                    (lch=='{' && rch =='}') ||
-                    (lch=='(' && rch ==')') ) {
-                s.pop_back();
-                stack.pop_back();
-            }else{
+    stack<char> st;
+    for(auto ch : s) {
+        if (ch=='{' || ch =='[' || ch=='(' ) {
+            st.push(ch);
+        }else if (ch=='}' || ch ==']' || ch == ')' ){
+            if (st.empty()) return false;
+            char sch = st.top();
+            if ( (sch=='{' && ch =='}') || (sch=='[' && ch==']') || (sch=='(' && ch==')' ) ){
+                st.pop();
+            }else {
                 return false;
             }
-        } else if (lch== ']' || lch=='}' || lch==')' ) {
-            s.pop_back();
-            stack.push_back(lch);
-        } else {
-            //skip the other charactors
-            s.pop_back();
+        }else{
+            return false;
         }
     }
-    return (s.size()==0 && stack.size()==0 );
+    return st.empty();
 }
 
 int main(int argc, char**argv)
