@@ -32,7 +32,7 @@ int majorityElement(vector<int> &num) {
             cnt++;
         }else{
             majority == num[i] ? cnt++ : cnt --;
-            if (cnt >= num.size()/2) return majority;
+            if (cnt > num.size()/2) return majority;
         }
     }
     return majority;
