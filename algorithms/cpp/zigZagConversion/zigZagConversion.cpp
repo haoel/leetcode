@@ -34,7 +34,7 @@ string convert(string s, int nRows) {
     vector<string> r(nRows);
     int row = 0;
     int step = 1;
-    for(int i=0; i<s.size(); i++) {
+    for(int i=0; i<s.size(); i ++) {
         if (row == nRows-1) step = -1;
         if (row == 0) step = 1;
         //cout << row <<endl;
