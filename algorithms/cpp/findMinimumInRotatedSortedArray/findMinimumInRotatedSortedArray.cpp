@@ -38,7 +38,7 @@ int findMin(vector<int> &num) {
         }
 
         // The array is rotated
-        // Spli it into two part, the minimal value must be the rotated part
+        // Split it into two part, the minimal value must be the rotated part
         
         // if the left part is rotated, warch the left part
         if (num[low] > num [mid]){
