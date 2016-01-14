@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|326|[Power of Three](https://leetcode.com/problems/power-of-three/) | [C++](./algorithms/cpp/powerOfThree/PowerOfThree.cpp)|Easy|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/) | [C++](./algorithms/cpp/coinChange/coinChange.cpp)|Medium|
 |319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [C++](./algorithms/cpp/bulbSwitcher/bulbSwitcher.cpp)|Medium|
 |315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [C++](./algorithms/cpp/countOfSmallerNumbersAfterSelf/countOfSmallerNumbersAfterSelf.cpp)|Hard|
