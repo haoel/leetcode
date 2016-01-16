@@ -160,14 +160,14 @@ fi
 # 2) the last two `sed` commands are used to add the comments tags
 case $FILE_EXT in
     .cpp )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
-                    grep -v '                ' | sed '/^$/N;/^\n$/D'  | fold -w 85 -s |\
+                    grep -v '             ' | sed '/^$/N;/^\n$/D'  | fold -w 85 -s |\
                     sed 's/^/ * /' | sed '1i\'$'\n'"/*$(printf '%.0s*' {0..85}) "$'\n' |\
                     sed '2i\'$'\n''!@#$%'$'\n' | sed 's/!@#$%/ */' | \
                     sed '$a\'$'\n'"*$(printf '%.0s*' {0..85})*/"$'\n'| \
                     sed 's/^*/ /' > /tmp/tmp.txt
                 ;;
     .sh )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
-                    grep -v '                ' |sed '/^$/N;/^\n$/D'  | fold -w 85 -s| \
+                    grep -v '             ' |sed '/^$/N;/^\n$/D'  | fold -w 85 -s| \
                     sed 's/^/# /' | sed '1i\'$'\n'"#$(printf '%.0s#' {0..85}) "$'\n' | \
                     sed '2i\'$'\n''#'$'\n' | sed '$a\'$'\n'"#$(printf '%.0s#' {0..85})"$'\n'\
                     > /tmp/tmp.txt
