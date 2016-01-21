@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|329|[Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [C++](./algorithms/cpp/longestIncreasingPathInAMatrix/LongestIncreasingPathInAMatrix.cpp)|Medium|
 |328|[Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [C++](./algorithms/cpp/oddEvenLinkedList/OddEvenLinkedList.cpp)|Easy|
 |327|[Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | [C++](./algorithms/cpp/countOfRangeSum/CountOfRangeSum.cpp)|Hard|
 |326|[Power of Three](https://leetcode.com/problems/power-of-three/) | [C++](./algorithms/cpp/powerOfThree/PowerOfThree.cpp)|Easy|
