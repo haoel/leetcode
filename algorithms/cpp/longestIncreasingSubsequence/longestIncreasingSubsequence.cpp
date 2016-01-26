@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/longest-increasing-subsequence/
-// Author : Calinescu Valentin
+// Author : Calinescu Valentin, Hao Chen
 // Date   : 2015-11-06
 
 /*************************************************************************************** 
@@ -21,6 +21,30 @@
  * Special thanks to @pbrother for adding this problem and creating all test cases.
  *               
  ***************************************************************************************/
+
+
+
+// O(n^2) - dynamic programming
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        
+        int len = nums.size();
+        int maxLen = 0;
+        vector<int> dp(len, 1);
+        
+        for (int i=0; i<len; i++) {
+            for(int j=0; j<i; j++) {
+                if ( nums[j] < nums[i] ) {
+                    dp[i] = max(dp[i], dp[j] + 1);
+                }
+            }
+            maxLen = max(maxLen, dp[i]);
+        }
+        return maxLen;
+    }
+};
+
 
 class Solution {
 public:
