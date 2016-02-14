@@ -36,7 +36,7 @@ public:
         //the same algorithm as Majority Element I problem
         int majority1=0, majority2=0, cnt1=0, cnt2=0;
         for(auto item: nums) {
-            if (cnt1 == 0) {
+            if (cnt1 == 0 && majority2 != item ) {
                 majority1 = item;
                 cnt1 = 1;
             } else if (majority1 == item) {
