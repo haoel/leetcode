@@ -33,11 +33,11 @@
  *    2 1 3 4
  *    ...
  *
- * The pattern as below:
+ * The pattern can be descripted as below:
  *
- *    1) find the first place which num[i-1] < num[i]
- *    2) find the first number from n-1 to i which >= num[i-1]
- *    3) swap the 2) num with num[i-1]
+ *    1) from n-1 to 0, find the first place [i-1] which num[i-1] < num[i]
+ *    2) from n-1 to i, find the first number from n-1 to i which >= num[i-1]
+ *    3) swap the 2) num with the num[i-1]
  *    4) sort the sub-array [i, n) //actuall sort is fine as well
  * 
  * For example:
