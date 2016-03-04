@@ -56,7 +56,7 @@ int maximalRectangle(vector<vector<char> > &matrix) {
     if (matrix.size()<=0 || matrix[0].size()<=0) return 0;
     int row = matrix.size();
     int col = matrix[0].size();
-    vector< vector<int> > heights(row, vector<int> col);
+    vector< vector<int> > heights(row, vector<int>(col));
 
     int maxArea = 0;
     for(int i=0; i<row; i++){
