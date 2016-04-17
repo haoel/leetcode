@@ -16,9 +16,9 @@
 // This is classical interview question
 // As we know, the same number XOR together will be 0,
 // So, XOR all of numbers, the result is the number which only appears once. 
-int singleNumber(int A[], int n) {
+int singleNumber(int A[]) {
     int s = 0;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<A.size(); i++){
         s = s^A[i];
     }
     return s;
@@ -27,6 +27,6 @@ int singleNumber(int A[], int n) {
 int main()
 {
     int a[]={1,1,2,2,3};
-    printf("%d\n", singleNumber(a,5));
+    printf("%d\n", singleNumber(a));
     return 0;
 }
