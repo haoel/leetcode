@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./algorithms/cpp/reverseVowelsOfAString/reverseVowelsOfAString.cpp)|Easy|
 |337|[House Robber III](https://leetcode.com/problems/house-robber-iii/) | [C++](./algorithms/cpp/houseRobber/houseRobberIII.cpp)|Medium|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | [C++](./algorithms/cpp/increasingTripletSubsequence/increasingTripletSubsequence.cpp)|Medium|
 |330|[Patching Array](https://leetcode.com/problems/patching-array/) | [C++](./algorithms/cpp/patchingArray/PatchingArray.cpp)|Medium|
