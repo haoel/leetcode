@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-AUTHOR="Hao Chen"
+AUTHOR="NOBODY"
 LEETCODE_URL=https://leetcode.com/problems/
 LEETCODE_NEW_URL=https://leetcode.com/problems/
 LEETCODE_OLD_URL=https://oj.leetcode.com/problems/
@@ -22,6 +22,18 @@ function usage()
     echo -e "   ${0} https://leetcode.com/problems/largest-number/ largestNumber.cpp"
     echo -e ""
 }
+
+function get_author_name()
+{
+    TRUE_CMD=`which true`
+    git=`type -P git || ${TRUE_CMD}`
+    if [ ! -z "${git}" ]; then
+       AUTHOR=`git config --get user.name`
+    else 
+       AUTHOR=`whoami`
+    fi
+}
+
 
 function detect_os()
 {
@@ -137,6 +149,9 @@ fi
 if [ ! -s $source_file ]; then
     echo "" > $source_file 
 fi
+
+#detect the author name
+get_author_name;
 
 #adding the Copyright Comments
 if  ! grep -Fq  "${COMMENT_TAG} Author :" $source_file ; then
