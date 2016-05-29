@@ -13,6 +13,7 @@ LeetCode
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C++](./algorithms/cpp/topKFrequentElements/topKFrequentElements.cpp)|Medium|
 |345|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./algorithms/cpp/reverseVowelsOfAString/reverseVowelsOfAString.cpp)|Easy|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/) | [C++](./algorithms/cpp/reverseString/ReverseString.cpp)|Easy|
+|343|[Integer Break](https://leetcode.com/problems/integer-break/) | [C++](./algorithms/cpp/integerBreak/IntegerBreak.cpp)|Medium|
 |342|[Power of Four](https://leetcode.com/problems/power-of-four/) | [C++](./algorithms/cpp/powerOfFour/PowerOfFour.cpp)|Easy|
 |337|[House Robber III](https://leetcode.com/problems/house-robber-iii/) | [C++](./algorithms/cpp/houseRobber/houseRobberIII.cpp)|Medium|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | [C++](./algorithms/cpp/increasingTripletSubsequence/increasingTripletSubsequence.cpp)|Medium|
