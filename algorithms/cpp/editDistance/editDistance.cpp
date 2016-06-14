@@ -75,7 +75,7 @@ using namespace std;
  *            ""  0 1 2 3 4 5
  *            a   1 0 1 2 3 4 
  *            b   2 1 0 1 2 3
- *            b   3 2 1 1 1 2
+ *            b   3 2 1 1 2 2
  *
  */
 int min(int x, int y, int z) {
