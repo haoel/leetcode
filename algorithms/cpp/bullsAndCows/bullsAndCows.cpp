@@ -42,8 +42,8 @@ public:
     }
 
     string getHint01(string secret, string guess) {
-        int appears_in_secret[10], appears_in_guess[10], bulls[10];
-        int total_bulls, total_cows;
+        int appears_in_secret[10] = {0}, appears_in_guess[10] = {0}, bulls[10] = {0};
+        int total_bulls = 0, total_cows = 0;
         for(int i = 0; i < secret.size(); i++)
             appears_in_secret[secret[i] - '0']++;
         for(int i = 0; i < guess.size(); i++)
