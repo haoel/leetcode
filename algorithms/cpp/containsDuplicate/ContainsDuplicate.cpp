@@ -22,3 +22,26 @@ public:
         return false;
     }
 };
+
+
+Alternate Solution:
+
+class Solution {
+public:
+    bool containsDuplicate(vector<int> nums) {
+        int size = nums.size();
+    
+        map<int,int>count;
+        for(auto i : nums)
+                {
+                     
+                    if(count[i]==1)
+                        return true;
+                    else
+                        count[i]++;
+                            
+                }
+            return false;
+        
+    }
+};
