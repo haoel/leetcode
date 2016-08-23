@@ -34,7 +34,7 @@ private::
         string tok;
         
         while(getline(ss, tok, delimiter)) {
-        internal.push_back(tok);
+            internal.push_back(tok);
         }
         
         return internal;
