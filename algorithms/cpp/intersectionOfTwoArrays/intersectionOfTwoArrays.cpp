@@ -29,3 +29,32 @@ public:
         return solution;
     }
 };
+
+/*
+ * This Solution use one unordered_set 
+ */
+class Solution2 {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        unordered_set<int> hash_set(nums1.begin(), nums1.end());
+        vector<int> res ;
+        for (auto it& : nums2) {
+            if (hash_set.count(it)) {
+                res.push_back(it);
+                hash_set.erase(it);
+            }
+        }
+        return res;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
