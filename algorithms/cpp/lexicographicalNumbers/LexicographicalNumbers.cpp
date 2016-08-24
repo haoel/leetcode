@@ -99,10 +99,10 @@ public :
 //start point
 public:
     vector<int> lexicalOrder(int n) {
-        //srand(time(NULL));
-        //if (rand()%2) 
-        //    return lexicalOrder02(n); // recursive way  560ms
-        //else 
+        srand(time(NULL));
+        if (rand()%2) 
+            return lexicalOrder02(n); // recursive way  560ms
+        else 
             return lexicalOrder03(n); // non-recursive way, 460ms
     }
 
