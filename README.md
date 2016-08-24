@@ -11,6 +11,7 @@ LeetCode
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/) | [C++](./algorithms/cpp/longestAbsoluteFilePath/LongestAbsoluteFilePath.cpp)|Medium|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](./algorithms/cpp/firstUniqueCharacterInAString/FirstUniqueCharacterInAString.cpp)|Easy|
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/) | [C++](./algorithms/cpp/lexicographicalNumbers/LexicographicalNumbers.cpp)|Medium|
+|385|[Mini Parser](https://leetcode.com/problems/mini-parser/) | [C++](./algorithms/cpp/miniParser/MiniParser.cpp)|Medium|
 |377|[Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/) | [C++](./algorithms/cpp/combinationSumIV/combinationSumIV.cpp)|Medium|
 |376|[Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) | [C++](./algorithms/cpp/wiggleSubsequence/wiggleSubsequence.cpp)|Medium|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./algorithms/cpp/intersectionOfTwoArraysII/intersectionOfTwoArraysII.cpp)|Easy|
