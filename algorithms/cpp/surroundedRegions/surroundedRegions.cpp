@@ -182,7 +182,94 @@ void solve_non_recursively(vector< vector<char> > &board) {
     }
 }
 
+
+// refers to <Algorithm> 4th edition.
+class UnionFind {
+    int  count_;  // number of components
+    int* rank_;   // to limits tree hights
+    int* id_;     // id[i] parent of i
+public:
+    UnionFind(int n) {
+        count_ = n;
+        rank_ = new int[n];
+        id_ = new int[n];
+        for (int i = 0; i < n; i++) {
+            id_[i] = i;
+            rank_[i] = 0;
+        }
+    }
+
+    ~UnionFind() {
+        delete [] rank_;
+        delete [] id_;
+    }
+
+    int count() { return count_; }
+
+    int find(int p) {
+        while (p != id_[p])    {
+            id_[p] = id_[id_[p]]; // path compression
+            p = id_[p];
+        }
+        return p;
+    }
+
+    bool connected(int p, int q) {
+        return find(p) == find(q);
+    }
+
+    void connect(int p, int q) {
+        int i = find(p);
+        int j = find(q);
+        if (i == j) return;
+        if (rank_[i] < rank_[j]) id_[i] = j;
+        else if (rank_[i] > rank_[j]) id_[j] = i;
+        else { // ==
+            id_[j] = i;
+            rank_[i]++;
+        }
+        count_--;
+    }
+};
+
+class Solution {
+public:
+    void solve(vector<vector<char> >& board) {
+        int n = board.size();
+        if (n == 0) return;
+        int m = board[0].size();
+
+        UnionFind uf(n*m+1);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (i == 0 || i == n-1 || j == 0 || j == m-1) { // side case, connect to dummy node
+                    uf.connect(i*m + j, n*m);
+                    continue;
+                }
+                char c = board[i][j]; // inner case, connect to same neighbor
+                if (board[i+1][j] == c) uf.connect((i+1)*m + j, i*m + j);
+                if (board[i-1][j] == c) uf.connect((i-1)*m + j, i*m + j);
+                if (board[i][j+1] == c) uf.connect(i*m + (j+1), i*m + j);
+                if (board[i][j-1] == c) uf.connect(i*m + (j-1), i*m + j);
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (board[i][j] == 'O' && !uf.connected(i*m + j, n*m)) {
+                    board[i][j] = 'X';
+                }
+            }
+        }
+    }
+};
+
+
 void solve(vector< vector<char> > &board) {
+    if (rand() % 2) {
+        Solution().solve(board);
+        return;
+    }
     //Runtime Error for 250 x 250 matrix
     /* solve_recursively(board); */
     solve_non_recursively(board); 
