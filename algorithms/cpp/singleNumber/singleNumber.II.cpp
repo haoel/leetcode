@@ -72,7 +72,7 @@ public:
     int singleNumber_2(int A[], int n) {
         int ones = 0, twos = 0, threes = 0;
         for (int i = 0; i < n; i++) {
-            threes = two & A[i];
+            threes = twos & A[i];
             twos = ~threes & (twos | ones&A[i]);
             ones = ~threes & (ones^A[i]);
         }
