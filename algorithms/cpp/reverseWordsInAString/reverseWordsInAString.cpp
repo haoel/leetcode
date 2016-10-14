@@ -34,44 +34,27 @@
 using namespace std;
 
 void reverseWords(string &s) {
-    
-    bool wordStart = false;
-    vector<string> v;
-    
-    const char *pHead =s.c_str();
-    const char *pStr, *pBegin, *pEnd;
-   
-    for (pStr=pHead; *pStr!='\0'; pStr++) {
-        if (!isspace(*pStr) && wordStart == false){
-            wordStart = true;
-            pBegin = pStr;
-            continue;
+    vector<string> words;
+    bool found = false;
+    int start = -1;
+    const char space = ' ';
+    for (int i = 0; i < s.size(); ++i){
+        if (found && s[i] == space){
+            words.push_back(s.substr(start, i-start));
+            found = false;
+        }else if (!found && s[i] != space){
+            start = i;
+            found = true;
         }
-        
-        if(isspace(*pStr) && wordStart==true){
-            wordStart=false;
-            pEnd = pStr;
-            v.insert(v.begin(), s.substr(pBegin-pHead, pEnd-pBegin) );
-        }
-        
     }
-
-    if (wordStart==true){
-        pEnd = pStr;
-        v.insert(v.begin(), s.substr(pBegin-pHead, pEnd-pBegin) );
-    }
-    
-    if (v.size()>0){
-        s.clear();
-        char space=' ';
-        vector<string>::iterator it;
-        for (it=v.begin(); it!=v.end(); ++it) {
-            s = s + *it;
+    if (found) words.push_back(s.substr(start));
+    s.clear();
+    if (!words.empty()){
+        for (int i = words.size()-1; i > 0; --i){
+            s += words[i];
             s.push_back(space);
         }
-        s.erase(s.end()-1);
-    }else{
-            s.clear();
+        s += words[0];
     }
     cout << "[" << s << "]" <<endl;
 }
