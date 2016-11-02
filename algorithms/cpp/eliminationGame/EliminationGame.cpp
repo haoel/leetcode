@@ -1,4 +1,4 @@
-// Source : https://leetcode.com/contest/2/problems/elimination-game/
+// Source : https://leetcode.com/problems/elimination-game
 // Author : Hao Chen
 // Date   : 2016-09-07-
 
