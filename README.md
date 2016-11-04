@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [C++](./algorithms/cpp/integerReplacement/IntegerReplacement.cpp)|Medium|
 |396|[Rotate Function](https://leetcode.com/problems/rotate-function/) | [C++](./algorithms/cpp/rotateFunction/RotateFunction.cpp)|Easy|
 |395|[Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | [C++](./algorithms/cpp/longestSubstringWithAtLeastKRepeatingCharacters/LongestSubstringWithAtLeastKRepeatingCharacters.cpp)|Medium|
 |394|[Decode String](https://leetcode.com/problems/decode-string/) | [C++](./algorithms/cpp/decodeString/DecodeString.cpp)|Medium|
