@@ -28,7 +28,7 @@
 
 class Solution {
 private:
-    void combination(int len, int n, int max, bool zero,
+    void combination(int nLED, int nLight, int max, bool zero,
                      int start, int k, int solution, 
                      vector<vector<string>>& result) {
         if (solution > max){
@@ -41,12 +41,12 @@ private:
             }else{
                 sprintf(tmp, "%d", solution);
             }
-            result[n].push_back(tmp);
+            result[nLight].push_back(tmp);
             return;
         }
-        for (int i=start; i<=len-k; i++) {
+        for (int i=start; i<=nLED-k; i++) {
             solution += pow(2, i);
-            combination(len, n, max, zero, i+1, k-1, solution, result);
+            combination(nLED, nLight, max, zero, i+1, k-1, solution, result);
             solution -= pow(2, i);
         }
     }
