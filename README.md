@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|400|[Nth Digit](https://leetcode.com/problems/nth-digit/) | [C++](./algorithms/cpp/nthDigit/NthDigit.cpp)|Easy|
 |399|[Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [C++](./algorithms/cpp/evaluateDivision/EvaluateDivision.cpp)|Medium|
 |398|[Random Pick Index](https://leetcode.com/problems/random-pick-index/) | [C++](./algorithms/cpp/randomPickIndex/RandomPickIndex.cpp)|Medium|
 |397|[Integer Replacement](https://leetcode.com/problems/integer-replacement/) | [C++](./algorithms/cpp/integerReplacement/IntegerReplacement.cpp)|Medium|
