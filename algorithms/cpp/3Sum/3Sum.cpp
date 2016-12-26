@@ -81,7 +81,7 @@ vector<vector<int> > threeSum(vector<int> &num) {
                 high--;
             } else{
                 //skip the duplication
-                while(low<n && num[low]==num[low+1]) low++;
+                while(low<n-1 && num[low]==num[low+1]) low++;
                 low++;
             } 
         }
