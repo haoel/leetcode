@@ -62,6 +62,7 @@ LeetCode
 |322|[Coin Change](https://leetcode.com/problems/coin-change/) | [C++](./algorithms/cpp/coinChange/coinChange.cpp)|Medium|
 |321|[Create Maximum Number](https://leetcode.com/problems/create-maximum-number/) | [C++](./algorithms/cpp/createMaximumNumber/CreateMaximumNumber.cpp)|Hard|
 |319|[Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [C++](./algorithms/cpp/bulbSwitcher/bulbSwitcher.cpp)|Medium|
+|316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | [C++](./algorithms/cpp/removeDuplicateLetters/RemoveDuplicateLetters.cpp)|Hard|
 |315|[Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [C++](./algorithms/cpp/countOfSmallerNumbersAfterSelf/countOfSmallerNumbersAfterSelf.cpp)|Hard|
 |313|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/) | [C++](./algorithms/cpp/superUglyNumber/SuperUglyNumber.cpp)|Medium|
 |312|[Burst Balloons](https://leetcode.com/problems/burst-balloons/) | [C++](./algorithms/cpp/burstBalloons/BurstBalloons.cpp)|Hard|
