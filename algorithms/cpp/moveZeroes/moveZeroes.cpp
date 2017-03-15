@@ -41,7 +41,7 @@ public:
         int i = 0, poz = 0;
         for(i = 0; i < nums.size() && poz < nums.size(); i++)
         {
-                while(nums[poz] == 0)
+                while(poz < nums.size() && nums[poz] == 0)
                     poz++;
                 if(poz < nums.size())
                     nums[i] = nums[poz];
@@ -72,7 +72,7 @@ public:
 
         // Find the first ZERO, where is the tail of the array.
         // (Notes: we can simply remove this!)
-        for (; nums[p1]!=0 && p1<nums.size(); p1++);
+        for (; p1<nums.size() && nums[p1]!=0; p1++);
         
         // copy the item from p2 to p1, and skip the ZERO
         for (p2=p1; p2<nums.size(); p2++) {
