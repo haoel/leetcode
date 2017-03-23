@@ -72,15 +72,9 @@ public:
     int singleNumber_2(int A[], int n) {
         int ones = 0, twos = 0, threes = 0;
         for (int i = 0; i < n; i++) {
-            // `ones & A[i]` the result is the bitmask which the bits appeared twice
-            twos |= ones & A[i]; 
-            // XOR means remove the bit which appeared twice int `ones` 
-            ones ^= A[i];
-            // count the `three`
-            threes = ones & twos;
-            // clear the `ones` and `twos` if the i-th bit had appeared three times.
-            ones &= ~threes;
-            twos &= ~threes;
+            threes = twos & A[i];
+            twos = ~threes & (twos | ones&A[i]);
+            ones = ~threes & (ones^A[i]);
         }
         return ones;
     }
