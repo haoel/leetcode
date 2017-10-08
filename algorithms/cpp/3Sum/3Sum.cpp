@@ -47,6 +47,7 @@ using namespace std;
 vector<vector<int> > threeSum(vector<int> &num) {
 
     vector< vector<int> > result;
+    if(num.size()==0 || num.size()==1 || num.size() == 2) return result;
 
     //sort the array, this is the key
     sort(num.begin(), num.end());
