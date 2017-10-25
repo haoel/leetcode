@@ -11,6 +11,8 @@
 #
 # #Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
+import math
+import time
 
 
 class Solution(object):
@@ -30,16 +32,31 @@ class Solution(object):
                 return
           #  list.append(target - i)
 
+    def primeData(self,target):
+        list = [];
+        listPrimeData = []
+        for i in range(3,target):
+            for j in range(2,i):
+                if i%j==0:
+                    list.append(i)
+                    #print '%d ' % (i)
+                    break;
+            else :#for函数也能做判断
+                listPrimeData.append(i)
+
+        return listPrimeData
+    #expore more
+    def primeDataOther(self,n):
+        return filter(lambda x: not [x%i for i in range(2, int(math.sqrt(x))+1) if x%i ==0], range(2,n+1))
 
 
-        list1 = []
 
-        for j in range(len(nums)):
-            list1.append(target - nums[j])
-            print list1
-        print list;
-        print list1;
-
-
-    twoSum(object,[1,2,3],5);
-
+    #twoSum(object,[1,2,3],5);
+    listAlldata = range(100)
+    print time.time()
+    #print listAlldata
+    print primeData(object,10000)
+    print time.time();
+    #print primeData(object,10000)
+    print primeDataOther(object,10000)
+    print time.time()
