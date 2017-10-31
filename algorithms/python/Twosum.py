@@ -16,8 +16,6 @@ import time
 
 
 class Solution(object):
-
-
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
@@ -27,30 +25,30 @@ class Solution(object):
         list = []
         data = nums
         for i in nums:
-            k = target -i
-            if(k in nums) == True:
+            k = target - i
+            if (k in nums) == True:
                 print "K 值"
-                print k,i;
+                print k, i;
                 return
-          #  list.append(target - i)
+                #  list.append(target - i)
 
-    def primeData(self,target):
+    def primeData(self, target):
         list = [];
         listPrimeData = []
-        for i in range(3,target):
-            for j in range(2,i):
-                if i%j==0:
+        for i in range(3, target):
+            for j in range(2, i):
+                if i % j == 0:
                     list.append(i)
-                    #print '%d ' % (i)
+                    # print '%d ' % (i)
                     break;
-            else :#for函数也能做判断
+            else:  # for函数也能做判断
                 listPrimeData.append(i)
 
         return listPrimeData
 
-    #expore more
-    def primeDataOther(self,n):
-        return filter(lambda x: not [x%i for i in range(2, int(math.sqrt(x))+1) if x%i ==0], range(2,n+1))
+    # expore more
+    def primeDataOther(self, n):
+        return filter(lambda x: not [x % i for i in range(2, int(math.sqrt(x)) + 1) if x % i == 0], range(2, n + 1))
 
     #
     # There are two sorted arrays nums1 and nums2 of size m and n respectively.
@@ -75,26 +73,18 @@ class Solution(object):
         """
         x = len(nums1)
         y = len(nums2)
-        z = x+y
+        z = x + y
 
         print z
 
-
         for i in range(len(nums1)):
 
-
-
-
-
-
-
-
-    #twoSum(object,[1,2,3],5);
+    # twoSum(object,[1,2,3],5);
     listAlldata = range(100)
     print time.time()
-    #print listAlldata
-    print primeData(object,10000)
+    # print listAlldata
+    print primeData(object, 10000)
     print time.time();
-    #print primeData(object,10000)
-    print primeDataOther(object,10000)
+    # print primeData(object,10000)
+    print primeDataOther(object, 10000)
     print time.time()
