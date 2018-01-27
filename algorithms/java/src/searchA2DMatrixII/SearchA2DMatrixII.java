@@ -22,15 +22,15 @@
  * 
  * Given target = 20, return false.
  *
- * Notice:
+ **********************************************************************************/
+package searchA2DMatrixII;
+/**********************************************************************************
  * This probleam is similar to problem 74(https://leetcode.com/problems/search-a-2d-matrix/description/).
  * One solution is:
  * Compare rightTopNumber with target to judge rowIndex and colIndex which place to move,
  * until thay out of range or find target.
  * Another solution is using binarySearch.
  **********************************************************************************/
-package searchA2DMatrixII;
-
 public class SearchA2DMatrixII {
 	public boolean searchMatrix(int[][] matrix, int target) {
 		if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
