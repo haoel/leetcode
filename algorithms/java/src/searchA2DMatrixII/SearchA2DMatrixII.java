@@ -23,12 +23,11 @@
  * Given target = 20, return false.
  *
  * Notice:
- * 此题为杨氏矩阵典型例题，且与74题解法类似
- * 思路：
- * 永远选取右上角的数字rightTopNumber和target进行比较，直到找到或者指针越界。
- * 1、若相等，直接返回；
- * 2、若target比rightTopNumber大，则行指针下移
- * 3、若target比rightTopNumber小，则列指针左移
+ * This probleam is similar to problem 74(https://leetcode.com/problems/search-a-2d-matrix/description/).
+ * One solution is:
+ * Compare rightTopNumber with target to judge rowIndex and colIndex which place to move,
+ * until thay out of range or find target.
+ * Another solution is using binarySearch.
  **********************************************************************************/
 package searchA2DMatrixII;
 
