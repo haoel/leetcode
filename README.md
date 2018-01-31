@@ -1,7 +1,7 @@
 LeetCode
 ========
 
-###LeetCode Algorithm
+### LeetCode Algorithm
 
 (Notes: "&hearts;" means you need to buy a book from Leetcode)
 
@@ -328,7 +328,7 @@ LeetCode
 |1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| [C++](./algorithms/cpp/twoSum/twoSum.cpp)|Medium|
 
 
-###LeetCode Shell
+### LeetCode Shell
 
 
 | # | Title | Solution | Difficulty |
@@ -338,7 +338,8 @@ LeetCode
 |2|[Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)| [Bash](./shell/ValidPhoneNumbers.sh)|Easy|
 |1|[Word Frequency](https://leetcode.com/problems/word-frequency/)| [Bash](./shell/WordFrequency.sh)|Medium|
 
-###LintCode
+### LintCode    
+
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1|[Search in a big sorted array](http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/)|[Java](./algorithms/java/src/searchInABigSortedArray/searchInABigSortedArray.java)|Medium|
