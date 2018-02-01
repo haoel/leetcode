@@ -2,11 +2,18 @@
 set -e
 
 AUTHOR="NOBODY"
-LEETCODE_URL=https://leetcode.com/problems/
-LEETCODE_NEW_URL=https://leetcode.com/problems/
-LEETCODE_OLD_URL=https://oj.leetcode.com/problems/
 COMMENT_TAG="//"
 FILE_EXT=".cpp"
+
+pushd `dirname $0` > /dev/null
+SCRIPTPATH=`pwd -P`
+popd > /dev/null
+SCRIPTFILE=`basename $0`
+
+COLOR_INFO='\033[0;36m'
+COLOR_NONE='\033[0m'
+
+source ${SCRIPTPATH}/lib/query_problem.sh
 
 function usage()
 {
@@ -99,6 +106,7 @@ function install_xidel()
 }
 
 
+
 if [ $# -lt 1 ] || [[ "${1}" != ${LEETCODE_NEW_URL}* ]] && [[ "${1}" != ${LEETCODE_OLD_URL}* ]]; then
     usage
     exit 255
@@ -108,16 +116,28 @@ if [[ "${1}" == ${LEETCODE_OLD_URL}* ]]; then
     LEETCODE_URL=${LEETCODE_OLD_URL}
 fi
 
-IS_SHELL=`curl ${1} 2>/dev/null | grep Bash |wc -l`
-if [ ${IS_SHELL} -gt 0 ]; then
-    COMMENT_TAG='#'
-    FILE_EXT='.sh'
-fi
-
 
 leetcode_url=$1
 current_time=`date +%Y-%m-%d`
 platform=`detect_os`
+
+get_question_slug ${leetcode_url}
+
+
+TRUE_CMD=`which true`
+xidel=`type -P xidel || ${TRUE_CMD}`
+if [ -z "${xidel}" ]; then
+    echo "xidel not found !"
+    install_xidel
+fi
+
+#grab the problem information
+query_problem ${leetcode_url} ${QUESTION_TITLE_SLUG}
+
+if [ ${QUESTION_CATEGORY} == "Shell" ]; then
+    COMMENT_TAG='#'
+    FILE_EXT='.sh'
+fi
 
 if [ $# -gt 1 ] && [ -f $2 ]; then
     source_file=$2
@@ -127,8 +147,8 @@ if [ $# -gt 1 ] && [ -f $2 ]; then
         current_time=`stat -f %a ${source_file} | xargs -I time date -r time +%Y-%m-%d`
     fi
 else
-    source_file=${1#${LEETCODE_URL}}
-    source_file=${source_file::${#source_file}-1}
+    source_file=$QUESTION_TITLE_SLUG
+    #source_file=${source_file::${#source_file}-1}
     source_file=`echo $source_file | awk -F '-' '{for (i=1; i<=NF; i++) printf("%s", toupper(substr($i,1,1)) substr($i,2)) }'`${FILE_EXT}
 
     if [ ! -f ${source_file} ]; then
@@ -143,6 +163,7 @@ else
         fi
     fi
 fi
+
 
 # the source file is existed but it is empty, add a line, 
 # otherwise it could casue the comments inserts failed.
@@ -162,38 +183,44 @@ if  ! grep -Fq  "${COMMENT_TAG} Author :" $source_file ; then
     rm ${source_file}.bak
 fi
 
-#grab the problem description and add the comments
-TRUE_CMD=`which true`
-xidel=`type -P xidel || ${TRUE_CMD}`
-if [ -z "${xidel}" ]; then
-    echo "xidel not found !"
-    install_xidel
-fi
 
-# using xidel grab the problem description
+
+#echo "$QUESTION_CONTENT" 
+#echo $QUESTION_DIFFICULTY
+#echo $QUESTION_TITLE
+#echo $QUESTION_ID
+#echo $QUESTION_CATEGORY
+
+
+TMP_FILE=/tmp/tmp.txt
+
 # 1) the `fold` command is used to wrap the text at centain column
 # 2) the last two `sed` commands are used to add the comments tags
 case $FILE_EXT in
-    .cpp )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
-                    grep -v '             ' | sed '/^$/N;/^\n$/D'  | fold -w 85 -s |\
+    .cpp )      echo "$QUESTION_CONTENT" |\
+                    grep -v '             ' | sed '/^$/N;/^\n$/D' |  fold -w 85 -s |\
                     sed 's/^/ * /' | sed '1i\'$'\n'"/*$(printf '%.0s*' {0..85}) "$'\n' |\
                     sed '2i\'$'\n''!@#$%'$'\n' | sed 's/!@#$%/ */' | \
                     sed '$a\'$'\n'"*$(printf '%.0s*' {0..85})*/"$'\n'| \
-                    sed 's/^*/ /' > /tmp/tmp.txt
+                    sed 's/^*/ /' > ${TMP_FILE}
                 ;;
-    .sh )      xidel ${leetcode_url} -q -e "css('div.question-content')"  | \
+    .sh )       echo "$QUESTION_CONTENT" |\
                     grep -v '             ' |sed '/^$/N;/^\n$/D'  | fold -w 85 -s| \
                     sed 's/^/# /' | sed '1i\'$'\n'"#$(printf '%.0s#' {0..85}) "$'\n' | \
                     sed '2i\'$'\n''#'$'\n' | sed '$a\'$'\n'"#$(printf '%.0s#' {0..85})"$'\n'\
-                    > /tmp/tmp.txt
+                    > ${TMP_FILE}
                 ;;
       * )       echo "Bad file extension!"
                 exit 1;
 
 esac
 
+#remove the ^M chars
+cat -v ${TMP_FILE} | tr -d '^M' > ${TMP_FILE}.1
+mv ${TMP_FILE}.1 ${TMP_FILE}
+
 #insert the problem description into the source file, and remove it
-sed -i.bak '4 r /tmp/tmp.txt' ${source_file}
+sed -i.bak '4 r '${TMP_FILE}'' ${source_file}
 rm -f ${source_file}.bak
 rm -f /tmp/tmp.txt
 
