@@ -30,7 +30,7 @@ using namespace std;
 
 
 /*
- *   Simlar like "Two Number" problem, we can have the simlar solution.
+ *   Similar like "Two Number" problem, we can have the simlar solution.
  *
  *   Suppose the input array is S[0..n-1], 3SUM can be solved in O(n^2) time on average by 
  *   inserting each number S[i] into a hash table, and then for each index i and j,  
