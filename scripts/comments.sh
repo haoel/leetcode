@@ -54,58 +54,6 @@ function detect_os()
     echo ${platform}
 }
 
-function install_xidel()
-{
-    echo "Install xidel ..."
-    if [ ! -d ./xidel ]; then
-        mkdir xidel
-    fi
-    cd xidel
-
-    platform=`detect_os`
-
-    if [[ "$platform" == "unknown" ]]; then
-        echo "Unknown platform, please install 'xidel' manually!"
-        exit 1;
-    fi
-
-    #install the xidel on Linux platform
-    if [[ "$platform" == "linux" ]]; then
-        hardware=`uname -m`
-        xidel_tar=xidel-0.8.4.linux64.tar.gz
-        case $hardware in
-            x86_64 )    xidel_tar=xidel-0.8.4.linux64.tar.gz
-                        ;;
-              i686 )    xidel_tar=xidel-0.8.4.linux32.tar.gz
-                        ;;
-                 * )    echo "Cannot install xidel, please install it manually!"
-                        exit 1;
-        esac
-        if [ ! -f ${xidel_tar} ]; then
-            echo "Downloading xidel......"
-            curl -L http://softlayer-sng.dl.sourceforge.net/project/videlibri/Xidel/Xidel%200.8.4/${xidel_tar} -o ${xidel_tar}
-        fi
-        tar -zxvf ${xidel_tar}
-        ./install.sh
-    fi
-
-    #install the xidel on MacOS platform
-    #refer to: https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0
-    if [[ "$platform" == "macos" ]]; then
-        echo "Downloading xidel......" 
-        xidel_zip=xidel.zip
-        if [ ! -f ${xidel_zip} ]; then
-            curl -L https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0/res/9f156868-01b4-4838-9c2f-935d7a236e05/${xidel_zip} -o ${xidel_zip}
-        fi 
-        unzip ${xidel_zip}
-        mv xidel /usr/local/bin/
-    fi
-
-    cd ..
-    echo "Install xidel successfullly !"
-}
-
-
 
 if [ $# -lt 1 ] || [[ "${1}" != ${LEETCODE_NEW_URL}* ]] && [[ "${1}" != ${LEETCODE_OLD_URL}* ]]; then
     usage
