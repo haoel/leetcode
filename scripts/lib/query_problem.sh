@@ -40,3 +40,67 @@ function query_problem()
     
     rm -f $TMP_JSON_FILE
 }
+
+function detect_os()
+{
+    platform='unknown'
+    ostype=`uname`
+    if [[ "$ostype" == 'Linux' ]]; then
+       platform='linux'
+    elif [[ "$ostype" == 'Darwin' ]]; then
+       platform='macos'
+    fi
+    echo ${platform}
+}
+
+function install_xidel()
+{
+    echo "Install xidel ..."
+    if [ ! -d ./xidel ]; then
+        mkdir xidel
+    fi
+    cd xidel
+
+    platform=`detect_os`
+
+    if [[ "$platform" == "unknown" ]]; then
+        echo "Unknown platform, please install 'xidel' manually!"
+        exit 1;
+    fi
+
+    #install the xidel on Linux platform
+    xidel_ver=0.9.6
+    if [[ "$platform" == "linux" ]]; then
+        hardware=`uname -m`
+        xidel_tar=xidel-${xidel_ver}.linux64.tar.gz
+        case $hardware in
+            x86_64 )    xidel_tar=xidel-${xidel_ver}.linux64.tar.gz
+                        ;;
+              i686 )    xidel_tar=xidel-${xidel_ver}.linux32.tar.gz
+                        ;;
+                 * )    echo "Cannot install xidel, please install it manually!"
+                        exit 1;
+        esac
+        if [ ! -f ${xidel_tar} ]; then
+            echo "Downloading xidel......"
+            curl -L http://softlayer-sng.dl.sourceforge.net/project/videlibri/Xidel/Xidel%20${xidel_ver}/${xidel_tar} -o ${xidel_tar}
+        fi
+        tar -zxvf ${xidel_tar}
+        ./install.sh
+    fi
+
+    #install the xidel on MacOS platform
+    #refer to: https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0
+    if [[ "$platform" == "macos" ]]; then
+        echo "Downloading xidel......"
+        xidel_zip=xidel.zip
+        if [ ! -f ${xidel_zip} ]; then
+            curl -L https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0/res/de33e89a-cdc6-42b5-a476-32e2df1cf4bc/${xidel_zip} -o ${xidel_zip}
+        fi
+        unzip ${xidel_zip}
+        mv xidel /usr/local/bin/
+    fi
+
+    cd ..
+    echo "Install xidel successfullly !"
+}
