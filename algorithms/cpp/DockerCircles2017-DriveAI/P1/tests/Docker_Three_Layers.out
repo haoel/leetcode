@@ -1,0 +1,17 @@
+Input the Number of imgs dependencies: ------
+
+─── Node: <Master> 
+    ├── Node: <Ubuntu10.1> 
+    ├── Node: <Ubuntu10.2> 
+    |   ├── Node: <vm2> 
+    |   └── Node: <division1> 
+    └── Node: <Ubuntu10.3> 
+------
+
+─── Node: <Ubuntu10.9> 
+    └── Node: <vm1> 
+------
+
+─── Node: <google-server> 
+    └── Node: <Ubuntu11.2> 
+Master Ubuntu10.1 Ubuntu10.2 Ubuntu10.3 vm2 division1 Ubuntu10.9 vm1 google-server Ubuntu11.2 
