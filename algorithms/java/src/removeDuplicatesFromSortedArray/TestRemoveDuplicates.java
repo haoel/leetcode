@@ -1,4 +1,4 @@
-package removeDuplicates;
+package removeDuplicatesFromSortedArray;
 
 import org.junit.Assert;
 import org.junit.Test;

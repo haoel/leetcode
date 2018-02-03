@@ -18,7 +18,7 @@
  * 	It doesn't matter what you leave beyond the new length.
  * 
  **********************************************************************************/
-package removeDuplicates;
+package removeDuplicatesFromSortedArray;
 
 public class RemoveDuplicatesFromSortedArray {
 	public int removeDuplicates(int[] nums) {
