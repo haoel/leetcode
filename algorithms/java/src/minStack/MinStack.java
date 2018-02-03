@@ -20,7 +20,7 @@
  *	minStack.getMin();   --> Returns -2.
  * 
  **********************************************************************************/
-package _155_minStack;
+package minStack;
 
 import java.util.Stack;
 

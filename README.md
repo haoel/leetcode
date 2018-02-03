@@ -112,14 +112,14 @@ LeetCode
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./algorithms/cpp/lowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp)|Easy|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./algorithms/cpp/palindromeLinkedList/PalindromeLinkedList.cpp)|Easy|
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)| [C++](./algorithms/cpp/numberOfDigitOne/NumberOfDigitOne.cpp)|Medium|
-|232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./algorithms/cpp/implementQueueUsingStacks/ImplementQueueUsingStacks.cpp), [Java](./algorithms/java/src/_232_myQueue/MyQueue.java)|Easy|
+|232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./algorithms/cpp/implementQueueUsingStacks/ImplementQueueUsingStacks.cpp), [Java](./algorithms/java/src/myQueue/MyQueue.java)|Easy|
 |231|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./algorithms/cpp/powerOfTwo/PowerOfTwo.cpp)|Easy|
 |230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| [C++](./algorithms/cpp/kthSmallestElementInaBST/KthSmallestElementInABst.cpp)|Medium|
 |229|[Majority Element II](https://oj.leetcode.com/problems/majority-element-ii/) | [C++](./algorithms/cpp/majorityElement/majorityElement.II.cpp)|Medium|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [C++](./algorithms/cpp/summaryRanges/SummaryRanges.cpp)|Easy|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)| [C++](./algorithms/cpp/basicCalculator/BasicCalculator.II.cpp)|Medium|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./algorithms/cpp/invertBinaryTree/InvertBinaryTree.cpp)|Easy|
-|225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./algorithms/cpp/implementStackUsingQueues/ImplementStackUsingQueues.cpp), [Java](./algorithms/java/src/_225_myStack/MyStack.java)|Medium|
+|225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./algorithms/cpp/implementStackUsingQueues/ImplementStackUsingQueues.cpp), [Java](./algorithms/java/src/myStack/MyStack.java)|Medium|
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)| [C++](./algorithms/cpp/basicCalculator/BasicCalculator.cpp)|Medium|
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [C++](./algorithms/cpp/rectangleArea/RectangleArea.cpp)|Easy|
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)| [C++](./algorithms/cpp/countCompleteTreeNodes/CountCompleteTreeNodes.cpp)|Medium|
@@ -149,7 +149,7 @@ LeetCode
 |198|[House Robber](https://leetcode.com/problems/house-robber/)| [C++](./algorithms/cpp/houseRobber/houseRobber.cpp)|Easy|
 |191|[Number of 1 Bits](https://oj.leetcode.com/problems/number-of-1-bits/)| [C++](./algorithms/cpp/numberOf1Bits/numberOf1Bits.cpp)|Easy|
 |190|[Reverse Bits](https://oj.leetcode.com/problems/reverse-bits/)| [C++](./algorithms/cpp/reverseBits/reverseBits.cpp)|Easy|
-|189|[Rotate Array](https://oj.leetcode.com/problems/rotate-array/)| [C++](./algorithms/cpp/rotateArray/rotateArray.cpp), [Java](./algorithms/java/src/_189_rotateArray/RotateArray.java)|Easy|
+|189|[Rotate Array](https://oj.leetcode.com/problems/rotate-array/)| [C++](./algorithms/cpp/rotateArray/rotateArray.cpp), [Java](./algorithms/java/src/rotateArray/RotateArray.java)|Easy|
 |188|[Best Time to Buy and Sell Stock IV](https://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [C++](./algorithms/cpp/bestTimeToBuyAndSellStock/bestTimeToBuyAndSellStock.IV.cpp)|Hard|
 |187|[Repeated DNA Sequences](https://oj.leetcode.com/problems/repeated-dna-sequences/)| [C++](./algorithms/cpp/repeatedDNASequences/repeatedDNASequences.cpp)|Medium|
 |186|[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts; | [C++](./algorithms/cpp/reverseWordsInAString/reverseWordsInAString.II.cpp)|Medium|
@@ -173,7 +173,7 @@ LeetCode
 |158|[Read N Characters Given Read4 II - Call multiple times](https://oj.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) &hearts; | [C++](./algorithms/cpp/readNCharactersGivenRead4/readNCharactersGivenRead4.II.cpp)|Hard|
 |157|[Read N Characters Given Read4](https://oj.leetcode.com/problems/read-n-characters-given-read4/) &hearts; | [C++](./algorithms/cpp/readNCharactersGivenRead4/readNCharactersGivenRead4.cpp)|Easy|
 |156|[Binary Tree Upside Down](https://oj.leetcode.com/problems/binary-tree-upside-down/) &hearts; | [C++](./algorithms/cpp/binaryTreeUpsideDown/binaryTreeUpsideDown.cpp)|Medium|
-|155|[Min Stack](https://oj.leetcode.com/problems/min-stack/)| [C++](./algorithms/cpp/minStack/minStack.cpp), [Java](./algorithms/java/src/_155_minStack/MinStack.java)|Easy|
+|155|[Min Stack](https://oj.leetcode.com/problems/min-stack/)| [C++](./algorithms/cpp/minStack/minStack.cpp), [Java](./algorithms/java/src/minStack/MinStack.java)|Easy|
 |154|[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)| [C++](./algorithms/cpp/findMinimumInRotatedSortedArray/findMinimumInRotatedSortedArray.II.cpp)|Hard|
 |153|[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)| [C++](./algorithms/cpp/findMinimumInRotatedSortedArray/findMinimumInRotatedSortedArray.cpp), [Java](./algorithms/java/src/findMinimumInRotatedSortedArray/findMinimumInRotatedSortedArray.java)|Medium|
 |152|[Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)| [C++](./algorithms/cpp/maximumProductSubarray/maximumProductSubarray.cpp)|Medium|
@@ -302,7 +302,7 @@ LeetCode
 |29|[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)| [C++](./algorithms/cpp/divideTwoInt/divideTwoInt.cpp)|Medium|
 |28|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [C++](./algorithms/cpp/strStr/strStr.cpp), [Java](./algorithms/java/src/strStr/strStr.java)|Easy|
 |27|[Remove Element](https://oj.leetcode.com/problems/remove-element/)| [C++](./algorithms/cpp/removeElement/removeElement.cpp)|Easy|
-|26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./algorithms/cpp/removeDuplicatesFromSortedArray/removeDuplicatesFromSortedArray.cpp), [Java](./algorithms/java/src/_26_removeDuplicates/RemoveDuplicatesFromSortedArray.java)|Easy|
+|26|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./algorithms/cpp/removeDuplicatesFromSortedArray/removeDuplicatesFromSortedArray.cpp), [Java](./algorithms/java/src/removeDuplicates/RemoveDuplicatesFromSortedArray.java)|Easy|
 |25|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./algorithms/cpp/reverseNodesInKGroup/reverseNodesInKGroup.cpp)|Hard|
 |24|[Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./algorithms/cpp/swapNodesInPairs/swapNodesInPairs.cpp)|Medium|
 |23|[Merge k Sorted Lists](https://oj.leetcode.com/problems/merge-k-sorted-lists/)| [C++](./algorithms/cpp/mergeKSortedLists/mergeKSortedLists.cpp)|Hard|

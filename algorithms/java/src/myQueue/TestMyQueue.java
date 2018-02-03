@@ -1,4 +1,4 @@
-package _232_myQueue;
+package myQueue;
 
 import org.junit.Assert;
 import org.junit.Test;

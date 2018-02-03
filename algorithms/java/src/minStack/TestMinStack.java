@@ -1,4 +1,4 @@
-package _155_minStack;
+package minStack;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package _26_removeDuplicates;
+package removeDuplicates;
 
 import org.junit.Assert;
 import org.junit.Test;

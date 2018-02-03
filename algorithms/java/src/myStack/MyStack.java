@@ -15,7 +15,7 @@
  *  You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
  *
  **********************************************************************************/
-package _225_myStack;
+package myStack;
 
 import java.util.LinkedList;
 import java.util.Queue;
