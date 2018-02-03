@@ -15,7 +15,7 @@
  * Related problem: Reverse Words in a String II
  * 
  **********************************************************************************/
-package _189_rotateArray;
+package rotateArray;
 /**********************************************************************************
  *
  * For example, with n = 9 and k = 4, the array is [1,2,3,4,5,6,7,8,9]
@@ -23,7 +23,7 @@ package _189_rotateArray;
  *  1. Reverse 1-5 to [5,4,3,2,1]
  *  2. Reverse 6-9 to [9,8,7,6]
  *  3. Reverse the entire array [5,4,3,2,1,9,8,7,6] to [6,7,8,9,1,2,3,4,5]
- * This is a liner time and in-place algorithm
+ * It's a liner time and in-place algorithm
  * 
  **********************************************************************************/
 public class RotateArray {

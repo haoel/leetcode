@@ -1,4 +1,4 @@
-package _225_myStack;
+package myStack;
 
 import org.junit.Assert;
 import org.junit.Test;
