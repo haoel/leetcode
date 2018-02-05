@@ -83,10 +83,10 @@ function install_xidel()
         esac
         if [ ! -f ${xidel_tar} ]; then
             echo "Downloading xidel......"
-            curl -L http://softlayer-sng.dl.sourceforge.net/project/videlibri/Xidel/Xidel%20${xidel_ver}/${xidel_tar} -o ${xidel_tar}
+            curl -s -L https://jaist.dl.sourceforge.net/project/videlibri/Xidel/Xidel%20${xidel_ver}/${xidel_tar} -o ${xidel_tar}
         fi
         tar -zxvf ${xidel_tar}
-        ./install.sh
+        sudo ./install.sh
     fi
 
     #install the xidel on MacOS platform
