@@ -28,15 +28,33 @@ function query_problem()
     -H "referer: ${1}" \
     --data-binary '{"operationName":"getQuestionDetail","variables":{"titleSlug":"'${2}'"},"query":"query getQuestionDetail($titleSlug: String!) {\n  isCurrentUserAuthenticated\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    questionTitle\n    questionTitleSlug\n    content\n    difficulty\n    stats\n    contributors\n    companyTags\n    topicTags\n    similarQuestions\n    discussUrl\n    mysqlSchemas\n    randomQuestionUrl\n    sessionId\n    categoryTitle\n    submitUrl\n    interpretUrl\n    codeDefinition\n    sampleTestCase\n    enableTestMode\n    metaData\n    enableRunCode\n    enableSubmit\n    judgerAvailable\n    infoVerified\n    envInfo\n    urlManager\n    article\n    questionDetailUrl\n    discussCategoryId\n    discussSolutionCategoryId\n  }\n  interviewed {\n    interviewedUrl\n    companies {\n      id\n      name\n    }\n    timeOptions {\n      id\n      name\n    }\n    stageOptions {\n      id\n      name\n    }\n  }\n  subscribeUrl\n  isPremium\n  loginUrl\n}\n"}' --compressed > ${TMP_JSON_FILE}
 
-    QUESTION_CONTENT=$(xidel -q ${TMP_JSON_FILE} -e '$json("data").question.content' | sed -e 's/<[^>]*>//g')
+    # xidel change the -q option to -s after 0.9.4 version, so we have to check that
+    # if xidel has -q option, then it will return error. 
 
-    QUESTION_DIFFICULTY=$(xidel -q ${TMP_JSON_FILE} -e '$json("data").question.difficulty')
+    OPT=
 
-    QUESTION_TITLE=$(xidel -q ${TMP_JSON_FILE} -e '$json("data").question.questionTitle')
+    set +e
+    xidel -q 2>/dev/null
+    if [ $? -ne 0 ]; then
+       OPT=-q
+    else
+       # if xidel has -s option, then it will return error. 
+       xidel -s 2>/dev/null
+       if  [ $? -ne 0 ]; then
+           OPT=-s
+       fi
+    fi 
+    set -e
 
-    QUESTION_ID=$(xidel -q ${TMP_JSON_FILE} -e '$json("data").question.questionId')
+    QUESTION_CONTENT=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.content' | sed -e 's/<[^>]*>//g')
 
-    QUESTION_CATEGORY=$(xidel -q ${TMP_JSON_FILE} -e '$json("data").question.categoryTitle')
+    QUESTION_DIFFICULTY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.difficulty')
+
+    QUESTION_TITLE=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionTitle')
+
+    QUESTION_ID=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionId')
+
+    QUESTION_CATEGORY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.categoryTitle')
     
     rm -f $TMP_JSON_FILE
 }
