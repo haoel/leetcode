@@ -11,7 +11,7 @@
 #include <string.h>
 #include <sstream>
 #include <vector>
-#include "OJ#418.h"
+#include "sentenceScreenFitting.h"
 #define N 100
 #define M 10
 
