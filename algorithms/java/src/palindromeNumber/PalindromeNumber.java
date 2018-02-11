@@ -1,4 +1,4 @@
-// Source : https://leetcode.com/problems/valid-palindrome/description/
+// Source : https://oj.leetcode.com/problems/palindrome-number/
 // Author : Tianming Cao
 // Date   : 2018-02-11
 
