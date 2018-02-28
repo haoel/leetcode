@@ -44,7 +44,7 @@ public class PalindromeLinkedList {
 	 * 3. Use two pointers to judge if the left-half list equals to right-half list or not
 	 * 
 	 *     p1       p2
-	 *     ↓                          ↓
+	 *     ↓         ↓
 	 *     1->2->3->1->2->3
 	 * 
 	 * Notice: The even/odd of list's length
