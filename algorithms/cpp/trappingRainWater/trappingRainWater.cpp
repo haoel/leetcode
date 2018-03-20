@@ -34,18 +34,18 @@ int Trap(std::vector<int>& elev) {
   
   while (true) {  // Scan levels from the bottom to the top.
     int non_zero = 0;  // count non-zero, i.e., the number of blocks.
-    int left = -1;
-    int right = elev.size();
+    int left = elev.size();
+    int right = -1;
     for (int i = 0; i < elev.size(); ++i) {
       if (elev[i] > 0) {
-	left = (left == -1) ? i : left;
+	left = (left == elev.size()) ? i : left;
 	right = i;
 	non_zero++;
       }
       elev[i]--;
     }
 
-    if (non_zero == 0)
+    if (right - left < 2)
       break;
 
     capacity += right - left - 1 - non_zero + 2;
