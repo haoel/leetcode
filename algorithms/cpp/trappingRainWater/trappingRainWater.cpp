@@ -26,58 +26,36 @@
 *               
 **********************************************************************************/
 
-#include <stdio.h>
-/*
- * The idea is:
- *    1) find the highest bar.
- *    2) traverse the bar from left the highest bar.
- *       becasue we have the highest bar in right, so, any bar higher than its right bar(s) can contain the water.
- *    3) traverse the bar from right the highest bar.
- *       becasue we have the highest bar in left, so, any bar higher than its left bar(s) can contain the water.
- *
- * The code below is quite clear!
- *
- */
-int trap(int a[], int n) {
-    int result = 0;
+#include <iostream>
+#include <vector>
 
-    //find the highest value/position
-    int maxHigh = 0;
-    int maxIdx = 0;
-    for(int i=0; i<n; i++){
-        if (a[i] > maxHigh){
-            maxHigh = a[i];
-            maxIdx = i;
-        }
+int Trap(std::vector<int>& elev) {
+  int capacity = 0;
+  
+  while (true) {  // Scan levels from the bottom to the top.
+    int non_zero = 0;  // count non-zero, i.e., the number of blocks.
+    int left = -1;
+    int right = elev.size();
+    for (int i = 0; i < elev.size(); ++i) {
+      if (elev[i] > 0) {
+	left = (left == -1) ? i : left;
+	right = i;
+	non_zero++;
+      }
+      elev[i]--;
     }
 
-    //from the left to the highest postion
-    int prevHigh = 0;
-    for(int i=0; i<maxIdx; i++){
-        if(a[i] > prevHigh){
-            prevHigh = a[i];
-        }
-        result += (prevHigh - a[i]);
-    }
+    if (non_zero == 0)
+      break;
 
-    //from the right to the highest postion
-    prevHigh=0;
-    for(int i=n-1; i>maxIdx; i--){
-        if(a[i] > prevHigh){
-            prevHigh = a[i];
-        }
-        result += (prevHigh - a[i]);
-    }
+    capacity += right - left - 1 - non_zero + 2;
+  }
 
-    return result;
+  return capacity;
 }
 
-#define TEST(a) printf("%d\n", trap(a, sizeof(a)/sizeof(int)))
-int main()
-{
-    int a[]={2,0,2};
-    TEST(a);
-    int b[]={0,1,0,2,1,0,1,3,2,1,2,1};
-    TEST(b);
-    return 0;
+int main() {
+  std::vector<int> elev = {0,1,0,2,1,0,1,3,2,1,2,1};
+  std::cout << Trap(elev) << "\n";
+  return 0;
 }
