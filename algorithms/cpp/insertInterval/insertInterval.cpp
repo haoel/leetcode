@@ -21,71 +21,47 @@
 
 #include <iostream>
 #include <vector>
+#include <utility>
 #include <algorithm>
-using namespace std;
 
-struct Interval {
-    int start;
-    int end;
-    Interval() : start(0), end(0) {}
-    Interval(int s, int e) : start(s), end(e) {}
-};
+void InsertInterval(std::vector<std::pair<int, int> >& intervals,
+		    std::pair<int, int>& itvl) {
+  auto pos = std::lower_bound(intervals.begin(), intervals.end(), itvl);
 
-//Two factors sorting [start:end]
-bool compare(const Interval& lhs, const Interval& rhs){
-    return (lhs.start==rhs.start) ? lhs.end < rhs.end : lhs.start < rhs.start;
-}
-
-vector<Interval> merge(vector<Interval> &intervals) {
-
-    vector<Interval> result;
-
-    if (intervals.size() <= 0) return result;
-    //sort the inervals. Note: using the customized comparing function.
-    sort(intervals.begin(), intervals.end(), compare);
-    for(int i=0; i<intervals.size(); i++) {
-        int size = result.size();
-        // if the current intervals[i] is overlapped with previous interval.
-        // merge them together
-        if( size>0 && result[size-1].end >= intervals[i].start) {
-            result[size-1].end = max(result[size-1].end, intervals[i].end);
-        }else{
-            result.push_back(intervals[i]);
-        }
+  int start = std::max(0L,
+		       std::distance(intervals.begin(), pos) - 1);
+  int left = itvl.first;
+  int right = itvl.second;
+  int num_merges = 0;
+  for (int i = start; i < intervals.size(); ++i) {
+    if ((left <= intervals[i].first && intervals[i].first <= right) ||
+	(left <= intervals[i].second && intervals[i].second <= right)) {
+      num_merges++;
+      left = std::min(intervals[i].first, left);
+      right = std::max(intervals[i].second, right);
     }
+  }
 
-    return result;
-}
-
-//just reuse the solution of "Merge Intervals", quite straight forward
-vector<Interval> insert(vector<Interval> &intervals, Interval newInterval) {
-
-    intervals.push_back(newInterval);
-
-    return merge(intervals);
-}
-
-int main(int argc, char**argv)
-{
-    Interval i1(1,2);
-    Interval i2(3,5);
-    Interval i3(6,7);
-    Interval i4(8,10);
-    Interval i5(12,16);
-    vector<Interval> intervals;
-    intervals.push_back(i1);
-    intervals.push_back(i2);
-    intervals.push_back(i3);
-    intervals.push_back(i4);
-    intervals.push_back(i5);
-
-    Interval n(4,9);
-    vector<Interval> r = insert(intervals, n);
-
-    for(int i=0; i<r.size(); i++){
-        cout << "[ " << r[i].start << ", " << r[i].end << " ] ";
+  if (num_merges > 0) {
+    intervals[start].first = left;
+    intervals[start].second = right;
+    for (int i = 1; i < num_merges; ++i) {
+      intervals.erase(intervals.begin() + start + 1);
     }
-    cout <<endl;
+  } else {
+    intervals.insert(pos, itvl);
+  }
+}
 
-    return 0;
+int main() {
+  std::vector<std::pair<int, int> > intervals =
+    { {1,2},{3,5},{6,7},{8,10},{12,16}};
+  std::pair<int, int> itvl(4,9);
+  InsertInterval(intervals, itvl);
+
+  for (auto& i : intervals) {
+    std::cout << "(" << i.first << "," << i.second << "), ";
+  }
+  std::cout << "\n";
+  return 0;
 }
