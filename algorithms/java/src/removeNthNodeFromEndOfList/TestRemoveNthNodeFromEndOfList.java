@@ -9,6 +9,7 @@ import org.junit.Test;
 public class TestRemoveNthNodeFromEndOfList {
 	@Test
 	public void test() {
+	
 		RemoveNthNodeFromEndOfList solution = new RemoveNthNodeFromEndOfList();
 		int[] array1 = {1, 2, 3, 4, 5, 6};
 		ListNode head1 = ListNode.arrayToList(array1);
