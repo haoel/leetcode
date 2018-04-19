@@ -82,7 +82,7 @@ fi
 #grab the problem information
 query_problem ${leetcode_url} ${QUESTION_TITLE_SLUG}
 
-if [ ${QUESTION_CATEGORY} == "Shell" ]; then
+if [ "${QUESTION_CATEGORY}" == "Shell" ]; then
     COMMENT_TAG='#'
     FILE_EXT='.sh'
 fi
