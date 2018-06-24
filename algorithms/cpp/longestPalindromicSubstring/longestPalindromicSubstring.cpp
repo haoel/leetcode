@@ -159,7 +159,6 @@ string longestPalindrome_dp_opt_way(string s) {
                 if (len < i-j+1){
                     start = j;
                     len = i-j+1;
-                    cout << start << ":" << len <<endl;
                 }
             }
         }
