@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/intersection-of-two-arrays/
-// Author : Calinescu Valentin
+// Author : Calinescu Valentin, Hao Chen
 // Date   : 2016-05-20
 
 /*************************************************************************************** 
@@ -48,13 +48,25 @@ public:
     }
 };
 
+/*
+ * This Solution use unordered_map, insert the data into a map is more efficent than set
+ */
 
-
-
-
-
-
-
-
-
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        unordered_map<int, bool> m;
+        for (auto n : nums1) {
+            m[n] = true;
+        }
+        vector<int> result;
+        for (auto n : nums2){
+            if (m.find(n) != m.end() && m[n] ){
+                result.push_back(n);
+                m[n]=false;
+            }                    
+        }
+        return result;
+    }
+};
 

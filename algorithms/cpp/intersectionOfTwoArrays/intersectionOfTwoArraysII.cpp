@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/intersection-of-two-arrays-ii/
-// Author : Calinescu Valentin
+// Author : Calinescu Valentin, Hao Chen
 // Date   : 2016-05-22
 
 /*************************************************************************************** 
@@ -57,5 +57,31 @@ public:
             }
         }
         return solution;
+    }
+};
+
+
+
+/*
+ * Just simply use the map can have O(M+N) time complexity.
+ *
+ */
+
+
+class Solution {
+public:
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        unordered_map<int, int> m;
+        for (auto n: nums1) {
+            m[n]++;
+        }
+        vector<int> result;
+        for (auto n:nums2){
+            if (m.find(n) != m.end() && m[n]>0 ){
+                result.push_back(n);
+                m[n]--;
+            }                    
+        }
+        return result;
     }
 };
