@@ -63,6 +63,8 @@ function query_problem()
 
     QUESTION_ID=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionId')
 
+    QUESTION_FRONTEND_ID=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionFrontendId')
+
     QUESTION_CATEGORY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.categoryTitle')
     
     rm -f $TMP_JSON_FILE
