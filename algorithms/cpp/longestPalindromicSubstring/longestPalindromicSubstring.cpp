@@ -53,6 +53,43 @@ string longestPalindrome_recursive_way(string s) {
     return longest; 
 }
 
+//================================================================================
+
+
+void findPalindrome(string s, int left, int right, int& start, int& len)
+{
+    int n = s.size();
+    int l = left;
+    int r = right;
+    while (left>=0 && right<=n-1 && s[left] == s[right]) {
+        left--;
+        right++;
+    }
+    if (right-left-1 > len){
+        len = right-left-1;
+        start = left+1;
+    }
+}
+
+//The following solution is better than previous solution.
+//Because it remove the sub-string return in findPalindrome().
+string longestPalindrome_recursive_way2(string s) {
+    int n = s.size();
+    if (n<=1) return s;
+
+    int start=0, len=0; 
+    string longest;
+
+    string str;
+    for (int i=0; i<n-1; i++) {
+        findPalindrome(s, i, i, start, len);
+        findPalindrome(s, i, i+1, start, len);
+    }
+
+    return s.substr(start, len);
+}
+
+//================================================================================
 
 // Time/Memory Limit Exceeded
 string longestPalindrome_dp_way(string s) {
@@ -103,16 +140,16 @@ string longestPalindrome_dp_opt_way(string s) {
 
     //Using vector  could cause the `Time Limit Error`
     //So, use the native array
-    bool **matrix  = new bool* [n];
+    bool **matrix  = (bool**)malloc(n*sizeof(bool*));
     int start=0, len=0;
     // Dynamic Programming
     //   1) if i == j, then matrix[i][j] = true;
     //   2) if i != j, then matrix[i][j] = (s[i]==s[j] && matrix[i-1][j+1])
     for (int i=0; i<n; i++){
-        matrix[i] = new bool[i+1];
+        matrix[i] = (bool*)malloc((i+1)*sizeof(bool));
         memset(matrix[i], false, (i+1)*sizeof(bool));
         matrix[i][i]=true;
-        for (int j=0; j<i; j++){
+        for (int j=0; j<=i; j++){
             // The following if statement can be broken to
             //   1) j==i, matrix[i][j] = true
             //   2) the length from j to i is 2 or 3, then, check s[i] == s[j]
@@ -128,16 +165,18 @@ string longestPalindrome_dp_opt_way(string s) {
     }
 
     for (int i=0; i<n; i++) { 
-        delete [] matrix[i];
+        free (matrix[i]);
     }
-    delete [] matrix;
+    free(matrix);
 
     return s.substr(start, len);
 }
 
 
 string longestPalindrome(string s) {
+    return longestPalindrome_dp_way(s);
     return longestPalindrome_dp_opt_way(s);
+    return longestPalindrome_recursive_way2(s);
     return longestPalindrome_recursive_way(s);
 }
 
@@ -151,5 +190,10 @@ int main(int argc, char**argv)
 
     s = "321012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210012321001232100123210123210012321001232100123210123";
     cout <<  s << " : " << longestPalindrome(s) << endl;
+ 
+    //"illi"
+    s = "iptmykvjanwiihepqhzupneckpzomgvzmyoybzfynybpfybngttozprjbupciuinpzryritfmyxyppxigitnemanreexcpwscvcwddnfjswgprabdggbgcillisyoskdodzlpbltefiz";
+    cout <<  s << " : " << longestPalindrome(s) << endl;
+
     return 0;
 }
