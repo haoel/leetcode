@@ -28,7 +28,8 @@ int binary_search(int A[], int low, int high, int key);
  *
  *   So, we can use the binary search to find the one postion - `pos`
  *   
- *   then, we can keep using the binary search find the target in A[0..pos-1] and A[pos+1..n]
+ *   then, we can keep using the binary search method to find the target in A[0..pos-1] and A[pos+1..n].
+ *   Do not call the binary_search() in the while-loop for a better convergence rate.
  *
  *   The code below is self-explaination
  */
@@ -39,17 +40,28 @@ vector<int> searchRange(int A[], int n, int target) {
     int low = -1, high = -1;
     if (pos >=0){
         low = high = pos;
-        int l = low;
-        do {
-            low = l;
-            l = binary_search(A, 0, low - 1, target);
-        }while (l>=0);
+        int  l = 0, mid;
+        while (l <low) {
+            mid=(l+low-1)/2;
+            if (A[mid] <target){ 
+	            l=mid+1;
+	    }
+	    else 
+       	    {
+                    low=mid;
+	    }
+	}
 
-        int h = high;
-        do {
-            high = h;
-            h = binary_search(A, high + 1, n-1, target);
-        }while (h>=0);
+        int h=n-1;
+        while (high<h) {
+            mid=(high+1+h)/2;
+        if (A[mid] >target){
+                h=mid-1;
+            }
+       	    else {
+		high=mid;
+            }
+        }
     }
 
     v.push_back(low);
