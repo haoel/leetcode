@@ -29,7 +29,8 @@ int binary_search(int A[], int low, int high, int key);
  *   So, we can use the binary search to find the one postion - `pos`
  *   
  *   then, we can keep using the binary search method to find the target in A[0..pos-1] and A[pos+1..n].
- *   Do not call the binary_search() in the while-loop for a better convergence rate.
+ *   Removed calls to binary_search() in the while-loop for a better convergence rate.
+ *   In fact, there is a different O(log N) algorithm in the java code folder.
  *
  *   The code below is self-explaination
  */
