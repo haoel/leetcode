@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|951|[Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/) | [Python](./algorithms/python/FlipEquivalentBinaryTrees/flipEquiv.py)|Medium|
 |859|[Buddy Strings](https://leetcode.com/problems/buddy-strings/description/) | [C++](./algorithms/cpp/buddyStrings/BuddyStrings.cpp)|Easy|
 |858|[Mirror Reflection](https://leetcode.com/problems/mirror-reflection/description/) | [C++](./algorithms/cpp/mirrorReflection/MirrorReflection.cpp)|Medium|
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [C++](./algorithms/cpp/peakIndexInAMountainArray/PeakIndexInAMountainArray.cpp)|Easy|
@@ -15,7 +16,11 @@ LeetCode
 |837|[Most Common Word](https://leetcode.com/problems/most-common-word/) | [C++](./algorithms/cpp/mostCommonWord/MostCommonWord.cpp)|Easy|
 |804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/) | [C++](./algorithms/cpp/uniqueMorseCodeWords/UniqueMorseCodeWords.cpp)|Easy|
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description) | [C++](./algorithms/cpp/jewelsAndStones/JewelsAndStones.cpp)|Easy|
+|684|[Redundant Connection](https://leetcode.com/problems/redundant-connection/) | [Python](./algorithms/python/RedundantConnection/findRedundantConnection.py)|Medium|
+|671|[Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) | [Python](./algorithms/python/SecondMinimumNodeInABinaryTree/findSecondMinimumValue.py)|Easy|
+|655|[Print Binary Tree](https://leetcode.com/problems/print-binary-tree/) | [Python](./algorithms/python/PrintBinaryTree/printTree.py)|Medium|
 |643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) | [C++](./algorithms/cpp/maximumAverageSubarray/MaximumAverageSubarray.I.cpp)|Easy|
+|538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Python](./algorithms/python/ConvertBSTtoGreaterTree/convertBST.py)|Easy|
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./algorithms/cpp/totalHammingDistance/totalHammingDistance.cpp)|Medium|
 |418|[SentenceScreenFitting](https://leetcode.com/problems/sentence-screen-fitting/) &hearts; | [C++](./algorithms/cpp/sentenceScreenFitting/sentenceScreenFitting.cpp)|Easy|
 |416|[Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/) | [C++](./algorithms/cpp/partitionEqualSubsetSum/PartitionEqualSubsetSum.cpp)|Medium|
@@ -27,7 +32,7 @@ LeetCode
 |409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [C++](./algorithms/cpp/longestPalindrome/LongestPalindrome.cpp)|Easy|
 |406|[Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [C++](./algorithms/cpp/queueReconstructionByHeight/QueueReconstructionByHeight.cpp)|Medium|
 |405|[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/) | [C++](./algorithms/cpp/convertANumberToHexadecimal/ConvertANumberToHexadecimal.cpp)|Easy|
-|404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./algorithms/cpp/sumOfLeftLeaves/SumOfLeftLeaves.cpp)|Easy|
+|404|[Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | [C++](./algorithms/cpp/sumOfLeftLeaves/SumOfLeftLeaves.cpp), [Python] (./algorithms/python/SumOfLeftLeaves/sumOfLeftLeaves.py)|Easy|
 |403|[Frog Jump](https://leetcode.com/problems/frog-jump/) | [C++](./algorithms/cpp/frogJump/FrogJump.cpp)|Hard|
 |402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [C++](./algorithms/cpp/removeKDigits/RemoveKDigits.cpp)|Medium|
 |401|[Binary Watch](https://leetcode.com/problems/binary-watch/) | [C++](./algorithms/cpp/binaryWatch/BinaryWatch.cpp)|Easy|
@@ -119,12 +124,12 @@ LeetCode
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)| [C++](./algorithms/cpp/productOfArrayExceptSelf/ProductOfArrayExceptSelf.cpp)|Medium|
 |237|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)| [C++](./algorithms/cpp/deleteNodeInALinkedList/DeleteNodeInALinkedList.cpp)|Easy|
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C++](./algorithms/cpp/lowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfABinaryTree.cpp), [Java](./algorithms/java/src/lowestCommonAncestorOfABinaryTree/lowestCommonAncestorOfABinaryTree.java)|Medium|
-|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./algorithms/cpp/lowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp)|Easy|
+|235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./algorithms/cpp/lowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp), [Python](./algorithms/python/LowestCommonAncestorOfABinarySearchTree/lowestCommonAncestor.py)|Easy|
 |234|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)| [C++](./algorithms/cpp/palindromeLinkedList/PalindromeLinkedList.cpp)|Easy|
 |233|[Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)| [C++](./algorithms/cpp/numberOfDigitOne/NumberOfDigitOne.cpp)|Medium|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./algorithms/cpp/implementQueueUsingStacks/ImplementQueueUsingStacks.cpp), [Java](./algorithms/java/src/myQueue/MyQueue.java)|Easy|
 |231|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./algorithms/cpp/powerOfTwo/PowerOfTwo.cpp)|Easy|
-|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| [C++](./algorithms/cpp/kthSmallestElementInaBST/KthSmallestElementInABst.cpp)|Medium|
+|230|[Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)| [C++](./algorithms/cpp/kthSmallestElementInaBST/KthSmallestElementInABst.cpp), [Python] (./algorithms/python/KthSmallestElementInABST/kthSmallest.py)|Medium|
 |229|[Majority Element II](https://oj.leetcode.com/problems/majority-element-ii/) | [C++](./algorithms/cpp/majorityElement/majorityElement.II.cpp)|Medium|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges/)| [C++](./algorithms/cpp/summaryRanges/SummaryRanges.cpp)|Easy|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)| [C++](./algorithms/cpp/basicCalculator/BasicCalculator.II.cpp)|Medium|
