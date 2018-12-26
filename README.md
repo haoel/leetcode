@@ -20,6 +20,9 @@ LeetCode
 |671|[Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) | [Python](./algorithms/python/SecondMinimumNodeInABinaryTree/findSecondMinimumValue.py)|Easy|
 |655|[Print Binary Tree](https://leetcode.com/problems/print-binary-tree/) | [Python](./algorithms/python/PrintBinaryTree/printTree.py)|Medium|
 |643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) | [C++](./algorithms/cpp/maximumAverageSubarray/MaximumAverageSubarray.I.cpp)|Easy|
+|623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Python](./algorithms/python/AddOneRowToTree/addOneRow.py)|Medium|
+|563|[Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/) | [Python](./algorithms/python/BinaryTreeTilt/findTilt.py)|Easy|
+|543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Python](./algorithms/python/DiameterOfBinaryTree/diameterOfBinaryTree.py)|Easy|
 |538|[Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Python](./algorithms/python/ConvertBSTtoGreaterTree/convertBST.py)|Easy|
 |477|[Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./algorithms/cpp/totalHammingDistance/totalHammingDistance.cpp)|Medium|
 |418|[SentenceScreenFitting](https://leetcode.com/problems/sentence-screen-fitting/) &hearts; | [C++](./algorithms/cpp/sentenceScreenFitting/sentenceScreenFitting.cpp)|Easy|
@@ -70,7 +73,7 @@ LeetCode
 |342|[Power of Four](https://leetcode.com/problems/power-of-four/) | [C++](./algorithms/cpp/powerOfFour/PowerOfFour.cpp)|Easy|
 |341|[Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [C++](./algorithms/cpp/flattenNestedListIterator/FlattenNestedListIterator.cpp)|Medium|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/) | [C++](./algorithms/cpp/countingBits/CountingBits.cpp)|Medium|
-|337|[House Robber III](https://leetcode.com/problems/house-robber-iii/) | [C++](./algorithms/cpp/houseRobber/houseRobberIII.cpp)|Medium|
+|337|[House Robber III](https://leetcode.com/problems/house-robber-iii/) | [C++](./algorithms/cpp/houseRobber/houseRobberIII.cpp), [Python](./algorithms/python/HouseRobberIII/rob.py)|Medium|
 |336|[Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) | [C++](./algorithms/cpp/palindromePairs/PalindromePairs.cpp)|Hard|
 |334|[Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | [C++](./algorithms/cpp/increasingTripletSubsequence/increasingTripletSubsequence.cpp)|Medium|
 |332|[Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | [C++](./algorithms/cpp/reconstructItinerary/ReconstructItinerary.cpp)|Medium|
@@ -170,7 +173,7 @@ LeetCode
 |186|[Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts; | [C++](./algorithms/cpp/reverseWordsInAString/reverseWordsInAString.II.cpp)|Medium|
 |179|[Largest Number](https://oj.leetcode.com/problems/largest-number/) | [C++](./algorithms/cpp/largestNumber/largestNumber.cpp)|Medium|
 |174|[Dungeon Game](https://oj.leetcode.com/problems/dungeon-game/) | [C++](./algorithms/cpp/dungeonGame/dungeonGame.cpp)|Hard|
-|173|[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/) | [C++](./algorithms/cpp/binarySearchTreeIterator/binarySearchTreeIterator.cpp), [Java](./algorithms/java/src/binarySearchTreeIterator/binarySearchTreeIterator.java)|Medium|
+|173|[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/) | [C++](./algorithms/cpp/binarySearchTreeIterator/binarySearchTreeIterator.cpp), [Java](./algorithms/java/src/binarySearchTreeIterator/binarySearchTreeIterator.java), [Python](./algorithms/python/BinarySearchTreeIterator/BSTIterator.py)|Medium|
 |172|[Factorial Trailing Zeroes](https://oj.leetcode.com/problems/factorial-trailing-zeroes/) | [C++](./algorithms/cpp/factorialTrailingZeroes/factorialTrailingZeroes.cpp)|Easy|
 |171|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/) | [C++](./algorithms/cpp/excelSheetColumnNumber/excelSheetColumnNumber.cpp)|Easy|
 |170|[Two Sum III - Data structure design](https://oj.leetcode.com/problems/two-sum-iii-data-structure-design/) &hearts; | [C++](./algorithms/cpp/twoSum/twoSum.III.cpp)|Easy|
@@ -198,7 +201,7 @@ LeetCode
 |148|[Sort List](https://oj.leetcode.com/problems/sort-list/)| [C++](./algorithms/cpp/sortList/sortList.cpp)|Medium|
 |147|[Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)| [C++](./algorithms/cpp/insertionSortList/insertionSortList.cpp)|Medium|
 |146|[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)| [C++](./algorithms/cpp/LRUCache/LRUCache.cpp), [Java](./algorithms/java/src/lruCache/LRUCache.java)|Hard|
-|145|[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)| [C++](./algorithms/cpp/binaryTreePostorderTraversal/binaryTreePostorderTraversal.cpp)|Hard|
+|145|[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)| [C++](./algorithms/cpp/binaryTreePostorderTraversal/binaryTreePostorderTraversal.cpp), [Python](./algorithms/python/BinaryTreePostorderTraversal/postorderTraversal.py)|Hard|
 |144|[Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/)| [C++](./algorithms/cpp/binaryTreePreorderTraversal/binaryTreePreorderTraversal.cpp), [Java](./algorithms/java/src/binaryTreePreorderTraversal/binaryTreePreorderTraversal.java)|Medium|
 |143|[Reorder List](https://oj.leetcode.com/problems/reorder-list/)| [C++](./algorithms/cpp/reorderList/reorderList.cpp)|Medium|
 |142|[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)| [C++](./algorithms/cpp/linkedListCycle/linkedListCycle.II.cpp)|Medium|
