@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|978|[Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) | [Python](./algorithms/python/LongestTurbulentSubarray/maxTurbulenceSize.py)|Medium|
 |977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [Python](./algorithms/python/SquaresOfSortedArray/sortedSquares.py)|Easy|
 |976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/) | [Python](./algorithms/python/LargestPerimeterTriangle/largestPerimeter.py)|Easy|
 |971|[Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/) | [Python](./algorithms/python/FlipBinaryTreeToMatchPreorderTraversal/flipMatchVoyage.py)|Medium|
@@ -16,6 +17,7 @@ LeetCode
 |951|[Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/) | [Python](./algorithms/python/FlipEquivalentBinaryTrees/flipEquiv.py)|Medium|
 |950|[Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) | [Python](./algorithms/python/RevealCardsInIncreasingOrder/deckRevealedIncreasing.py)|Medium|
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | [Python](./algorithms/python/ValidMountainArray/validMountainArray.py)|Easy|
+|914|[X of a Kind in a Deck of Cards](https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/) | [Python](./algorithms/python/XOfAKindInADeckOfCards/hasGroupsSizeX.py)|Easy|
 |859|[Buddy Strings](https://leetcode.com/problems/buddy-strings/description/) | [C++](./algorithms/cpp/buddyStrings/BuddyStrings.cpp)|Easy|
 |858|[Mirror Reflection](https://leetcode.com/problems/mirror-reflection/description/) | [C++](./algorithms/cpp/mirrorReflection/MirrorReflection.cpp)|Medium|
 |852|[Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/) | [C++](./algorithms/cpp/peakIndexInAMountainArray/PeakIndexInAMountainArray.cpp)|Easy|
@@ -40,6 +42,7 @@ LeetCode
 |643|[Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) | [C++](./algorithms/cpp/maximumAverageSubarray/MaximumAverageSubarray.I.cpp), [Python](./algorithms/python/MaximumAverageSubarrayI/findMaxAverage.py)|Easy|
 |628|[Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) | [Python](./algorithms/python/MaximumProductOfThreeNumbers/maximumProduct.py)|Easy|
 |623|[Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Python](./algorithms/python/AddOneRowToTree/addOneRow.py)|Medium|
+|581|[Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) | [Python](./algorithms/python/ShortestUnsortedContinuousSubarray/findUnsortedSubarray.py)|Easy|
 |572|[Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | [Python](./algorithms/python/SubtreeOfAnotherTree/isSubtree.py)|Easy|
 |563|[Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/) | [Python](./algorithms/python/BinaryTreeTilt/findTilt.py)|Easy|
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Python](./algorithms/python/DiameterOfBinaryTree/diameterOfBinaryTree.py)|Easy|
@@ -167,8 +170,8 @@ LeetCode
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [C++](./algorithms/cpp/rectangleArea/RectangleArea.cpp)|Easy|
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)| [C++](./algorithms/cpp/countCompleteTreeNodes/CountCompleteTreeNodes.cpp), [Python](./algorithms/python/CountCompleteTreeNodes/countNodes.py)|Medium|
 |221|[Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./algorithms/cpp/maximalSquare/MaximalSquare.cpp)|Medium|
-|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)| [C++](./algorithms/cpp/containsDuplicate/ContainsDuplicate.III.cpp)|Medium|
-|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| [C++](./algorithms/cpp/containsDuplicate/ContainsDuplicate.II.cpp)|Easy|
+|220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)| [C++](./algorithms/cpp/containsDuplicate/ContainsDuplicate.III.cpp), [Python](./algorithms/python/ContainsDuplicateIII/containsNearbyAlmostDuplicate.py)|Medium|
+|219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| [C++](./algorithms/cpp/containsDuplicate/ContainsDuplicate.II.cpp), [Python](./algorithms/python/ContainsDuplicateII/containsNearbyDuplicate.py)|Easy|
 |218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| [C++](./algorithms/cpp/theSkylineProblem/TheSkylineProblem.cpp)|Hard|
 |217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)| [C++](./algorithms/cpp/containsDuplicate/ContainsDuplicate.cpp)|Easy|
 |216|[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)| [C++](./algorithms/cpp/combinationSum/combinationSum.III.cpp)|Medium|
@@ -293,7 +296,7 @@ LeetCode
 |81|[Search in Rotated Sorted Array II](https://oj.leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [C++](./algorithms/cpp/searchInRotatedSortedArray/searchInRotatedSortedArray.II.cpp)|Medium|
 |80|[Remove Duplicates from Sorted Array II](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./algorithms/cpp/removeDuplicatesFromSortedArray/removeDuplicatesFromSortedArray.II.cpp)|Medium|
 |79|[Word Search](https://oj.leetcode.com/problems/word-search/)| [C++](./algorithms/cpp/wordSearch/wordSearch.cpp)|Medium|
-|78|[Subsets](https://oj.leetcode.com/problems/subsets/)| [C++](./algorithms/cpp/subsets/subsets.cpp), [Java](./algorithms/java/src/subsets/subsets.java)|Medium|
+|78|[Subsets](https://oj.leetcode.com/problems/subsets/)| [C++](./algorithms/cpp/subsets/subsets.cpp), [Java](./algorithms/java/src/subsets/subsets.java), [Python](./algorithms/python/Subsets/subsets.py)|Medium|
 |77|[Combinations](https://oj.leetcode.com/problems/combinations/)| [C++](./algorithms/cpp/combinations/combinations.cpp)|Medium|
 |76|[Minimum Window Substring](https://oj.leetcode.com/problems/minimum-window-substring/)| [C++](./algorithms/cpp/minimumWindowSubstring/minimumWindowSubstring.cpp)|Hard|
 |75|[Sort Colors](https://oj.leetcode.com/problems/sort-colors/)| [C++](./algorithms/cpp/sortColors/sortColors.cpp)|Medium|
