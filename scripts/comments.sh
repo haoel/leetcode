@@ -132,35 +132,62 @@ if  ! grep -Fq  "${COMMENT_TAG} Author :" $source_file ; then
 fi
 
 
-
+#echo "--------------"
 #echo "$QUESTION_CONTENT" 
 #echo $QUESTION_DIFFICULTY
 #echo $QUESTION_TITLE
 #echo $QUESTION_ID
 #echo $QUESTION_CATEGORY
+#echo "--------------"
 
+
+function make_comments() {
+    
+    # arguments - comment content, style and the outputfile
+    CONTENT=${1}
+    STYLE=${2}
+    OUTPUT_FILE=${3}
+
+    # the width of comments
+    WIDTH=100
+    WIDTH_SEQ=$(seq 1 ${WIDTH})
+    
+    # 1) the `fold` command is used to wrap the text at centain column
+    # 2) the last two `sed` commands are used to add the comments tags
+    case ${STYLE} in
+        clike )     echo "${CONTENT}" | 
+	                sed 's/^[[:space:]]*$/'"$(printf '\n')"'/g' | cat -s |     # replace the multiple empty line with a single empty line
+                        fold -w ${WIDTH} -s  |                                     # wrap the text at centain column
+                        sed 's/^/ * /'  |                                          # add the '*' for each line 
+			sed '1i\'$'\n'"/*$(printf '%.0s*' ${WIDTH_SEQ}) "$'\n' |   # add the first line - /*********** 
+                        sed '2i\'$'\n'"@@@*"$'\n' | sed 's/^@@@/ /g' |             # add the second line -  * (lead by a space)
+                        sed '$a\'$'\n'"@@@*$(printf '%.0s*' ${WIDTH_SEQ})*/"$'\n'| # add the end line - **********/ 
+			sed 's/^@@@/ /' > ${OUTPUT_FILE}
+                    ;;
+        script )    echo "${CONTENT}" |
+	                sed 's/^[[:space:]]*$/'"$(printf '\n')"'/g' | cat -s |     # replace the multiple empty line with a single empty line
+                        fold -w ${WIDTH} -s  |                                     # wrap the text at centain column
+                        sed 's/^/# /'  |                                           # add the '*' for each line 
+			sed '1i\'$'\n'"#$(printf '%.0s#' ${WIDTH_SEQ}) "$'\n' |    # add the first line - ############
+                        sed '2i\'$'\n'"#"$'\n' |                                   # add the second line - #
+                        sed '$a\'$'\n'"#$(printf '%.0s#' ${WIDTH_SEQ})"$'\n' > ${OUTPUT_FILE} # add the end line - #############
+                    ;;
+          * )       echo "Bad Comment Style!"
+                    exit 1;
+    esac
+}
 
 TMP_FILE=/tmp/tmp.txt
-
-# 1) the `fold` command is used to wrap the text at centain column
-# 2) the last two `sed` commands are used to add the comments tags
-case $FILE_EXT in
-    .cpp )      echo "$QUESTION_CONTENT" |\
-                    grep -v '             ' | sed '/^$/N;/^\n$/D' |  fold -w 85 -s |\
-                    sed 's/^/ * /' | sed '1i\'$'\n'"/*$(printf '%.0s*' {0..85}) "$'\n' |\
-                    sed '2i\'$'\n''!@#$%'$'\n' | sed 's/!@#$%/ */' | \
-                    sed '$a\'$'\n'"*$(printf '%.0s*' {0..85})*/"$'\n'| \
-                    sed 's/^*/ /' > ${TMP_FILE}
-                ;;
-    .sh )       echo "$QUESTION_CONTENT" |\
-                    grep -v '             ' |sed '/^$/N;/^\n$/D'  | fold -w 85 -s| \
-                    sed 's/^/# /' | sed '1i\'$'\n'"#$(printf '%.0s#' {0..85}) "$'\n' | \
-                    sed '2i\'$'\n''#'$'\n' | sed '$a\'$'\n'"#$(printf '%.0s#' {0..85})"$'\n'\
-                    > ${TMP_FILE}
-                ;;
-      * )       echo "Bad file extension!"
-                exit 1;
-
+case ${FILE_EXT} in
+     .c | .cpp | .java )      
+         make_comments  "${QUESTION_CONTENT}" clike "${TMP_FILE}"
+         ;;
+    .sh | .py )       
+         make_comments  "${QUESTION_CONTENT}" script "${TMP_FILE}" 
+         ;;
+      * )
+         echo "Bad file extension!"
+         exit 1;
 esac
 
 #remove the ^M chars
