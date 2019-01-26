@@ -58,7 +58,7 @@ function query_problem()
 
     QUESTION_DIFFICULTY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.difficulty')
 
-    QUESTION_TITLE=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionTitle')
+    QUESTION_TITLE=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.title')
 
     QUESTION_ID=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionId')
 
