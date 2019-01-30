@@ -24,7 +24,7 @@ int divide(int dividend, int divisor) {
     unsigned int dvd = dividend > 0 ? dividend : -dividend;
     unsigned int dvs = divisor > 0 ? divisor : -divisor;
 
-    unsigned int bit_num[32];
+    unsigned int bit_num[33];
     unsigned int i=0;
     long long d = dvs;
     bit_num[i] = d;
