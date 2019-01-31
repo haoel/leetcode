@@ -21,11 +21,10 @@ public:
     //
     int maxProfit(vector<int> &prices) {
 
-        if ( prices.size() < 1 ) return 0;
-
         int max = 0;
         int low = -1;
-        for (int i=0; i < prices.size() - 1; i++){
+	int len = prices.size();
+        for (int i=0; i < len - 1; i++){
             //meet the valley, then goes up
             if (prices[i] < prices[i+1] && low < 0 ) {
                 low = i;
