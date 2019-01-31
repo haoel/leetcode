@@ -20,28 +20,28 @@ public:
     // add their delta together 
     //
     int maxProfit(vector<int> &prices) {
-        int max=0, begin=0, end=0;
-        bool up=false, down=false;
-        for (int i=1; i<prices.size(); i++) {
-            if (prices[i] > prices[i-1] && up==false){ // goes up
-                begin = i-1;
-                up = true;
-                down = false;
+
+        if ( prices.size() < 1 ) return 0;
+
+        int max = 0;
+        int low = -1;
+        for (int i=0; i < prices.size() - 1; i++){
+            //meet the valley, then goes up
+            if (prices[i] < prices[i+1] && low < 0 ) {
+                low = i;
             }
-            
-            if (prices[i] < prices[i-1] && down==false) { // goes down
-                end = i-1;
-                down = true;
-                up = false;
-                max += (prices[end] - prices[begin]);
+            //meet the peak, then goes down
+            if (prices[i] > prices[i+1] && low >= 0) {
+                max += ( prices[i] - prices[low] ) ;
+                low = -1; // reset the `low`
             }
         }
-        // edge case 
-        if (begin < prices.size() && up==true){
-            end = prices.size() - 1;
-            max += (prices[end] - prices[begin]);
+
+        // edge case
+        if ( low >= 0 ) {
+            max += ( prices[prices.size()-1] - prices[low] );
         }
-        
+
         return max;
     }
 };
