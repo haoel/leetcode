@@ -50,3 +50,19 @@ public:
         
     }
 };
+
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int buy = INT_MAX;
+        int profit = 0;
+        for (auto p : prices) {
+    	    // Keep tracking the previous lowest price
+            buy = min (buy, p);
+	    // Keep tacking the current max profit
+            profit = max(profit, p - buy);
+        }
+        return profit;
+    }
+};
