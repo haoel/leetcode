@@ -15,11 +15,15 @@
 
 class Solution {
 public:
-    //
+    int maxProfit(vector<int>& prices) {
+        return maxProfit02(prices);
+        return maxProfit01(prices);
+    }
+    // Solution 1 
     // find all of ranges: which start a valley with the nearest peak after
     // add their delta together 
     //
-    int maxProfit(vector<int> &prices) {
+    int maxProfit01(vector<int> &prices) {
 
         int max = 0;
         int low = -1;
@@ -42,5 +46,15 @@ public:
         }
 
         return max;
+    }
+
+    // Solution 2 
+    // if we find we can earn money, we just sell
+    int maxProfit02(vector<int>& prices) {
+        int profit = 0 ;
+        for(int i=1; i< prices.size(); i++) {
+            profit += max(0, prices[i] - prices[i-1]);
+        }
+        return profit;
     }
 };
