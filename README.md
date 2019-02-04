@@ -33,7 +33,7 @@ LeetCode
 |804|[Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/description/) | [C++](./algorithms/cpp/uniqueMorseCodeWords/UniqueMorseCodeWords.cpp)|Easy|
 |771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description) | [C++](./algorithms/cpp/jewelsAndStones/JewelsAndStones.cpp)|Easy|
 |747|[Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [Python](./algorithms/python/LargestNumberAtLeastTwiceOfOthers/dominantIndex.py)|Easy|
-|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Python](./algorithms/python/MinCostClimbingStairs/minCostClimbingStairs.py)|Easy|
+|746|[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [C++](./algorithms/cpp/minCostClimbingStairs/MinCostClimbingStairs.cpp), [Python](./algorithms/python/MinCostClimbingStairs/minCostClimbingStairs.py)|Easy|
 |717|[1-bit and 2-bit Characters](https://leetcode.com/problems/1-bit-and-2-bit-characters/) | [Python](./algorithms/python/1-bitAnd2-bitCharacters/isOneBitCharacter.py)|Easy|
 |714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee) | [C++](./algorithms/cpp/bestTimeToBuyAndSellStock/BestTimeToBuyAndSellStockWithTransactionFee.cpp)|Medium|
 |712|[Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) | [C++](./algorithms/cpp/minimumASCIIDeleteSumForTwoStrings/MinimumAsciiDeleteSumForTwoStrings.cpp)|Medium|
