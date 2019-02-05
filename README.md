@@ -10,6 +10,7 @@ LeetCode
 |---| ----- | -------- | ---------- |
 |988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) | [C++](./algorithms/cpp/smallestStringStartingFromLeaf/SmallestStringStartingFromLeaf.cpp)|Medium|
 |987|[Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | [C++](./algorithms/cpp/verticalOrderTraversalOfABinaryTree/VerticalOrderTraversalOfABinaryTree.cpp)|Medium|
+|986|[Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [C++](./algorithms/cpp/intervalListIntersectons/IntervalListIntersections.cpp)|Medium|
 |985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | [C++](./algorithms/cpp/sumOfEvenNumbersAfterQueries/SumOfEvenNumbersAfterQueries.cpp)|Easy|
 |984|[String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb/) | [C++](./algorithms/cpp/stringWithoutAAAOrBBB/StringWithoutAAAOrBBB.cpp)|Easy|
 |983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) | [C++](./algorithms/cpp/minimumCostForTickets/MinimumCostForTickets.cpp)|Medium|
