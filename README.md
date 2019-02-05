@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) | [C++](./algorithms/cpp/smallestStringStartingFromLeaf/SmallestStringStartingFromLeaf.cpp)|Medium|
 |985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | [C++](./algorithms/cpp/sumOfEvenNumbersAfterQueries/SumOfEvenNumbersAfterQueries.cpp)|Easy|
 |984|[String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb/) | [C++](./algorithms/cpp/stringWithoutAAAOrBBB/StringWithoutAAAOrBBB.cpp)|Easy|
 |983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) | [C++](./algorithms/cpp/minimumCostForTickets/MinimumCostForTickets.cpp)|Medium|
