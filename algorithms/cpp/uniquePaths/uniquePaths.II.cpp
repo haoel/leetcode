@@ -30,11 +30,15 @@
 using namespace std;
 
 //As same as DP solution with "Unique Path I", just need to consider the obstacles.
-int uniquePathsWithObstacles(vector<vector<int> > &obstacleGrid) {
-    vector< vector<int> > v = obstacleGrid;
+int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
+    
+    int row =obstacleGrid.size();
+    int col = obstacleGrid[0].size();
+    vector<vector<unsigned int>>  v (row, vector<unsigned int>(col, 0));
+    
     unsigned int max=0;
-    for (int i=0; i<obstacleGrid.size(); i++){
-        for (int j=0; j<obstacleGrid[i].size(); j++){
+    for (int i=0; i<row; i++){
+        for (int j=0; j<col; j++){
             if(obstacleGrid[i][j] == 1){
                 max = v[i][j] = 0;
             } else {
@@ -59,7 +63,7 @@ int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
     int row = obstacleGrid.size();
     int col = obstacleGrid[0].size();
 
-    vector< vector <int> >  dp (row, vector<int>(col, 0));
+    vector< vector <unsigned int> >  dp (row, vector<unsigned int>(col, 0));
 
     dp[0][0] =  obstacleGrid[0][0]  ?  0 : 1;
     for (int r=1; r<row; r++) {
