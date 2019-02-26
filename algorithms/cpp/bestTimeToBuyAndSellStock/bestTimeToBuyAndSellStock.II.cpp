@@ -15,33 +15,46 @@
 
 class Solution {
 public:
-    //
+    int maxProfit(vector<int>& prices) {
+        return maxProfit02(prices);
+        return maxProfit01(prices);
+    }
+    // Solution 1 
     // find all of ranges: which start a valley with the nearest peak after
     // add their delta together 
     //
-    int maxProfit(vector<int> &prices) {
-        int max=0, begin=0, end=0;
-        bool up=false, down=false;
-        for (int i=1; i<prices.size(); i++) {
-            if (prices[i] > prices[i-1] && up==false){ // goes up
-                begin = i-1;
-                up = true;
-                down = false;
+    int maxProfit01(vector<int> &prices) {
+
+        int max = 0;
+        int low = -1;
+	int len = prices.size();
+        for (int i=0; i < len - 1; i++){
+            //meet the valley, then goes up
+            if (prices[i] < prices[i+1] && low < 0 ) {
+                low = i;
             }
-            
-            if (prices[i] < prices[i-1] && down==false) { // goes down
-                end = i-1;
-                down = true;
-                up = false;
-                max += (prices[end] - prices[begin]);
+            //meet the peak, then goes down
+            if (prices[i] > prices[i+1] && low >= 0) {
+                max += ( prices[i] - prices[low] ) ;
+                low = -1; // reset the `low`
             }
         }
-        // edge case 
-        if (begin < prices.size() && up==true){
-            end = prices.size() - 1;
-            max += (prices[end] - prices[begin]);
+
+        // edge case
+        if ( low >= 0 ) {
+            max += ( prices[prices.size()-1] - prices[low] );
         }
-        
+
         return max;
+    }
+
+    // Solution 2 
+    // if we find we can earn money, we just sell
+    int maxProfit02(vector<int>& prices) {
+        int profit = 0 ;
+        for(int i=1; i< prices.size(); i++) {
+            profit += max(0, prices[i] - prices[i-1]);
+        }
+        return profit;
     }
 };

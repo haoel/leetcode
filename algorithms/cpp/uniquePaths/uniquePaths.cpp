@@ -32,10 +32,21 @@
  *               
  **********************************************************************************/
 
+#ifdef CSTYLE
+
 #include <stdio.h>
 #include <stdlib.h>
 
-void printMatrix(int*a, int m, int n);
+void printMatrix(int*a, int m, int n)
+{
+    for (int i=0; i<m; i++){
+        for (int j=0; j<n; j++){
+            printf("%4d ", a[i*n+j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
 
 /*
  * Dynamic Programming
@@ -45,6 +56,8 @@ void printMatrix(int*a, int m, int n);
  *    dp[i][j] =  1  if i==0 || j==0        //the first row/column only have 1 uniqe path.
  *             =  dp[i-1][j] + dp[i][j-1]   //the path can be from my top cell and left cell.
  */
+
+// using C style array
 int uniquePaths(int m, int n) {
     int* matrix = new int[m*n];
     printMatrix(matrix, m, n);
@@ -63,16 +76,23 @@ int uniquePaths(int m, int n) {
     return u;
 }
 
-void printMatrix(int*a, int m, int n)
-{
-    for (int i=0; i<m; i++){
-        for (int j=0; j<n; j++){
-            printf("%4d ", a[i*n+j]);
+#else
+
+#include <vector>
+using namespace std;
+
+// using C++ STL vector , the code is much easy to read
+int uniquePaths(int m, int n) {
+    vector< vector <int> >  dp (n, vector<int>(m, 1));
+    for (int row=1; row<n; row++) {
+        for (int col=1; col<m; col++) {
+            dp[row][col] = dp[row-1][col] + dp[row][col-1];
         }
-        printf("\n");
     }
-    printf("\n");
+    return dp[n-1][m-1];
 }
+
+#endif
 
 int main(int argc, char** argv)
 {
