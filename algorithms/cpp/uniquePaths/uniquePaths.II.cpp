@@ -31,14 +31,10 @@ using namespace std;
 
 //As same as DP solution with "Unique Path I", just need to consider the obstacles.
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-    
-    int row =obstacleGrid.size();
-    int col = obstacleGrid[0].size();
     vector<vector<unsigned int>>  v (row, vector<unsigned int>(col, 0));
-    
     unsigned int max=0;
-    for (int i=0; i<row; i++){
-        for (int j=0; j<col; j++){
+    for (int i=0; i<obstacleGrid.size();; i++){
+        for (int j=0; j<obstacleGrid[0].size();; j++){
             if(obstacleGrid[i][j] == 1){
                 max = v[i][j] = 0;
             } else {
