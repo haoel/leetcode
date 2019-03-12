@@ -40,3 +40,5 @@ awk 'NR==10{print $0}' file.txt
 # Solution Two
 sed -n '10p' file.txt
 
+# Solution Three
+head -10 file.txt | tail -1
