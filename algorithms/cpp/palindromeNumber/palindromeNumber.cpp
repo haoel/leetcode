@@ -26,7 +26,12 @@
 class Solution {
 public:
 
-    bool isPalindrome(int x) {
+    bool isPalindrome(int x) {    
+        return isPalindrome1(x);
+        return isPalindrome2(x);
+    }
+
+    bool isPalindrome1(int x) {
         if (x<0) {
             return false;
         }
@@ -59,6 +64,9 @@ private:
         int n;
         while( x!=0 ){
             n = x%10;
+            //check if y is overflowed or not. 
+            //if it is, then it's not palindrome
+            if ( y > INT_MAX/10 - n) return x-1;
             y = y*10 + n;
             x /= 10;
         }
