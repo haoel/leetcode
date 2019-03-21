@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/increasing-triplet-subsequence/
-// Author : Calinescu Valentin
+// Author : Calinescu Valentin, Hao Chen
 // Date   : 2016-02-27
 
 /*************************************************************************************** 
@@ -39,5 +39,27 @@ public:
             }
         }
         return solution;
+    }
+};
+
+
+//Hao Chen's implementation
+class Solution {
+public:
+    bool increasingTriplet(vector<int>& nums) {
+        if (nums.size() < 3) return false;
+        
+        int first=INT_MAX, second = INT_MAX;
+        
+        for(int i=0; i<nums.size(); i++) {
+            if ( first > nums[i] ) {
+                first = nums[i];
+            }else if ( first < nums[i] && nums[i] < second) {
+                second = nums[i];
+            }else if (nums[i] > second){
+                return true;
+            }
+        }
+        return false;
     }
 };
