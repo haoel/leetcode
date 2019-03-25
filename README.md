@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|990|[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [C++](./algorithms/cpp/satisfiabilityOfEqualityEquations/SatisfiabilityOfEqualityEquations.cpp)|Medium|
 |989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | [C++](./algorithms/cpp/addToArrayFormOfInteger/AddToArrayFormOfInteger.cpp)|Easy|
 |988|[Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) | [C++](./algorithms/cpp/smallestStringStartingFromLeaf/SmallestStringStartingFromLeaf.cpp)|Medium|
 |987|[Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | [C++](./algorithms/cpp/verticalOrderTraversalOfABinaryTree/VerticalOrderTraversalOfABinaryTree.cpp)|Medium|
