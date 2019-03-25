@@ -191,7 +191,7 @@ case ${FILE_EXT} in
 esac
 
 #remove the ^M chars
-cat -v ${TMP_FILE} | tr -d '^M' > ${TMP_FILE}.1
+tr -d $'\r' < ${TMP_FILE} > ${TMP_FILE}.1
 mv ${TMP_FILE}.1 ${TMP_FILE}
 
 #insert the problem description into the source file, and remove it
