@@ -36,7 +36,7 @@ public:
         if ( amount < 0 ) return -1;
         for (int i=0; i<coins.size(); i++) {
             if ( amount - coins[i] < 0 ) continue;
-            int r = coinChange_recursive(coins, amount - coins[i]);
+            int r = coinChange(coins, amount - coins[i]);
             if ( r == -1 ) continue;
             if (result > r )  result = r + 1;
         }
