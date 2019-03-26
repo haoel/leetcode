@@ -19,7 +19,7 @@ LeetCode
 |981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | [C++](./algorithms/cpp/timeBasedKeyValueStore/TimeBasedKeyValueStore.cpp)|Medium|
 |980|[Unique Paths III](https://leetcode.com/problems/unique-paths-iii/) | [C++](./algorithms/cpp/uniquePaths/UniquePaths.III.cpp)|Hard|
 |978|[Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray/) | [C++](./algorithms/cpp/longestTurbulentSubarray/LongestTurbulentSubarray.cpp),[Python](./algorithms/python/LongestTurbulentSubarray/maxTurbulenceSize.py)|Medium|
-|977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [Python](./algorithms/python/SquaresOfSortedArray/sortedSquares.py)|Easy|
+|977|[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [C++](./algorithms/cpp/squaresOfASortedArray/SquaresOfASortedArray.cpp), [Python](./algorithms/python/SquaresOfSortedArray/sortedSquares.py)|Easy|
 |976|[Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/) | [Python](./algorithms/python/LargestPerimeterTriangle/largestPerimeter.py)|Easy|
 |971|[Flip Binary Tree To Match Preorder Traversal](https://leetcode.com/problems/flip-binary-tree-to-match-preorder-traversal/) | [Python](./algorithms/python/FlipBinaryTreeToMatchPreorderTraversal/flipMatchVoyage.py)|Medium|
 |969|[Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) | [Python](./algorithms/python/PancakeSorting/pancakeSort.py)|Medium|
