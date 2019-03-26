@@ -39,14 +39,10 @@ void mark(vector<vector<char> >& grid, int r, int c){
 
     grid[r][c] = 'M';
 
-    //left
-    mark(grid, r, c+1);
-    //right
-    mark(grid, r, c-1);
-    //up
-    mark(grid, r-1, c);
-    //down
-    mark(grid, r+1, c);
+    mark(grid, r, c+1); //left
+    mark(grid, r, c-1); //right
+    mark(grid, r-1, c); //up
+    mark(grid, r+1, c); //down
 }
 
 int numIslands(vector<vector<char> >& grid) {
