@@ -35,29 +35,15 @@ using namespace std;
 void print(vector< vector<char> > &board);
 
 
-//Runtime Error for 250 x 250 matrix
 void markOpen(vector< vector<char> > &board, int row, int col, int r, int c) {
-
-    if (board[r][c] == 'O'){
-
-        board[r][c]='N'; // 'N' means it's not closed
-
-        if (r < row-1) {
-            markOpen(board, row, col, r+1, c);
-        }
-        if (r > 0) {
-            markOpen(board, row, col, r-1, c);
-        }
-        if (c < col-1 ) {
-            markOpen(board, row, col, r, c+1); 
-        }
-        if (c>0) {
-            markOpen(board, row, col, r, c-1);
-        }
-    }
+    if (r<0 || c <0 || r>=row || c>=col || board[r][c] != 'O') return;
+    board[r][c]='N'; // 'N' means it's not closed
+    markOpen(board, row, col, r+1, c);
+    markOpen(board, row, col, r-1, c);
+    markOpen(board, row, col, r, c+1);
+    markOpen(board, row, col, r, c-1);
 }
 
-//Runtime Error for 250 x 250 matrix
 void solve_recursively(vector< vector<char> > &board) {
 
     if (board.size()<=0 || board[0].size()<=0) return;
@@ -270,8 +256,7 @@ void solve(vector< vector<char> > &board) {
         Solution().solve(board);
         return;
     }
-    //Runtime Error for 250 x 250 matrix
-    /* solve_recursively(board); */
+    solve_recursively(board); 
     solve_non_recursively(board); 
 }
 

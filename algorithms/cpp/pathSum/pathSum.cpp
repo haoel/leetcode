@@ -39,10 +39,16 @@ public:
         srand(time(NULL));
     }
     bool hasPathSum(TreeNode *root, int sum) {
-        if (random()%2){
-            return hasPathSum1(root, sum);    
-        }
+        return hasPathSum3(root, sum, 0);
         return hasPathSum2(root, sum);
+        return hasPathSum1(root, sum);    
+    }
+
+    bool hasPathSum3(TreeNode* root, int sum, int s) {
+        if ( root == NULL) return false;
+        s += root->val;
+        if ( !root->left && !root->right)  return s == sum;
+        return (hasPathSum3(root->left, sum, s) || hasPathSum3(root->right, sum, s));
     }
     
     bool hasPathSum1(TreeNode *root, int sum) {
