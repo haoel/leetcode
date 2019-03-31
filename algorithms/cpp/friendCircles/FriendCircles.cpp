@@ -104,7 +104,7 @@ public:
     bool join(vector<int> &relations, int x, int y) {
         int tx = find(relations, x);
         int ty = find(relations, y);
-        if ( tx != ty ) relations[tx] = y;
+        if ( tx != ty ) relations[tx] = ty;
         return tx != ty;
     }
 
