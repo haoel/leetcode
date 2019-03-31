@@ -78,7 +78,7 @@ public:
         char tx = find(x);
         char ty = find(y);
         if (tx != ty) { 
-            eq_map[tx] = y;
+            eq_map[tx] = ty;
         }
     }
 
@@ -90,7 +90,6 @@ public:
         }
         for (auto e : equations) {
             if (e[1] == '!' && (e[0] == e[3] || find(e[0]) == find(e[3]) ) ) { 
-                cout << e << " " << find(e[0]) << find(e[3]) << endl;
                 return false;
             }
         }

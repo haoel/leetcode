@@ -168,7 +168,7 @@ public:
     bool join(unordered_map<int, int>& emails_chains, int id1, int id2) {
         int e1 = find(emails_chains, id1);
         int e2 = find(emails_chains, id2);
-        if ( e1 != e2 )  emails_chains[e1] = id2;
+        if ( e1 != e2 )  emails_chains[e1] = e2;
         return e1 == e2;
     }
 };
