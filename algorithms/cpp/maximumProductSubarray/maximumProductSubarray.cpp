@@ -27,6 +27,19 @@
 #include <algorithm>
 using namespace std;
 
+int max(int x, int y) {
+    return x>y?x:y;
+}
+int min(int x, int y){
+    return x<y?x:y;
+}
+int max(int x, int y, int z) {
+    return max(x, max(y,z));
+}
+int min(int x, int y, int z) {
+    return min(x, min(y, z));
+}
+
 // The idea is similar with "Find the subarray wich has the largest sum"
 // (See: http://en.wikipedia.org/wiki/Maximum_subarray_problem)
 // 
@@ -44,10 +57,8 @@ int maxProduct(int A[], int n) {
     int maxProd = A[0];
 
     for (int i=1; i<n; i++){
-        //max( maxPrev * A[i],  minPrev * A[i],  A[i] )
-        maxHere = max( max( maxPrev * A[i], minPrev * A[i] ), A[i] );
-        //min( maxPrev * A[i],  minPrev * A[i],  A[i] )
-        minHere = min( min( maxPrev * A[i], minPrev * A[i] ), A[i] );
+        maxHere = max( maxPrev * A[i], minPrev * A[i], A[i] );
+        minHere = min( maxPrev * A[i], minPrev * A[i], A[i] );
         //Keep tracking the overall maximum product
         maxProd = max(maxHere, maxProd);
         //Shift the current max/min product to previous variables
