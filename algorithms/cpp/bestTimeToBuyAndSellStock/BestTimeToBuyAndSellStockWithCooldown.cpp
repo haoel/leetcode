@@ -19,7 +19,6 @@
  * Output: 3 
  * Explanation: transactions = [buy, sell, cooldown, buy, sell]
  ******************************************************************************************************/
-
 class Solution {
 public:
     //
@@ -32,47 +31,33 @@ public:
     // Also set sell[0] = 0, that you do nothing in the first day.
     //
     // So,
-    //
-    //   sell[i] = max ( buy[i-1] + prices[i],
-    //                   sell[i-1] - prices[i-1] + prices[i] );
-    //
-    //   - buy[i-1]+prices[i] represents buy the stock on day i-1 and sell it on day i; 
-    //   - sell[i-1]-prices[i-1]+prices[i] represents you didn't sell the stock on day i-1 
-    //     but sell it on day i (bought stock back and sell it on day i).
-    //
-    //
-    //  buy[i] = max ( sell[i-2] - prices[i], 
-    //                 buy[i-1] + prices[i-1] - prices[i] );
-    //
-    //  - sell[i-2]-prices[i] means sold the stock on day i-2 and buy it on day i 
-    //    (day i-1 is cooldown). 
-    //  - buy[i-1]+prices[i-1]-prices[i] means you didn't buy the stock on day i-1 
-    //    but buy it on day i.
-    //
-
+    //     buy[i] = max(buy[i-1],                // do nothing - keep holding
+    //                  sell[i-2] - prices[i] )  // sell previous day, buy today
+    //                                           // i-1 is cooldown day
+    //     sell[i] = max(sell[i-1],              // do nothing 
+    //                   buy[i-1] + prices[i] )  // buy previous day, sell today.
+    //  
+    
     int maxProfit(vector<int>& prices) {
         int len = prices.size();
         if ( len < 2 ) return 0;
+        
         vector<int> buy(len, 0);
         vector<int> sell(len, 0);
         
+        //day 0
         buy[0] = -prices[0];
+        sell[0] = 0;
         
-        int profit = 0;
+        //day 1
+        buy[1] = max(buy[0], 0 - prices[1]);
+        sell[1] = max(sell[0], buy[0] + prices[1]);
         
-        for (int i=1; i<len; i++) {
-            sell[i] = max ( buy[i-1] + prices[i],
-                            sell[i-1] - prices[i-1] + prices[i] );
-            profit = max(profit, sell[i]);
-            if ( i == 1) {
-                buy[i] = buy[0] + prices[0] - prices[1];
-            } else {
-                buy[i] = max ( sell[i-2] - prices[i],
-                               buy[i-1] + prices[i-1] - prices[i] );
-            }
-            
+        for (int i=2; i<len; i++) {
+            buy[i]  = max( buy[i - 1], sell[i - 2] - prices[i]);   
+            sell[i] = max(sell[i - 1],  buy[i - 1] + prices[i]);
         }
         
-        return profit;
+        return sell[len-1];
     }
 };
