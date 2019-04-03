@@ -29,25 +29,25 @@
 class Solution {
     public:
         /*
-           profits[trans, day]
-           - `trans` represents the number of transactions we've done so far. ( 0 <= trans <= k )
-           - `day` represents the number of days so far. ( 0 <= day <= prices.size() )
-
-           So, we have the initialization as below:
-
-           profits[0, day] = 0; // 0 <= day <= prices.size()
-           profits[trans, 0] = 0; // 0 <= trans <= k
-
-           And the iteration logic as below:
-
-           profits[trans, day] = max (
-           profits[trans, day-1], // same times transactions, but one days before.
-           profits[trans-1, i-1] + (prices[day] - prices[i])// for all of (0 <= i < day )
-        // this means find max profit from
-        // previous any of days
-        )
-
-*/
+         *  profits[trans, day]
+         *  - `trans` represents the number of transactions we've done so far. ( 0 <= trans <= k )
+         *  - `day` represents the number of days so far. ( 0 <= day <= prices.size() )
+         *
+         *  So, we have the initialization as below:
+         *
+         *  profits[0, day] = 0; // 0 <= day <= prices.size()
+         *  profits[trans, 0] = 0; // 0 <= trans <= k
+         *
+         *  And the iteration logic as below:
+         *
+         *  profits[trans, day] = max (
+         *                              profits[trans, day-1], // same times transactions, but one days before.
+         *                              profits[trans-1, i-1] + (prices[day] - prices[i]) // for all of (0 <= i < day )
+         *                                                                                // this means find max profit from
+         *                                                                                // previous any of days
+         *                            )
+         *
+         */
 
         int maxProfit(int k, vector<int> &prices) {
             int ndays = prices.size();
