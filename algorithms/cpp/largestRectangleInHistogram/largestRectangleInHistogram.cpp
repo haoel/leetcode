@@ -54,6 +54,43 @@
 #include <vector>
 using namespace std;
 
+//Time Limit Exceeded
+int largestRectangleArea_01(vector<int>& heights) {
+    if (heights.size() == 0) return 0;
+
+    // idx of the first bar in the left or right that is lower than current bar
+    vector<int> left(heights.size()); 
+    vector<int> right(heights.size());
+
+    right[heights.size() - 1] = heights.size();
+    left[0] = -1;
+
+    for (int i = 1; i < heights.size(); i++) {
+        int l = i - 1;
+        while (l >= 0 && heights[l] >= heights[i]) {
+            l--;
+        }
+        left[i] = l;
+    }
+
+    for (int i = heights.size() - 2; i >= 0; i--) {
+        int r = i + 1;
+        while (r < heights.size() && heights[r] >= heights[i]) {
+            r++;
+        }
+        right[i] = r;
+    }
+
+    int maxArea = 0;
+    for (int i = 0; i < heights.size(); i++) {
+        maxArea = max(maxArea, heights[i] * (right[i] - left[i] - 1));
+    }
+
+    return maxArea;        
+
+}
+
+
 // As we know, the area = width * height
 // For every bar, the 'height' is determined by the loweset bar.
 //
@@ -175,10 +212,10 @@ int main()
 }
 
 /*int main()
-{
-    int a[] = {2,1,5,6,2,3};
-    vector<int> v(a, a + sizeof(a)/sizeof(int));
-    printArray(v);
-    cout << largestRectangleArea(v) << endl;
-    return 0;
-}*/
+  {
+  int a[] = {2,1,5,6,2,3};
+  vector<int> v(a, a + sizeof(a)/sizeof(int));
+  printArray(v);
+  cout << largestRectangleArea(v) << endl;
+  return 0;
+  }*/
