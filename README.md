@@ -8,6 +8,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/) | [C++](./algorithms/cpp/matrixCellsInDistanceOrder/MatrixCellsInDistanceOrder.cpp)|Easy|
 |1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | [C++](./algorithms/cpp/twoCityScheduling/TwoCityScheduling.cpp)|Easy|
 |990|[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [C++](./algorithms/cpp/satisfiabilityOfEqualityEquations/SatisfiabilityOfEqualityEquations.cpp)|Medium|
 |989|[Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | [C++](./algorithms/cpp/addToArrayFormOfInteger/AddToArrayFormOfInteger.cpp)|Easy|
