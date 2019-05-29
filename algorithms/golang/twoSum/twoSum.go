@@ -1,4 +1,4 @@
-package addTwoNumbers
+package twoSum
 
 func twoSum(nums []int, target int) []int {
 	numMap := make(map[int]int)
