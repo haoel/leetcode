@@ -57,12 +57,9 @@ void solveNQueensRecursive(int n, int currentRow, vector<int>& solution, vector<
     //if no more row need to do, shape the result
     if (currentRow == n){
         vector<string> s;
+        vector<string> s(n, string(n, '.'));
         for (int row = 0; row < n; row++) {
-            string sRow;
-            for (int col = 0; col < n; col++) {
-                sRow = sRow + (solution[row] == col ? "Q" :"." );
-            }
-            s.push_back(sRow);
+            s[row][solution[row]] = 'Q';
         }
         result.push_back(s);
         return;

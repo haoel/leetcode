@@ -36,7 +36,7 @@ function get_author_name()
     git=`type -P git || ${TRUE_CMD}`
     if [ ! -z "${git}" ]; then
        AUTHOR=`git config --get user.name`
-    else 
+    else
        AUTHOR=`whoami`
     fi
 }
@@ -113,10 +113,10 @@ else
 fi
 
 
-# the source file is existed but it is empty, add a line, 
+# the source file is existed but it is empty, add a line,
 # otherwise it could casue the comments inserts failed.
 if [ ! -s $source_file ]; then
-    echo "" > $source_file 
+    echo "" > $source_file
 fi
 
 #detect the author name
@@ -133,7 +133,7 @@ fi
 
 
 #echo "--------------"
-#echo "$QUESTION_CONTENT" 
+#echo "$QUESTION_CONTENT"
 #echo $QUESTION_DIFFICULTY
 #echo $QUESTION_TITLE
 #echo $QUESTION_ID
@@ -142,7 +142,7 @@ fi
 
 
 function make_comments() {
-    
+
     # arguments - comment content, style and the outputfile
     CONTENT=${1}
     STYLE=${2}
@@ -151,23 +151,23 @@ function make_comments() {
     # the width of comments
     WIDTH=100
     WIDTH_SEQ=$(seq 1 ${WIDTH})
-    
+
     # 1) the `fold` command is used to wrap the text at centain column
     # 2) the last two `sed` commands are used to add the comments tags
     case ${STYLE} in
-        clike )     echo "${CONTENT}" | 
+        clike )     echo "${CONTENT}" |
 	                sed 's/^[[:space:]]*$/'"$(printf '\n')"'/g' | cat -s |     # replace the multiple empty line with a single empty line
                         fold -w ${WIDTH} -s  |                                     # wrap the text at centain column
-                        sed 's/^/ * /'  |                                          # add the '*' for each line 
-			sed '1i\'$'\n'"/*$(printf '%.0s*' ${WIDTH_SEQ}) "$'\n' |   # add the first line - /*********** 
+                        sed 's/^/ * /'  |                                          # add the '*' for each line
+			sed '1i\'$'\n'"/*$(printf '%.0s*' ${WIDTH_SEQ}) "$'\n' |   # add the first line - /***********
                         sed '2i\'$'\n'"@@@*"$'\n' | sed 's/^@@@/ /g' |             # add the second line -  * (lead by a space)
-                        sed '$a\'$'\n'"@@@*$(printf '%.0s*' ${WIDTH_SEQ})*/"$'\n'| # add the end line - **********/ 
+                        sed '$a\'$'\n'"@@@*$(printf '%.0s*' ${WIDTH_SEQ})*/"$'\n'| # add the end line - **********/
 			sed 's/^@@@/ /' > ${OUTPUT_FILE}
                     ;;
         script )    echo "${CONTENT}" |
 	                sed 's/^[[:space:]]*$/'"$(printf '\n')"'/g' | cat -s |     # replace the multiple empty line with a single empty line
                         fold -w ${WIDTH} -s  |                                     # wrap the text at centain column
-                        sed 's/^/# /'  |                                           # add the '*' for each line 
+                        sed 's/^/# /'  |                                           # add the '*' for each line
 			sed '1i\'$'\n'"#$(printf '%.0s#' ${WIDTH_SEQ}) "$'\n' |    # add the first line - ############
                         sed '2i\'$'\n'"#"$'\n' |                                   # add the second line - #
                         sed '$a\'$'\n'"#$(printf '%.0s#' ${WIDTH_SEQ})"$'\n' > ${OUTPUT_FILE} # add the end line - #############
@@ -179,11 +179,11 @@ function make_comments() {
 
 TMP_FILE=/tmp/tmp.txt
 case ${FILE_EXT} in
-     .c | .cpp | .java )      
+     .c | .cpp | .java )
          make_comments  "${QUESTION_CONTENT}" clike "${TMP_FILE}"
          ;;
-    .sh | .py )       
-         make_comments  "${QUESTION_CONTENT}" script "${TMP_FILE}" 
+    .sh | .py )
+         make_comments  "${QUESTION_CONTENT}" script "${TMP_FILE}"
          ;;
       * )
          echo "Bad file extension!"
@@ -191,7 +191,7 @@ case ${FILE_EXT} in
 esac
 
 #remove the ^M chars
-cat -v ${TMP_FILE} | tr -d '^M' > ${TMP_FILE}.1
+tr -d $'\r' < ${TMP_FILE} > ${TMP_FILE}.1
 mv ${TMP_FILE}.1 ${TMP_FILE}
 
 #insert the problem description into the source file, and remove it

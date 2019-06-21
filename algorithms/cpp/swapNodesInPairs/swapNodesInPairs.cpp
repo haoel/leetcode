@@ -71,4 +71,23 @@ public:
         
         return head;
     }
+
+    ListNode* swapPairs3(ListNode* head) {
+         // Three pointers point current, previous and next node.
+         ListNode *Curr=head, *Prev=NULL, *Next=NULL;
+
+         while (Curr && Curr->next ) {
+             Next = Curr->next;
+
+             //swap nodes
+             Curr->next = Next->next;
+             Prev == NULL ? head = Prev = Next : Prev->next = Next;
+             Next->next = Curr;
+
+             //set the pointers to next place.
+             Prev = Curr;
+             Curr = Curr->next;
+         }
+         return head;
+     }
 };

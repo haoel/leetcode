@@ -25,6 +25,26 @@
  * cases.
  * 
  ***************************************************************************************/
+
+
+/* Recursive solution - TIME LIMIT ERROR */
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {  
+        int result = INT_MAX;
+        if ( amount == 0 ) return 0;
+        if ( amount < 0 ) return -1;
+        for (int i=0; i<coins.size(); i++) {
+            if ( amount - coins[i] < 0 ) continue;
+            int r = coinChange(coins, amount - coins[i]);
+            if ( r == -1 ) continue;
+            if (result > r )  result = r + 1;
+        }
+        return result == INT_MAX ? -1 : result;
+    }
+}
+
+
  /* 
  * Solution 1 - O(N * amount)
  * =========
