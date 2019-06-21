@@ -102,5 +102,37 @@ public:
         return root;
 
     }
+
+    TreeNode* recoverFromPreorderOptimized(string S) {
+     int cur_val = 0 , cur_depth = 0;
+    vector<pair<TreeNode*,int>> st;
+    st.push_back(make_pair(new TreeNode(-1),-1)); //dumpy
+    
+    for(int i = 0;i<S.size();){
+        cur_val=0;
+        while(i<S.size() && S[i] != '-'){
+            cur_val = cur_val*10+S[i]-'0';
+            i++;
+        }
+        auto cur = st.back();
+        while(cur.second != cur_depth-1){
+            st.pop_back();
+            cur = st.back();
+        }
+        auto t = new TreeNode(cur_val);
+        if(cur.first->left == NULL){
+            cur.first->left = t;
+        }else{
+            cur.first->right = t;
+        }
+        st.push_back(make_pair(t,cur_depth));
+        cur_depth=0;
+        while(i<S.size() && S[i] =='-'){
+            cur_depth++;
+            i++;
+        }
+    }
+    return st.front().first->left;
+    }
 };
 
