@@ -201,7 +201,7 @@ LeetCode
 |224|[Basic Calculator](https://leetcode.com/problems/basic-calculator/)| [C++](./algorithms/cpp/basicCalculator/BasicCalculator.cpp)|Medium|
 |223|[Rectangle Area](https://leetcode.com/problems/rectangle-area/)| [C++](./algorithms/cpp/rectangleArea/RectangleArea.cpp)|Easy|
 |222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)| [C++](./algorithms/cpp/countCompleteTreeNodes/CountCompleteTreeNodes.cpp), [Python](./algorithms/python/CountCompleteTreeNodes/countNodes.py)|Medium|
-|221|[Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./algorithms/cpp/maximalSquare/MaximalSquare.cpp)|Medium|
+|221|[Maximal Square](https://leetcode.com/problems/maximal-square/)| [C++](./algorithms/cpp/maximalSquare/MaximalSquare.cpp), [Go](./algorithms/golang/maximalSquare/221.maximal-square.go)|Medium|
 |220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)| [C++](./algorithms/cpp/containsDuplicate/ContainsDuplicate.III.cpp), [Python](./algorithms/python/ContainsDuplicateIII/containsNearbyAlmostDuplicate.py)|Medium|
 |219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| [C++](./algorithms/cpp/containsDuplicate/ContainsDuplicate.II.cpp), [Python](./algorithms/python/ContainsDuplicateII/containsNearbyDuplicate.py)|Easy|
 |218|[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)| [C++](./algorithms/cpp/theSkylineProblem/TheSkylineProblem.cpp)|Hard|
