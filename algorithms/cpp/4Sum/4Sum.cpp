@@ -25,6 +25,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 vector<vector<int> > threeSum(vector<int> num, int target); 
@@ -36,15 +37,15 @@ vector<vector<int> > threeSum(vector<int> num, int target);
 
 vector<vector<int> > fourSum(vector<int> &num, int target) {
     vector< vector<int> > result;
-    if (num.size()<4) return result;
+    if (num.size() < 4) return result;
     sort( num.begin(), num.end() );
-    
-    for(int i=0; i<num.size()-3; i++) {
+
+    for(int i = 0; i < num.size() - 3; i++) {
         //skip the duplication
-        if (i>0 && num[i-1]==num[i]) continue;
+        if (i > 0 && num[i - 1] == num[i]) continue;
         vector<int> n(num.begin()+i+1, num.end());
         vector<vector<int> > ret = threeSum(n, target-num[i]);
-        for(int j=0; j<ret.size(); j++){
+        for(int j = 0; j < ret.size(); j++) {
             ret[j].insert(ret[j].begin(), num[i]);
             result.push_back(ret[j]);
         }
@@ -61,16 +62,16 @@ vector<vector<int> > threeSum(vector<int> num, int target) {
 
     int n = num.size();
 
-    for (int i=0; i<n-2; i++) {
+    for (int i = 0; i < n - 2; i++) {
         //skip the duplication
-        if (i>0 && num[i-1]==num[i]) continue;
+        if (i > 0 && num[i - 1] == num[i]) continue;
         int a = num[i];
-        int low = i+1;
-        int high = n-1;
-        while ( low < high ) {
+        int low = i + 1;
+        int high = n - 1;
+        while (low < high) {
             int b = num[low];
             int c = num[high];
-            if (a+b+c == target) {
+            if (a + b + c == target) {
                 //got the soultion
                 vector<int> v;
                 v.push_back(a);
@@ -79,17 +80,17 @@ vector<vector<int> > threeSum(vector<int> num, int target) {
                 result.push_back(v);
                 // Continue search for all triplet combinations summing to zero.
                 //skip the duplication
-                while(low<n && num[low]==num[low+1]) low++;
-                while(high>0 && num[high]==num[high-1]) high--;
+                while(low < n && num[low] == num[low + 1]) low++;
+                while(high > 0 && num[high] == num[high - 1]) high--;
                 low++;
                 high--;
-            } else if (a+b+c > target) {
+            } else if (a + b + c > target) {
                 //skip the duplication
-                while(high>0 && num[high]==num[high-1]) high--;
+                while(high > 0 && num[high] == num[high - 1]) high--;
                 high--;
-            } else{
+            } else {
                 //skip the duplication
-                while(low<n && num[low]==num[low+1]) low++;
+                while(low < n && num[low] == num[low + 1]) low++;
                 low++;
             }
         }
@@ -100,9 +101,9 @@ vector<vector<int> > threeSum(vector<int> num, int target) {
 
 int printMatrix(vector< vector<int> > &vv)
 {
-    for(int i=0; i<vv.size(); i++) {
+    for(int i = 0; i < vv.size(); i++) {
         cout << "[";
-        for(int j=0; j<vv[i].size(); j++) {
+        for(int j = 0; j < vv[i].size(); j++) {
             cout << " " << vv[i][j];
         }
         cout << "]" << endl;;
@@ -112,14 +113,14 @@ int printMatrix(vector< vector<int> > &vv)
 
 int main()
 {
-    int a[] = {1,0,-1,0,-2,2};
+    int a[] = { 1, 0, -1, 0, -2, 2 };
     vector<int> n(a, a+6);
     int t = 0;
     vector< vector<int> > v = fourSum(n, t);
     printMatrix(v);
 
     n.clear();
-    int b[] = {-1,-5,-5,-3,2,5,0,4};
+    int b[] = { -1, -5, -5, -3, 2, 5, 0, 4 };
     n.insert(n.begin(), b, b+8);
     t = -7;
     v = fourSum(n, t);

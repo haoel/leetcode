@@ -21,6 +21,7 @@
 #include <vector>
 #include <set>
 #include <algorithm>
+
 using namespace std;
 
 #define INT_MAX 2147483647
@@ -53,34 +54,33 @@ int threeSumClosest(vector<int> &num, int target) {
 
     for (int i=0; i<n-2; i++) {
         //skip the duplication
-        if (i>0 && num[i-1]==num[i]) continue;
+        if (i > 0 && num[i - 1] == num[i]) continue;
         int a = num[i];
-        int low = i+1;
-        int high = n-1;
+        int low = i + 1;
+        int high = n - 1;
         //convert the 3sum to 2sum problem
-        while ( low < high ) {
+        while (low < high) {
             int b = num[low];
             int c = num[high];
-            int sum = a+b+c;
+            int sum = a + b + c;
             if (sum - target == 0) {
                 //got the final soultion
                 return target;
             } else {
-
                 //tracking the minmal distance
-                if (abs(sum-target) < distance ) {
+                if (abs(sum - target) < distance ) {
                     distance = abs(sum - target);
                     result = sum;
                 }
 
-                if (sum -target> 0) {
+                if (sum - target > 0) {
                     //skip the duplication
-                    while(high>0 && num[high]==num[high-1]) high--;
+                    while(high > 0 && num[high] == num[high - 1]) high--;
                     //move the `high` pointer
                     high--;
                 } else {
                     //skip the duplication
-                    while(low<n && num[low]==num[low+1]) low++;
+                    while(low < n && num[low] == num[low + 1]) low++;
                     //move the `low` pointer
                     low++;
                 }
@@ -96,8 +96,8 @@ int threeSumClosest(vector<int> &num, int target) {
 
 int main()
 {
-    int a[] = {-1, 2, 1, -4};
-    vector<int> n(a, a+sizeof(a)/sizeof(int));
+    int a[] = { -1, 2, 1, -4 };
+    vector<int> n(a, a + sizeof(a)/sizeof(int));
     int target = 1;
     cout << threeSumClosest(n, target) << endl;
     return 0;
