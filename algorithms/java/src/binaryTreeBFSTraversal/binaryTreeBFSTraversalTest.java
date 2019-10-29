@@ -41,13 +41,13 @@ public class binaryTreeBFSTraversalTest {
         n2.right = n6;
 
 
-        ArrayList<TreeNode> inputes = new ArrayList<TreeNode>();
+        ArrayList<TreeNode> inputes = new ArrayList<>();
         inputes.add(t0);
         inputes.add(n0);
 
         List<List<Integer>> results = new ArrayList<List<Integer>>(){{
             add(new ArrayList<Integer>(){{
-                   add(0);
+                add(0);
             }});
             add(new ArrayList<Integer>(){{
                 add(0);
