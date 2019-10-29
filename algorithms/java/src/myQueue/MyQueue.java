@@ -65,8 +65,8 @@ public class MyQueue {
 	public Stack<Integer> stack2;
 	public int size;
 	public MyQueue() {
-		stack1 = new Stack<Integer>();
-		stack2 = new Stack<Integer>();
+		stack1 = new Stack<>();
+		stack2 = new Stack<>();
 		size = 0;
 	}
 
@@ -92,8 +92,7 @@ public class MyQueue {
 				stack2.push(stack1.pop());
 			}
 		}
-		int value = stack2.peek();
-		return value;
+		return stack2.peek();
 	}
 
 	public boolean empty() {

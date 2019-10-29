@@ -13,8 +13,8 @@ public class inorderSuccessorInBSTTest {
 
     @Test
     public void testInorderSuccessor() throws Exception {
-        ArrayList<TreeNode> inputes = new ArrayList<TreeNode>();
-        ArrayList<TreeNode> targets = new ArrayList<TreeNode>();
+        ArrayList<TreeNode> inputes = new ArrayList<>();
+        ArrayList<TreeNode> targets = new ArrayList<>();
 
         TreeNode n0 = new TreeNode(2);
         TreeNode n1 = new TreeNode(1);
@@ -37,7 +37,7 @@ public class inorderSuccessorInBSTTest {
         targets.add(t0);
 
 
-        ArrayList<TreeNode> results = new ArrayList<TreeNode>();
+        ArrayList<TreeNode> results = new ArrayList<>();
         results.add(null);
         results.add(nn0);
         results.add(t1);
