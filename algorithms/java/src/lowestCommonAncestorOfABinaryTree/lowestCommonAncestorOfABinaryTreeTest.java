@@ -13,10 +13,10 @@ public class lowestCommonAncestorOfABinaryTreeTest {
 
     @Test
     public void testLowestCommonAncestor() throws Exception {
-        ArrayList<TreeNode> inputeRoots = new ArrayList<TreeNode>();
-        ArrayList<TreeNode> inputeAs = new ArrayList<TreeNode>();
-        ArrayList<TreeNode> inputeBs = new ArrayList<TreeNode>();
-        ArrayList<TreeNode> results = new ArrayList<TreeNode>();
+        ArrayList<TreeNode> inputeRoots = new ArrayList<>();
+        ArrayList<TreeNode> inputeAs = new ArrayList<>();
+        ArrayList<TreeNode> inputeBs = new ArrayList<>();
+        ArrayList<TreeNode> results = new ArrayList<>();
 
         TreeNode n0 = new TreeNode(0);
         TreeNode n1 = new TreeNode(1);
