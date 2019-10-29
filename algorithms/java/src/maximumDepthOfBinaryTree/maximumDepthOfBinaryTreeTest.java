@@ -30,7 +30,7 @@ public class maximumDepthOfBinaryTreeTest {
         n4.left = n5;
         n2.right = n6;
 
-        ArrayList<TreeNode> inputes = new ArrayList<TreeNode>();
+        ArrayList<TreeNode> inputes = new ArrayList<>();
         inputes.add(t0);
         inputes.add(n0);
         int[] results = {1,3};
