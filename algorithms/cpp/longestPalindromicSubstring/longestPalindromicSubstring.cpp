@@ -154,7 +154,7 @@ string longestPalindrome_dp_opt_way(string s) {
             //   1) j==i, matrix[i][j] = true
             //   2) the length from j to i is 2 or 3, then, check s[i] == s[j]
             //   3) the length from j to i > 3, then, check s[i]==s[j] && matrix[i-1][j+1]
-            if ( i==j || (s[j]==s[i] && (i-j<2 || matrix[i-1][j+1]) ) )  {
+            if ( i==j || (s[j]==s[i] && (i-j<3 || matrix[i-1][j+1]) ) )  {
                 matrix[i][j] = true;
                 if (len < i-j+1){
                     start = j;
