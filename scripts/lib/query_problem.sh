@@ -97,7 +97,7 @@ function install_xidel()
     fi
 
     #install the xidel on Linux platform
-    xidel_ver=0.9.6
+    xidel_ver=0.9.8
     if [[ "$platform" == "linux" ]]; then
         hardware=`uname -m`
         xidel_tar=xidel-${xidel_ver}.linux64.tar.gz
@@ -111,7 +111,7 @@ function install_xidel()
         esac
         if [ ! -f ${xidel_tar} ]; then
             echo "Downloading xidel......"
-            curl -s -L https://jaist.dl.sourceforge.net/project/videlibri/Xidel/Xidel%20${xidel_ver}/${xidel_tar} -o ${xidel_tar}
+            curl -# -L https://github.com/benibela/xidel/releases/download/Xidel_${xidel_ver}/${xidel_tar} -o ${xidel_tar}
         fi
         tar -zxvf ${xidel_tar}
         sudo ./install.sh
