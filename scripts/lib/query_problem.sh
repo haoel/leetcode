@@ -81,6 +81,16 @@ function detect_os()
     echo ${platform}
 }
 
+function install_brew() 
+{
+    TRUE_CMD=`which true`
+    brew=`type -P brew || ${TRUE_CMD}`
+    if [ -z "${brew}" ]; then
+        echo "brew not found !"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    fi
+}
+
 function install_xidel()
 {
     echo "Install xidel ..."
@@ -120,13 +130,9 @@ function install_xidel()
     #install the xidel on MacOS platform
     #refer to: https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0
     if [[ "$platform" == "macos" ]]; then
-        echo "Downloading xidel......"
-        xidel_zip=xidel.zip
-        if [ ! -f ${xidel_zip} ]; then
-            curl -L https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0/res/de33e89a-cdc6-42b5-a476-32e2df1cf4bc/${xidel_zip} -o ${xidel_zip}
-        fi
-        unzip ${xidel_zip}
-        mv xidel /usr/local/bin/
+        install_brew
+        echo "brew install xidel..."
+        brew install xidel
     fi
 
     cd ..
