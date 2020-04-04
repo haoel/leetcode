@@ -7,7 +7,7 @@ Some Scripts
 
 > **Notes**: 
 > - The  `comments.sh`  is compatible for both Linux and Mac platfrom.
-> - The  `comments.sh`  needs [xidel](http://videlibri.sourceforge.net/xidel.html) to grab & parse the html  contents with filtering out the HTML tags. The script  would check the `xidel`  whether installed or not in your Linux box, if not, it will download the [Universal Linux Version](http://videlibri.sourceforge.net/xidel.html#downloads) on Linux platform, and the [Mac OS Prebuilt Version](https://www.evernote.com/shard/s69/sh/ff1e78f3-a369-4855-b18f-6184ce789c45/f3511927d0fb356ce883835f2eb712e0) on Mac platfrom.
+> - The  `comments.sh`  needs [xidel](https://github.com/benibela/xidel) to grab & parse the html  contents with filtering out the HTML tags. The script  would check the `xidel`  whether installed or not in your Linux box, if not, it will download via Github on Linux platform, and the run `brew install xidel` on Mac platfrom.
 > - The  `comments.sh`  currently can automatically detect the problem's type, if the problem is `algorithm` type, it's going to create `.cpp` file, if the problem is `shell` type, the `.sh` file will be created.
 
 1) Create a file named largestNumber.cpp, and add Copyright & Problem description
