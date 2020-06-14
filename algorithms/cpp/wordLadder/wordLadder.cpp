@@ -43,7 +43,7 @@
 //   
 //     start = "hit"
 //     end = "cog"
-//     dict = ["hot","dot","dog","lot","log","dit","hig", "dig"]
+//     dict = ["hot","dot","dog","lot","log","dit","hig", "dig", "cog"]
 //
 //                      +-----+                  
 //        +-------------+ hit +--------------+   
