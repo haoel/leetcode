@@ -25,6 +25,7 @@ LeetCode
 |985|[Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | [C++](./algorithms/cpp/sumOfEvenNumbersAfterQueries/SumOfEvenNumbersAfterQueries.cpp)|Easy|
 |984|[String Without AAA or BBB](https://leetcode.com/problems/string-without-aaa-or-bbb/) | [C++](./algorithms/cpp/stringWithoutAAAOrBBB/StringWithoutAAAOrBBB.cpp)|Easy|
 |983|[Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) | [C++](./algorithms/cpp/minimumCostForTickets/MinimumCostForTickets.cpp)|Medium|
+|982|[Triples with Bitwise AND Equal To Zero](https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/) | [C++](./algorithms/cpp/triplesWithBitwiseANDEqualToZero/TriplesWithBitwiseAndEqualToZero.cpp)|Hard|
 |981|[Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | [C++](./algorithms/cpp/timeBasedKeyValueStore/TimeBasedKeyValueStore.cpp)|Medium|
 |980|[Unique Paths III](https://leetcode.com/problems/unique-paths-iii/) | [C++](./algorithms/cpp/uniquePaths/UniquePaths.III.cpp)|Hard|
 |979|[Distribute Coins in Binary Tree](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | [C++](./algorithms/cpp/distributeCoinsInBinaryTree/DistributeCoinsInBinaryTree.cpp)|Medium|
