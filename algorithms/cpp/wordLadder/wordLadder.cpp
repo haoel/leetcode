@@ -96,14 +96,16 @@ public:
             }
             
             for (int i=0; i<word.size(); i++){
-                string temp = word;
+                char ch=word[i];
                 for(char c='a'; c<='z'; c++){
-                    temp[i] = c;
+                    word[i] = c;
                     if (dict.count(temp)>0 && dis.count(temp)==0){
                         dis[temp] = dis[word] + 1;
                         q.push(temp);
+                        q.erase(word);
                     }
                 }
+                word[i]=ch;
             }
         }
         return (dis.count(end)==0) ? 0 : dis[end];
