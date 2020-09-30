@@ -378,7 +378,7 @@ LeetCode
 |44|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)| [C++](./algorithms/cpp/wildcardMatching/wildcardMatching.cpp)|Hard|
 |43|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [C++](./algorithms/cpp/multiplyStrings/multiplyStrings.cpp)|Medium|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| [C++](./algorithms/cpp/trappingRainWater/trappingRainWater.cpp)|Hard|
-|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./algorithms/cpp/firstMissingPositive/firstMissingPositive.cpp)|Hard|
+|41|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./algorithms/cpp/firstMissingPositive/firstMissingPositive.cpp), [Python](././algorithms/python/firstMissingPositive/firstMissingPositive.py)|Hard|
 |40|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)| [C++](./algorithms/cpp/combinationSum/combinationSum.II.cpp)|Medium|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum/)| [C++](./algorithms/cpp/combinationSum/combinationSum.cpp)|Medium|
 |38|[Count and Say](https://leetcode.com/problems/count-and-say/)| [C++](./algorithms/cpp/countAndSay/countAndSay.cpp), [Java](./algorithms/java/src/countAndSay/CountAndSay.java)|Easy|
