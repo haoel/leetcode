@@ -1,3 +1,4 @@
+
 LeetCode
 ========
 
@@ -8,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [C++](./algorithms/cpp/uniqueNumberOfOccurrences/Unique-Number-of-Occurrences.cpp)|Easy|
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/) | [C++](./algorithms/cpp/compareStringsByFrequencyOfTheSmallestCharacter/CompareStringsByFrequencyOfTheSmallestCharacter.cpp)|Easy|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [C++](./algorithms/cpp/greatestCommonDivisorOfStrings/GreatestCommonDivisorOfStrings.cpp)|Easy|
