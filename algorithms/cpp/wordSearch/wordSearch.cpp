@@ -85,7 +85,7 @@ vector< vector<char> > buildBoard(char b[][5], int r, int c) {
     return board;
 }
 
-int main(int argc, char** argv)
+int main(int argc, char* argv[])
 {
     string s;
     char b[3][5] ={ "ABCE", "SFCS", "ADEE" };
