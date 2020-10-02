@@ -1,0 +1,28 @@
+// Problem 
+Kids With the Greatest Number of Candies :
+
+'''Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the ith kid has. 
+For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. 
+Notice that multiple kids can have the greatest number of candies. '''
+Link: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+
+func kidsWithCandies(candies []int, extraCandies int) []bool {
+    var maxElement = -1
+    for i:=0;i<len(candies);i++{
+        if(candies[i]>maxElement){
+            maxElement=candies[i]
+        }
+    }
+    var value =len(candies)
+    answer := make([]bool, value)
+
+    for i:=0;i<len(candies);i++{
+        if(candies[i]+extraCandies >= maxElement){
+            answer[i]=true
+        }else {
+            answer[i]=false
+        }
+    }
+    return answer
+    
+}
