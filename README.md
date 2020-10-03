@@ -19,6 +19,7 @@ LeetCode
 |1470|[Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) | [C++](./algorithms/cpp/shuffleTheArray/ShuffleTheArray.cpp)|Easy|
 |1464|[Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | [C++](./algorithms/cpp/maximumProductOfTwoElementsInAnArray/MaximumProductOfTwoElementsInAnArray.cpp)|Easy|
 |1460|[Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | [C++](./algorithms/cpp/twoArraysEqualByReversingSubArrays/MakeTwoArraysEqualByReversingSubArrays.cpp)|Easy|
+|1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./algorithms/cpp/filterRestaurants/filterRestaurants.cpp)|Medium|
 |1376|[Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | [C++](./algorithms/cpp/timeNeededToInformAllEmployees/TimeNeededToInformAllEmployees.cpp)|Medium|
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [C++](./algorithms/cpp/uniqueNumberOfOccurrences/Unique-Number-of-Occurrences.cpp)|Easy|
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/) | [C++](./algorithms/cpp/compareStringsByFrequencyOfTheSmallestCharacter/CompareStringsByFrequencyOfTheSmallestCharacter.cpp)|Easy|
