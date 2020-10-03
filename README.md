@@ -10,10 +10,12 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|
+|1556|[Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [C++](./algorithms/cpp/thousandSeparator/ThousandSeparator.cpp)|Easy|
 |1551|[Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | [C++](./algorithms/cpp/minimumOperationsToMakeArrayEqual/MinimumOperationsToMakeArrayEqual.cpp)|Medium|
 |1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | [C++](./algorithms/cpp/threeConsecutiveOdds/ThreeConsecutiveOdds.cpp)|Easy|
 |1541|[Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | [C++](./algorithms/cpp/minimumInsertionsToBalanceAParenthesesString/MinimumInsertionsToBalanceAParenthesesString.cpp)|Medium|
 |1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./algorithms/cpp/findTheWinnerOfAnArrayGame/FindTheWinnerOfAnArrayGame.cpp)|Medium|
+|1513|[Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s/) | [C++](./algorithms/cpp/numberOfSubstringsWithOnly1s/NumberOfSubstringsWithOnly1s.cpp)|Medium|
 |1470|[Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) | [C++](./algorithms/cpp/shuffleTheArray/ShuffleTheArray.cpp)|Easy|
 |1464|[Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | [C++](./algorithms/cpp/maximumProductOfTwoElementsInAnArray/MaximumProductOfTwoElementsInAnArray.cpp)|Easy|
 |1460|[Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | [C++](./algorithms/cpp/twoArraysEqualByReversingSubArrays/MakeTwoArraysEqualByReversingSubArrays.cpp)|Easy|
