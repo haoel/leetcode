@@ -10,6 +10,7 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|
+|1551|[Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | [C++](./algorithms/cpp/minimumOperationsToMakeArrayEqual/MinimumOperationsToMakeArrayEqual.cpp)|Medium|
 |1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | [C++](./algorithms/cpp/threeConsecutiveOdds/ThreeConsecutiveOdds.cpp)|Easy|
 |1541|[Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | [C++](./algorithms/cpp/minimumInsertionsToBalanceAParenthesesString/MinimumInsertionsToBalanceAParenthesesString.cpp)|Medium|
 |1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./algorithms/cpp/findTheWinnerOfAnArrayGame/FindTheWinnerOfAnArrayGame.cpp)|Medium|
