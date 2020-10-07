@@ -18,6 +18,7 @@ LeetCode
 |1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./algorithms/cpp/findTheWinnerOfAnArrayGame/FindTheWinnerOfAnArrayGame.cpp)|Medium|
 |1525|[Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [C++](./algorithms/cpp/numberOfGoodWaysToSplitAString/NumberOfGoodWaysToSplitAString.cpp)|Medium|
 |1524|[Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/) | [C++](./algorithms/cpp/numberOfSubArraysWithOddSum/NumberOfSubArraysWithOddSum.cpp)|Medium|
+|1523|[Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | [C++](./algorithms/cpp/countOddNumbersInAnIntervalRange/CountOddNumbersInAnIntervalRange.cpp)|Easy|
 |1513|[Number of Substrings With Only 1s](https://leetcode.com/problems/number-of-substrings-with-only-1s/) | [C++](./algorithms/cpp/numberOfSubstringsWithOnly1s/NumberOfSubstringsWithOnly1s.cpp)|Medium|
 |1470|[Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/) | [C++](./algorithms/cpp/shuffleTheArray/ShuffleTheArray.cpp)|Easy|
 |1464|[Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | [C++](./algorithms/cpp/maximumProductOfTwoElementsInAnArray/MaximumProductOfTwoElementsInAnArray.cpp)|Easy|
