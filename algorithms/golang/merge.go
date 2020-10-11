@@ -1,5 +1,3 @@
-package merge
-
 func merge(intervals [][]int) [][]int {
     if len(intervals) < 1 {
         return [][]int{}
