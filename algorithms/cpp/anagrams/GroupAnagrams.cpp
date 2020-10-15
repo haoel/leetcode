@@ -68,6 +68,9 @@ public:
         }
         return result;
     }
+    
+    
+ 
 
 
     //NOTICE: the below solution has been depracated as the problem has been updated!
@@ -91,3 +94,25 @@ public:
         return result;
     }
 };
+
+
+//Another simple method can be using unordered map
+/*we can simply do in few lines using stl libraries*/
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> mp;
+        for (string s : strs) {
+            string t = s; 
+            sort(t.begin(), t.end());
+            mp[t].push_back(s);
+        }
+        vector<vector<string>> anagrams;
+        for (auto p : mp) { 
+            anagrams.push_back(p.second);
+        }
+        return anagrams;
+    }
+};
+
+/*I hope this is much simple*/
