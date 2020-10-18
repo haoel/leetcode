@@ -1,0 +1,53 @@
+class Solution {
+public:
+    vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& ed) {
+        int in[n],out[n]; // represents incoming and outgoing edges for a node/vertex
+        vector<pair<int,int> >rd;
+        vector<int>con[n];
+        
+        for(int i=0;i<n;i++)in[i]=0,out[i]=0;
+        
+        for(int i=0;i<ed.size();i++){
+            out[ed[i][0]]++;
+            in[ed[i][1]]++;
+            con[ed[i][0]].push_back(ed[i][1]);
+        }
+        
+        int a[n],all=0;//,ans;
+        
+        for(int i=0;i<n;i++){
+            // cout<<in[i]<<" "<<out[i]<<endl;
+            a[i]=0;
+            if(in[i]==0)
+            rd.push_back(make_pair(out[i],i));
+        }
+        
+        sort(rd.begin(),rd.end());
+        
+        vector<int>ans;
+        
+        for(int i=rd.size()-1;i>=0;i--){
+            ans.push_back(rd[i].second);
+            a[rd[i].second]=1;all++;
+            queue<int>q;
+            q.push(rd[i].second);
+            while(!q.empty()){
+                int cur=q.front();q.pop();
+                for(int j=0;j<con[cur].size();j++){
+                    if(!a[con[cur][j]]){
+                        a[con[cur][j]]=1;
+                        all++;
+                        q.push(con[cur][j]);
+                    }
+                }
+                if(all==n){
+                    break;
+                }
+            }
+            if(all==n){
+                    break;
+            }
+        }
+        return ans;
+    }
+};
