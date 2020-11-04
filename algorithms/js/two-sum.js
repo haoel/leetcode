@@ -1,3 +1,6 @@
+// Source : https://leetcode.com/problems/two-sum/
+// Author : Phuong Lam
+// Date   : 2020-11-04
 /**
  * @param {number[]} nums
  * @param {number} target
