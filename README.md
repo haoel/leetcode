@@ -32,6 +32,7 @@ LeetCode
 |1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | [C++](./algorithms/cpp/twoCityScheduling/TwoCityScheduling.cpp)|Easy|
 |1028|[Recover a Tree From Preorder Traversal](https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/) | [C++](./algorithms/cpp/recoverATreeFromPreorderTraversal/recoverATreeFromPreorderTraversal.cpp)|Hard|
 |1024|[Video Stitching](https://leetcode.com/problems/video-stitching/) | [C++](./algorithms/cpp/videoStitching/VideoStitching.cpp)|Medium|
+|997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | [JavaScript](./algorithms/javascript/findTheTownJudge/findTheTownJudge.js)|Easy|
 |993|[Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/) | [C++](./algorithms/cpp/cousinsInBinaryTree/CousinsInBinaryTree.cpp)|Easy|
 |991|[Broken Calculator](https://leetcode.com/problems/broken-calculator/) | [C++](./algorithms/cpp/brokenCalculator/BrokenCalculator.cpp)|Medium|
 |990|[Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [C++](./algorithms/cpp/satisfiabilityOfEqualityEquations/SatisfiabilityOfEqualityEquations.cpp)|Medium|
