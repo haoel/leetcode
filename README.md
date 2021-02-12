@@ -12,6 +12,7 @@ LeetCode
 |1754|[Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/) | [C++](./algorithms/cpp/largestMergeOfTwoStrings/LargestMergeOfTwoStrings.cpp)|Medium|
 |1753|[Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./algorithms/cpp/maximumScoreFromRemovingStones/MaximumScoreFromRemovingStones.cpp)|Medium|
 |1752|[Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | [C++](./algorithms/cpp/checkIfArrayIsSortedAndRotated/CheckIfArrayIsSortedAndRotated.cpp)|Easy|
+|1748|[Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/) | [C++](./algorithms/cpp/sumOfUniqueElements/SumOfUniqueElements.cpp)|Easy|
 |1605|[Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./algorithms/cpp/FindValidMatrixGivenRowAndColumnSums/FindValidMatrixGivenRowAndColumnSums.cpp)|Medium|
 |1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|
 |1556|[Thousand Separator](https://leetcode.com/problems/thousand-separator/) | [C++](./algorithms/cpp/thousandSeparator/ThousandSeparator.cpp)|Easy|
