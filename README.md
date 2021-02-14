@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1760|[Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | [C++](./algorithms/cpp/minimumLimitOfBallsInABag/MinimumLimitOfBallsInABag.cpp)|Medium|
 |1759|[Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | [C++](./algorithms/cpp/countNumberOfHomogenousSubstrings/CountNumberOfHomogenousSubstrings.cpp)|Medium|
 |1758|[Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | [C++](./algorithms/cpp/minimumChangesToMakeAlternatingBinaryString/MinimumChangesToMakeAlternatingBinaryString.cpp)|Easy|
 |1754|[Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/) | [C++](./algorithms/cpp/largestMergeOfTwoStrings/LargestMergeOfTwoStrings.cpp)|Medium|
