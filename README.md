@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1758|[Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | [C++](./algorithms/cpp/minimumChangesToMakeAlternatingBinaryString/MinimumChangesToMakeAlternatingBinaryString.cpp)|Easy|
 |1754|[Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/) | [C++](./algorithms/cpp/largestMergeOfTwoStrings/LargestMergeOfTwoStrings.cpp)|Medium|
 |1753|[Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./algorithms/cpp/maximumScoreFromRemovingStones/MaximumScoreFromRemovingStones.cpp)|Medium|
 |1752|[Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | [C++](./algorithms/cpp/checkIfArrayIsSortedAndRotated/CheckIfArrayIsSortedAndRotated.cpp)|Easy|
