@@ -13,6 +13,7 @@ LeetCode
 |1760|[Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | [C++](./algorithms/cpp/minimumLimitOfBallsInABag/MinimumLimitOfBallsInABag.cpp)|Medium|
 |1759|[Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | [C++](./algorithms/cpp/countNumberOfHomogenousSubstrings/CountNumberOfHomogenousSubstrings.cpp)|Medium|
 |1758|[Minimum Changes To Make Alternating Binary String](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | [C++](./algorithms/cpp/minimumChangesToMakeAlternatingBinaryString/MinimumChangesToMakeAlternatingBinaryString.cpp)|Easy|
+|1755|[Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) | [C++](./algorithms/cpp/closestSubsequenceSum/ClosestSubsequenceSum.cpp)|Hard|
 |1754|[Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/) | [C++](./algorithms/cpp/largestMergeOfTwoStrings/LargestMergeOfTwoStrings.cpp)|Medium|
 |1753|[Maximum Score From Removing Stones](https://leetcode.com/problems/maximum-score-from-removing-stones/) | [C++](./algorithms/cpp/maximumScoreFromRemovingStones/MaximumScoreFromRemovingStones.cpp)|Medium|
 |1752|[Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | [C++](./algorithms/cpp/checkIfArrayIsSortedAndRotated/CheckIfArrayIsSortedAndRotated.cpp)|Easy|
