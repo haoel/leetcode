@@ -153,8 +153,8 @@ public:
     }
     
     int maxValueDP(vector<vector<int>>& events, int k) {
-        // for each event, find the next first event which 
-        // starting day is greater than its ending day
+        // for each event, find the previous nearest event which 
+        // ending day is less than its starting day
         
         for (int i = 0; i < events.size(); i++) {
             events[i].push_back( findPrevEvent(events, i, events[i][0]));
