@@ -21,6 +21,7 @@ LeetCode
 |1750|[Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [C++](./algorithms/cpp/minimumLengthOfStringAfterDeletingSimilarEnds/MinimumLengthOfStringAfterDeletingSimilarEnds.cpp)|Medium|
 |1749|[Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [C++](./algorithms/cpp/maximumAbsoluteSumOfAnySubarray/MaximumAbsoluteSumOfAnySubarray.cpp)|Medium|
 |1748|[Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/) | [C++](./algorithms/cpp/sumOfUniqueElements/SumOfUniqueElements.cpp)|Easy|
+|1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/) | [C++](./algorithms/cpp/minimumNumberOfPeopleToTeach/MinimumNumberOfPeopleToTeach.cpp)|Medium|
 |1732|[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | [C++](./algorithms/cpp/findTheHighestAltitude/FindTheHighestAltitude.cpp)|Easy|
 |1605|[Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./algorithms/cpp/FindValidMatrixGivenRowAndColumnSums/FindValidMatrixGivenRowAndColumnSums.cpp)|Medium|
 |1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|
