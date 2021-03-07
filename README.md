@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1786|[Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/) | [C++](./algorithms/cpp/numberOfRestrictedPathsFromFirstToLastNode/NumberOfRestrictedPathsFromFirstToLastNode.cpp)|Medium|
 |1785|[Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/) | [C++](./algorithms/cpp/minimumElementsToAddToFormAGivenSum/MinimumElementsToAddToFormAGivenSum.cpp)|Medium|
 |1784|[Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | [C++](./algorithms/cpp/checkIfBinaryStringHasAtMostOneSegmentOfOnes/CheckIfBinaryStringHasAtMostOneSegmentOfOnes.cpp)|Easy|
 |1761|[Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/) | [C++](./algorithms/cpp/minimumDegreeOfAConnectedTrioInAGraph/MinimumDegreeOfAConnectedTrioInAGraph.cpp)|Hard|
