@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1784|[Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | [C++](./algorithms/cpp/checkIfBinaryStringHasAtMostOneSegmentOfOnes/CheckIfBinaryStringHasAtMostOneSegmentOfOnes.cpp)|Easy|
 |1761|[Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/) | [C++](./algorithms/cpp/minimumDegreeOfAConnectedTrioInAGraph/MinimumDegreeOfAConnectedTrioInAGraph.cpp)|Hard|
 |1760|[Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | [C++](./algorithms/cpp/minimumLimitOfBallsInABag/MinimumLimitOfBallsInABag.cpp)|Medium|
 |1759|[Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | [C++](./algorithms/cpp/countNumberOfHomogenousSubstrings/CountNumberOfHomogenousSubstrings.cpp)|Medium|
