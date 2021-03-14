@@ -15,6 +15,7 @@ LeetCode
 |1781|[Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/) | [C++](./algorithms/cpp/sumOfBeautyOfAllSubstrings/SumOfBeautyOfAllSubstrings.cpp)|Medium|
 |1780|[Check if Number is a Sum of Powers of Three](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | [C++](./algorithms/cpp/checkIfNumberIsASumOfPowersOfThree/CheckIfNumberIsASumOfPowersOfThree.cpp)|Medium|
 |1779|[Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./algorithms/cpp/findNearestPointThatHasTheSameXOrYCoordinate/FindNearestPointThatHasTheSameXOrYCoordinate.cpp)|Easy|
+|1773|[Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./algorithms/cpp/countItemsMatchingARule/CountItemsMatchingARule.cpp)|Easy|
 |1763|[Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | [C++](./algorithms/cpp/longestNiceSubstring/LongestNiceSubstring.cpp)|Easy|
 |1761|[Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/) | [C++](./algorithms/cpp/minimumDegreeOfAConnectedTrioInAGraph/MinimumDegreeOfAConnectedTrioInAGraph.cpp)|Hard|
 |1760|[Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | [C++](./algorithms/cpp/minimumLimitOfBallsInABag/MinimumLimitOfBallsInABag.cpp)|Medium|
