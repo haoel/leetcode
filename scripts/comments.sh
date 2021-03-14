@@ -22,11 +22,11 @@ function usage()
     echo -e ""
     echo -e "Example:"
     echo -e ""
-    echo -e "   1) Create a file named largestNumber.cpp, and add Copyright & Problem description"
+    echo -e "   1) Create a file named LargestNumber.cpp, and add Copyright & Problem description"
     echo -e "   ${0} https://leetcode.com/problems/largest-number/"
     echo -e ""
     echo -e "   2) Add Copyright & Problem description into existed file"
-    echo -e "   ${0} https://leetcode.com/problems/largest-number/ largestNumber.cpp"
+    echo -e "   ${0} https://leetcode.com/problems/largest-number/ LargestNumber.cpp"
     echo -e ""
 }
 

@@ -49,3 +49,5 @@ query_problem ${URL} ${QUESTION_TITLE_SLUG}
 FILE=`echo ${FILE} | sed "s/.*\/algorithms/\.\/algorithms/"`
 
 echo "|${QUESTION_FRONTEND_ID}|[${QUESTION_TITLE}](${URL}) | [C++](${FILE})|${QUESTION_DIFFICULTY}|"
+
+echo "git commit -am \"New Problem Solution -\"${QUESTION_TITLE}\"\""
