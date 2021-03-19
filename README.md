@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1791|[Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/) | [C++](./algorithms/cpp/findCenterOfStarGraph/FindCenterOfStarGraph.cpp)|Medium|
 |1790|[Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) | [C++](./algorithms/cpp/checkIfOneStringSwapCanMakeStringsEqual/CheckIfOneStringSwapCanMakeStringsEqual.cpp)|Easy|
 |1786|[Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/) | [C++](./algorithms/cpp/numberOfRestrictedPathsFromFirstToLastNode/NumberOfRestrictedPathsFromFirstToLastNode.cpp)|Medium|
 |1785|[Minimum Elements to Add to Form a Given Sum](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/) | [C++](./algorithms/cpp/minimumElementsToAddToFormAGivenSum/MinimumElementsToAddToFormAGivenSum.cpp)|Medium|
