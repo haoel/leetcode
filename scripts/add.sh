@@ -42,7 +42,11 @@ dir_name=`echo ${QUESTION_TITLE_SLUG} | awk -F '-' '{for (i=1; i<=NF; i++) print
 dir_name=`echo ${dir_name:0:1} | tr '[A-Z]' '[a-z]'`${dir_name:1}
 
 mkdir -p ${dir_name}
-echo "${dir_name} is created!"
-
 cd ${dir_name}
-${SCRIPTPATH}/comments.sh ${leetcode_url}
+
+file=`${SCRIPTPATH}/comments.sh ${leetcode_url} | grep updated | awk '{print $1}'`
+
+git add ${file}
+vi "${file}"
+
+
