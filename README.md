@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1792|[Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./algorithms/cpp/maximumAveragePassRatio/MaximumAveragePassRatio.cpp)|Medium|
 |1791|[Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/) | [C++](./algorithms/cpp/findCenterOfStarGraph/FindCenterOfStarGraph.cpp)|Medium|
 |1790|[Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) | [C++](./algorithms/cpp/checkIfOneStringSwapCanMakeStringsEqual/CheckIfOneStringSwapCanMakeStringsEqual.cpp)|Easy|
 |1786|[Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/) | [C++](./algorithms/cpp/numberOfRestrictedPathsFromFirstToLastNode/NumberOfRestrictedPathsFromFirstToLastNode.cpp)|Medium|
