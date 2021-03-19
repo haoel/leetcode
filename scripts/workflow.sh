@@ -32,7 +32,7 @@ if [[ "${1}" == ${LEETCODE_OLD_URL}* ]]; then
     LEETCODE_URL=${LEETCODE_OLD_URL}
 fi
 
-
+platform=`detect_os`
 leetcode_url=$1
 
 get_question_slug ${leetcode_url}
@@ -58,10 +58,17 @@ output=`${SCRIPTPATH}/readme.sh ${file}`
 readme=`echo "${output}" | head -n 1`
 commit=`echo "${output}" | tail -n 1`
 
-echo $readme | pbcopy
+if [[ "$platform" == "macos" ]]; then
+    echo $readme | pbcopy
+else
+    echo $readme
+    read -n 1 -s -r -p  "Please copy the line above & press any key continue to edit README.md"
+fi
+
 echo "Step 5: Copied the readme text to Clipboard!"
 vi ${SCRIPTPATH}/../README.md
 echo "Step 6: Edited the \"README.md\"!"
 
-echo "Step 7: You can commit the changes now...."
-echo $commit
+echo "Step 7: You can commit the changes by running the following command line..."
+echo ""
+echo "            ${commit}"
