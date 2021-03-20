@@ -22,6 +22,7 @@ LeetCode
 |1779|[Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | [C++](./algorithms/cpp/findNearestPointThatHasTheSameXOrYCoordinate/FindNearestPointThatHasTheSameXOrYCoordinate.cpp)|Easy|
 |1774|[Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/) | [C++](./algorithms/cpp/closestDessertCost/ClosestDessertCost.cpp)|Medium|
 |1773|[Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./algorithms/cpp/countItemsMatchingARule/CountItemsMatchingARule.cpp)|Easy|
+|1769|[Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | [C++](./algorithms/cpp/minimumNumberOfOperationsToMoveAllBallsToEachBox/MinimumNumberOfOperationsToMoveAllBallsToEachBox.cpp)|Medium|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [C++](./algorithms/cpp/mergeStringsAlternately/MergeStringsAlternately.cpp)|Easy|
 |1763|[Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | [C++](./algorithms/cpp/longestNiceSubstring/LongestNiceSubstring.cpp)|Easy|
 |1761|[Minimum Degree of a Connected Trio in a Graph](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/) | [C++](./algorithms/cpp/minimumDegreeOfAConnectedTrioInAGraph/MinimumDegreeOfAConnectedTrioInAGraph.cpp)|Hard|
