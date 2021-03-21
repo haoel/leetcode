@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1800|[Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | [C++](./algorithms/cpp/maximumAscendingSubarraySum/MaximumAscendingSubarraySum.cpp)|Easy|
 |1793|[Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | [C++](./algorithms/cpp/maximumScoreOfAGoodSubarray/MaximumScoreOfAGoodSubarray.cpp)|Hard|
 |1792|[Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./algorithms/cpp/maximumAveragePassRatio/MaximumAveragePassRatio.cpp)|Medium|
 |1791|[Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/) | [C++](./algorithms/cpp/findCenterOfStarGraph/FindCenterOfStarGraph.cpp)|Medium|
