@@ -65,10 +65,10 @@ else
     read -n 1 -s -r -p  "Please copy the line above & press any key continue to edit README.md"
 fi
 
-echo "Step 5: Copied the readme text to Clipboard!"
+echo "Step 5 : Copied the readme text to Clipboard!"
 vi ${SCRIPTPATH}/../README.md
-echo "Step 6: Edited the \"README.md\"!"
+echo "Step 6 : Edited the \"README.md\"!"
 
-echo "Step 7: You can commit the changes by running the following command line..."
+echo "Step 7 : You can commit the changes by running the following command line..."
 echo ""
 echo "            ${commit}"
