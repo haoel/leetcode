@@ -13,6 +13,7 @@ LeetCode
 |1802|[Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [C++](./algorithms/cpp/maximumValueAtAGivenIndexInABoundedArray/MaximumValueAtAGivenIndexInABoundedArray.cpp)|Medium|
 |1801|[Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/) | [C++](./algorithms/cpp/numberOfOrdersInTheBacklog/NumberOfOrdersInTheBacklog.cpp)|Medium|
 |1800|[Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | [C++](./algorithms/cpp/maximumAscendingSubarraySum/MaximumAscendingSubarraySum.cpp)|Easy|
+|1796|[Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | [C++](./algorithms/cpp/secondLargestDigitInAString/SecondLargestDigitInAString.cpp)|Easy|
 |1793|[Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | [C++](./algorithms/cpp/maximumScoreOfAGoodSubarray/MaximumScoreOfAGoodSubarray.cpp)|Hard|
 |1792|[Maximum Average Pass Ratio](https://leetcode.com/problems/maximum-average-pass-ratio/) | [C++](./algorithms/cpp/maximumAveragePassRatio/MaximumAveragePassRatio.cpp)|Medium|
 |1791|[Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/) | [C++](./algorithms/cpp/findCenterOfStarGraph/FindCenterOfStarGraph.cpp)|Medium|
