@@ -48,14 +48,14 @@ function query_problem_jq()
 {
     QUESTION_CONTENT=$(jq -r '.data.question.content' ${TMP_JSON_FILE} | sed -e 's/<sup>/\^/g' | sed -e 's/<[^>]*>//g; s/&nbsp;/ /g; s/&amp;/\&/g; s/&lt;/\</g; s/&gt;/\>/g; s/&quot;/\"/g; s/&#39;/\'"'"'/g; s/&ldquo;/\"/g;')
 
-    QUESTION_DIFFICULTY=$(jq '.data.question.difficulty' ${TMP_JSON_FILE})
+    QUESTION_DIFFICULTY=$(jq -r '.data.question.difficulty' ${TMP_JSON_FILE})
 
-    QUESTION_TITLE=$(jq '.data.question.title' ${TMP_JSON_FILE})
+    QUESTION_TITLE=$(jq -r '.data.question.title' ${TMP_JSON_FILE})
 
-    QUESTION_ID=$(jq '.data.question.questionId' ${TMP_JSON_FILE})
+    QUESTION_ID=$(jq -r '.data.question.questionId' ${TMP_JSON_FILE})
 
-    QUESTION_FRONTEND_ID=$(jq '.data.question.questionFrontendId' ${TMP_JSON_FILE})
-
+    QUESTION_FRONTEND_ID=$(jq -r '.data.question.questionFrontendId' ${TMP_JSON_FILE})
+ 
 }
 
 function query_problem()
