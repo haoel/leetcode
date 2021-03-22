@@ -72,14 +72,19 @@ from the left to right,
    K = 1 1 0 1 0
    E = 0 1 0 1 0
        ^
-   X = 0 x x x x   ->  all of number with `0` as the 1st bit need be count.
+   X = 0 x x x x   ->  all of number with `0` as the 1st bit need to be counted.
+ 
+Notes: for the 1st bit of X, it could be `0` or `1`.
+ 
+   - `0`: after XOR E, the 1st bit is `0`, so, it must be smaller than `K`
+   - `1`: after XOR E, the 1st bit is `1`, so, we have to check the rest bits -> Step Two
    
 2) Step Two - the 2nd bit 
 
    K = 1 1 0 1 0
    E = 0 1 0 1 0
          ^
-   X = 1 1 x x x   ->  all of number with `1` as the 1st bit need be count.
+   X = 1 1 x x x   ->  all of number with `1` as the 2nd bit need to be counted.
 
 3) Step Three - the 3rd bit
 
@@ -93,7 +98,7 @@ from the left to right,
    K = 1 1 0 1 0
    E = 0 1 0 1 0
              ^
-   X = 1 1 0 1 x   ->  all of number with `1` as the 1st bit need be count.
+   X = 1 1 0 1 x   ->  all of number with `1` as the 4th bit need to be counted.
    
 5) Step Five - the 5th bit
 
