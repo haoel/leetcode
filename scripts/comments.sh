@@ -73,10 +73,10 @@ get_question_slug ${leetcode_url}
 
 
 TRUE_CMD=`which true`
-xidel=`type -P xidel || ${TRUE_CMD}`
-if [ -z "${xidel}" ]; then
-    echo "xidel not found !"
-    install_xidel
+JQ=`type -P jq || ${TRUE_CMD}`
+if [ -z "${JQ}" ]; then
+    echo "jq command is not found !"
+    install_jq
 fi
 
 #grab the problem information
