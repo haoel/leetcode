@@ -45,32 +45,39 @@ This problem can be treat as a pyramid which shaped by 1, it looks like below:
   1 1 1 1 1 1 1
 So, from the top, for each layer, we need the 1,3,5,7,9.... 2*n-1 ONE(s).
 
-But we need to deal with the edge case - it could be out of the array bound
+But we need to deal with the edge case - it could be out of the array boundary
 
 For example: index=2, lenght=3, maxSum=18
 
       1) at first, we put  `1 1 1` on bottom layer - Array[2] = 1
 
-      2) then we start from the top - Array[2] = 2
+      2) then we start from the top 
 
                 1   <-- the top first layer
             1 1 1   <-- bottom 
+            
+         now, we have Array[2] is 2
 
       3) we keep doing tthe 2nd layer - Array[2] = 3
                 1      <-- the 1st layer
-              1 1 [1]  <-- the 2nd layer, which has 1 out of the bound
+              1 1 [1]  <-- the 2nd layer, which has 1 out of the boundary
             1 1 1      <-- bottom 
+            
+         now, we have Array[2] is 3
 
       4) the 3rd layer  -  Array[2] = 4 
                 1         <-- the 1st layer
-              1 1 [1]     <-- the 2nd layer, which has 1 out of the bound
-            1 1 1 [1] [1] <-- the 3rd layer, which has 2 out of the bound
+              1 1 [1]     <-- the 2nd layer, which has 1 out of the boundary
+            1 1 1 [1] [1] <-- the 3rd layer, which has 2 out of the boundary
             1 1 1         <-- bottom 
+            
+         now, we have Array[2] is 4
    		 
-      5) Now, the rest layers no need to be cacluated, they all are `3`
-         So far, we spent 9 of `1`,  we still have 9, so 9/3 = 3
-   	  
-   	  6) Finally, the maximum of Array[2] = 4 + 3 = 7
+      5) Now, the rest layers no need to be cacluated, they all are `3`.
+         Since 4), we spent 9 of `1`,  we still have 18 - 9 = 9 of `1`
+         So, we can have 9/3 = 3 layer.
+         
+      6) Finally, the maximum of Array[2] = 4 + 3 = 7
 */
 
 class Solution {
