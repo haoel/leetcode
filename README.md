@@ -13,6 +13,7 @@ LeetCode
 |1802|[Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [C++](./algorithms/cpp/maximumValueAtAGivenIndexInABoundedArray/MaximumValueAtAGivenIndexInABoundedArray.cpp)|Medium|
 |1801|[Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/) | [C++](./algorithms/cpp/numberOfOrdersInTheBacklog/NumberOfOrdersInTheBacklog.cpp)|Medium|
 |1800|[Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | [C++](./algorithms/cpp/maximumAscendingSubarraySum/MaximumAscendingSubarraySum.cpp)|Easy|
+|1799|[Maximize Score After N Operations](https://leetcode.com/problems/maximize-score-after-n-operations/submissions/) | [C++](./algorithms/cpp/maximizeScoreAfterNOperations/MaximizeScoreAfterNOperations.cpp)|Hard|
 |1798|[Maximum Number of Consecutive Values You Can Make](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/submissions/) | [C++](./algorithms/cpp/maximumNumberOfConsecutiveValuesYouCanMake/MaximumNumberOfConsecutiveValuesYouCanMake.cpp)|Medium|
 |1797|[Design Authentication Manager](https://leetcode.com/problems/design-authentication-manager/) | [C++](./algorithms/cpp/designAuthenticationManager/DesignAuthenticationManager.cpp)|Medium|
 |1796|[Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | [C++](./algorithms/cpp/secondLargestDigitInAString/SecondLargestDigitInAString.cpp)|Easy|
