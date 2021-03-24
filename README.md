@@ -50,6 +50,7 @@ LeetCode
 |1734|[Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./algorithms/cpp/decodeXORedPermutation/DecodeXoredPermutation.cpp)|Medium|
 |1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/) | [C++](./algorithms/cpp/minimumNumberOfPeopleToTeach/MinimumNumberOfPeopleToTeach.cpp)|Medium|
 |1732|[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | [C++](./algorithms/cpp/findTheHighestAltitude/FindTheHighestAltitude.cpp)|Easy|
+|1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/) | [C++](./algorithms/cpp/lexicographicallySmallestStringAfterApplyingOperations/LexicographicallySmallestStringAfterApplyingOperations.cpp)|Medium|
 |1624|[Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/) | [C++](./algorithms/cpp/largestSubstringBetweenTwoEqualCharacters/LargestSubstringBetweenTwoEqualCharacters.cpp)|Easy|
 |1605|[Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./algorithms/cpp/FindValidMatrixGivenRowAndColumnSums/FindValidMatrixGivenRowAndColumnSums.cpp)|Medium|
 |1573|[Number of Ways to Split a String](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | [C++](./algorithms/cpp/NumberOfWaysToSplitString/NumberOfWaysToSplitString.cpp)|Medium|
