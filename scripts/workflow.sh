@@ -2,14 +2,14 @@
 set -e
 
 pushd `dirname $0` > /dev/null
-SCRIPTPATH=`pwd -P`
+SCRIPT_PATH=`pwd -P`
 popd > /dev/null
-SCRIPTFILE=`basename $0`
+SCRIPT_FILE=`basename $0`
 
 COLOR_INFO='\033[0;36m'
 COLOR_NONE='\033[0m'
 
-source ${SCRIPTPATH}/lib/query_problem.sh
+source ${SCRIPT_PATH}/lib/query_problem.sh
 
 function usage()
 {
@@ -45,7 +45,7 @@ mkdir -p ${dir_name}
 echo "Step 1 : Created \"${dir_name}\" directory!"
 cd ${dir_name}
  
-file=`${SCRIPTPATH}/comments.sh ${leetcode_url} | grep updated | awk '{print $1}'`
+file=`${SCRIPT_PATH}/comments.sh ${leetcode_url} | grep updated | awk '{print $1}'`
 echo "Step 2 : Created \"${dir_name}/${file}\" source file!"
  
 git add ${file}
