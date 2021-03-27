@@ -23,6 +23,13 @@ function usage()
     echo -e ""
 }
 
+function git_commit(){
+    TITLE=$1
+    FILE1=$2
+    FILE2=$3
+    git commit -m "New Problem Solution -\"${TITLE}\""  "${FILE1}" "${FILE2}"
+}
+
 if [ $# -lt 1 ] || [[ "${1}" != ${LEETCODE_NEW_URL}* ]] && [[ "${1}" != ${LEETCODE_OLD_URL}* ]]; then
     usage
     exit 255
@@ -42,16 +49,20 @@ dir_name=`echo ${dir_name:0:1} | tr '[A-Z]' '[a-z]'`${dir_name:1}
 mkdir -p ${dir_name}
 echo "Step 1 : Created \"${dir_name}\" directory!"
 cd ${dir_name}
-WORKING_DIR=`pwd`
- 
+
 file=`${SCRIPT_PATH}/comments.sh ${leetcode_url} | grep updated | awk '{print $1}'`
-echo "Step 2 : Created \"${dir_name}/${file}\" source file!"
+WORKING_DIR=`pwd`
+SRC="${dir_name}/${file}"
+SRC_FILE="${WORKING_DIR}/${file}"
+README_FILE="${SCRIPT_PATH}/../README.md"
 
-echo "Step 3 : Run \"git add ${dir_name}/${file}\"!"
-git add ${file}
+echo "Step 2 : Created \"${SRC}\" source file!"
 
-vi "${file}"
-echo "Step 4 : Edited the \"${dir_name}${file}\"!"
+echo "Step 3 : Run \"git add ${SRC}\"!"
+git add ${SRC_FILE}
+
+vi "${SRC_FILE}"
+echo "Step 4 : Edited the \"${SRC}\"!"
 readme=`${SCRIPT_PATH}/readme.sh ${file}`
 readme=`echo "${readme}" | head -n 1`
 
@@ -62,17 +73,18 @@ else
     read -n 1 -s -r -p  "Please copy the line above & press any key continue to edit README.md"
 fi
 echo "Step 5 : Copied the readme text to Clipboard!"
-vi ${SCRIPT_PATH}/../README.md
+vi ${README_FILE}
 
 echo "Step 6 : Edited the \"README.md\"!"
+
 QUESTION_TITLE=`echo "${readme}" | awk -F '|' '{print $3}' | sed 's/\[/\]/' |awk -F ']' '{print $2}'`
 commit="git commit -m \"New Problem Solution -\\\"${QUESTION_TITLE}\\\"\""
 
 echo "Step 7 : It's ready to commit to git repository ..."
 echo ""
 echo "      ${commit} \\"
-echo "          ${WORKING_DIR}/${file} \\"
-echo "          ${SCRIPT_PATH}/../README.md"
+echo "          ${SRC_FILE} \\"
+echo "          ${README_FILE}"
 echo ""
 
 #git status
@@ -82,7 +94,7 @@ commit="${commit} \"${WORKING_DIR}/${file}\" \"${SCRIPT_PATH}/../README.md\""
 while true; do
     read -p "Do you wish to commit them (y/n) ?" yn
     case $yn in
-        [Yy]* ) echo "/bin/bash -c ${commit}"; break;;
+        [Yy]* ) git_commit "${QUESTION_TITLE}" "${SRC_FILE}" "${README_FILE}" ; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
