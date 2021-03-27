@@ -32,6 +32,7 @@ LeetCode
 |1775|[Equal Sum Arrays With Minimum Number of Operations](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/) | [C++](./algorithms/cpp/equalSumArraysWithMinimumNumberOfOperations/EqualSumArraysWithMinimumNumberOfOperations.cpp)|Medium|
 |1774|[Closest Dessert Cost](https://leetcode.com/problems/closest-dessert-cost/) | [C++](./algorithms/cpp/closestDessertCost/ClosestDessertCost.cpp)|Medium|
 |1773|[Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/) | [C++](./algorithms/cpp/countItemsMatchingARule/CountItemsMatchingARule.cpp)|Easy|
+|1771|[Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/) | [C++](./algorithms/cpp/maximizePalindromeLengthFromSubsequences/MaximizePalindromeLengthFromSubsequences.cpp)|Hard|
 |1769|[Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | [C++](./algorithms/cpp/minimumNumberOfOperationsToMoveAllBallsToEachBox/MinimumNumberOfOperationsToMoveAllBallsToEachBox.cpp)|Medium|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [C++](./algorithms/cpp/mergeStringsAlternately/MergeStringsAlternately.cpp)|Easy|
 |1765|[Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak/) | [C++](./algorithms/cpp/mapOfHighestPeak/MapOfHighestPeak.cpp)|Medium|
