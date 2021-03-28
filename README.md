@@ -54,6 +54,7 @@ LeetCode
 |1750|[Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | [C++](./algorithms/cpp/minimumLengthOfStringAfterDeletingSimilarEnds/MinimumLengthOfStringAfterDeletingSimilarEnds.cpp)|Medium|
 |1749|[Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | [C++](./algorithms/cpp/maximumAbsoluteSumOfAnySubarray/MaximumAbsoluteSumOfAnySubarray.cpp)|Medium|
 |1748|[Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/) | [C++](./algorithms/cpp/sumOfUniqueElements/SumOfUniqueElements.cpp)|Easy|
+|1743|[Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/) | [C++](./algorithms/cpp/restoreTheArrayFromAdjacentPairs/RestoreTheArrayFromAdjacentPairs.cpp)|Medium|
 |1742|[Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) | [C++](./algorithms/cpp/maximumNumberOfBallsInABox/MaximumNumberOfBallsInABox.cpp)|Easy|
 |1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/) | [C++](./algorithms/cpp/latestTimeByReplacingHiddenDigits/LatestTimeByReplacingHiddenDigits.cpp)|Easy|
 |1734|[Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./algorithms/cpp/decodeXORedPermutation/DecodeXoredPermutation.cpp)|Medium|
