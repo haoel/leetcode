@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1806|[Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/) | [C++](./algorithms/cpp/minimumNumberOfOperationsToReinitializeAPermutation/MinimumNumberOfOperationsToReinitializeAPermutation.cpp)|Medium|
 |1805|[Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | [C++](./algorithms/cpp/numberOfDifferentIntegersInAString/NumberOfDifferentIntegersInAString.cpp)|Easy|
 |1803|[Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/) | [C++](./algorithms/cpp/countPairsWithXorInARange/CountPairsWithXorInARange.cpp)|Hard|
 |1802|[Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | [C++](./algorithms/cpp/maximumValueAtAGivenIndexInABoundedArray/MaximumValueAtAGivenIndexInABoundedArray.cpp)|Medium|
