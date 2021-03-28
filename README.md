@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1807|[Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | [C++](./algorithms/cpp/evaluateTheBracketPairsOfAString/EvaluateTheBracketPairsOfAString.cpp)|Medium|
 |1806|[Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/) | [C++](./algorithms/cpp/minimumNumberOfOperationsToReinitializeAPermutation/MinimumNumberOfOperationsToReinitializeAPermutation.cpp)|Medium|
 |1805|[Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | [C++](./algorithms/cpp/numberOfDifferentIntegersInAString/NumberOfDifferentIntegersInAString.cpp)|Easy|
 |1803|[Count Pairs With XOR in a Range](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/) | [C++](./algorithms/cpp/countPairsWithXorInARange/CountPairsWithXorInARange.cpp)|Hard|
