@@ -1,4 +1,4 @@
-// Source : https://leetcode.com/problems/bulb-switcher-ii/submissions/
+// Source : https://leetcode.com/problems/bulb-switcher-ii/
 // Author : Hao Chen
 // Date   : 2021-03-29
 
