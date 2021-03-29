@@ -72,6 +72,7 @@ LeetCode
 |1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | [C++](./algorithms/cpp/threeConsecutiveOdds/ThreeConsecutiveOdds.cpp)|Easy|
 |1541|[Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | [C++](./algorithms/cpp/minimumInsertionsToBalanceAParenthesesString/MinimumInsertionsToBalanceAParenthesesString.cpp)|Medium|
 |1535|[Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | [C++](./algorithms/cpp/findTheWinnerOfAnArrayGame/FindTheWinnerOfAnArrayGame.cpp)|Medium|
+|1528|[Shuffle String](https://leetcode.com/problems/shuffle-string/submissions/) | [C++](./algorithms/cpp/shuffleString/ShuffleString.cpp)|Easy|
 |1525|[Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [C++](./algorithms/cpp/numberOfGoodWaysToSplitAString/NumberOfGoodWaysToSplitAString.cpp)|Medium|
 |1524|[Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/) | [C++](./algorithms/cpp/numberOfSubArraysWithOddSum/NumberOfSubArraysWithOddSum.cpp)|Medium|
 |1523|[Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | [C++](./algorithms/cpp/countOddNumbersInAnIntervalRange/CountOddNumbersInAnIntervalRange.cpp)|Easy|
