@@ -77,8 +77,10 @@ vi ${README_FILE}
 
 echo "Step 6 : Edited the \"README.md\"!"
 
+QUESTION_FRONTEND_ID=`echo "${readme}" | awk -F '|' '{print $3}'`
+QUESTION_DIFFICULTY=`echo "${readme}" | awk -F '|' '{print $5}'`
 QUESTION_TITLE=`echo "${readme}" | awk -F '|' '{print $3}' | sed 's/\[/\]/' |awk -F ']' '{print $2}'`
-commit="git commit -m \"New Problem Solution -\\\"${QUESTION_TITLE}\\\"\""
+commit="git commit -m \"New Problem Solution -\\\"${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}\\\"\""
 
 echo "Step 7 : It's ready to commit to git repository ..."
 echo ""
@@ -92,9 +94,9 @@ echo ""
 commit="${commit} \"${WORKING_DIR}/${file}\" \"${SCRIPT_PATH}/../README.md\""
 
 while true; do
-    read -p "Do you wish to commit them (y/n) ?" yn
+    read -p "Do you wish to commit them (y/n) ? " yn
     case $yn in
-        [Yy]* ) git_commit "${QUESTION_TITLE}" "${SRC_FILE}" "${README_FILE}" ; break;;
+        [Yy]* ) git_commit "${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}" "${SRC_FILE}" "${README_FILE}" ; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
