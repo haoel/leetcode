@@ -77,7 +77,7 @@ vi ${README_FILE}
 
 echo "Step 6 : Edited the \"README.md\"!"
 
-QUESTION_FRONTEND_ID=`echo "${readme}" | awk -F '|' '{print $3}'`
+QUESTION_FRONTEND_ID=`echo "${readme}" | awk -F '|' '{print $2}'`
 QUESTION_DIFFICULTY=`echo "${readme}" | awk -F '|' '{print $5}'`
 QUESTION_TITLE=`echo "${readme}" | awk -F '|' '{print $3}' | sed 's/\[/\]/' |awk -F ']' '{print $2}'`
 commit="git commit -m \"New Problem Solution -\\\"${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}\\\"\""
