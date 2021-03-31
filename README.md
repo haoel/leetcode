@@ -56,6 +56,7 @@ LeetCode
 |1748|[Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/) | [C++](./algorithms/cpp/sumOfUniqueElements/SumOfUniqueElements.cpp)|Easy|
 |1743|[Restore the Array From Adjacent Pairs](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/) | [C++](./algorithms/cpp/restoreTheArrayFromAdjacentPairs/RestoreTheArrayFromAdjacentPairs.cpp)|Medium|
 |1742|[Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) | [C++](./algorithms/cpp/maximumNumberOfBallsInABox/MaximumNumberOfBallsInABox.cpp)|Easy|
+|1738|[Find Kth Largest XOR Coordinate Value](https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/) | [C++](./algorithms/cpp/findKthLargestXorCoordinateValue/FindKthLargestXorCoordinateValue.cpp)|Medium|
 |1736|[Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/) | [C++](./algorithms/cpp/latestTimeByReplacingHiddenDigits/LatestTimeByReplacingHiddenDigits.cpp)|Easy|
 |1734|[Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./algorithms/cpp/decodeXORedPermutation/DecodeXoredPermutation.cpp)|Medium|
 |1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/) | [C++](./algorithms/cpp/minimumNumberOfPeopleToTeach/MinimumNumberOfPeopleToTeach.cpp)|Medium|
