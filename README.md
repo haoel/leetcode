@@ -40,6 +40,7 @@ LeetCode
 |1770|[Maximum Score from Performing Multiplication Operations](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/) | [C++](./algorithms/cpp/maximumScoreFromPerformingMultiplicationOperations/MaximumScoreFromPerformingMultiplicationOperations.cpp)|Medium|
 |1769|[Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | [C++](./algorithms/cpp/minimumNumberOfOperationsToMoveAllBallsToEachBox/MinimumNumberOfOperationsToMoveAllBallsToEachBox.cpp)|Medium|
 |1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [C++](./algorithms/cpp/mergeStringsAlternately/MergeStringsAlternately.cpp)|Easy|
+|1766|[Tree of Coprimes](https://leetcode.com/problems/tree-of-coprimes/) | [C++](./algorithms/cpp/treeOfCoprimes/TreeOfCoprimes.cpp)|Hard|
 |1765|[Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak/) | [C++](./algorithms/cpp/mapOfHighestPeak/MapOfHighestPeak.cpp)|Medium|
 |1764|[Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/) | [C++](./algorithms/cpp/formArrayByConcatenatingSubarraysOfAnotherArray/FormArrayByConcatenatingSubarraysOfAnotherArray.cpp)|Medium|
 |1763|[Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | [C++](./algorithms/cpp/longestNiceSubstring/LongestNiceSubstring.cpp)|Easy|
