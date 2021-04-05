@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1819|[Number of Different Subsequences GCDs](https://leetcode.com/problems/number-of-different-subsequences-gcds/) | [C++](./algorithms/cpp/numberOfDifferentSubsequencesGcds/NumberOfDifferentSubsequencesGcds.cpp)|Hard|
 |1818|[Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./algorithms/cpp/minimumAbsoluteSumDifference/MinimumAbsoluteSumDifference.cpp)|Medium|
 |1817|[Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/) | [C++](./algorithms/cpp/findingTheUsersActiveMinutes/FindingTheUsersActiveMinutes.cpp)|Medium|
 |1816|[Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./algorithms/cpp/truncateSentence/TruncateSentence.cpp)|Easy|
