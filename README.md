@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1818|[Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./algorithms/cpp/minimumAbsoluteSumDifference/MinimumAbsoluteSumDifference.cpp)|Medium|
 |1817|[Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/) | [C++](./algorithms/cpp/findingTheUsersActiveMinutes/FindingTheUsersActiveMinutes.cpp)|Medium|
 |1816|[Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./algorithms/cpp/truncateSentence/TruncateSentence.cpp)|Easy|
 |1808|[Maximize Number of Nice Divisors](https://leetcode.com/problems/maximize-number-of-nice-divisors/) | [C++](./algorithms/cpp/maximizeNumberOfNiceDivisors/MaximizeNumberOfNiceDivisors.cpp)|Hard|
