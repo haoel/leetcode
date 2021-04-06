@@ -13,6 +13,7 @@ LeetCode
 |1818|[Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./algorithms/cpp/minimumAbsoluteSumDifference/MinimumAbsoluteSumDifference.cpp)|Medium|
 |1817|[Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/) | [C++](./algorithms/cpp/findingTheUsersActiveMinutes/FindingTheUsersActiveMinutes.cpp)|Medium|
 |1816|[Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | [C++](./algorithms/cpp/truncateSentence/TruncateSentence.cpp)|Easy|
+|1814|[Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | [C++](./algorithms/cpp/countNicePairsInAnArray/CountNicePairsInAnArray.cpp)|Medium|
 |1813|[Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | [C++](./algorithms/cpp/sentenceSimilarity/SentenceSimilarity.III.cpp)|Medium|
 |1812|[Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/) | [C++](./algorithms/cpp/determineColorOfAChessboardSquare/DetermineColorOfAChessboardSquare.cpp)|Easy|
 |1808|[Maximize Number of Nice Divisors](https://leetcode.com/problems/maximize-number-of-nice-divisors/) | [C++](./algorithms/cpp/maximizeNumberOfNiceDivisors/MaximizeNumberOfNiceDivisors.cpp)|Hard|
