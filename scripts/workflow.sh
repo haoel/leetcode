@@ -27,7 +27,7 @@ function git_commit(){
     TITLE=$1
     FILE1=$2
     FILE2=$3
-    git commit -m "New Problem Solution -\"${TITLE}\""  "${FILE1}" "${FILE2}"
+    git commit -m "New Problem Solution - \"${TITLE}\""  "${FILE1}" "${FILE2}"
 }
 
 if [ $# -lt 1 ] || [[ "${1}" != ${LEETCODE_NEW_URL}* ]] && [[ "${1}" != ${LEETCODE_OLD_URL}* ]]; then
@@ -80,7 +80,7 @@ echo "Step 6 : Edited the \"README.md\"!"
 QUESTION_FRONTEND_ID=`echo "${readme}" | awk -F '|' '{print $2}'`
 QUESTION_DIFFICULTY=`echo "${readme}" | awk -F '|' '{print $5}'`
 QUESTION_TITLE=`echo "${readme}" | awk -F '|' '{print $3}' | sed 's/\[/\]/' |awk -F ']' '{print $2}'`
-commit="git commit -m \"New Problem Solution -\\\"${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}\\\"\""
+commit="git commit -m \"New Problem Solution - \\\"${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}\\\"\""
 
 echo "Step 7 : It's ready to commit to git repository ..."
 echo ""
