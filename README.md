@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1823|[Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) | [C++](./algorithms/cpp/findTheWinnerOfTheCircularGame/FindTheWinnerOfTheCircularGame.cpp)|Medium|
 |1822|[Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) | [C++](./algorithms/cpp/signOfTheProductOfAnArray/SignOfTheProductOfAnArray.cpp)|Easy|
 |1819|[Number of Different Subsequences GCDs](https://leetcode.com/problems/number-of-different-subsequences-gcds/) | [C++](./algorithms/cpp/numberOfDifferentSubsequencesGcds/NumberOfDifferentSubsequencesGcds.cpp)|Hard|
 |1818|[Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) | [C++](./algorithms/cpp/minimumAbsoluteSumDifference/MinimumAbsoluteSumDifference.cpp)|Medium|
