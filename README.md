@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1825|[Finding MK Average](https://leetcode.com/problems/finding-mk-average/) | [C++](./algorithms/cpp/findingMkAverage/FindingMkAverage.cpp)|Hard|
 |1824|[Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/) | [C++](./algorithms/cpp/minimumSidewayJumps/MinimumSidewayJumps.cpp)|Medium|
 |1823|[Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) | [C++](./algorithms/cpp/findTheWinnerOfTheCircularGame/FindTheWinnerOfTheCircularGame.cpp)|Medium|
 |1822|[Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) | [C++](./algorithms/cpp/signOfTheProductOfAnArray/SignOfTheProductOfAnArray.cpp)|Easy|
