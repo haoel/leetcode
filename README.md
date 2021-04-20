@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1832|[Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | [C++](./algorithms/cpp/checkIfTheSentenceIsPangram/CheckIfTheSentenceIsPangram.cpp)|Easy|
 |1829|[Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | [C++](./algorithms/cpp/maximumXorForEachQuery/MaximumXorForEachQuery.cpp)|Medium|
 |1828|[Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/) | [C++](./algorithms/cpp/queriesOnNumberOfPointsInsideACircle/QueriesOnNumberOfPointsInsideACircle.cpp)|Medium|
 |1827|[Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/) | [C++](./algorithms/cpp/minimumOperationsToMakeTheArrayIncreasing/MinimumOperationsToMakeTheArrayIncreasing.cpp)|Easy|
