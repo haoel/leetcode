@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1828|[Queries on Number of Points Inside a Circle](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/) | [C++](./algorithms/cpp/queriesOnNumberOfPointsInsideACircle/QueriesOnNumberOfPointsInsideACircle.cpp)|Medium|
 |1827|[Minimum Operations to Make the Array Increasing](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/) | [C++](./algorithms/cpp/minimumOperationsToMakeTheArrayIncreasing/MinimumOperationsToMakeTheArrayIncreasing.cpp)|Easy|
 |1825|[Finding MK Average](https://leetcode.com/problems/finding-mk-average/) | [C++](./algorithms/cpp/findingMkAverage/FindingMkAverage.cpp)|Hard|
 |1824|[Minimum Sideway Jumps](https://leetcode.com/problems/minimum-sideway-jumps/) | [C++](./algorithms/cpp/minimumSidewayJumps/MinimumSidewayJumps.cpp)|Medium|
