@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1835|[Find XOR Sum of All Pairs Bitwise AND](https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/) | [C++](./algorithms/cpp/findXorSumOfAllPairsBitwiseAnd/FindXorSumOfAllPairsBitwiseAnd.cpp)|Hard|
 |1834|[Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/) | [C++](./algorithms/cpp/singleThreadedCpu/SingleThreadedCpu.cpp)|Medium|
 |1833|[Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) | [C++](./algorithms/cpp/maximumIceCreamBars/MaximumIceCreamBars.cpp)|Medium|
 |1832|[Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | [C++](./algorithms/cpp/checkIfTheSentenceIsPangram/CheckIfTheSentenceIsPangram.cpp)|Easy|
