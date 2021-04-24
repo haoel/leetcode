@@ -84,6 +84,7 @@ LeetCode
 |1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/) | [C++](./algorithms/cpp/minimumNumberOfPeopleToTeach/MinimumNumberOfPeopleToTeach.cpp)|Medium|
 |1732|[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | [C++](./algorithms/cpp/findTheHighestAltitude/FindTheHighestAltitude.cpp)|Easy|
 |1725|[Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/) | [C++](./algorithms/cpp/numberOfRectanglesThatCanFormTheLargestSquare/NumberOfRectanglesThatCanFormTheLargestSquare.cpp)|Easy|
+|1718|[Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | [C++](./algorithms/cpp/constructTheLexicographicallyLargestValidSequence/ConstructTheLexicographicallyLargestValidSequence.cpp)|Medium|
 |1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/) | [C++](./algorithms/cpp/maximumScoreFromRemovingSubstrings/MaximumScoreFromRemovingSubstrings.cpp)|Medium|
 |1716|[Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | [C++](./algorithms/cpp/calculateMoneyInLeetcodeBank/CalculateMoneyInLeetcodeBank.cpp)|Easy|
 |1711|[Count Good Meals](https://leetcode.com/problems/count-good-meals/) | [C++](./algorithms/cpp/countGoodMeals/CountGoodMeals.cpp)|Medium|
