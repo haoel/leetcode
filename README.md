@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1840|[Maximum Building Height](https://leetcode.com/problems/maximum-building-height/) | [C++](./algorithms/cpp/maximumBuildingHeight/MaximumBuildingHeight.cpp)|Hard|
 |1835|[Find XOR Sum of All Pairs Bitwise AND](https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/) | [C++](./algorithms/cpp/findXorSumOfAllPairsBitwiseAnd/FindXorSumOfAllPairsBitwiseAnd.cpp)|Hard|
 |1834|[Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/) | [C++](./algorithms/cpp/singleThreadedCpu/SingleThreadedCpu.cpp)|Medium|
 |1833|[Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) | [C++](./algorithms/cpp/maximumIceCreamBars/MaximumIceCreamBars.cpp)|Medium|
@@ -541,3 +542,4 @@ LeetCode
 |---| ----- | -------- | ---------- |
 |1|[Search in a big sorted array](http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/)|[Java](./algorithms/java/src/searchInABigSortedArray/searchInABigSortedArray.java)|Medium|
 |2|[Search Range in Binary Search Tree](http://www.lintcode.com/en/problem/search-range-in-binary-search-tree/) | [Java](./algorithms/java/src/searchRangeInBinarySearchTree/searchRangeInBinarySearchTree.java)|Medium|
+
