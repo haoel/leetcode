@@ -10,6 +10,7 @@ LeetCode
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1840|[Maximum Building Height](https://leetcode.com/problems/maximum-building-height/) | [C++](./algorithms/cpp/maximumBuildingHeight/MaximumBuildingHeight.cpp)|Hard|
+|1839|[Longest Substring Of All Vowels in Order](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/) | [C++](./algorithms/cpp/longestSubstringOfAllVowelsInOrder/LongestSubstringOfAllVowelsInOrder.cpp)|Medium|
 |1835|[Find XOR Sum of All Pairs Bitwise AND](https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/) | [C++](./algorithms/cpp/findXorSumOfAllPairsBitwiseAnd/FindXorSumOfAllPairsBitwiseAnd.cpp)|Hard|
 |1834|[Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/) | [C++](./algorithms/cpp/singleThreadedCpu/SingleThreadedCpu.cpp)|Medium|
 |1833|[Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) | [C++](./algorithms/cpp/maximumIceCreamBars/MaximumIceCreamBars.cpp)|Medium|
