@@ -86,7 +86,7 @@ So, we can figure out the following rules :
     - Building#1 max-height  = 2,  building#3 max-height = 5 : then, we only can make `[2,3,4]`
     - Building#1 max-height  = 2,  building#2 max-height = 9 : then, we only can make `[2,3]`
 
-So, we can have the following source code caluation the max height between two restractions.
+So, we can have the following source code to calculate the max height between two restractions.
 
 ```
     int getMaxHeight(vector<int>& left, vector<int>& right) {
@@ -112,14 +112,15 @@ BUT, we still have a case need to deal with, considering we have the following r
 
 we can process them couple by couple.
 
-- `[1,1], [2,2]` : max-height = 2
-- `[2,2] ,[3,3]` : max-height = 3
-- `[3,3], [4,0]` : max-height = 1
+- step 1: `[1,1], [2,2]` : max-height = 2
+- step 2: `[2,2] ,[3,3]` : max-height = 3
+- step 3: `[3,3], [4,0]` : max-height = 1
 
-for the last couple restractions, we can see the building#3 max-height is 1, so we have go backwards to recaluate the building#2 and building#1.
-- `[3,1], [4,0]` : max-height = 1
-- `[2,2] ,[3,1]` : max-height = 2
-- `[1,1], [2,2]` : max-height = 2
+for the last couple of restractions, we can see the building#3 max-height is 1, so we have go backwards to recaluate the building#2 and building#1.
+
+- step 3: `[3,1], [4,0]` : max-height = 1  (change the `[3,3]` to `[3,1]` )
+- step:4: `[2,2] ,[3,1]` : max-height = 2
+- step 5: `[1,1], [2,2]` : max-height = 2
 
 So, the correct answer of max height is `2`
 
