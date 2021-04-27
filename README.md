@@ -87,6 +87,7 @@ LeetCode
 |1734|[Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | [C++](./algorithms/cpp/decodeXORedPermutation/DecodeXoredPermutation.cpp)|Medium|
 |1733|[Minimum Number of People to Teach](https://leetcode.com/problems/minimum-number-of-people-to-teach/) | [C++](./algorithms/cpp/minimumNumberOfPeopleToTeach/MinimumNumberOfPeopleToTeach.cpp)|Medium|
 |1732|[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | [C++](./algorithms/cpp/findTheHighestAltitude/FindTheHighestAltitude.cpp)|Easy|
+|1726|[Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/) | [C++](./algorithms/cpp/tupleWithSameProduct/TupleWithSameProduct.cpp)|Medium|
 |1725|[Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/) | [C++](./algorithms/cpp/numberOfRectanglesThatCanFormTheLargestSquare/NumberOfRectanglesThatCanFormTheLargestSquare.cpp)|Easy|
 |1718|[Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | [C++](./algorithms/cpp/constructTheLexicographicallyLargestValidSequence/ConstructTheLexicographicallyLargestValidSequence.cpp)|Medium|
 |1717|[Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/) | [C++](./algorithms/cpp/maximumScoreFromRemovingSubstrings/MaximumScoreFromRemovingSubstrings.cpp)|Medium|
