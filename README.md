@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1844|[Replace All Digits with Characters](https://leetcode.com/problems/replace-all-digits-with-characters/) | [C++](./algorithms/cpp/replaceAllDigitsWithCharacters/ReplaceAllDigitsWithCharacters.cpp)|Easy|
 |1840|[Maximum Building Height](https://leetcode.com/problems/maximum-building-height/) | [C++](./algorithms/cpp/maximumBuildingHeight/MaximumBuildingHeight.cpp)|Hard|
 |1839|[Longest Substring Of All Vowels in Order](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/) | [C++](./algorithms/cpp/longestSubstringOfAllVowelsInOrder/LongestSubstringOfAllVowelsInOrder.cpp)|Medium|
 |1838|[Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | [C++](./algorithms/cpp/frequencyOfTheMostFrequentElement/FrequencyOfTheMostFrequentElement.cpp)|Medium|
