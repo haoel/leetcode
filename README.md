@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1849|[Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/) | [C++](./algorithms/cpp/splittingAStringIntoDescendingConsecutiveValues/SplittingAStringIntoDescendingConsecutiveValues.cpp)|Medium|
 |1848|[Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | [C++](./algorithms/cpp/minimumDistanceToTheTargetElement/MinimumDistanceToTheTargetElement.cpp)|Easy|
 |1847|[Closest Room](https://leetcode.com/problems/closest-room/) | [C++](./algorithms/cpp/closestRoom/ClosestRoom.cpp)|Hard|
 |1846|[Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) | [C++](./algorithms/cpp/maximumElementAfterDecreasingAndRearranging/MaximumElementAfterDecreasingAndRearranging.cpp)|Medium|
