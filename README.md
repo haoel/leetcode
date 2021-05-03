@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1850|[Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/) | [C++](./algorithms/cpp/minimumAdjacentSwapsToReachTheKthSmallestNumber/MinimumAdjacentSwapsToReachTheKthSmallestNumber.cpp)|Medium|
 |1849|[Splitting a String Into Descending Consecutive Values](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/) | [C++](./algorithms/cpp/splittingAStringIntoDescendingConsecutiveValues/SplittingAStringIntoDescendingConsecutiveValues.cpp)|Medium|
 |1848|[Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | [C++](./algorithms/cpp/minimumDistanceToTheTargetElement/MinimumDistanceToTheTargetElement.cpp)|Easy|
 |1847|[Closest Room](https://leetcode.com/problems/closest-room/) | [C++](./algorithms/cpp/closestRoom/ClosestRoom.cpp)|Hard|
