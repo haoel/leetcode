@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1846|[Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) | [C++](./algorithms/cpp/maximumElementAfterDecreasingAndRearranging/MaximumElementAfterDecreasingAndRearranging.cpp)|Medium|
 |1845|[Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | [C++](./algorithms/cpp/seatReservationManager/SeatReservationManager.cpp)|Medium|
 |1844|[Replace All Digits with Characters](https://leetcode.com/problems/replace-all-digits-with-characters/) | [C++](./algorithms/cpp/replaceAllDigitsWithCharacters/ReplaceAllDigitsWithCharacters.cpp)|Easy|
 |1840|[Maximum Building Height](https://leetcode.com/problems/maximum-building-height/) | [C++](./algorithms/cpp/maximumBuildingHeight/MaximumBuildingHeight.cpp)|Hard|
