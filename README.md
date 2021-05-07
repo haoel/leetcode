@@ -103,6 +103,7 @@ LeetCode
 |1716|[Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | [C++](./algorithms/cpp/calculateMoneyInLeetcodeBank/CalculateMoneyInLeetcodeBank.cpp)|Easy|
 |1711|[Count Good Meals](https://leetcode.com/problems/count-good-meals/) | [C++](./algorithms/cpp/countGoodMeals/CountGoodMeals.cpp)|Medium|
 |1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/) | [C++](./algorithms/cpp/maximumUnitsOnATruck/MaximumUnitsOnATruck.cpp)|Easy|
+|1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | [C++](./algorithms/cpp/reformatPhoneNumber/ReformatPhoneNumber.cpp)|Easy|
 |1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/) | [C++](./algorithms/cpp/lexicographicallySmallestStringAfterApplyingOperations/LexicographicallySmallestStringAfterApplyingOperations.cpp)|Medium|
 |1624|[Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/) | [C++](./algorithms/cpp/largestSubstringBetweenTwoEqualCharacters/LargestSubstringBetweenTwoEqualCharacters.cpp)|Easy|
 |1605|[Find Valid Matrix Given Row and Column Sums](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | [C++](./algorithms/cpp/FindValidMatrixGivenRowAndColumnSums/FindValidMatrixGivenRowAndColumnSums.cpp)|Medium|
