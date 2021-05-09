@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1855|[Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | [C++](./algorithms/cpp/maximumDistanceBetweenAPairOfValues/MaximumDistanceBetweenAPairOfValues.cpp)|Medium|
 |1854|[Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | [C++](./algorithms/cpp/maximumPopulationYear/MaximumPopulationYear.cpp)|Easy|
 |1851|[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [C++](./algorithms/cpp/minimumIntervalToIncludeEachQuery/MinimumIntervalToIncludeEachQuery.cpp)|Hard|
 |1850|[Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/) | [C++](./algorithms/cpp/minimumAdjacentSwapsToReachTheKthSmallestNumber/MinimumAdjacentSwapsToReachTheKthSmallestNumber.cpp)|Medium|
