@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1856|[Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./algorithms/cpp/maximumSubarrayMinProduct/MaximumSubarrayMinProduct.cpp)|Medium|
 |1855|[Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | [C++](./algorithms/cpp/maximumDistanceBetweenAPairOfValues/MaximumDistanceBetweenAPairOfValues.cpp)|Medium|
 |1854|[Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | [C++](./algorithms/cpp/maximumPopulationYear/MaximumPopulationYear.cpp)|Easy|
 |1851|[Minimum Interval to Include Each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | [C++](./algorithms/cpp/minimumIntervalToIncludeEachQuery/MinimumIntervalToIncludeEachQuery.cpp)|Hard|
