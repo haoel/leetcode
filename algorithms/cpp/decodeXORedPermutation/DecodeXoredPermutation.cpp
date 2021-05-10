@@ -30,7 +30,53 @@
  * 	n is odd.
  * 	encoded.length == n - 1
  ******************************************************************************************************/
+/*
+    XOR Basic Rules
+    ---------------
+    At first, we need understand the following XOR rules
 
+    x^x = 0
+    0^x = x
+    with the rule 1 and 2 , we can have: x^x^y = y . the element ocurrs twice would be removed.
+    if x^y = z , then x = y^z and y = x^z
+   
+    XOR from 1 to n
+    ---------------
+    Secondly, suppose the f(n) is XOR from 1 to n , f(n) = 1^2^3^4^5 .... ^n .
+    if the n is odd number, then we can observse the following things:
+
+    f(1) = 1
+    f(3) = 1^2^3 = 0
+    f(5) = 1^2^3^4^5 = 1
+    f(7) = 1^2^3^4^5^6^7 = 0
+    f(9) = 1^2^3^4^5^6^7^8^9 = 1
+    ... ...
+    so, f(n) = [ (n-1)/2 + 1 ] % 2 - (n is odd number)
+
+    Solution
+    --------
+    We know,
+    encode = { (p1^p2), (p2^p3), (p3^p4), ... } - p is the permutation array
+
+    so, if xor the odd index of encoded[] array,
+
+    encoded[1] = p2 ^ p3;
+    encoded[3] = p4 ^ p5;
+    encoded[5] = p6 ^ p7;
+    ......
+    we can get: f(m) = p2 ^ p3 ^ p4 ...pn, without the p1
+
+    with the XOR rule 3, we know
+
+    p1 = f(n) ^ f(m)
+
+    with the XOR rule 4, we know encoded[0] = p1^p2 then
+    p2 = p1 ^ enclode[0]
+
+    So,
+
+    p[i+1] = p[i] ^ enclode[i]
+*/
 class Solution {
 public:
     vector<int> decode(vector<int>& encoded) {

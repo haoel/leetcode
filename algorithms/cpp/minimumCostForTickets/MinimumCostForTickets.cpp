@@ -62,15 +62,16 @@ public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {
 
         // Dynamic Programming
-        vector<int> dp(days.size(), INT_MAX);
+        vector<int> dp(days.size()+1, INT_MAX);
 
         // dp[i] is the minimal cost from Days[0] to Days[i]
-        dp[0] = costs[0];
+        dp[0] = 0;
+        dp[1] = min(costs[0], costs[1], costs[2]);
 
-        for (int i = 1; i< days.size(); i ++) {
+        for (int i = 2; i<= days.size(); i ++) {
 
-            // the currnet day need at least 1-day pass cost
-            int OneDayPass = dp[i-1] + costs[0];
+            // the currnet day need at least min(1-day, 7days, 30days) from previous.
+            int m = dp[i-1] + min(costs[0], costs[1], costs[2]);
 
             // Seprating the array to two parts.
             //     days[0] -> days[j] -> day[i]
@@ -79,21 +80,23 @@ public:
             //
             // Traking the minimal costs, then can have dp[i] minimal cost
 
-            int SevenDayPass = INT_MAX, ThrityDayPass = INT_MAX;
-            for (int j=i-1; j>=0; j--){
-                if (days[i] - days[j] < 7 )  {
-                    SevenDayPass  = dp[j-1] + costs[1];
-                } else if (days[i] - days[j] < 30 ) {
-                    ThrityDayPass = dp[j-1] + costs[2];
+            int SevenDays = INT_MAX, ThrityDays = INT_MAX;
+            for (int j=i-1; j>0; j--){
+                int gaps = days[i-1] - days[j-1];
+                if ( gaps < 7 )  {
+                    // can use 7-days or 30-days ticket
+                    SevenDays  = dp[j-1] + min(costs[1], costs[2]);
+                } else if (gaps < 30 ) {
+                    //can use 30-days tickets
+                    ThrityDays = dp[j-1] + costs[2];
                 } else {
                     break;
                 }
-                int m = min(OneDayPass, SevenDayPass, ThrityDayPass);
-                if ( dp[i] > m )  dp[i] = m;
+                m = min(m, SevenDays, ThrityDays);
             }
-
+            if ( dp[i] > m )  dp[i] = m;
         }
-
-        return dp[dp.size()-1];
+        
+        return dp[dp.size()-1];    
     }
 };
