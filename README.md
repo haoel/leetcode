@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1857|[Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [C++](./algorithms/cpp/largestColorValueInADirectedGraph/LargestColorValueInADirectedGraph.cpp)|Hard|
 |1856|[Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./algorithms/cpp/maximumSubarrayMinProduct/MaximumSubarrayMinProduct.cpp)|Medium|
 |1855|[Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | [C++](./algorithms/cpp/maximumDistanceBetweenAPairOfValues/MaximumDistanceBetweenAPairOfValues.cpp)|Medium|
 |1854|[Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | [C++](./algorithms/cpp/maximumPopulationYear/MaximumPopulationYear.cpp)|Easy|
@@ -543,7 +544,7 @@ LeetCode
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [C++](./algorithms/cpp/addTwoNumbers/addTwoNumbers.cpp)|Medium|
 |1|[Two Sum](https://leetcode.com/problems/two-sum/)| [C++](./algorithms/cpp/twoSum/twoSum.cpp), [Go](./algorithms/golang/twoSum/twoSum.go)|Easy|
 
-
+l
 ### LeetCode Shell
 
 
@@ -560,5 +561,6 @@ LeetCode
 |---| ----- | -------- | ---------- |
 |1|[Search in a big sorted array](http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/)|[Java](./algorithms/java/src/searchInABigSortedArray/searchInABigSortedArray.java)|Medium|
 |2|[Search Range in Binary Search Tree](http://www.lintcode.com/en/problem/search-range-in-binary-search-tree/) | [Java](./algorithms/java/src/searchRangeInBinarySearchTree/searchRangeInBinarySearchTree.java)|Medium|
+
 
 
