@@ -10,8 +10,6 @@ class Solution:
         for i in range(2, n):
             if primes[i]:
                 res += 1
-                for j in range(2, n):
-                    if j * i >= n: 
-                        break
-                    primes[i * j] = False
+                for j in range(i * i, n, i):
+                    primes[j] = False
         return res
