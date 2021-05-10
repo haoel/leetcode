@@ -107,6 +107,7 @@ LeetCode
 |1716|[Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | [C++](./algorithms/cpp/calculateMoneyInLeetcodeBank/CalculateMoneyInLeetcodeBank.cpp)|Easy|
 |1711|[Count Good Meals](https://leetcode.com/problems/count-good-meals/) | [C++](./algorithms/cpp/countGoodMeals/CountGoodMeals.cpp)|Medium|
 |1710|[Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/) | [C++](./algorithms/cpp/maximumUnitsOnATruck/MaximumUnitsOnATruck.cpp)|Easy|
+|1700|[Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/) | [C++](./algorithms/cpp/numberOfStudentsUnableToEatLunch/NumberOfStudentsUnableToEatLunch.cpp)|Easy|
 |1695|[Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | [C++](./algorithms/cpp/maximumErasureValue/MaximumErasureValue.cpp)|Medium|
 |1694|[Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | [C++](./algorithms/cpp/reformatPhoneNumber/ReformatPhoneNumber.cpp)|Easy|
 |1625|[Lexicographically Smallest String After Applying Operations](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/) | [C++](./algorithms/cpp/lexicographicallySmallestStringAfterApplyingOperations/LexicographicallySmallestStringAfterApplyingOperations.cpp)|Medium|
