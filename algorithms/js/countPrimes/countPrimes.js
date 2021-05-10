@@ -18,7 +18,7 @@
     for (let i = 2; i < n; i++) {
         if (primes[i]) {
             res++;
-            for (let j = i; j < n; j += i) primes[j] = false;
+            for (let j = i * i; j < n; j += i) primes[j] = false;
         }
     }
     return res;
