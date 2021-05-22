@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1860|[Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | [C++](./algorithms/cpp/incrementalMemoryLeak/IncrementalMemoryLeak.cpp)|Medium|
 |1859|[Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) | [C++](./algorithms/cpp/sortingTheSentence/SortingTheSentence.cpp)|Easy|
 |1857|[Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [C++](./algorithms/cpp/largestColorValueInADirectedGraph/LargestColorValueInADirectedGraph.cpp)|Hard|
 |1856|[Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/) | [C++](./algorithms/cpp/maximumSubarrayMinProduct/MaximumSubarrayMinProduct.cpp)|Medium|
