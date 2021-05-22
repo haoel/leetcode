@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1861|[Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./algorithms/cpp/rotatingTheBox/RotatingTheBox.cpp)|Medium|
 |1860|[Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | [C++](./algorithms/cpp/incrementalMemoryLeak/IncrementalMemoryLeak.cpp)|Medium|
 |1859|[Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) | [C++](./algorithms/cpp/sortingTheSentence/SortingTheSentence.cpp)|Easy|
 |1857|[Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | [C++](./algorithms/cpp/largestColorValueInADirectedGraph/LargestColorValueInADirectedGraph.cpp)|Hard|
