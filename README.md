@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1880|[Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | [C++](./algorithms/cpp/checkIfWordEqualsSummationOfTwoWords/CheckIfWordEqualsSummationOfTwoWords.cpp)|Easy|
 |1871|[Jump Game VII](https://leetcode.com/problems/jump-game-vii/) | [C++](./algorithms/cpp/jumpGame/jumpGame.VII.cpp)|Medium|
 |1870|[Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [C++](./algorithms/cpp/minimumSpeedToArriveOnTime/MinimumSpeedToArriveOnTime.cpp)|Medium|
 |1869|[Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./algorithms/cpp/longerContiguousSegmentsOfOnesThanZeros/LongerContiguousSegmentsOfOnesThanZeros.cpp)|Easy|
