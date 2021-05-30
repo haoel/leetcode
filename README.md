@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1870|[Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [C++](./algorithms/cpp/minimumSpeedToArriveOnTime/MinimumSpeedToArriveOnTime.cpp)|Medium|
 |1869|[Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | [C++](./algorithms/cpp/longerContiguousSegmentsOfOnesThanZeros/LongerContiguousSegmentsOfOnesThanZeros.cpp)|Easy|
 |1862|[Sum of Floored Pairs](https://leetcode.com/problems/sum-of-floored-pairs/) | [C++](./algorithms/cpp/sumOfFlooredPairs/SumOfFlooredPairs.cpp)|Hard|
 |1861|[Rotating the Box](https://leetcode.com/problems/rotating-the-box/) | [C++](./algorithms/cpp/rotatingTheBox/RotatingTheBox.cpp)|Medium|
