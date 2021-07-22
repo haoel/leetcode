@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1935|[Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | [C++](./algorithms/cpp/maximumNumberOfWordsYouCanType/MaximumNumberOfWordsYouCanType.cpp)|Easy|
 |1882|[Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./algorithms/cpp/processTasksUsingServers/ProcessTasksUsingServers.cpp)|Medium|
 |1881|[Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | [C++](./algorithms/cpp/maximumValueAfterInsertion/MaximumValueAfterInsertion.cpp)|Medium|
 |1880|[Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | [C++](./algorithms/cpp/checkIfWordEqualsSummationOfTwoWords/CheckIfWordEqualsSummationOfTwoWords.cpp)|Easy|
