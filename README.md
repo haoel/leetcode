@@ -15,6 +15,7 @@ LeetCode
 |1882|[Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./algorithms/cpp/processTasksUsingServers/ProcessTasksUsingServers.cpp)|Medium|
 |1881|[Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | [C++](./algorithms/cpp/maximumValueAfterInsertion/MaximumValueAfterInsertion.cpp)|Medium|
 |1880|[Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | [C++](./algorithms/cpp/checkIfWordEqualsSummationOfTwoWords/CheckIfWordEqualsSummationOfTwoWords.cpp)|Easy|
+|1877|[Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | [C++](/Users/chenhao/GitHub/leetcode/minimizeMaximumPairSumInArray/MinimizeMaximumPairSumInArray.cpp)|Medium|
 |1876|[Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/submissions/) | [C++](/Users/chenhao/GitHub/leetcode/substringsOfSizeThreeWithDistinctCharacters/SubstringsOfSizeThreeWithDistinctCharacters.cpp)|Easy|
 |1871|[Jump Game VII](https://leetcode.com/problems/jump-game-vii/) | [C++](./algorithms/cpp/jumpGame/jumpGame.VII.cpp)|Medium|
 |1870|[Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | [C++](./algorithms/cpp/minimumSpeedToArriveOnTime/MinimumSpeedToArriveOnTime.cpp)|Medium|
