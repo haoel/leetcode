@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|1945|[Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | [C++](/Users/chenhao/GitHub/leetcode/sumOfDigitsOfStringAfterConvert/SumOfDigitsOfStringAfterConvert.cpp)|Easy|
 |1935|[Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | [C++](./algorithms/cpp/maximumNumberOfWordsYouCanType/MaximumNumberOfWordsYouCanType.cpp)|Easy|
 |1882|[Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | [C++](./algorithms/cpp/processTasksUsingServers/ProcessTasksUsingServers.cpp)|Medium|
 |1881|[Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | [C++](./algorithms/cpp/maximumValueAfterInsertion/MaximumValueAfterInsertion.cpp)|Medium|
