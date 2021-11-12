@@ -67,6 +67,10 @@ public:
                 return false;
             }
             
+            // invalid utf-8 as it doesn't have enough 10xxxxxx
+            if (i + len > data.size()) {
+                return false;
+            }
             
             for (int j=i+1; j < i+len; j++) { //checking 10xxxxxx
                 if ( (data[j] & 0xC0) != 0x80 ) {
@@ -75,11 +79,6 @@ public:
             }
             
             i += len ;
-            
-            if (i > data.size()) {
-                return false;
-            }
-            
         }
         return true;
     }
