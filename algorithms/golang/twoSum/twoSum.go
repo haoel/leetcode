@@ -1,6 +1,6 @@
 package twoSum
 
-func twoSum(nums []int, target int) []int {
+func twoSum(nums []int, target int) [2]int {
 	numMap := make(map[int]int)
 	for index, num := range nums {
 		if i, ok := numMap[target-num]; ok {
