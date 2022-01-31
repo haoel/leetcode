@@ -425,7 +425,7 @@ LeetCode
 |140|[Word Break II](https://leetcode.com/problems/word-break-ii/)| [C++](./algorithms/cpp/wordBreak/wordBreak.II.cpp)|Hard|
 |139|[Word Break](https://leetcode.com/problems/word-break/)| [C++](./algorithms/cpp/wordBreak/wordBreak.cpp)|Medium|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)| [C++](./algorithms/cpp/copyListWithRandomPointer/copyListWithRandomPointer.cpp), [Python](./algorithms/python/CopyListWithRandomPointer/copyRandomList.py)|Hard|
-|137|[Single Number II](https://leetcode.com/problems/single-number-ii/)| [C++](./algorithms/cpp/singleNumber/singleNumber.II.cpp)|Medium|
+|137|[Single Number II](https://leetcode.com/problems/single-number-ii/)| [C++](./algorithms/cpp/singleNumber/singleNumber.II.cpp), [Python](./algorithms/python/SingleNumberII/SingleNumberII.py)|Medium|
 |136|[Single Number](https://leetcode.com/problems/single-number/)| [C++](./algorithms/cpp/singleNumber/singleNumber.cpp)|Medium|
 |135|[Candy](https://leetcode.com/problems/candy/)| [C++](./algorithms/cpp/candy/candy.cpp)|Hard|
 |134|[Gas Station](https://leetcode.com/problems/gas-station/)| [C++](./algorithms/cpp/gasStation/gasStation.cpp)|Medium|
@@ -434,7 +434,7 @@ LeetCode
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)| [C++](./algorithms/cpp/palindromePartitioning/palindromePartitioning.cpp)|Medium|
 |130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)| [C++](./algorithms/cpp/surroundedRegions/surroundedRegions.cpp)|Medium|
 |129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)| [C++](./algorithms/cpp/sumRootToLeafNumber/sumRootToLeafNumber.cpp), [Python](./algorithms/python/SumRootToLeafNumbers/sumNumbers.py)|Medium|
-|128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)| [C++](./algorithms/cpp/longestConsecutiveSequence/longestConsecutiveSequence.cpp)|Hard|
+|128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)| [C++](./algorithms/cpp/longestConsecutiveSequence/longestConsecutiveSequence.cpp), [Python](./algorithms/python/LongestConsecutiveSequence/LongestConsecutive.py)|Medium|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder/)| [C++](./algorithms/cpp/wordLadder/wordLadder.cpp)|Medium|
 |126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)| [C++](./algorithms/cpp/wordLadder/wordLadder.II.cpp)|Hard|
 |125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)| [C++](./algorithms/cpp/validPalindrome/validPalindrome.cpp), [Java](./algorithms/java/src/validPalindrome/ValidPalindrome.java)|Easy|
