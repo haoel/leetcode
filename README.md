@@ -151,6 +151,7 @@ LeetCode
 |1333|[Filter Restaurants by Vegan-Friendly, Price and Distance](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | [C++](./algorithms/cpp/filterRestaurantsByVeganFriendlyPriceAndDistance/FilterRestaurantsByVeganFriendlyPriceAndDistance.cpp)|Medium|
 |1207|[Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | [C++](./algorithms/cpp/uniqueNumberOfOccurrences/Unique-Number-of-Occurrences.cpp)|Easy|
 |1170|[Compare Strings by Frequency of the Smallest Character](https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/) | [C++](./algorithms/cpp/compareStringsByFrequencyOfTheSmallestCharacter/CompareStringsByFrequencyOfTheSmallestCharacter.cpp)|Easy|
+|1103|[Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/) | [Java](./algorithms/java/src/DistributeCandiesToPeople/DistributeCandiesToPeople.java)|Easy|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [C++](./algorithms/cpp/greatestCommonDivisorOfStrings/GreatestCommonDivisorOfStrings.cpp)|Easy|
 |1030|[Matrix Cells in Distance Order](https://leetcode.com/problems/matrix-cells-in-distance-order/) | [C++](./algorithms/cpp/matrixCellsInDistanceOrder/MatrixCellsInDistanceOrder.cpp)|Easy|
 |1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | [C++](./algorithms/cpp/twoCityScheduling/TwoCityScheduling.cpp)|Easy|
