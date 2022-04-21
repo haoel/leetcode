@@ -1,3 +1,7 @@
+// Source : https://leetcode.com/problems/is-subsequence/
+// Author : Diego Ruiz Piqueras (Pikeras72)
+// Date   : 22-04-2022
+
 /***************************************************************************************************** 
  *
  * Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
