@@ -1,3 +1,7 @@
+// Source : https://leetcode.com/problems/distribute-candies-to-people/
+// Author : Diego Ruiz Piqueras (Pikeras72)
+// Date   : 22-04-2022
+
 /***************************************************************************************************** 
  *
  * We distribute some number of candies, to a row of n = num_people people in the
