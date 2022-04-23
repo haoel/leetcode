@@ -392,7 +392,7 @@ LeetCode
 |174|[Dungeon Game](https://leetcode.com/problems/dungeon-game/) | [C++](./algorithms/cpp/dungeonGame/dungeonGame.cpp)|Hard|
 |173|[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [C++](./algorithms/cpp/binarySearchTreeIterator/binarySearchTreeIterator.cpp), [Java](./algorithms/java/src/binarySearchTreeIterator/binarySearchTreeIterator.java), [Python](./algorithms/python/BinarySearchTreeIterator/BSTIterator.py)|Medium|
 |172|[Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | [C++](./algorithms/cpp/factorialTrailingZeroes/factorialTrailingZeroes.cpp)|Easy|
-|171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [C++](./algorithms/cpp/excelSheetColumnNumber/excelSheetColumnNumber.cpp)|Easy|
+|171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [C++](./algorithms/cpp/excelSheetColumnNumber/excelSheetColumnNumber.cpp), [Java](./algorithms/java/src/ExcelSheetColumnNumber/ExcelSheetColumnNumber.java)|Easy|
 |170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) 🔒 | [C++](./algorithms/cpp/twoSum/twoSum.III.cpp)|Easy|
 |169|[Majority Element](https://leetcode.com/problems/majority-element/) | [C++](./algorithms/cpp/majorityElement/majorityElement.cpp)|Easy|
 |168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [C++](./algorithms/cpp/excelSheetColumnTitle/excelSheetColumnTitle.cpp)|Easy|
