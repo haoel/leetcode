@@ -377,7 +377,7 @@ LeetCode
 |205|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)| [C++](./algorithms/cpp/isomorphicStrings/IsomorphicStrings.cpp)|Easy|
 |204|[Count Primes](https://leetcode.com/problems/count-primes/)| [C++](./algorithms/cpp/countPrimes/CountPrimes.cpp)|Easy|
 |203|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)| [C++](./algorithms/cpp/removeLinkedListElements/RemoveLinkedListElements.cpp)|Easy|
-|202|[Happy Number](https://leetcode.com/problems/happy-number/)| [C++](./algorithms/cpp/happyNumber/HappyNumber.cpp), [Python](./algorithms/python/HappyNumber/isHappy.py)|Easy|
+|202|[Happy Number](https://leetcode.com/problems/happy-number/)| [C++](./algorithms/cpp/happyNumber/HappyNumber.cpp), [Python](./algorithms/python/HappyNumber/isHappy.py), [Java](./algorithms/java/src/HappyNumber/HappyNumber.java)|Easy|
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)| [C++](./algorithms/cpp/bitwiseANDOfNumbersRange/BitwiseAndOfNumbersRange.cpp)|Medium|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./algorithms/cpp/numberOfIslands/NumberOfIslands.cpp), [Python](./algorithms/python/NumberOfIslands/numIslands.py)|Medium|
 |199|[Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)| [C++](./algorithms/cpp/binaryTreeRightSideView/binaryTreeRightSideView.cpp)|Medium|
