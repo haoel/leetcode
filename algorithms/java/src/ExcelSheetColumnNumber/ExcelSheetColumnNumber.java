@@ -34,13 +34,7 @@
  * 
  *  1 <= columnTitle.length <= 7
  *  columnTitle consists only of uppercase English letters.
- * columnTitle is in the range ["A", "FXSHRXW"].
- * 
- * Explanation of the solution:
- * 
- * 1. While we have given less candies than the ones we had at the beginning (while(total < candies){...})
- * 
- * 2. Use count % num_people == 0 to determine the current index of the people.
+ * columnTitle is in the range ["A", "FXSHRXW"]
  ******************************************************************************************************/
 
 class Solution {
