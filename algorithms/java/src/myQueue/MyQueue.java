@@ -99,3 +99,16 @@ public class MyQueue {
 		return size == 0 ? true : false;
 	}
 }
+
+//ANOTHER POSIBLE SOLUTION BY: DIEGO RUIZ PIQUERAS (PIKERAS72)
+
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        double num =Math.log10(n)/ Math.log10(2);
+        
+        if(num % 1 != 0){
+            return false;
+        }
+        return true;
+    }
+}
