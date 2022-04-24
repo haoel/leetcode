@@ -43,7 +43,7 @@ public class LengthOfLastWord {
 
 }
 
-// ANOTHER POSIBLE SOLUTION:
+// ANOTHER POSIBLE SOLUTION BY: DIEGO RUIZ PIQUERAS (PIKERAS72)
 
 class Solution {
     public int lengthOfLastWord(String s) {
