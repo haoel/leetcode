@@ -59,8 +59,8 @@ public:
                 m[target - numbers[i]] = i; 
             }else { 
                 // found the second one
-                result.push_back(m[numbers[i]]+1);
-                result.push_back(i+1);
+                result.push_back(m[numbers[i]]);
+                result.push_back(i);
                 break;
             }
         }
