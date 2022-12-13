@@ -26,7 +26,7 @@
 #include <vector>
 #include <set>
 #include <algorithm>
-
+#include <a.out.h>
 using namespace std;
 
 
