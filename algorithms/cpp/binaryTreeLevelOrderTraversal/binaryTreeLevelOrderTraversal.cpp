@@ -182,6 +182,31 @@ vector<vector<int> > levelOrder3(TreeNode *root) {
     return vv;
 }
 
+vector<vector<int>> levelOrder4(TreeNode *root) {
+    vector<vector <int>> result;
+    if (!root) return result;
+    queue <TreeNode*> q;
+    q.push(root);
+    while (q.size()> 0 )
+    {   /* cout<<q.size(); */
+        int length = q.size();
+        int count{};
+        vector<int> res{};
+        while (count < length)
+        {   
+            TreeNode* node = q.front();
+            q.pop();
+            res.push_back(node->val);
+            if(node->left) q.push(node->left);
+            if(node->right) q.push(node->right);
+            count += 1;
+        }
+        result.push_back(res);
+    }
+    return result;
+
+}
+
 void printTree(TreeNode *root)
 {
     if (root == NULL){
@@ -237,7 +262,7 @@ TreeNode* createTree(int a[], int n)
     return tree[0];
 }
 
-int printMatrix(vector< vector<int> > &vv)
+void printMatrix(vector< vector<int> > &vv)
 {
     for(int i=0; i<vv.size(); i++) {
         cout << "[";
@@ -280,5 +305,14 @@ int main()
     vv = levelOrder(p);
     printMatrix(vv);
     cout << endl;
+    
+
+    int e[] = {1,2,3,5,0,0,5};
+    p = createTree(e, sizeof(e)/sizeof(int));
+    printTree_level_order(p);
+    vv = levelOrder4(p);
+    printMatrix(vv);
+    cout << endl;
+
     return 0;
 }
