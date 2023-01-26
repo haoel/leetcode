@@ -426,7 +426,7 @@ LeetCode
 |139|[Word Break](https://leetcode.com/problems/word-break/)| [C++](./algorithms/cpp/wordBreak/wordBreak.cpp)|Medium|
 |138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)| [C++](./algorithms/cpp/copyListWithRandomPointer/copyListWithRandomPointer.cpp), [Python](./algorithms/python/CopyListWithRandomPointer/copyRandomList.py)|Hard|
 |137|[Single Number II](https://leetcode.com/problems/single-number-ii/)| [C++](./algorithms/cpp/singleNumber/singleNumber.II.cpp), [Python](./algorithms/python/SingleNumberII/SingleNumberII.py)|Medium|
-|136|[Single Number](https://leetcode.com/problems/single-number/)| [C++](./algorithms/cpp/singleNumber/singleNumber.cpp)|Medium|
+|136|[Single Number](https://leetcode.com/problems/single-number/)| [C++](./algorithms/cpp/singleNumber/singleNumber.cpp), [Java](./algorithms/java/src/SingleNumber/SingleNumber.java)|Medium|
 |135|[Candy](https://leetcode.com/problems/candy/)| [C++](./algorithms/cpp/candy/candy.cpp)|Hard|
 |134|[Gas Station](https://leetcode.com/problems/gas-station/)| [C++](./algorithms/cpp/gasStation/gasStation.cpp)|Medium|
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph/)| [C++](./algorithms/cpp/cloneGraph/cloneGraph.cpp)|Medium|
@@ -496,7 +496,7 @@ LeetCode
 |69|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./algorithms/cpp/sqrt/sqrt.cpp)|Medium|
 |68|[Text Justification](https://leetcode.com/problems/text-justification/)| [C++](./algorithms/cpp/textJustification/textJustification.cpp)|Hard|
 |67|[Add Binary](https://leetcode.com/problems/add-binary/)| [C++](./algorithms/cpp/addBinary/addBinary.cpp)|Easy|
-|66|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./algorithms/cpp/plusOne/plusOne.cpp)|Easy|
+|66|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./algorithms/cpp/plusOne/plusOne.cpp) [Java](./algorithms/java/src/PlusOne/PlusOne.java)|Easy|
 |65|[Valid Number](https://leetcode.com/problems/valid-number/)| [C++](./algorithms/cpp/validNumber/validNumber.cpp)|Easy|
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./algorithms/cpp/minimumPathSum/minimumPathSum.cpp), [Java](./algorithms/java/src/dynamicProgramming/minimumPathSum/minimumPathSum.java)|Medium|
 |63|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)| [C++](./algorithms/cpp/uniquePaths/uniquePaths.II.cpp), [Java](./algorithms/java/src/dynamicProgramming/uniquePaths/uniquePathsII.java)|Medium|
