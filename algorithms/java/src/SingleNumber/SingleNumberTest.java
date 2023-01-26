@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test for 58. Length of Last Word
+ * Test for 136. Single Number
  */
-public class TestLengthOfLastWord {
+public class SingleNumber {
 	@Test
 	public void test() {
 		Solution solution = new Solution();
