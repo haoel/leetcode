@@ -28,35 +28,45 @@
 
 #include <iostream>
 #include <vector>
+#include <queue>
+#include <array>
 using namespace std;
 
-void mark(vector<vector<char> >& grid, int r, int c){
-    if ( r<0 || r>=grid.size() ||
-            c<0 || c>=grid[0].size() ||
-            grid[r][c] != '1' ) {
-        return;
-    }
 
-    grid[r][c] = 'M';
+void dfs(vector<vector<char> >& grid, int row, int col, int row_boarder, int col_boarder){
+    
+    if (row < 0 
+    || col < 0 
+    || row >= row_boarder 
+    || col >= col_boarder 
+    || grid[row][col]=='0') return;
+    grid[row][col] = '0';
+    
 
-    mark(grid, r, c+1); //left
-    mark(grid, r, c-1); //right
-    mark(grid, r-1, c); //up
-    mark(grid, r+1, c); //down
+    dfs(grid, row + 1, col, row_boarder, col_boarder);
+    dfs(grid, row, col + 1, row_boarder, col_boarder);
+    dfs(grid, row, col - 1, row_boarder, col_boarder);
+    dfs(grid, row -1, col, row_boarder, col_boarder);
 }
 
 int numIslands(vector<vector<char> >& grid) {
-    int result = 0;
-    for (int r=0; r<grid.size(); r++) {
-        for (int c=0; c<grid[r].size(); c++) {
-            if (grid[r][c] == '1') {
-                result++;
-                mark(grid, r, c);
+    if (grid.size()== 0) return 0;
+    int count = 0;
+    int row_boarder = grid.size();
+    int col_boarder = grid[0].size();
+    for (int row = 0; row < grid.size(); row++){
+        for (int col = 0; col < grid[0].size(); col++){
+            if (grid[row][col] == '1'){
+                count++;
+                dfs(grid, row, col, row_boarder, col_boarder);
             }
         }
     }
-    return result;
+    return count;
+
 }
+
+
 
 void initGrid( string g[], int len, vector<vector<char> >& grid )
 {
