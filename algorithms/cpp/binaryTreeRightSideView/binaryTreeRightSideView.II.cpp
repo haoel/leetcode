@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/binary-tree-right-side-view/
-// Author : David Lin
+// Author : Sunny Lin
 // Date   : 2023-05-18
 
 /********************************************************************************** 

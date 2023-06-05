@@ -1,5 +1,5 @@
 // Source : https://leetcode.com/problems/time-needed-to-inform-all-employees/
-// Author : David Lin
+// Author : Sunny Lin
 // Date   : 2023-05-22
 
 /*************************************************************************************** 
