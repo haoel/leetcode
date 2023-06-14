@@ -1,6 +1,6 @@
 // Source : https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
-// Author : Hao Chen
-// Date   : 2014-07-17
+// Author : Hao Chen, Sunny Lin
+// Date   : 2023-06-05
 
 /********************************************************************************** 
 * 
@@ -180,6 +180,31 @@ vector<vector<int> > levelOrder3(TreeNode *root) {
     vv.pop_back();
 
     return vv;
+}
+
+vector<vector<int>> levelOrder4(TreeNode *root) {
+    vector<vector <int>> result;
+    if (!root) return result;
+    queue <TreeNode*> q;
+    q.push(root);
+    while (q.size()> 0 )
+    {   /* cout<<q.size(); */
+        int length = q.size();
+        int count{};
+        vector<int> res{};
+        while (count < length)
+        {   
+            TreeNode* node = q.front();
+            q.pop();
+            res.push_back(node->val);
+            if(node->left) q.push(node->left);
+            if(node->right) q.push(node->right);
+            count += 1;
+        }
+        result.push_back(res);
+    }
+    return result;
+
 }
 
 void printTree(TreeNode *root)
