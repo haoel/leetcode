@@ -1,0 +1,24 @@
+// Short method for sum of two integers
+// Define a class named Solution
+class Solution {
+public:
+    // Function to find the sum of two integers without using '+' or '-'
+    int getSum(int a, int b) {
+
+        // Base case: if b is 0, there is no carry left
+        // So the result is simply 'a'
+        return b == 0 
+            ? a  // If b == 0, return a
+            : getSum(
+                a ^ b,                 // Step 1: a XOR b gives sum without carry
+                (unsigned)(a & b) << 1 // Step 2: a AND b gives carry, shift left by 1
+              );
+        /*
+        Explanation:
+        1. a ^ b → XOR operation adds bits where only one of them is 1 (ignores carry)
+        2. a & b → AND operation finds positions where both bits are 1 (this is the carry)
+        3. << 1 → shift carry left by 1 to add it in the next higher bit
+        4. Recursive call → we repeat the process until carry (b) becomes 0
+        */
+    }
+};
