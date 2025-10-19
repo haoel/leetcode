@@ -488,7 +488,7 @@ LeetCode
 |77|[Combinations](https://leetcode.com/problems/combinations/)| [C++](./algorithms/cpp/combinations/combinations.cpp)|Medium|
 |76|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| [C++](./algorithms/cpp/minimumWindowSubstring/minimumWindowSubstring.cpp)|Hard|
 |75|[Sort Colors](https://leetcode.com/problems/sort-colors/)| [C++](./algorithms/cpp/sortColors/sortColors.cpp)|Medium|
-|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| [C++](./algorithms/cpp/search2DMatrix/search2DMatrix.cpp), [Java](./algorithms/java/src/search2DMatrix/search2DMatrix.java), [TypeScript](.algorithms/ts/search2DMatrix/search-2d-matrix.ts)|Medium|
+|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| [C++](./algorithms/cpp/search2DMatrix/search2DMatrix.cpp), [Java](./algorithms/java/src/search2DMatrix/search2DMatrix.java), [TypeScript](algorithms/ts/search2DMatrix/search-2d-matrix.ts)|Medium|
 |73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)| [C++](./algorithms/cpp/setMatrixZeroes/setMatrixZeroes.cpp)|Medium|
 |72|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./algorithms/cpp/editDistance/editDistance.cpp)|Hard|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path/)| [C++](./algorithms/cpp/simplifyPath/simplifyPath.cpp)|Medium|
