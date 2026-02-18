@@ -1,4 +1,6 @@
+#Check whether the last character in a bit array is a one-bit character.
 def isOneBitCharacter(self, bits):
+    
     i = 0
     while i < len(bits):
         if bits[i] == 0:
